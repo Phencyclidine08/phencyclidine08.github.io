@@ -1,0 +1,473 @@
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+
+.ProseMirror {
+    background-color: rgba(0, 0, 0, 0.25)!important;
+}
+
+.ProseMirror:focus {
+    background-color: var(--AdamsMaskMain)!important;
+}
+
+.ProseMirror:hover {
+    background-color: var(--AdamsMaskMain)!important;
+}
+
+.ExtendedContentButton:hover {
+    background: #1c272e;
+    color: var(--DefaultBlueColor);
+}
+
+button.IconButton:hover {
+	color: var(--AdamsMaskMain)!important;
+}
+
+#PostsListModule_Add > div > form > div > div > div > div.Flow > div:nth-child(1) > label:hover {
+	color: var(--AdamsMaskMain)!important;
+}
+
+.PostHeader stateLabel[data-label=Submitter] {
+	content: url(https://files.gamebanana.com/bitpit/submitterhtmladam.html);
+}
+
+body .MiniMedal_normal, body .MiniMedal_rare, body .MiniMedal_legendary, body .MiniMedal_titanium, body .MiniMedal_diamond, body .MiniMedal_jam_entry, body .MiniMedal_jam_award {
+    background-image: url()!important;
+    padding: 0px!important;
+    width: 67px!important;
+    height: 67px!important;
+}
+
+*,*:after,*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+element.style {
+	font-size: 12px;
+    font-family: none;
+}
+
+:root {
+    --NotificationUnseenBG: #1b252c;
+    --NotificationUnseenDividerColor: #27353f;
+    --NotificationSeenDividerColor: #27292b;
+    --NotificationMessageDividerColor: #383838;
+    --TodoDividerColor: #383838;
+    --InputPlaceholderColor: #ffffff8c;
+    --TabBackground: #1c272e;
+    --TabBorder: #2d373e;
+    --tagify-dd-bg-color: var(--ModalWindowBG);
+    --tagify-dd-color-primary: #0004;
+    --PrimaryNavBackgroundColor: #0e0f10;
+    --SecondaryNavBackgroundColor: #0e0f10;
+    --NavPaneBackgroundColor: #0e0f10;
+    --BodyBackground: #20131e url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    --BodyWrapperBackground: #231521 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    --LinkColor: #2e2e25;
+    --LinkHoverColor: #8d89aa;
+    --TabBackground: #00000000;
+    --TabBorder: #707070;
+    --ModalWindowBG: #f4ca53!important;
+    --InputBackgroundColor: #000000;
+    --InputHoverBackgroundColor: #303436;
+    --InputFocusBackgroundColor: #f4ca53;
+    --ButtonBackground: linear-gradient(180deg,#767,#545);
+    --ButtonHoverBackgroundColor: #f4ca53;
+	--blanker: #00000000;
+    --blankeralt: #000;
+	--DefaultGreyColor: #9c9487;
+	--StateLabelBackground: #f4ca53;
+	--ButtonFontFamily:bebasneue-regular; 
+	--DefaultTechnicalFontFamily:bebasneue-regular;
+	
+	--AdamsMaskMain:#2e2e25;
+	--AdamsMaskSecondary:#f4ca53;
+}
+	
+stateLabel {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0.25em 0.5em;
+    margin: 0.125em;
+    border-radius: 0.25em;
+    background: var(--AdamsMaskMain);
+}
+
+stateLabel.IsHonorary {
+    color: var(--AdamsMaskSecondary);
+}
+
+
+
+#tpm__sBmSteamAccountDetails>module>div {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding: 8px 4px 4px 4px;
+    height: auto;
+    min-height: 132.5px/*215px*/;
+    grid-template-columns: [content]100%;
+    grid-template-rows: [top]100%/*75%*/ [bottom]0%/*25%*/;
+    background: none!important;
+    background-position: center center;
+    background-size: 100% 230px;
+}
+
+
+
+html,body {
+    overflow-x: hidden
+	font-family: rift,bebas-neue-by-fontfabric,sans-serif;
+}
+
+@font-face {
+        font-family:bebasneue-regular;
+        src:url("https://files.gamebanana.com/bitpit/bebasneue-regular.ttf");
+}
+
+@font-face {
+        font-family:bebasneue-bold;
+        src:url("https://files.gamebanana.com/bitpit/bebasneue-bold.ttf");
+}
+
+.Content .RichText h1, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:bebasneue-bold;margin-bottom:8px;margin-top:8px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h2, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:bebasneue-bold;margin-bottom:5px;margin-top:5px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h3, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:bebasneue-bold;text-shadow:2px 2px 0px black !important;}
+
+.Content .RichText h1 .HeadingText, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:bebasneue-bold;}
+.Content .RichText h2 .HeadingText, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:bebasneue-bold;}
+.Content .RichText h3 .HeadingText, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:bebasneue-bold;}
+
+.PageModule>h2 {
+    font-size: 1.8em;
+    font-family: bebasneue-bold;
+    margin: 0 0 0.5em 0;
+    padding: 0 1em 0 0;
+    line-height: 2.2rem;
+}
+
+a {
+   /*  font-size: 1.3em;  */
+	font-family:bebasneue-regular;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#PageFooter column strong {
+    display: block;
+    font-family: bebasneue-bold;
+    font-size: 1.5em;
+}
+
+#PageTitle span {
+    transform: translate(0px, 50%);
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    background: var(--blankeralt);
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat
+    margin: 40px auto;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+#MainContent {
+    background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-color: black;
+    position: relative;
+    box-sizing: border-box;
+	font-family: bebasneue-regular;
+}
+
+#ContentGrid>row>column:not(:first-child) {
+    background: var(--blanker);
+    border-right: var(--blanker);
+}
+
+#PageFooter {
+	background: var(--blanker);
+}
+
+body,button,input,select,optgroup,textarea {
+	font-family: bebasneue-regular;
+}
+
+button.IconButton, .ButtonLike.IconButton {
+    padding: 0;
+    clip-path: polygon(0% 0%,100% 0%,calc(100% - 15px) 100%,0% 100%);
+    display: inline-block;
+    min-width: 180px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-family: rift,bebas-neue-by-fontfabric,sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: 5px 30px;
+    text-shadow: none;
+    font-kerning: none;
+    line-height: initial;
+}
+
+button, .ButtonLike {
+    font-size: var(--ButtonFontSize);
+    font-family: var(--ButtonFontFamily);
+    display: inline-flex;
+    align-items: center;
+    outline: none;
+    text-align: center;
+    border: 0;
+    border-radius: 0.125em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+	background: #2e2e25;
+    color: #fff;
+}
+
+button.IconButton spriteIcon, button.IconButton matIcon, .ButtonLike.IconButton spriteIcon, .ButtonLike.IconButton matIcon {
+    margin: 0 0.5em;
+    display: none;
+}
+
+itemCount {
+    font-family: bebasneue-bold;
+    font-size: 125%;
+}
+
+#StatsModule ul li itemCount {
+    font-weight: bold;
+	font-size: 150% !important;
+}
+
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+/* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ /* PD3 SHIT */ 
+
+p {
+    padding: 0 0 1em 0;
+    font-family: 'Motiva Sans';
+}
+
+#MainContent {
+    margin-top: 0px;
+}
+
+#MainContentWrapper {
+      min-width: 80%
+}
+
+
+.PostStamp {
+    --PostStampColor: var(--DefaultGreyColor);
+    color: var(--PostStampColor);
+    background: #ffffff00!important;
+    border-left: 1em solid;
+    border-radius: 0.125em;
+    align-items: center;
+    padding: 0.25em 0.5em;
+    font-weight: 700;
+    display: flex;
+}
+
+#MainContentHeader
+{
+  --HeadlineWrapperHeight: -400px !important;
+}
+
+#PrimaryNav {
+    background: url(https://puu.sh/K0lDw/d2263060a7.jpg);
+    background-size: cover;
+    background-position: top;
+	
+}
+
+#SecondaryNav {
+    background: url(https://puu.sh/K0lDw/d2263060a7.jpg);
+    background-size: unset;
+    background-position: unset;
+}
+
+#SubNavigator {
+	background-color: rgba(0, 0, 0, 0.55);
+    display: block;
+    font-size: var(--SubNavigatorFontSize);
+    border-bottom-width: 0.125em;
+    border-bottom-style: solid;
+    border-bottom-color: #dd43a3;
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    margin-right: 50px;
+}
+
+#SubNavigator .ActiveEntry {
+    border-bottom-color: #dd43a3;
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+body {
+    background: rgb(73,22,25);
+	background-image: url(https://puu.sh/K0lMO/068ad9861c.png);
+    background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-color: black;
+    position: relative;
+}
+
+#MainContent {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#PageFooter {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid>row>column:not(:first-child) {
+/*    background: var(--blanker); */
+/*    border-right: var(--blanker); */
+	background-color: rgba(0, 0, 0, 0.55)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-3 {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-6 {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+:root {
+        --DefaultTextColor:white;
+		--LinkColor: #eddc4c;
+		
+		--HolyBlood:#eddc4c;
+		--AdamStripe:#8581a7;
+		
+		--SteamIngame:#eddc4c!Important;
+		--SteamOnline:#8581a7!Important;
+
+		
+		--BodyBackground: var(--NavPaneBackgroundColor);
+}
+
+.Avatar.HasClearanceLevel {
+    box-shadow: 0 0 0 0.125em var(--HolyBlood),0 0 0.75em var(--HolyBlood);
+}
+
+#ttt_12578327-19dd-0503-cf88-69b83506e4ec {
+	content: none;
+}
+
+#IdentityModule > div > a.MemberLink {
+	content: url(https://files.gamebanana.com/bitpit/allenart05a_shadow_e76ac.png);
+	max-width: 213px
+}
+
+#IdentityModule .Avatar {
+	content: url(https://puu.sh/K0lFF/d24f82352a.gif);
+    margin-bottom: 0.5em;
+	max-width: 213px;
+}
+
+#HeadlineWrapper overlay h1 {
+    content: url(https://files.gamebanana.com/bitpit/allenart05a_shadow_e76ac.png);
+    max-width: 600px;
+}
+
+@media (min-width: 648px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/K0lDw/d2263060a7.jpg);
+    width: auto;
+    height: 400px;
+    background-position-y: -14em!important;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top -105px right 0px;
+}
+
+@media (max-width: 649px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/K0lDw/d2263060a7.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top;
+}
+
+#tpm__sBmSteamAccountDetails {
+    border-radius: 0px 0px 0px 0px;
+    border: 0px solid #d64b4b !important;
+    background-position: center center;
+    background-size: 100% 230px;
+}
+
+#tpm__sBmSteamAccountDetails > module > {
+	background-color: rgba(168, 50, 58, 0.8);
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #d64b4b !important;
+    background-position: center center;
+    background-size: 100% 230px;
+}
+
+#tpm__sBmSteamAccountDetails > module > div {
+	background-color: rgba(168, 50, 58, 0.8) !important;
+	background-blend-mode: overlay;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p {
+font-size: 20px !important;	
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamLevel {
+font-size: 10px !important;	
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName {	
+}
+
+.SteamAvatar > img {
+    border: 2px solid var(--DefaultGreenColor) !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus {
+    color: var(--DefaultGreenColor) !important;
+    font-size: 16px !important;
+    transform: translate(0px, -12px);
+}
+

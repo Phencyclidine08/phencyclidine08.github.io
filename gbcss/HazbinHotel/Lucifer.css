@@ -1,0 +1,50 @@
+:root {
+    --HazbinPurpleRedGradient:linear-gradient(to top,#840430,#670f38);
+    --HazbinRed:#f20032;
+    --HazbinRedGradient:linear-gradient(to top,#f8021b,#5e0110);
+    --HazbinMaroon:#871028;
+	--HazbinPurple:#5e0f39;
+	--HazbinGlass1:#ffebab;
+	--HazbinGlass1Gradient:linear-gradient(to top,#ffebab,#fecc92);
+	--HazbinGlass2:#ffc681;
+	--HazbinGlass2Gradient:linear-gradient(to top,#ffc683,#ff966c);
+	--HazbinViolet:#270b3d;
+	--HazbinPink:#b5194e;
+	--HazbinLED:#fdefe4;
+	--HazbinLED-C:#ef7821;
+	--HazbinMaroonGradient:linear-gradient(to top,#860f3c,#350011);
+
+
+body {
+	background-image: url(https://puu.sh/KDOta/8539760abf.webp);
+    background-size: 10%;
+	background-color: #4b020e;
+    font-size: 14px;
+	font-family: Park Lane;
+    line-height: 1.75;
+}
+
+#MainContent {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#PageFooter {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid>row>column:not(:first-child) {
+/*    background: var(--blanker); */
+/*    border-right: var(--blanker); */
+	background-color: rgba(0, 0, 0, 0.55)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-3 {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-6 {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
