@@ -49,79 +49,52 @@ body {
 	border-right: rgba(0, 0, 0, 0.85);
 }
 
-/* Page Module Borders */
-
 .PageModule {
+  background: var(--HazbinRedGradient) !important;
   position: relative;
   z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-/* Top border */
+/* Left border */
 .PageModule::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  height: 20px; /* Adjust as needed */
-  width: 100%;
-  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png');
-  background-repeat: repeat-x;
-  background-size: contain;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Bottom border */
-.PageModule::after {
-  content: '';
-  position: absolute;
   bottom: 0;
   left: 0;
-  height: 20px; /* Adjust as needed */
-  width: 100%;
-  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_large.png');
-  background-repeat: repeat-x;
-  background-size: contain;
-  z-index: 2;
-  pointer-events: none;
-}
-
-/* Left border */
-.PageModule .Content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px; /* Adjust as needed */
-  height: 100%;
+  width: 20px;
   background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png');
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   z-index: 2;
   pointer-events: none;
 }
 
 /* Right border */
-.PageModule .Content::after {
+.PageModule::after {
   content: '';
   position: absolute;
   top: 0;
+  bottom: 0;
   right: 0;
-  width: 20px; /* Adjust as needed */
-  height: 100%;
+  width: 20px;
   background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png');
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   z-index: 2;
   pointer-events: none;
 }
 
-/* Make sure .Content is relatively positioned */
+/* Optional, only if top and bottom are kept in for later */
 .PageModule .Content {
   position: relative;
   z-index: 1;
-  padding: 20px; /* Padding to avoid overlap with borders */
 }
+
 
 
 
