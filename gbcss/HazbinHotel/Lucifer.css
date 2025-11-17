@@ -13,6 +13,7 @@
 	--HazbinLED:#fdefe4;
 	--HazbinLED-C:#ef7821;
 	--HazbinMaroonGradient:linear-gradient(to top,#860f3c,#350011);
+	--HazbinBGColor:#4b020e;
 
 
 body {
@@ -25,11 +26,12 @@ body {
 }
 
 #MainContent {
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgb(0 0 0 / 0%);
+	background: none;
 }
 
 #PageFooter {
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: rgb(0 0 0 / 0%);
 }
 
 #ContentGrid>row>column:not(:first-child) {
@@ -48,3 +50,18 @@ body {
 	background-color: rgba(0, 0, 0, 0.55)!important;
 	border-right: rgba(0, 0, 0, 0.85);
 }
+
+   wrapper#HeadlineWrapper {
+        background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/lucy_header.png);
+        width: auto;
+        height: 400px;
+        background-size: cover;
+        align-content: end;
+        overflow: hidden;
+        background-position: top -105px right 0;
+    }
+
+    #HeadlineWrapper overlay h1 {
+        content: url(https://files.gamebanana.com/bitpit/allenart04a_shadow.png);
+        max-width: 600px;
+    }
