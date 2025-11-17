@@ -14,13 +14,13 @@
 	--HazbinLED-C:#ef7821;
 	--HazbinMaroonGradient:linear-gradient(to top,#860f3c,#350011);
 	--HazbinBGColor:#4b020e;
+}
 
 
 body {
 	background-image: url(https://puu.sh/KDOta/8539760abf.webp);
     background-size: 10%;
-	background-color: #4b020e;
-    font-size: 14px;
+	background-color: var(--HazbinBGColor);
 	font-family: Park Lane;
     line-height: 1.75;
 }
@@ -35,14 +35,12 @@ body {
 }
 
 #ContentGrid>row>column:not(:first-child) {
-/*    background: var(--blanker); */
-/*    border-right: var(--blanker); */
-	background-color: rgba(0, 0, 0, 0.55)!important;
-	border-right: rgba(0, 0, 0, 0.85);
+	background: var(--HazbinRedGradient)!important;
+	border-right: rgb(112 84 84 / 85%);
 }
 
 #ContentGrid row>column.lg-3 {
-	background-color: rgba(0, 0, 0, 0.55)!important;
+	background-color: rgb(99 61 61 / 55%)!important;
 	border-right: rgba(0, 0, 0, 0.85);
 }
 
@@ -50,6 +48,82 @@ body {
 	background-color: rgba(0, 0, 0, 0.55)!important;
 	border-right: rgba(0, 0, 0, 0.85);
 }
+
+/* Page Module Borders */
+
+.PageModule {
+  position: relative;
+  z-index: 1;
+}
+
+/* Top border */
+.PageModule::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px; /* Adjust as needed */
+  width: 100%;
+  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Bottom border */
+.PageModule::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20px; /* Adjust as needed */
+  width: 100%;
+  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_large.png');
+  background-repeat: repeat-x;
+  background-size: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Left border */
+.PageModule .Content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px; /* Adjust as needed */
+  height: 100%;
+  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Right border */
+.PageModule .Content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px; /* Adjust as needed */
+  height: 100%;
+  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Make sure .Content is relatively positioned */
+.PageModule .Content {
+  position: relative;
+  z-index: 1;
+  padding: 20px; /* Padding to avoid overlap with borders */
+}
+
+
 
    wrapper#HeadlineWrapper {
         background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/lucy_header.png);
