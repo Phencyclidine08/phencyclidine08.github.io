@@ -680,3 +680,81 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   position: relative;
   z-index: 1;
 }
+
+#ResponsibilitiesModule > div > div > div,
+#ResponsibilitiesModule > div > div > h4
+{
+  /* ✅ Centering content */
+  display: flex;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+  #ResponsibilitiesModule > div > div:nth-child(1) > div > div {
+    font-size-adjust:1 !important;
+  }
+
+  :where(#ResponsibilitiesModule,#CoreStatsModule) .Card {
+    padding:0em;
+    background:none;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(1) {
+    content:url(https://images.gamebanana.com/img/banners/games/59496e8cc7888.jpg);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(2) {
+    content:url(https://images.gamebanana.com/img/banners/games/63397d6620120.jpg);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(1) {
+    content:url(https://puu.sh/K0LiP/09ba4c9270.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(2) {
+    content:url(https://files.gamebanana.com/bitpit/jds_large_banner.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(3) {
+    content:url(https://puu.sh/KaWYo/77f3ab4263.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > h4 {
+    display:none;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > div > a:nth-child(1) {
+    content:url(https://i.imgur.com/88xLk.png);
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > div > a:nth-child(2) {
+    content:url(https://images.gamebanana.com/img/banners/clubs/619fa9d27c6b1.jpg);
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
