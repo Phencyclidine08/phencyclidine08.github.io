@@ -391,11 +391,72 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
         background-position: top -200px right 0;
     }
 
-    #HeadlineWrapper overlay h1 {
-        content: url(https://files.gamebanana.com/bitpit/allenart04a_shadow.png);
-        max-width: 600px;
-    }
+#HeadlineWrapper overlay h1 {
+  background-image: url("https://files.gamebanana.com/bitpit/allenart04a_shadow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 700px;
+  height: 240px;
+
+  color: transparent;
+  text-shadow: none;
+}
+
 
 #SubNavigator {
-	background: var(--HazbinMaroonGradient) !important;
-}]
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+
+  background:
+    /* Corners (Top Layer) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Side Borders */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
+
+    /* ✅ Gradient Background (Bottom Layer) */
+    var(--HazbinMaroonGradient);
+
+  background-size:
+    86px 86px,
+    86px 86px,
+    86px 86px,
+    86px 86px,
+
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%,
+
+    100% 100%; /* gradient fills the full box */
+
+  padding: 36px 76px;
+  overflow: visible;
+}
+
+#PrimaryNav {
+  box-sizing: border-box;
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/primarynav_bottom_border.png") bottom left repeat-x,
+    var(--HazbinRedGradient); /* gradient remains as base layer */
+  
+  background-size:
+    auto 8px,  /* first layer: image height 4px, adjust as needed */
+    cover;     /* second layer: gradient fills area */
+
+  z-index: 1005;
+  opacity: 1;
+  width: 100%;
+  height: var(--PrimaryNavHeight);
+  transition: opacity .5s ease-in-out;
+  display: flex;
+  position: relative;
+  transform: translateZ(0);
+}
