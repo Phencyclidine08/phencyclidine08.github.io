@@ -587,6 +587,12 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   text-shadow: none;
 }
 
+@media (max-width: 632px) {
+wrapper#HeadlineWrapper {
+ display: none !important; 
+}
+}
+
 #ModsOnlineModule > div {
 	padding: 0px 40px 0px 66px;
 }
