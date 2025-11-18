@@ -268,7 +268,10 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
+
+    /* ✅ New centered background image */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/misc_module_image2.png') top center no-repeat;
 
   background-size:
     86px 86px,   /* top-left corner */
@@ -279,7 +282,13 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     100% 26px,   /* top border */
     26px 100%,   /* right border */
     100% 26px,   /* bottom border */
-    26px 100%;   /* left border */
+    26px 100%,   /* left border */
+
+    100%;        /* ✅ center image uses natural size */
+}
+
+#tpm__sBmAudio > module > div {
+	padding: 100px 50px 15px 50px !important;
 }
 
 #MemberSubscriptionToggleModule::before {
