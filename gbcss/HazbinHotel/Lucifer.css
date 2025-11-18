@@ -170,16 +170,21 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 .PageModule {
   position: relative;
-  	background:-moz-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
-	background:-webkit-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
-	background:radial-gradient(ellipse at center,#980d20 50%,#38050c 100%);
-	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#980d20',endColorstr='#38050c',GradientType=1);
-  padding: 70px 36px; /* 40px top & bottom, 26px left & right */
+  padding: 70px 36px;
   overflow: visible;
-}
+  margin: .0em 0 0 0;
 
-.PageModule::after {
-background-image:url("https://files.gamebanana.com/bitpit/cascading_lucifer_crest.png") !important;
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
 }
 
 .PageModule::before {
@@ -225,13 +230,20 @@ background-image:url("https://files.gamebanana.com/bitpit/cascading_lucifer_cres
 #tpm__sBmAudio > module.PageModule,
 #MemberSubscriptionToggleModule {
   position: relative;
-  z-index: 1;
-	background:-moz-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
-	background:-webkit-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
-	background:radial-gradient(ellipse at center,#980d20 50%,#38050c 100%);
-	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#980d20',endColorstr='#38050c',GradientType=1);
-  padding: 27px 36px; /* 40px top & bottom, 26px left & right */
+  padding: 70px 36px;
   overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
 }
 
 #tpm__sBmAudio > module.PageModule::before,
@@ -270,13 +282,20 @@ background-image:url("https://files.gamebanana.com/bitpit/cascading_lucifer_cres
 
 #IdentityModule {
   position: relative;
-  z-index: 1;
-	background:-moz-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
-	background:-webkit-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
-	background:radial-gradient(ellipse at center,#980d20 50%,#38050c 100%);
-	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#980d20',endColorstr='#38050c',GradientType=1);
-  padding: 70px 36px; /* 40px top & bottom, 26px left & right */
+  padding: 70px 36px;
   overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
 }
 
 #IdentityModule::before {
