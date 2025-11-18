@@ -21,8 +21,8 @@ body {
 	background-image: url(https://puu.sh/KDOta/8539760abf.webp);
     background-size: 10%;
 	background-color: var(--HazbinBGColor);
-	font-family: Park Lane;
-    line-height: 1.75;
+	/*	font-family: Park Lane;  */
+	/*   line-height: 1.75;      */
 }
 
 #MainContent {
@@ -54,7 +54,7 @@ body {
 .PageModule {
   position: relative;
   background: var(--HazbinRedGradient); /* background fill only */
-  padding: 26px;
+  padding: 70px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
 
@@ -102,7 +102,7 @@ body {
   position: relative;
   z-index: 1;
   background: var(--HazbinRedGradient); /* base fill only */
-  padding: 26px;
+  padding: 27px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
 
@@ -144,7 +144,7 @@ body {
   position: relative;
   z-index: 1;
   background: var(--HazbinRedGradient); /* just the base fill now */
-  padding: 26px;
+  padding: 70px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
 
