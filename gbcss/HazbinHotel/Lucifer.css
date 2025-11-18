@@ -408,18 +408,6 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 	display:none;
 }
 
-
-#MemberSubscriptionToggleModule > div > button {
-  position: absolute;
-  top: -190px;       /* adjust as needed */
-  left: 115px;       /* position to the right of the container */
-  z-index: 9999;    /* high enough to appear over everything */
-  pointer-events: auto;
-	background: none;
-	color: #750b0f;
-	font-size-adjust: .8;
-}
-
 #tpm__sBmSteamAccountDetails > module {
   position: relative;
   padding: 70px 36px;
