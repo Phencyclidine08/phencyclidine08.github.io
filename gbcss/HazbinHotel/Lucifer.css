@@ -2,7 +2,7 @@
     --HazbinPurpleRedGradient:linear-gradient(to top,#840430,#670f38);
     --HazbinRed:#f20032;
     --HazbinRedGradient:linear-gradient(to top,#f8021b,#5e0110);
-	--HazbinRedGradientTweaked:linear-gradient(to top,#cb0015,#5e0110);
+	--HazbinRedGradientTweaked:linear-gradient(to top,#980d20,#38050c);
     --HazbinMaroon:#871028;
 	--HazbinPurple:#5e0f39;
 	--HazbinGlass1:#ffebab;
@@ -170,11 +170,17 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 .PageModule {
   position: relative;
-  background: var(--HazbinRedGradientTweaked); /* background fill only */
+  	background:-moz-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
+	background:-webkit-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
+	background:radial-gradient(ellipse at center,#980d20 50%,#38050c 100%);
+	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#980d20',endColorstr='#38050c',GradientType=1);
   padding: 70px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
 
+.PageModule::after {
+background-image:url("https://files.gamebanana.com/bitpit/cascading_lucifer_crest.png") !important;
+}
 
 .PageModule::before {
   content: '';
@@ -182,6 +188,8 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   inset: 0;
   z-index: 10; /* higher than content */
   pointer-events: none;
+
+	
 
   background:
     /* corners first */
@@ -218,7 +226,10 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 #MemberSubscriptionToggleModule {
   position: relative;
   z-index: 1;
-  background: var(--HazbinRedGradientTweaked); /* base fill only */
+	background:-moz-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
+	background:-webkit-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
+	background:radial-gradient(ellipse at center,#980d20 50%,#38050c 100%);
+	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#980d20',endColorstr='#38050c',GradientType=1);
   padding: 27px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
@@ -260,7 +271,10 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 #IdentityModule {
   position: relative;
   z-index: 1;
-  background: var(--HazbinRedGradientTweaked); /* just the base fill now */
+	background:-moz-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
+	background:-webkit-radial-gradient(center,ellipse cover,#980d20 50%,#38050c 100%);
+	background:radial-gradient(ellipse at center,#980d20 50%,#38050c 100%);
+	filter:progid:dximagetransform.microsoft.gradient(startColorstr='#980d20',endColorstr='#38050c',GradientType=1);
   padding: 70px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
