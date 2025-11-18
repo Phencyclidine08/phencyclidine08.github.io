@@ -376,6 +376,38 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     26px 100%;     /* left border */
 }
 
+.Avatar img {
+    content: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/allen_avatar1.gif)
+}
+
+#IdentityModule .MemberLink {
+  position: relative;
+  display: block;
+
+  /* Replace content with your image */
+  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 100%;
+  height: 100px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* ✅ Hide original children inside .MemberLink */
+#IdentityModule .MemberLink > * {
+  display: none !important;
+}
+
+#IdentityModule > div > div:nth-child(3),
+#IdentityModule > div > div.UserTitle,
+#IdentityModule > div > ul > li:nth-child(1)
+{
+	display:none;
+}
+
+
 #MemberSubscriptionToggleModule > div > button {
   position: absolute;
   top: -190px;       /* adjust as needed */
