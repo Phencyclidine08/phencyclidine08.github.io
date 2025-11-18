@@ -16,6 +16,12 @@
 	--HazbinMaroonGradient:linear-gradient(to top,#860f3c,#350011);
 	--HazbinBGColor:#4b020e;
 
+	--SecondaryNavBackgroundColor:linear-gradient(to top,#860f3c,#350011);
+	--NavPaneBackgroundColor:linear-gradient(to top,#860f3c,#350011);
+	--NotificationUnseenBG:linear-gradient(to top,#860f3c,#350011);
+	--NotificationSeenDividerColor:#f20032;
+	--NotificationUnseenDividerColor:#f20032;
+	
     --DefaultTextFontFamily: "Open Sans", sans-serif;
     --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
     --DefaultTextColor: #ffc681;
@@ -40,9 +46,9 @@
     --NavUpdatesIndicatorColor: #6CB1E1;
     --InputTitleUnderlineColor: #707070;
     --InputTextColor: #e2e2e2;
-    --InputBackgroundColor: #3a4246;
-    --InputHoverBackgroundColor: #414a4e;
-    --InputFocusBackgroundColor: #414a4e;
+    --InputBackgroundColor: #840430;
+    --InputHoverBackgroundColor: #670f38;
+    --InputFocusBackgroundColor: #400822;
     --InputPlaceholderColor: #121a1f;
     --PaginatorPageNumberBackgroundColor: #0b1013;
     --AdvancedElementTabsBackgroundColor: transparent;
@@ -55,9 +61,8 @@
     --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
 }
 
-
 body {
-	background-image: url(https://puu.sh/KDOta/8539760abf.webp);
+	background-image: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/morningstar_wallpaper_pattern.webp);
     background-size: 10%;
 	background-color: var(--HazbinBGColor);
 	/*	font-family: Park Lane;  */
@@ -311,7 +316,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     100% 26px,   /* bottom border */
     26px 100%,   /* left border */
 
-    auto;        /* ✅ center image uses natural size */
+    100%;        /* ✅ center image uses natural size */
 }
 
 
