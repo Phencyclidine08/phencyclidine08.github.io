@@ -21,8 +21,8 @@ body {
 	background-image: url(https://puu.sh/KDOta/8539760abf.webp);
     background-size: 10%;
 	background-color: var(--HazbinBGColor);
-	font-family: Park Lane;
-    line-height: 1.75;
+/*	font-family: Park Lane;  */
+/*   line-height: 1.75;      */
 }
 
 #MainContent {
