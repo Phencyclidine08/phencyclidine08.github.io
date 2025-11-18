@@ -299,6 +299,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   content: '';
   position: absolute;
   inset: 0;
+  z-index: 10; /* above content */
   pointer-events: none;
 
   background:
@@ -389,20 +390,19 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 }
 
 #IdentityModule .Avatar {
-    content: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/allen_avatar1.gif)
+    content: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/allen_avatar1.gif);
 }
 
 #IdentityModule .MemberLink {
   position: relative;
   display: block;
-  padding: 10px 0px 70px 0px;
+  padding: 0px 0px 40px 0px;
 
   /* Replace content with your image */
   background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
   width: 100%;
   height: 100px; /* Adjust as needed */
   overflow: hidden;
@@ -419,6 +419,27 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 {
 	display:none;
 }
+
+#IdentityModule > div > ul {
+ color: #750d0f;
+}
+
+#IdentityModule > div > ul > li:nth-child(3) {
+	transform: translateY(10px); /* adjust */
+    display: inline-block; /* may be needed depending on HTML */
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > span {
+	font-size: 12px;
+    display: inline-block; /* may be needed depending on HTML */
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > small,
+#IdentityModule > div > ul > li:nth-child(3) > small{
+	color: #750d0f;
+}
+
+
 
 #tpm__sBmSteamAccountDetails > module {
   position: relative;
