@@ -376,7 +376,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     26px 100%;     /* left border */
 }
 
-.Avatar img {
+#IdentityModule .Avatar {
     content: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/allen_avatar1.gif)
 }
 
