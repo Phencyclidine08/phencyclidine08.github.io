@@ -301,6 +301,14 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     max-width: 100%;      /* Prevents expanding wider than container */
 }
 
+#DiscordProfileTabContent > div {
+	padding: 10px 10px 60px 10px !important; 
+}
+
+#GsaModule > div {
+	padding: 10px 10px 64px 10px !important; 
+}
+
 #MemberSubscriptionToggleModule::before {
   content: '';
   position: absolute;
@@ -614,8 +622,21 @@ wrapper#HeadlineWrapper {
 }
 }
 
+#ModsOnlineModule > h2 {
+  position: relative; /* required for transform to visually shift */
+  transform: translate( 20px, -20px); /* X = right 20px, Y = up 10px */
+}
+
 #ModsOnlineModule > div {
-	padding: 0px 40px 0px 66px;
+	padding: 0px 10px 0px 20px;
+}
+
+#ModsOnlineModule .Grid {
+    grid-template-columns: repeat(auto-fit, 50px) !important;
+    gap: 0.6em !important;
+    display: grid;
+	position: relative; /* required for transform to visually shift */
+	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
 }
 
 #SubNavigator {
