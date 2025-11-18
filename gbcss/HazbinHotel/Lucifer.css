@@ -86,7 +86,8 @@ body {
   overflow: visible;
 }
 
-#tpm__sBmAudio > module.PageModule {
+#tpm__sBmAudio > module.PageModule,
+#MemberSubscriptionToggleModule {
   position: relative;
   z-index: 1;
 
@@ -94,8 +95,8 @@ body {
     /* 1–4: corners (TOP LAYER) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
 
     /* 5–8: side borders (UNDER corners) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
