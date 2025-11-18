@@ -292,7 +292,13 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 }
 
 #tpm__sBmAudio > module > div {
-	padding: 100px 50px 15px 50px !important;
+	padding: 100px 0px 15px 0px !important;
+}
+
+#tpm__sBmAudio > module > div > div > audio {
+    overflow: hidden;     /* Prevents any visual overflow */
+    box-sizing: border-box; /* Ensures padding/borders don't expand width */
+    max-width: 100%;      /* Prevents expanding wider than container */
 }
 
 #MemberSubscriptionToggleModule::before {
