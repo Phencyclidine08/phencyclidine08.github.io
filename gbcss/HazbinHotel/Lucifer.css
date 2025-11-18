@@ -2,6 +2,7 @@
     --HazbinPurpleRedGradient:linear-gradient(to top,#840430,#670f38);
     --HazbinRed:#f20032;
     --HazbinRedGradient:linear-gradient(to top,#f8021b,#5e0110);
+	--HazbinRedGradientTweaked:linear-gradient(to top,#cb0015,#5e0110);
     --HazbinMaroon:#871028;
 	--HazbinPurple:#5e0f39;
 	--HazbinGlass1:#ffebab;
@@ -14,6 +15,44 @@
 	--HazbinLED-C:#ef7821;
 	--HazbinMaroonGradient:linear-gradient(to top,#860f3c,#350011);
 	--HazbinBGColor:#4b020e;
+
+    --DefaultTextFontFamily: "Open Sans", sans-serif;
+    --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
+    --DefaultTextColor: #ffc681;
+    --DefaultBlueColor: #6CB1E1;
+    --DefaultRedColor: #FF4E4E;
+    --DefaultRedDarkColor: #701E24;
+    --DefaultGreenColor: #6EE16C;
+    --DefaultGreenDarkColor: #344734;
+    --DefaultPurpleColor: #FF5E9D;
+    --DefaultGreyColor: #999999;
+    --DefaultOrangeColor: #FF7238;
+    --DefaultYellowColor: #FFE033;
+    --StateLabelBackground: linear-gradient(to top,#840430,#670f38);
+	--ButtonBackground: linear-gradient(to top,#840430,#670f38);
+	--ButtonFontColor: #bbb;
+    --ButtonFontFamily: "IBM Plex Mono", monospace;
+    --ButtonFontSize: 0.9em;
+    --ButtonHoverFontColor: #e2e2e2;
+    --ButtonHoverBackgroundColor: #670f38;
+    --LinkColor: #fe226d;
+    --LinkHoverColor: #FD70E1;
+    --NavUpdatesIndicatorColor: #6CB1E1;
+    --InputTitleUnderlineColor: #707070;
+    --InputTextColor: #e2e2e2;
+    --InputBackgroundColor: #3a4246;
+    --InputHoverBackgroundColor: #414a4e;
+    --InputFocusBackgroundColor: #414a4e;
+    --InputPlaceholderColor: #121a1f;
+    --PaginatorPageNumberBackgroundColor: #0b1013;
+    --AdvancedElementTabsBackgroundColor: transparent;
+    --AdvancedElementTabsBorderColor: #0e1317;
+    --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+    --ActiveTabBorderColor: #FF5E9D;
+    --ActiveTabBackgroundColor: rgba(255,94,157,0.08);
+    --TableColumnTitleFontColor: #ffffff8a;
+    --TableColumnTitleBackground: #ffffff14;
+    --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
 }
 
 
@@ -32,6 +71,7 @@ body {
 
 #PageFooter {
 	background-color: rgb(0 0 0 / 0%);
+	background: none;
 }
 
 #ContentGrid>row>column:not(:first-child) {
@@ -49,11 +89,88 @@ body {
 	border-right: rgb(0 0 0 / 0%);
 }
 
+.Tab {
+    background: var(--ButtonBackground);
+    cursor: pointer;
+    opacity: .5;
+    border: 2px solid var(--HazbinGlass2);
+    border-bottom: 0;
+    border-radius: .25em .25em 0 0;
+    align-items: center;
+    gap: .25em;
+    padding: .75em 1em;
+    transition: opacity .2s 
+ease-in-out;
+    display: flex;
+}
 
+input:checked+.Tab, .Tab:has(:checked) {
+    border: 3px solid var(--HazbinGlass2);
+    opacity: 1;
+    cursor: default;
+    border-bottom: 0;
+    margin-bottom: -3px;
+    font-weight: 700;
+}
+
+.TabsWrapper {
+    border-bottom: 10px solid #00000000;
+    overflow: auto;
+}
+
+.Tabs {
+    border-bottom: 3px solid var(--HazbinGlass2);
+    padding: 0 1em 0 .5em;
+    display: flex;
+}
+
+input[type=text],input[type=password],input[type=url],input[type=number],input[type=email],input[type=num],input[type=tel],select,.SelectLike,option,.OptionLike,optgroup,textarea,.TextareaLike {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: .125em;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--DefaultTechnicalFontFamily);
+    padding: .75em;
+    color: var(--InputTextColor);
+    border: 0;
+    background: #0000003d;
+}
+
+input[type=text]:hover,input[type=password]:hover,input[type=url]:hover,input[type=number]:hover,input[type=email]:hover,input[type=num]:hover,input[type=tel]:hover,select:hover,.SelectLike:hover,option:hover,.OptionLike:hover,optgroup:hover,textarea:hover,.TextareaLike:hover {
+    background: #00000078;
+}
+
+input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[type=number]:focus,input[type=email]:focus,input[type=num]:focus,input[type=tel]:focus,select:focus,.SelectLike:focus,option:focus,.OptionLike:focus,optgroup:focus,textarea:focus,.TextareaLike:focus {
+    background: #00000017;
+}
+
+.Posts .Post {
+  background: var(--HazbinRedGradientTweaked); /* background fill only */
+  border: 2px solid var(--HazbinGlass2);
+  padding: 16px 16px;
+  border-radius: 8px; /* ✅ this adds the curve */
+}
+
+.PostStamp {
+    --PostStampColor: var(--DefaultGreyColor);
+    color: var(--PostStampColor);
+    background: #00000042 !important;
+}
+
+#DonatePoints > div > form > div:nth-child(1) > div,
+#DonatePoints > div > form > div:nth-child(2) > div.InputWrapper{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.PageModule > h2 {
+  margin-left: 25px;
+}
 
 .PageModule {
   position: relative;
-  background: var(--HazbinRedGradient); /* background fill only */
+  background: var(--HazbinRedGradientTweaked); /* background fill only */
   padding: 70px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
@@ -101,7 +218,7 @@ body {
 #MemberSubscriptionToggleModule {
   position: relative;
   z-index: 1;
-  background: var(--HazbinRedGradient); /* base fill only */
+  background: var(--HazbinRedGradientTweaked); /* base fill only */
   padding: 27px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
@@ -143,7 +260,7 @@ body {
 #IdentityModule {
   position: relative;
   z-index: 1;
-  background: var(--HazbinRedGradient); /* just the base fill now */
+  background: var(--HazbinRedGradientTweaked); /* just the base fill now */
   padding: 70px 36px; /* 40px top & bottom, 26px left & right */
   overflow: visible;
 }
