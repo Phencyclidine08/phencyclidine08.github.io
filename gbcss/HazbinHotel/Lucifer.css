@@ -57,35 +57,34 @@ body {
     /* 1–4: corners (TOP LAYER) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom left no-repeat,
 
-    /* 5–8: borders (UNDER corners) */
+    /* 5–8: side borders (UNDER corners) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
 
-    /* 9: content background (bottom layer) */
+    /* 9: background fill */
     var(--HazbinRedGradient);
 
   background-size:
-    26px 26px,   /* top-left corner */
-    26px 26px,   /* top-right corner */
-    26px 26px,   /* bottom-right corner */
-    26px 26px,   /* bottom-left corner */
+    86px 86px,   /* top-left corner */
+    86px 86px,   /* top-right corner */
+    86px 86px,   /* bottom-right corner */
+    86px 86px,   /* bottom-left corner */
 
-    100% 26px,   /* top border */
-    26px 100%,   /* right border */
-    100% 26px,   /* bottom border */
-    26px 100%,   /* left border */
+    100% 26px,   /* top border: full width, 26px height */
+    26px 100%,   /* right border: 26px width, full height */
+    100% 26px,   /* bottom border: full width, 26px height */
+    26px 100%,   /* left border: 26px width, full height */
 
     cover;
 
-  padding: 26px; /* All sides — to match border/corner image thickness */
+  padding: 26px; /* Matches border/corner size */
   overflow: visible;
 }
-
 
 
 
