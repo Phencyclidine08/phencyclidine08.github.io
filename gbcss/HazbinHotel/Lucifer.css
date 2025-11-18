@@ -343,7 +343,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   content: '';
   position: absolute;
   inset: 0;
-  z-index: 10; /* on top of content */
+
   pointer-events: none;
 
   background:
@@ -438,7 +438,8 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 }
 
 #tpm__sBmSteamAccountDetails > module > div {
- 	padding: 80px 0px 80px 30px !important; 
+ 	padding: 80px 0px 80px 30px !important;
+	
 }
 
 #tpm__sBmSteamAccountDetails > module > h2 {
@@ -452,6 +453,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 #tpm__sBmSteamAccountDetails > module > div > div > p,
 #tpm__sBmSteamAccountDetails > module > div > p {
 	padding: 95px 0px 0px 20px;
+	
 }
 
 #tpm__sBmSteamAccountDetails > module > div > p.SteamRealName {
@@ -534,9 +536,14 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   z-index: 1; /* Base layer for stacking */
 
   background: var(--HazbinMaroonGradient);
-  padding: 36px 76px;
+  padding: 36px;
   overflow: visible;
   isolation: isolate; /* Creates new stacking context */
+
+  /* ✅ Centering content */
+  display: flex;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
 }
 
 #SubNavigator::before {
