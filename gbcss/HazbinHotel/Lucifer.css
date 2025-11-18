@@ -49,25 +49,36 @@ body {
 	border-right: rgba(0, 0, 0, 0.85);
 }
 
+
+
 .PageModule {
   position: relative;
-  z-index: 1;
+  background: var(--HazbinRedGradient); /* background fill only */
+  padding: 26px;
+  overflow: visible;
+}
+
+
+.PageModule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* higher than content */
+  pointer-events: none;
 
   background:
-    /* 1–4: corners (TOP LAYER) */
+    /* corners first */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom left no-repeat,
 
-    /* 5–8: side borders (UNDER corners) */
+    /* sides next */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
 
-    /* 9: background fill */
-    var(--HazbinRedGradient);
 
   background-size:
     86px 86px,   /* top-left corner */
@@ -90,22 +101,31 @@ body {
 #MemberSubscriptionToggleModule {
   position: relative;
   z-index: 1;
+  background: var(--HazbinRedGradient); /* base fill only */
+  padding: 26px;
+  overflow: visible;
+}
+
+#tpm__sBmAudio > module.PageModule::before,
+#MemberSubscriptionToggleModule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* above content */
+  pointer-events: none;
 
   background:
-    /* 1–4: corners (TOP LAYER) */
+    /* Corners (Top Layer) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
 
-    /* 5–8: side borders (UNDER corners) */
+    /* Side Borders (Under Corners) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
-
-    /* 9: background fill */
-    var(--HazbinRedGradient);
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
 
   background-size:
     86px 86px,   /* top-left corner */
@@ -113,28 +133,35 @@ body {
     86px 86px,   /* bottom-right corner */
     86px 86px,   /* bottom-left corner */
 
-    100% 26px,   /* top border: full width, 26px height */
-    26px 100%,   /* right border: 26px width, full height */
-    100% 26px,   /* bottom border: full width, 26px height */
-    26px 100%,   /* left border: 26px width, full height */
-
-    cover;
-
-  padding: 26px; /* Matches border/corner size */
-  overflow: visible;
+    100% 26px,   /* top border */
+    26px 100%,   /* right border */
+    100% 26px,   /* bottom border */
+    26px 100%;   /* left border */
 }
+
 
 #IdentityModule {
   position: relative;
   z-index: 1;
+  background: var(--HazbinRedGradient); /* just the base fill now */
+  padding: 26px;
+  overflow: visible;
+}
+
+#IdentityModule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* on top of content */
+  pointer-events: none;
 
   background:
-	/* Plaque (TOP MOST LAYER) */
-	url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') bottom no-repeat,
-	  
+    /* Plaque (TOP MOST LAYER) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') bottom no-repeat,
+
     /* 1–4: corners (TOP LAYER) */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_max.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_max.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_max.png') bottom right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_max.png') bottom left no-repeat,
 
@@ -142,16 +169,54 @@ body {
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
-
-    /* 9: background fill */
-    var(--HazbinRedGradient);
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
 
   background-size:
-	300px 200px,   /* top-left corner */
-	  
-    160px 160px,   /* top-left corner */
-    160px 160px,   /* top-right corner */
+    300px 200px,   /* plaque */
+
+    86px 86px,   /* top-left corner */
+    86px 86px,   /* top-right corner */
+    160px 160px,   /* bottom-right corner */
+    160px 160px,   /* bottom-left corner */
+
+    100% 26px,     /* top border */
+    26px 100%,     /* right border */
+    100% 26px,     /* bottom border */
+    26px 100%;     /* left border */
+}
+
+
+	#HeadlineWrapper {  
+	  position: relative;
+	  background: var(--HazbinRedGradient); /* background fill only */
+	  padding: 26px;
+	  overflow: visible;
+	}
+
+#HeadlineWrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* higher than content */
+  pointer-events: none;
+
+  background:
+    /* corners first */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_max.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_max.png') bottom left no-repeat,
+
+    /* sides next */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+
+  background-size:
+    86px 86px,   /* top-left corner */
+    86px 86px,   /* top-right corner */
     160px 160px,   /* bottom-right corner */
     160px 160px,   /* bottom-left corner */
 
@@ -165,6 +230,7 @@ body {
   padding: 26px; /* Matches border/corner size */
   overflow: visible;
 }
+
 
 
    wrapper#HeadlineWrapper {
