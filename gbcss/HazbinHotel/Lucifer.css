@@ -443,13 +443,31 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 #PrimaryNav {
   box-sizing: border-box;
+
   background:
-    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/primarynav_bottom_border.png") bottom left repeat-x,
-    var(--HazbinRedGradient); /* gradient remains as base layer */
-  
+    /* Bottom border image (top layer) */
+    url("ttps://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/primarynav_bottom_border.png") bottom left repeat-x,
+
+    /* Full-width cascading image (middle layer) */
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/primarynav_window_cascading1.png") center left repeat-x,
+
+    /* Base gradient (bottom layer) */
+    var(--HazbinRedGradient);
+
   background-size:
-    auto 8px,  /* first layer: image height 4px, adjust as needed */
-    cover;     /* second layer: gradient fills area */
+    auto 8px,      /* bottom border image height */
+    auto 100%,     /* full-height image that repeats horizontally */
+    cover;         /* gradient covers the rest */
+
+  background-position:
+    bottom left,
+    center left,
+    center;
+
+  background-repeat:
+    repeat-x,
+    repeat-x,
+    no-repeat;
 
   z-index: 1005;
   opacity: 1;
