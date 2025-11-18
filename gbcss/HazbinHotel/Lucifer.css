@@ -525,6 +525,9 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   text-shadow: none;
 }
 
+#ModsOnlineModule > div {
+	padding: 0px 40px 0px 66px;
+}
 
 #SubNavigator {
   position: relative;
