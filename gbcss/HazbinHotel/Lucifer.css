@@ -52,41 +52,39 @@ body {
 .PageModule {
   position: relative;
   z-index: 1;
+
   background:
-    /* 1–4: corners */
+    /* 1–4: corners (TOP LAYER) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
 
-    /* 5–8: sides */
+    /* 5–8: borders (UNDER corners) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
 
-    /* 9: base background fill */
+    /* 9: content background (bottom layer) */
     var(--HazbinRedGradient);
 
   background-size:
-    32px 32px,   /* top-left corner */
-    32px 32px,   /* top-right corner */
-    32px 32px,   /* bottom-right corner */
-    32px 32px,   /* bottom-left corner */
+    26px 26px,   /* top-left corner */
+    26px 26px,   /* top-right corner */
+    26px 26px,   /* bottom-right corner */
+    26px 26px,   /* bottom-left corner */
 
-    100% 32px,   /* top border */
-    20px 100%,   /* right border */
-    100% 32px,   /* bottom border */
-    20px 100%,   /* left border */
+    100% 26px,   /* top border */
+    26px 100%,   /* right border */
+    100% 26px,   /* bottom border */
+    26px 100%,   /* left border */
 
     cover;
 
-  padding: 32px 20px; /* top/bottom | left/right */
+  padding: 26px; /* All sides — to match border/corner image thickness */
+  overflow: visible;
 }
-
-
-
-
 
 
 
