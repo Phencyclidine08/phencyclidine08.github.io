@@ -383,6 +383,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 #IdentityModule .MemberLink {
   position: relative;
   display: block;
+  padding: 10px 0px 70px 0px;
 
   /* Replace content with your image */
   background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png');
