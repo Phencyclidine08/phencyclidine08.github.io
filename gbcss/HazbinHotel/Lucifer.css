@@ -733,6 +733,27 @@ wrapper#HeadlineWrapper {
 	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
 }
 
+/* -------------------------- Page Module Styling Buddies -------------------------- */
+
+/* Margin Fixes */
+
+#BuddiesModule > h2 {
+  position: relative; /* required for transform to visually shift */
+  transform: translate( 20px, -10px); /* X = right 20px, Y = up 10px */
+}
+
+#BuddiesModule > div {
+	padding: 20px 10px 0px 20px;
+}
+
+#BuddiesModule > div > div {
+    grid-template-columns: repeat(auto-fit, 50px) !important;
+    gap: 0.6em !important;
+    display: grid;
+	position: relative; /* required for transform to visually shift */
+	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
+}
+
 /* -------------------------- Page Module Styling Favorite Game App -------------------------- */
 
 /* Margin Fixes */
