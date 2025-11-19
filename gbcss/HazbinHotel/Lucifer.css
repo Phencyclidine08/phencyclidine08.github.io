@@ -580,11 +580,36 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Discord App -------------------------- */
 
+#DiscordProfile .DiscordCard,
+#discordActivityPanel,
+#discordSettingsTabPanel
+{
+  position: relative;
+  padding: 70px 36px;
+  overflow: visible;
+
+  background:
+    url(""),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%) !important;
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+	
+    border-radius: 8px 8px 50px 50px !important;
+	border: 2px solid var(--HazbinGlass2) !important;
+}
+
 /* Margin Fixes */
 
-#DiscordProfileTabContent > div {
+#DiscordProfileTabContent > div,
+#discordActivityPanel,
+#discordSettingsTabPanel
+{
 	padding: 10px 10px 60px 10px !important; 
 }
+
+
 
 /* -------------------------- Page Module Styling Global Submission Announcement -------------------------- */
 
