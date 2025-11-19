@@ -873,6 +873,11 @@ wrapper#HeadlineWrapper {
 	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
 }
 
+#ModsOnlineModule > div > span
+{
+	padding: 0px 10px 0px 20px;
+}
+
 /* -------------------------- Page Module Styling Buddies -------------------------- */
 
 /* Margin Fixes */
