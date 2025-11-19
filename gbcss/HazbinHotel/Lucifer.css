@@ -181,7 +181,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   overflow-x: hidden;
 }
 
-/* -------------------------- Page Module Styling Header -------------------------- */
+/* -------------------------- Page Header Styling -------------------------- */
 
 #HeadlineWrapper {  
 	  position: relative;
@@ -227,6 +227,8 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   padding: 26px; /* Matches border/corner size */
   overflow: visible;
 }
+
+/* Container Width Sensitive Logic (prevent lucy from losing eye contact with viewer) */
 
 /* STEP 1 — Turn the parent into a container */
 #MainContentHeader {
@@ -276,8 +278,68 @@ wrapper#HeadlineWrapper {
 }
 }
 
+/* Nuke Breadcrumb */
+
 #Breadcrumb {
 	display: none;
+}
+
+/* -------------------------- SubNavigator Styling -------------------------- */
+
+#SubNavigator {
+  position: relative;
+  z-index: 1; /* Base layer for stacking */
+
+  background: var(--HazbinMaroonGradient);
+  padding: 36px;
+  overflow: visible;
+  isolation: isolate; /* Creates new stacking context */
+
+  /* ✅ Centering content */
+  display: flex;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+#SubNavigator::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index:10;
+
+  background:
+    /* Corners (top) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    86px 86px,
+    86px 86px,
+    86px 86px,
+    86px 86px,
+
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%;
+
+  z-index: 0;
+}
+
+/* SubNav Dropdown Render Priority */
+
+#SubNavigator .DropdownMenuSubNavigator>li ul {
+  position: absolute;
+  z-index: 99999; /* or higher than ::before */
 }
 
 /* -------------------------- Page Module Styling Generic -------------------------- */
@@ -410,7 +472,7 @@ wrapper#HeadlineWrapper {
   display: block;
   padding: 0px 0px 40px 0px;
 
-  /* Replace content with your image */
+  /* Replace content with signature */
   background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -491,6 +553,8 @@ wrapper#HeadlineWrapper {
     100%;        /* ✅ center image uses natural size */
 }
 
+/* Margin Fixes */
+
 #tpm__sBmAudio > module > div {
 	padding: 100px 0px 15px 0px !important;
 }
@@ -503,11 +567,15 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Discord App -------------------------- */
 
+/* Margin Fixes */
+
 #DiscordProfileTabContent > div {
 	padding: 10px 10px 60px 10px !important; 
 }
 
 /* -------------------------- Page Module Styling Global Submission Announcement -------------------------- */
+
+/* Margin Fixes */
 
 #GsaModule > div {
 	padding: 10px 10px 64px 10px !important; 
@@ -606,6 +674,8 @@ wrapper#HeadlineWrapper {
     26px 100%;   /* left border */
 }
 
+/* Margin Fixes */
+
 #tpm__sBmSteamAccountDetails > module > div {
  	padding: 80px 0px 80px 30px !important;
 	
@@ -631,6 +701,8 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Staff Online App -------------------------- */
 
+/* Margin Fixes */
+
 #ModsOnlineModule > h2 {
   position: relative; /* required for transform to visually shift */
   transform: translate( 20px, -20px); /* X = right 20px, Y = up 10px */
@@ -650,6 +722,8 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Favorite Game App -------------------------- */
 
+/* Margin Fixes */
+
 #FavoriteGameModule > div {
 	padding: 0px 0px 44px 0px;
 }
@@ -658,9 +732,14 @@ wrapper#HeadlineWrapper {
 
 #tpm__sBmAudio > module.PageModule,
 #MemberSubscriptionToggleModule {
+
+/* Margin Fixes */
+	
   position: relative;
   padding: 70px 36px;
   overflow: visible;
+
+/* This section looks redundant. Removing it doesn’t cause any immediate disasters, but I’m keeping it, because I’m not interested in discovering whatever obscure nonsense it was quietly preventing. */
 
   background:
     url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
@@ -673,62 +752,6 @@ wrapper#HeadlineWrapper {
   background-size:
     150px 150px, /* ✅ scale the pattern image smaller */
     cover;
-}
-
-/* -------------------------- SubNavigator Styling -------------------------- */
-
-#SubNavigator {
-  position: relative;
-  z-index: 1; /* Base layer for stacking */
-
-  background: var(--HazbinMaroonGradient);
-  padding: 36px;
-  overflow: visible;
-  isolation: isolate; /* Creates new stacking context */
-
-  /* ✅ Centering content */
-  display: flex;
-  align-items: center;    /* vertical center */
-  justify-content: center; /* horizontal center */
-}
-
-#SubNavigator::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index:10;
-
-  background:
-    /* Corners (top) */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
-
-    /* Sides (under corners) */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
-
-  background-size:
-    86px 86px,
-    86px 86px,
-    86px 86px,
-    86px 86px,
-
-    100% 26px,
-    26px 100%,
-    100% 26px,
-    26px 100%;
-
-  z-index: 0;
-}
-
-#SubNavigator .DropdownMenuSubNavigator>li ul {
-  position: absolute;
-  z-index: 99999; /* or higher than ::before */
 }
 
 /* -------------------------- PrimaryNav Styling -------------------------- */
@@ -750,11 +773,13 @@ wrapper#HeadlineWrapper {
   height: var(--PrimaryNavHeight);
   transition: opacity 0.5s ease-in-out;
 
-  /* 🔧 New: create stacking context */
+  /* create stacking context */
+	
   isolation: isolate;
 }
 
-/* ✅ Cascade window image: behind everything */
+/* Cascade window image: behind everything */
+
 #PrimaryNav::before {
   content: "";
   position: absolute;
@@ -772,7 +797,8 @@ wrapper#HeadlineWrapper {
   z-index: 0; /* bottom layer */
 }
 
-/* ✅ Bottom border: above cascade, below content */
+/* Bottom border: above cascade, below content */
+
 #PrimaryNav::after {
   content: "";
   position: absolute;
@@ -790,7 +816,8 @@ wrapper#HeadlineWrapper {
   z-index: 2;
 }
 
-/* ✅ Optional: explicitly raise nav content if needed */
+/* explicitly raise nav content */
+
 #PrimaryNav > * {
   position: relative;
   z-index: 1;
