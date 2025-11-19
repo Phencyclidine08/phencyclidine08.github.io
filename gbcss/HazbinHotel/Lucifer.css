@@ -419,6 +419,10 @@ wrapper#HeadlineWrapper {
   margin-left: 36px;
 }
 
+.PageModule> h2:after {
+    background: var(--HazbinGlass2);
+}
+
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 #IdentityModule {
@@ -733,8 +737,67 @@ wrapper#HeadlineWrapper {
 	
 }
 
-#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName {
-	
+
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) 
+{
+
+    padding:10px 00px 0px 10px !important;
+	max-width: 396px;
+    overflow: visible;
+    background: url(Lucifer.css), radial-gradient(ellipse at center, #840430 50%, #38050c 100%) !important;
+    background-repeat: repeat, no-repeat;
+    border-radius: 8px 8px 8px 8px !important;
+    border: 2px solid var(--HazbinGlass2) !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus
+{
+	max-width: 250px !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamLevel,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName
+{
+		padding: 87px 0px 0px 40px !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus
+{
+		color: var(--HazbinRed) !important
+}
+
+.SteamAvatar {
+	padding: 4px 0px 0px 8px !important;
+    --SteamOffline: #080808;
+    --SteamOnline: var(--HazbinGlass1);
+    --SteamIngame: var(--HazbinRed);
+}
+
+.SteamAvatar:hover > img 
+{
+    filter: brightness(130%) !important;
+}
+
+.SteamAvatar:hover::after {
+    content: "View Full Profile";
+    font-size: 12px;
+    font-family: "Motiva Sans", Sans-serif !important;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: calc( 3px + 55px) !important;
+    left:60px !important;
+    color: white !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamLevel,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName
+{
+		color: var(--HazbinGlass2)
 }
 
 /* -------------------------- Page Module Styling Staff Online App -------------------------- */
