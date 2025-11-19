@@ -61,6 +61,19 @@
     --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
 }
 
+/* -------------------------- Removing Needless Elements Present on Client Side -------------------------- */
+
+#FavoriteGameModule > h2 > spriteicon, 
+#GsaModule > h2 > a > spriteicon,
+#ContactInfo > h2 > a > spriteicon,
+#Bio > h2 > a > spriteicon,
+#PcSpecs > h2 > a > spriteicon,
+#StaffProfileModule > h2 > a > spriteicon,
+#SoftwareKit > h2 > a > spriteicon
+{
+	display: none;
+}
+
 /* -------------------------- Main Background -------------------------- */
 
 body {
@@ -752,6 +765,12 @@ wrapper#HeadlineWrapper {
   background-size:
     150px 150px, /* ✅ scale the pattern image smaller */
     cover;
+}
+
+/* Margin Fixes */
+
+#ContentGrid > row > column:nth-child(8) > div > div {
+	padding: 0px 0px 40px 10px;
 }
 
 /* -------------------------- PrimaryNav Styling -------------------------- */
