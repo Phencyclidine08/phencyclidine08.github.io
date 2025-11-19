@@ -303,7 +303,19 @@ wrapper#HeadlineWrapper {
   position: relative;
   z-index: 1; /* Base layer for stacking */
 
-  background: var(--HazbinMaroonGradient);
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    var(--HazbinMaroonGradient);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+
+
   padding: 36px;
   overflow: visible;
   isolation: isolate; /* Creates new stacking context */
