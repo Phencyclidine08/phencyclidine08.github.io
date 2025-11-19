@@ -808,11 +808,6 @@ wrapper#HeadlineWrapper {
 		padding: 87px 0px 0px 40px !important;
 }
 
-#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus
-{
-		color: var(--HazbinRed) !important
-}
-
 .SteamAvatar 
 {
 	padding: 4px 0px 0px 8px !important;
