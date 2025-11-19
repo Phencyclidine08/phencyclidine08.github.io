@@ -423,6 +423,12 @@ wrapper#HeadlineWrapper {
     background: var(--HazbinGlass2);
 }
 
+dt {
+    font-size: var(--DefaultTinyFontSize);
+    margin-bottom: .25em;
+    color: var(--HazbinGlass1);
+}
+
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 #IdentityModule {
@@ -808,6 +814,11 @@ wrapper#HeadlineWrapper {
 		padding: 87px 0px 0px 40px !important;
 }
 
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus
+{
+		color: var(--HazbinRed) !important
+}
+
 .SteamAvatar 
 {
 	padding: 4px 0px 0px 8px !important;
@@ -931,6 +942,10 @@ wrapper#HeadlineWrapper {
 /* Margin Fixes */
 
 #ContentGrid > row > column:nth-child(8) > div > div {
+	padding: 0px 0px 40px 10px;
+}
+
+#ContentGrid > row > column:nth-child(7) > div > div {
 	padding: 0px 0px 40px 10px;
 }
 
