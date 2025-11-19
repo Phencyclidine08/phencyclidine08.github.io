@@ -488,6 +488,7 @@ wrapper#HeadlineWrapper {
   position: relative;
   display: block;
   padding: 0px 0px 40px 0px;
+  transform: translate(0px, 25px); /* X = right 20px, Y = up 10px */
 
   /* Replace content with signature */
   background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png');
@@ -505,8 +506,7 @@ wrapper#HeadlineWrapper {
 }
 
 #IdentityModule > div > div:nth-child(3),
-#IdentityModule > div > div.UserTitle,
-#IdentityModule > div > ul > li:nth-child(1)
+#IdentityModule > div > div.UserTitle
 {
 	display:none;
 }
@@ -526,10 +526,54 @@ wrapper#HeadlineWrapper {
 }
 
 #IdentityModule > div > ul > li:nth-child(4) > small,
-#IdentityModule > div > ul > li:nth-child(3) > small{
-	color: #750d0f;
+#IdentityModule > div > ul > li:nth-child(3) > small,
+#IdentityModule > div > ul > li:nth-child(1) > statelabel
+{
+	color: #750d0f !important;
 }
 
+#IdentityModule > div > ul 
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 30px); /* X = right 20px, Y = up 10px */
+  padding: 0px 0px 0px 0px;
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > span
+{
+  position: relative; /* required to visually shift */
+  transform: translate(8px, 0px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > spriteicon
+{
+  position: relative; /* required to visually shift */
+  transform: translate(-83px, 33px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(3)
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 20px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(1)
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 50px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(1) > statelabel
+{
+	display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: .25em .5em;
+    margin: .125em;
+    border-radius: .25em;
+    background: transparent;
+	border: 1px solid #750d0f73;
+}
 
 /* -------------------------- Page Module Styling Audio Player -------------------------- */
 
@@ -769,8 +813,16 @@ wrapper#HeadlineWrapper {
 		color: var(--HazbinRed) !important
 }
 
-.SteamAvatar {
+.SteamAvatar 
+{
 	padding: 4px 0px 0px 8px !important;
+    --SteamOffline: #080808;
+    --SteamOnline: var(--HazbinGlass1);
+    --SteamIngame: var(--HazbinRed);
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus 
+{
     --SteamOffline: #080808;
     --SteamOnline: var(--HazbinGlass1);
     --SteamIngame: var(--HazbinRed);
