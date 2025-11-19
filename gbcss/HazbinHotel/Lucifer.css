@@ -581,6 +581,70 @@ dt {
 	border: 1px solid #750d0f73;
 }
 
+
+.AvatarTooltip
+{
+  position: relative;
+
+  overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #670f38 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+}
+
+.AvatarTooltip::before
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index:10;
+
+  background:
+    /* Corners (top) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    46px 46px,
+    46px 46px,
+    46px 46px,
+    46px 46px,
+
+    100% 16px,
+    16px 100%,
+    100% 16px,
+    16px 100%;
+
+  z-index: 0;
+
+	margin: -15px -15px -15px -15px !important;
+
+}
+
+.tippy-content .AvatarTooltip,
+.tippy-content .BananaTip,
+{
+
+}
+
 /* -------------------------- Page Module Styling Audio Player -------------------------- */
 
 #tpm__sBmAudio > module.PageModule::before {
