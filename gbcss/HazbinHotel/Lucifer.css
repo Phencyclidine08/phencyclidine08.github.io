@@ -305,7 +305,7 @@ wrapper#HeadlineWrapper {
 
   background:
     url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
-    var(--HazbinMaroonGradient);
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
   
   background-repeat:
     repeat,
