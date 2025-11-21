@@ -400,8 +400,8 @@ wrapper#HeadlineWrapper {
     /* corners first */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
 
     /* sides next */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
@@ -825,8 +825,8 @@ dt {
     /* Corners (Top Layer) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
 
     /* Side Borders (Under Corners) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
