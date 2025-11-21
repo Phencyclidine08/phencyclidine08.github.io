@@ -590,31 +590,29 @@ dt {
     box-shadow: 0 0 0 .0em var(--DefaultRedColor), 0 0 .0em var(--DefaultRedColor);
 }
 
-.Avatar.Online:after
- {
+#IdentityModule .Avatar.Online::after {
     content: "";
     width: 20px;
     height: 20px;
     position: absolute;
     bottom: 3px;
     right: 3px;
-	border: transparent;
-	border-radius: 50px 50px 50px 50px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, .5);
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
     background: var(--DefaultGreenColor);
 }
 
-.Avatar.Offline:after
- {
+#IdentityModule .Avatar.Offline::after {
     content: "";
     width: 20px;
     height: 20px;
     position: absolute;
     bottom: 3px;
     right: 3px;
-	border: transparent;
-	border-radius: 50px 50px 50px 50px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, .5);
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 /* ✅ Hides the original avatar image */
