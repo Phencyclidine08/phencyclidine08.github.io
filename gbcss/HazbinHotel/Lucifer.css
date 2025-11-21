@@ -710,10 +710,31 @@ dt {
 
 /* -------------------------- Page Module Styling Discord App -------------------------- */
 
+#DiscordProfile 
+{
+    overflow: hidden !important;     /* Prevents any visual overflow */
+    box-sizing: border-box !important; /* Ensures padding/borders don't expand width */	
+	height: 475px
+}
+
+
+#ActivityHistoryContent
+{
+    overflow: scroll;
+	height: 200px
+	
+}
+
+#DiscordProfile::before
+{
+	z-index: 11;
+}
+
 #DiscordProfile .DiscordCard,
 #discordActivityPanel,
 #discordSettingsTabPanel
 {
+  height: 190px;
   position: relative;
   padding: 70px 36px;
   overflow: visible;
@@ -730,7 +751,7 @@ dt {
     150px 150px, /* ✅ scale the pattern image smaller */
     cover !important;
 	
-    border-radius: 8px 8px 50px 50px !important;
+    border-radius: 8px 8px 8px 8px !important;
 	border: 2px solid var(--HazbinGlass2) !important;
 }
 
@@ -742,8 +763,6 @@ dt {
 {
 	padding: 10px 10px 60px 10px !important; 
 }
-
-
 
 /* -------------------------- Page Module Styling Global Submission Announcement -------------------------- */
 
