@@ -173,10 +173,46 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 /* -------------------------- Post Flow -------------------------- */
 
+#PostsListModule 
+{
+    position: relative;
+    padding: 50px 20px;
+    overflow: visible;
+    margin: .0em 0 0 0;
+    background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png), radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 150px 150px, /* ✅ scale the pattern image smaller */ cover;
+}
+
+#PostsListModule > div > button.IconButton
+{
+	position: relative;
+	transform: translate(10px, 0px)
+}
+
+#PostsListModule > div > fieldset
+{
+	position: relative;
+	transform: translate(10px, 0px);
+	max-width: 300px
+}
+
+
 .Posts .Post {
-  background: var(--HazbinRedGradientTweaked); /* background fill only */
-  border: 2px solid var(--HazbinGlass2);
-  padding: 16px 16px;
+      background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+    border-radius: 8px 8px 8px 8px !important;
+    border: 2px solid var(--HazbinGlass2) !important;
+  padding: 3px 3px;
   border-radius: 8px; /* ✅ this adds the curve */
 }
 
@@ -185,6 +221,42 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     color: var(--PostStampColor);
     background: #00000042 !important;
 }
+
+.Posts .Post > .Flow > div > .Post
+{
+  background: #ffffff00; /* background fill only */
+  border: 1px solid var(--HazbinGlass2) !important;
+}
+
+.Posts .Post statelabel,
+.Posts .Post * statelabel {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 130px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+.Post > header,
+.Post > article,
+.Post > footer,
+.Post > div.Cluster.PostTools
+{
+	padding: 0px 10px 0px 10px;
+}
+
+.Post > div.Cluster.PostTools
+{
+	padding: 0px 10px 5px 10px;
+}
+
+.Replies {
+    padding-inline-start: 0em;
+}
+
 
 /* -------------------------- Point Donation Field Overflow Fix -------------------------- */
 
@@ -374,15 +446,12 @@ wrapper#HeadlineWrapper {
   padding: 50px 36px;
   overflow: visible;
   margin: .0em 0 0 0;
-
   background:
     url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
     radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
-  
   background-repeat:
     repeat,
     no-repeat;
-
   background-size:
     150px 150px, /* ✅ scale the pattern image smaller */
     cover;
@@ -1257,3 +1326,4 @@ dt {
 
 
 /* -------------------------- To Be Continued -------------------------- */
+
