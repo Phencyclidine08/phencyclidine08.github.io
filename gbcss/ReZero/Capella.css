@@ -32,7 +32,7 @@
     wrapper#HeadlineWrapper {
         background: url();
         width: auto;
-        height: 270px;
+        height: 400px;
         background-size: cover;
         align-content: end;
         overflow: hidden;
@@ -40,10 +40,11 @@
     }
 	
 	body {
-    background: rgb(73,22,25);
-	background-image: url(https://files.gamebanana.com/bitpit/capellacompile_header_22768.png);
-	background-position: unset;
-    background-size: cover;
+	background: 
+		url(https://files.gamebanana.com/bitpit/capellacompile_header_22768.png),
+		black;
+	background-position: top -150px right -200px;
+    background-size: fit;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
     position: relative;
