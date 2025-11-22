@@ -173,17 +173,6 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 /* -------------------------- Post Flow -------------------------- */
 
-#PostsListModule 
-{
-    position: relative;
-    padding: 50px 20px;
-    overflow: visible;
-    margin: .0em 0 0 0;
-    background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png), radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
-    background-repeat: repeat, no-repeat;
-    background-size: 150px 150px, /* ✅ scale the pattern image smaller */ cover;
-}
-
 #PostsListModule > div > button.IconButton
 {
 	position: relative;
@@ -782,6 +771,52 @@ dt {
 {
 
 }
+
+/* -------------------------- Page Module Styling Comments -------------------------- */
+
+#PostsListModule 
+{
+    position: relative;
+    padding: 50px 20px;
+    overflow: visible;
+    margin: .0em 0 0 0;
+    background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png), radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 150px 150px, /* ✅ scale the pattern image smaller */ cover;
+}
+
+#PostsListModule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+
+  background:
+    /* Corners */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
+
+    /* Side Borders */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center repeat-x,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') top right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center repeat-x,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') top left repeat-y;
+
+  background-size:
+    85px 85px,  /* top-left */
+    85px 85px,  /* top-right */
+    85px 85px,  /* bottom-right */
+    85px 85px,  /* bottom-left */
+
+    100% 26px,  /* top border */
+    26px auto,  /* right border - repeated */
+    100% 26px,  /* bottom border */
+    26px auto;  /* left border - repeated */
+}
+
 
 /* -------------------------- Page Module Styling Audio Player -------------------------- */
 
