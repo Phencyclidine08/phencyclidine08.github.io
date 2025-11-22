@@ -563,7 +563,7 @@ dt {
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
 
     /* ✅ Custom image you want to translate */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/LuciferRender_by_OKDraws.webp') 60px 170px no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/LuciferRender_by_OKDraws.webp') center 170px no-repeat;
 
   background-size:
     300px 200px,   /* plaque */
