@@ -1,0 +1,393 @@
+:root
+{
+	--BodyBackground: #1F2825 url("http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png");
+	--BodyWrapperBackground: #1F2825 url("http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png");
+	--defaultCursor: url("https://files.gamebanana.com/bitpit/green_cursor.png"), default !important;
+	--helpCursor: url("https://files.gamebanana.com/bitpit/green_cursor_help.png"), help !important;
+	--pointerCursor: url("https://files.gamebanana.com/bitpit/green_cursor_pointer.png"), pointer !important;
+	--InputHoverBackgroundColor: #44534F;
+	--InputFocusBackgroundColor: #313B38;
+	--PrimaryNavBackgroundColor: #1A2220 url("http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png");
+	--SecondaryNavBackgroundColor: transparent;
+	--SubNavigatorActiveTabBorderColor: #0F76D0;
+	--SubNavigatorTabHoverBorderColor: #A0C56C;
+	--SubNavigatorBorderColor: #384642;
+	--LinkHoverColor: #0F76D0;
+	--NavPaneBackgroundColor: #0e1317 url(http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png);
+	--SubNavigatorDropdownBackgroundColor: #0e1317 url(http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png);
+	--MasterLogBackgroundColor: #0e1317 url(http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png);
+	--AdvancedElementTabsBorderColor: #0e1317 url(http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png);
+	--ButtonBackground: linear-gradient(to bottom, #374642, #25322E);
+	--ButtonFontColor: #A0C56C;
+	--ButtonFontFamily: 'Segoe UI', monospace;
+	--ButtonHoverBackgroundColor: linear-gradient(to bottom, #25322E, #374642);
+}
+/* Enter Cursor Bullshit ala Ring-a-Ding Rampage */
+
+body, .lg-outer #lg-dropdown-overlay
+{
+	cursor: var(--defaultCursor);
+}
+
+.RichText .Spoiler, #MedalsModule li, .PostsListModule .Posts>li article .PostStamps:hover
+{
+	cursor: var(--helpCursor);
+}
+
+a, .Linklike, button, .ButtonLike, input[type=range]::-webkit-slider-runnable-track, select, .SelectLike, .BeaconParent .Beacon, .ExpandableToggle, .PageModule>.RelatedLinksButton, .MainForm .InputsWrapper .OptionalInput>legend, fieldset#Userid .AdvancedElement_InputSuggestionsList li, .AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend, .AdvancedElement_FloatingButtonTabs li, .AdvancedElement_InputSuggestionsList li, .AdvancedElement_Tabs li, .AdvancedElement_GraphicalSelect .OptionsWrapper .Options li, .AdvancedElement_Switch.List ul li, #MasterLog log .CloseButton, .Modal .CloseModal, .Editor .ViewModeSwitchers span, .Editor .WysiwygPalettes>h4, #PrimaryNav controls, #SecondaryNav controls, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover, #HiddenColumnToggleButton, #AlertsNavModule pane .Controls .MarkAllAsSeen, #ActivityNavModule pane .Controls .MarkAllAsSeen, #AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper, #ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper, #GamesNavModule widget ul li, #BuddiesNavModule pane #BuddyChatInitiators li, .RichText .TableOfContents ul li, #FeaturesSliderModule .Slides .Slide, #FeaturesSliderModule .Slides .ExpandedSlide, #FeaturesSliderModule .Slides .Slide .Info .Name, #FeaturesSliderModule .Slides .ExpandedSlide .Info .Name, #SubmissionsListAdvancedListSettingsModule .RecentGames li, #SubmissionsListAdvancedListSettingsModule .SelectedGames li, #ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher, #UpdatesModule .ToggleContentButton, .lg-actions .lg-next, .lg-actions .lg-prev, .lg-toolbar .lg-icon, .lg-outer .lg-thumb-item, .lg-outer .lg-toogle-thumb, .lg-outer .lg-video .lg-video-play, .lg-outer .lg-pager-cont
+{
+        cursor: var(--pointerCursor);
+}
+
+/* Exit Cursor Bullshit */
+
+.Editor .ViewModes .Wysiwyg .RichText
+{
+	background: #394643;
+}
+
+.Editor .WysiwygPalettes
+{
+	background: #2E3836;
+}
+
+.ExtendedContentButton
+{
+	background: linear-gradient(to bottom, #374642, #25322E)
+}
+
+/* ∨∨ Thank you to Ring-A-Ding Rampage for the below code ∨∨ */
+
+#GbLogo
+{
+	display: none;
+}
+
+#BananaNavModule widget a:after
+{
+	content: url("https://files.gamebanana.com/bitpit/yellowjello-gb.png");
+}
+
+#TopNav, #SideNav, #SubNavigator, #MainContentHeader.Fixed
+{
+	background: url("https://files.gamebanana.com/bitpit/cowmuffin_background_darker.png") !important;
+}
+
+/* ∧∧ Thank you to Ring-A-Ding Rampage for the above code ∧∧ */
+
+/* ∨∨  Animated Online Indicator   ∨∨ */
+/* ∨∨ Created with the help of AoM ∨∨ */
+
+@keyframes online-indicator 
+{
+	from
+	{
+		height: 15px;
+		width: 10px
+	}
+
+	to
+	{
+		height: 10px;
+		width: 15px
+	}
+}
+
+.Avatar.Online:after, .MemberLink.Online:after
+{
+	background: #6EE16C;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #6EE16C;
+	animation-name: online-indicator;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+	animation-direction: alternate;
+}
+
+li:nth-child(2n+1) .Avatar.Online:after, li:nth-child(2n+1) .MemberLink.Online:after
+{
+	animation-delay: 0.2s;
+}
+
+li:nth-child(3n+2) .Avatar.Online:after, li:nth-child(3n+2) .MemberLink.Online:after
+{
+	animation-delay: 0.4s;
+}
+
+li:nth-child(5n+3) .Avatar.Online:after, li:nth-child(5n+3) .MemberLink.Online:after
+{
+	animation-delay: 0.6s;
+}
+
+li:nth-child(7n+5) .Avatar.Online:after, li:nth-child(7n+5) .MemberLink.Online:after
+{
+	animation-delay: 0.8s;
+}
+
+li:nth-child(11n+7) .Avatar.Online:after, li:nth-child(11n+7) .MemberLink.Online:after
+{
+	animation-delay: 1.5s;
+}
+
+/* ∧∧ Animated Online Indicator ∧∧ */
+
+.Avatar.IsRipeSupporter
+{
+	background: linear-gradient(to bottom, rgba(219, 37, 37, 0.75), rgba(219, 204, 37, 0.75), rgba(37, 219, 41, 0.75), rgba(37, 37, 218, 0.75), rgba(219, 37, 217, 0.75));
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.1em transparent, 0 0 1.15em var(--DefaultBlueColor);
+	padding: 0.375em;
+}
+
+.Avatar.HasClearanceLevel
+{
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.15em #A0C56C, 0 0 2.05em #A0C56C;
+}
+
+.Avatar, .Avatar img
+{
+	border-radius: 50%;
+}
+
+stateLabel.IsRipeRelated,  stateLabel.GameKeyGrade_premium
+{
+	background: linear-gradient(45deg, rgba(173, 29, 29, 0.75), rgba(193, 182, 32, 0.75), rgba(29, 169, 32, 0.75), rgba(28, 28, 164, 0.75), rgba(143, 24, 143, 0.75));
+}
+
+a:hover, button:hover, #PostsListModule ul.PostStamps li:hover, #ItemProfileModule div.Download:hover, #AddToWatchlistFormModule fieldset#AreasToWatch legend:hover, #ItemProfileModule.Screenshots img:hover
+{
+	color:#0075DF;
+	text-shadow:0px 0px 5px yellow, 0px 0px 5px #E2E2E2, 0px 0px 15px red;
+}
+
+img.PreviewImage
+{
+	border-radius: 0.3em;
+}
+
+a, button.IconButton span
+{
+	color: #A0C56C;
+	transition: color 1.0s, text-shadow 1.5s;
+	text-shadow: 1px 1px #000;
+}
+	
+#NavigatorTabs 
+{
+	position: initial !important;
+}
+
+body
+{
+	background: url("http://files.gamebanana.com/bitpit/cowmuffin_background.png") repeat fixed;
+}
+
+form, input[type=text], input[type=password], input[type=password], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike, input[type=password]:hover, input[type=text]:focus
+{
+	background: transparent;
+}
+
+div.Module>h3
+{
+	background: #374042;
+	border: none;
+	box-shadow: 0px 0px 0px #6F6F6F, 0px 0px 0px #4A4A4A, 0px 0px 0px #333333;
+}
+
+div.Module div.Content, #IdentityModule div.Content, #PostHeader div.Content, #PostsListModule div.Content>ul>li
+{
+	background: url("https://files.gamebanana.com/bitpit/cowmuffin_background_darker.png");
+	border: 1px solid #384642;
+}
+
+#PostsListModule div.PostHeader
+{
+	background: #374042;
+	border: none;
+	box-shadow: 1px 1px 1px #6F6F6F, 1px 1px 1px #4A4A4A, 1px 1px 1px #333333;
+}
+
+#HeadlineWrapper overlay h1
+{
+	background: linear-gradient(#F2E684, #A49753);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	text-shadow: none;
+}
+
+.GenericPreviewListModule li:nth-child(odd), table tr:nth-child(even), body article h1
+{
+	background:#212627;
+}
+
+.MultipleRowListModule span.LabelStat
+{
+	background:#31393C;
+}
+
+body article blockquote 
+{
+	border: 1px solid #000;
+	color: #fff;
+	background: #27322f url(http://files.gamebanana.com/bitpit/cowmuffin_background_dark.png);
+	box-shadow: 1px 1px #000;
+}
+
+div#MainContent
+{
+	border-left:0px solid #000000
+}
+
+div.PageNavigation
+{
+	background:rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:0px 0px 0px 1px #6F6F6F;
+	-webkit-box-shadow:1px 1px 1px 1px #4A4A4A;
+	box-shadow:1px 1px 1px 1px #333333;
+}
+
+div#MasterLog
+{
+	background:rgba(0, 0, 0, 0.5);
+}
+
+div#Modal
+{
+	background:rgba(103, 24, 24, 0.102);
+}
+
+fieldset, fieldset legend sup
+{
+	background: transparent;
+}
+
+#DropdownMenuSubNavigator>ul>li
+{
+	color:#A0C56C;
+	background:#15181A;
+	-moz-box-shadow:0px 0px 0px 1px #1F2425;
+	-webkit-box-shadow:0px 0px 0px 1px #1F2425;
+	box-shadow:0px 0px 0px 1px #1F2425;
+	border:1px solid #6F6F6F;
+}
+
+element.style
+{
+    color: #A0C56C;
+    text-shadow: 1px 1px #000;
+}
+
+#PrimaryNav module 
+{
+    border-right: 0px solid #ffffff14;
+}
+
+#SecondaryNav module
+{
+	border-right: 0px solid #1F2826;
+}
+
+#SecondaryNav:hover
+{
+	background: linear-gradient(to bottom, #25312E 60%, transparent);
+	border-right: 1px linear-gradient(to bottom, #1F2826 60%, transparent);
+}
+
+#BuddiesModule h3, #MedalsModule h3, #ResponsibilitiesModule h3
+{
+	text-align: left;
+}
+
+#MedalsModule, #ResponsibilitiesModule, #BuddiesModule 
+{
+	text-align: center;
+}
+
+#ResponsibilitiesModule li
+{
+	box-shadow: 1px 1px #000;
+}
+
+/* ∨∨ Thank you to Comunidad [VHE] and El pirucho XP-007 for the below code ∨∨ */
+
+.PostTools button
+{
+	transform: scale(0);
+	transition: transform .2s ease-in-out;
+}
+
+.Post:hover .PostTools button
+{
+	transform: scale(1);
+}
+
+.PostTools button:nth-of-type(2)
+{
+	transition-delay: .05s;
+}
+
+.PostTools button:nth-of-type(3)
+{
+	transition-delay: .1s;
+}
+
+.PostTools button:nth-of-type(4)
+{
+	transition-delay: .15s;
+}
+
+.PostTools button:nth-of-type(5)
+{
+	transition-delay: .2s;
+}
+
+.PostTools button:nth-of-type(6)
+{
+	transition-delay: .25s;
+}
+
+.PostTools button:nth-of-type(7)
+{
+	transition-delay: .3s;
+}
+
+/* ∧∧ Thank you to Comunidad [VHE] for the above code ∧∧ */
+
+.RichText blockquote 
+{
+	border-left-color: var(--DefaultTextColor);
+	border-right-color: var(--DefaultTextColor);
+	border-top-color: var(--DefaultTextColor);
+	border-bottom-color: var(--DefaultTextColor);
+	border-left-width: 0.05em;
+	border-left-style: solid;
+	text-shadow:1px 1px #000;
+}
+
+::-webkit-scrollbar
+{
+	width:12px;
+	height:12px;
+	background-color:#111
+}
+
+::-webkit-scrollbar-corner
+{
+	background-color:#1E2725
+}
+::-webkit-scrollbar-track
+{
+	background-color:#1E2725
+}
+
+::-webkit-scrollbar-thumb
+{
+	background:#283431
+}
+
+::-webkit-scrollbar:horizontal
+{
+	height:12px
+}

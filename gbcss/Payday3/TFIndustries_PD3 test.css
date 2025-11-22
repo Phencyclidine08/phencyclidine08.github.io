@@ -1,0 +1,417 @@
+:root {
+        --ModuleTitleFontFamily: TF2 Build !important;
+        --ModuleTitleFontSize:24px;
+		--DefaultTextFontFamily: Verdana !important;
+}
+
+@font-face {
+    font-family: 'TF2 Build';
+    src: url('https://files.gamebanana.com/bitpit/tf2build.woff2') format('woff2'),
+        url('https://files.gamebanana.com/bitpit/tf2build.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TF2';
+    src: url('https://files.gamebanana.com/bitpit/bebasneue-bold.woff2') format('woff2'),
+        url('https://files.gamebanana.com/bitpit/bebasneue-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TF2 Secondary';
+    src: url('https://files.gamebanana.com/bitpit/bebasneue-regular.woff2') format('woff2'),
+        url('https://files.gamebanana.com/bitpit/bebasneue-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TF2 Professor';
+    src: url('https://files.gamebanana.com/bitpit/dinengschrift.woff2') format('woff2'),
+        url('https://files.gamebanana.com/bitpit/dinengschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#Breadcrumb {
+	font-family: TF2 !important;
+	letter-spacing: .2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    padding: .5em .75em;
+    border-radius: 2em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    backdrop-filter: blur(5px);
+    font-size: .8em;
+}
+
+#SubNavigator {
+    display: block;
+    font-size: var(--SubNavigatorFontSize);
+    border-bottom-width: .125em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--SubNavigatorBorderColor);
+    font-family: 'TF2 Build';
+}
+
+#AuthorsAndRolesModule .Content dd.Author {
+    margin: 0 0 1em 0;
+    font-size: var(--DefaultTinyFontSize);
+    color: var(--DefaultGreyColor);
+    padding-left: 12px;
+}
+
+stateLabel {
+    display: inline-flex;
+    font-size: 1.2em;
+    align-items: center;
+    white-space: nowrap;
+    padding: .25em .5em;
+    margin: .125em;
+    border-radius: .25em;
+    background: var(--StateLabelBackground);
+}
+
+#UpdatesModule .LogText {
+    font-family: TF2 Professor !important;
+	font-size: 2.4em !important;
+}
+
+#UpdatesModule > div > details:nth-child(1) > div > div.AdditionalNotes > p > span {
+    margin-inline-start: 2.2em;
+	font-family: TF2 Secondary !important;
+}
+
+#UpdatesModule .UpdateDetails {
+    margin-inline-start: 2.2em;
+	font-family: TF2 Secondary !important;
+}
+
+#UpdatesModule .Files {
+    font-family: TF2 Secondary !important;
+    font-size: var(--DefaultSmallFontSize);
+    margin-top: .25em;
+}
+
+#FilesModule>.Content {
+	font-family: TF2 Secondary !important;
+    padding: 0;
+}
+
+.PageModule>h2 {
+		letter-spacing: .2rem;
+}
+
+h1, h2, h3 {
+    font-weight: normal !important;
+}
+
+.PageModule {
+	font-family: TF2 Secondary;
+	font-size: large;
+    display: block;
+    margin: .5em 0 0 0;
+    padding: .5em 1em 1em 1em;
+    position: relative;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--ModuleBorderColor);
+}
+
+#StatsModule ul li itemCount {
+    font-weight: bold;
+    font-family: 'TF2 Secondary';
+    letter-spacing: .2rem;
+}
+
+article {
+    font-family: TF2 Secondary !important;
+	font-size: large;
+}
+
+.AvatarTooltip {
+	font-family: TF2 Secondary !important;
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: .25em;
+    box-sizing: border-box;
+    max-width: 500px;
+    padding: .5em;
+}
+
+.AvatarTooltip .Column .StatusLevels .IsHonorary {
+	font-weight: normal !important;
+	font-family: 'TF2 Build' !important;
+}
+
+stateLabel.IsHonorary {
+	font-weight: normal !important;
+	font-family: 'TF2 Build' !important;
+    color: var(--DefaultPurpleColor);
+}
+
+#PostsListModule {
+     background-color: #6f6f6f;
+}
+
+.Posts .Post {
+    border-top: 1px solid #ffffff0d;
+    padding-top: 1em;
+	background-color: #585858;
+	font-family: Verdana !important;
+	color: #f9f5e6 !important;
+    text-shadow: black 2px 1px !important;
+    padding-left: 12px !important;
+}
+
+p {
+   font-family: Verdana;
+   color: #f9f5e6;
+   text-shadow: black 2px 1px;
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.Avatar, .MemberLink {
+	padding-left: 12px !important;
+    position: relative;
+	font-family: Verdana !important;
+	color: #ea4d4b !important;
+	text-shadow: black 2px 1px !important;
+	font-weight: Bold !important;
+}
+
+.Avatar, .MemberLink:hover {
+  color: #b2e0fb !important;
+  text-shadow: black 2px 1px !important;
+  font-weight: Bold !important;
+}
+
+.PostHeader stateLabel {
+    font-size: var(--DefaultSmallFontSize);
+    font-family: 'TF2';
+}
+
+.PostHeader .Poster small {
+    font-weight: 400;
+    font-size: var(--DefaultTinyFontSize);
+    display: block;
+    padding-left: 12px;
+    font-family: 'TF2 Build';
+}
+
+.PostStamp {
+    --PostStampColor: var(--DefaultGreyColor);
+    color: var(--PostStampColor);
+    text-shadow: black 2px 1px;
+    background: #1c272e00 !important;
+    border-left: 1em solid;
+    border-radius: .125em;
+    align-items: center;
+    padding: .25em .5em;
+    font-weight: 700;
+    display: flex;
+}
+
+.PostFooter {
+	padding-left: 12px !important;
+    color: var(--DefaultGreyColor);
+	font-family: Verdana !important;
+    font-style: italic;
+    font-size: var(--DefaultTinyFontSize);
+}
+
+.PostTools {
+    padding-left: 12px !important;
+	padding-bottom: 12px !important;
+}
+
+#PageBackground {
+	background-image: url(https://puu.sh/KaX1l/2d42f525cc.png)!important;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .05;
+}
+
+#MainContentHeader
+{
+  --HeadlineWrapperHeight: -400px !important;
+}
+
+#HeadlineWrapper overlay h1 {
+    content: url(https://puu.sh/KaWYo/77f3ab4263.png);
+    max-width: 600px;
+}
+
+#IdentityModule > div > article > img {
+	content: url(https://puu.sh/KaWYo/77f3ab4263.png);
+}
+
+#IdentityModule > div > article > h2 {
+	display:none;
+}
+
+#HeadlineBackground {
+	display:none;
+}
+
+#StudioModule .Content img {
+    margin-bottom: 0.25em;
+	content: url(https://puu.sh/KaWYo/77f3ab4263.png)!important;
+    width: 280px;
+}
+
+@media (min-width: 648px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/KaWYy/2f8654cf38.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top -105px right 0px;
+}
+}
+
+@media (max-width: 649px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/KaWYy/2f8654cf38.jpg);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top;
+}
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+body {
+    background: rgb(73,22,25);
+	background-image: url(https://puu.sh/KaWYF/ec99a4e0ea.png);
+	background-position: unset;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    position: relative;
+}
+
+#MainContent {
+	background-color: rgba(0, 0, 0, 0.85);
+	background-image: url(https://puu.sh/KaWYF/ec99a4e0ea.png);
+	background-position: unset;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    position: relative;
+}
+
+#PageFooter {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid>row>column:not(:first-child) {
+/*    background: var(--blanker); */
+/*    border-right: var(--blanker); */
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-4 {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-3 {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-6 {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+
+#PrimaryNav {
+	background-image: url(https://puu.sh/KaWZ0/840afc7506.png);
+    background-size: cover;
+    background-position: bottom;
+	background-position-y: -59em!important;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+}
+
+#SecondaryNav {
+    background-image: url(https://puu.sh/KaX08/effe92259d.png);
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#SubNavigator {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    margin-right: 50px;
+}
+
+#SubNavigator .ActiveEntry {
+    border-bottom-color: #dd43a3;
+}
+
+#NotificationsNavModule .NotificationPaneHeader {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+#SecondaryNav>wrapper module pane article {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+#SecondaryNav module pane {
+    background: none;
+    display: none;
+    position: absolute;
+}
+
+.Notification.Unseen {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+    border-top-color: var(--NotificationUnseenDividerColor);
+}
+
+[data-theme~=dropdown] .tippy-content {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.125em;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--DefaultTechnicalFontFamily);
+    padding: 0.75em;
+    color: var(--InputTextColor);
+    border: 0;
+    background: var(--InputBackgroundColor);
+}

@@ -1,0 +1,546 @@
+/*Orignally Created by wohSiesta (2019.01)*/
+/*Reverse Engineered by Allen Scott (2019.15)*/
+
+:root {
+--defaultCursor: url("https://files.gamebanana.com/bitpit/allen_cursor.png"), default !important;
+--helpCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_help.png"), help !important;
+--pointerCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_pointer.png"), pointer !important;
+--DefaultTextColor: #e85298;
+--DefaultYellowColor: #a8cb05;
+--LinkColor: #f3075b;
+--LinkHoverColor: #a8cb05; 
+--BodyBackground: #371323 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+--NavBackgroundColor: #371323;
+--NavPaneBackgroundColor: #371323;
+}
+
+/*
+
+spriteIcon, .SpriteIcon {
+  image-rendering: pixelated;
+  background-image: url(http://www.mediafire.com/convkey/430b/6ifirr184wh3g73zg.jpg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle; } 
+  
+  */
+
+img#GbLogo {
+    content: url(https://files.gamebanana.com/bitpit/gamebanana_title_resized1.png);
+}
+
+button, .ButtonLike {
+    background: #371323;
+}
+
+.ExtendedContentButton {
+    background: #371323;
+    color: #e85298;
+}
+
+#PrimaryNav, #SecondaryNav {
+    background: #371323;
+}
+
+.TitleOnly>div {
+    color: #230d18;
+    cursor: pointer;
+}
+
+.TitleOnly>div:hover {
+    color: #230d18;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li {
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a {
+    color: #230d18;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a:hover {
+    color: #230d18;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li:hover {
+    border-bottom-width: 0;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+    background: #000000ad;
+}
+
+.AvatarTooltip .Column .NameAndStatus .StateLabel.Online {
+    color: #e85298;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .NameAndStatus .StateLabel.Offline {
+    color: #043333;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .Clearance .StateLabel.Member {
+    color: #cb6f9a;
+    border: 1px solid;
+}
+.AvatarTooltip .Column .Clearance .StateLabel {
+    color: gray;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Online {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase; 
+	  }
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Offline {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase; 
+	  }
+
+.AvatarTooltip .Column .StatusLevels stateLabel:not(.IsRipeSupporter) {
+    border: 3px solid;
+    border-radius: 0px;
+    text-transform: uppercase; 
+	}
+
+.AvatarTooltip .Column .StatusLevels stateLabel:not(.IsRipeSupporter).HasClearanceLevel {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase;
+      color: #e85298;	  
+	  }
+	  
+.Avatar.IsRipeSupporter {
+    border-radius: 0em;
+}
+
+.Avatar.IsRipeSupporter {
+    background: linear-gradient(to bottom, #f3074a, #fa487a, #fc7ea2, #fa487a, #f3074a);
+    padding: 0.25em;
+    border-radius: 0.125em;
+}
+
+.Avatar.HasClearanceLevel 
+{
+    box-shadow: 0 0 0 0.125em #f3075b, 0 0 0.75em #fa3e85;
+}
+
+.AvatarTooltip .Column .OnlineStatus .StateLabel.Online 
+{
+      color: #e85298; }	
+
+.Avatar.Online:after, .MemberLink.Online:after
+{
+	background: #fff7f1;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #f9a8b3;
+}
+
+spriteIcon.SubmissionType.Sound, .spriteIcon.SubmissionType.Sound { 
+    width: 28px;
+    height: 28px;
+    content: url(https://files.gamebanana.com/bitpit/soundicon1.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.SubmissionType.Skin, .spriteIcon.SubmissionType.Skin { 
+    width: 28px;
+    height: 28px;
+    content: url(https://files.gamebanana.com/bitpit/skinsicon1_c6129.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.SubmissionType.Spray, .spriteIcon.SubmissionType.Spray { 
+    width: 28px;
+    height: 28px;
+    content: url(https://files.gamebanana.com/bitpit/sprayicon1.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.SubmissionTypeSmall.Category, .spriteIcon.SubmissionTypeSmall.Category { 
+    width: 14px;
+    height: 10px;
+    content: url(https://files.gamebanana.com/bitpit/submissioncategory1.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.MiscIcon.QuickDlIcon, .spriteIcon.MiscIcon.QuickDlIcon { 
+    width: 14px;
+    height: 14px;
+    content: url(https://files.gamebanana.com/bitpit/quickdlicon.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.MiscIcon.SubmitIcon, .spriteIcon.MiscIcon.SubmitIcon {
+    width: 12px;
+    height: 12px;
+    content: url(https://files.gamebanana.com/bitpit/submiticon1.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.MiscIcon.ShowContentIcon, .SpriteIcon.MiscIcon.ShowContentIcon {
+    width: 10px;
+    height: 10px;
+    content: url(https://files.gamebanana.com/bitpit/expand_sprite1.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.MiscIcon.HideContentIcon, .SpriteIcon.MiscIcon.HideContentIcon {
+    width: 10px;
+    height: 10px;
+    content: url(https://files.gamebanana.com/bitpit/expand_sprite2.png);
+    background-position: 916px 0px;
+}
+
+body {background: url(https://files.gamebanana.com/bitpit/background_2019.png) !important;}
+#BodyWrapper {background: none !important;}
+
+/*header*/
+#MainContentHeader {
+    background: url(https://files.gamebanana.com/bitpit/2020_header_studio.png) -0px -271px;
+}
+#HeadlineWrapper {
+    height: 145px;
+}
+/*
+
+body {
+    background: #371323 !important;
+}
+
+*/
+
+a, .Linklike {
+  cursor: pointer;
+  text-decoration: none;
+  color: #a8cb05;
+  color: var(--LinkColor); }
+
+a:hover, .Linklike:hover {
+  color: #fb0d01;
+  color: var(--LinkHoverColor); }
+  
+
+/*studio Identity*/
+#IdentityModule .Content h2
+	{display:none;}
+#IdentityModule article img 
+	{content: url(https://files.gamebanana.com/bitpit/our_pink_sanctum.png); display: inline-block; width: 370px;} 
+
+
+/*nav*/
+
+
+
+#TopNav,#SideNav {
+	background: #93325e;
+}
+
+#TopNav, #SideNav {
+  transform: translateZ(0);
+  top: 0;
+  position: absolute;
+  background: #93325e;
+  position: fixed;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; }
+  #TopNav module, #SideNav module {
+    transition: opacity 0.5s ease-in-out; }
+    #TopNav module icon, #SideNav module icon {
+      line-height: 0;
+      user-select: none;
+      padding: 5px;
+      display: inline-block; }
+    #TopNav module pane, #SideNav module pane {
+      display: none;
+      background: #371323;
+      position: absolute; }
+      #TopNav module pane header, #SideNav module pane header {
+        padding: 0.25em; }
+        #TopNav module pane header h4, #SideNav module pane header h4 {
+          font-family: "" Open Sans ", sans-serif";
+          font-family: var(--NavPaneTitleFontFamily);
+          font-size: 1.5em;
+          font-size: var(--NavPaneTitleFontSize);
+          padding: 0.25em;
+          margin: 0; }
+      #TopNav module pane article, #SideNav module pane article {
+        padding: 0.75em; }
+      #TopNav module pane h5, #SideNav module pane h5 {
+        margin: 0 0 0.25em;
+        padding: 0 0 0.125em 0; }
+        #TopNav module pane h5 a, #TopNav module pane h5 span, #SideNav module pane h5 a, #SideNav module pane h5 span {
+          display: inline-block;
+          vertical-align: middle; }
+      #TopNav module pane column, #SideNav module pane column {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0.5em 0.5em 0; }
+      #TopNav module pane column:last-of-type, #SideNav module pane column:last-of-type {
+        vertical-align: top;
+        margin: 0; }
+      #TopNav module pane .Links, #SideNav module pane .Links {
+        margin-bottom: 0.5em; }
+        #TopNav module pane .Links li, #SideNav module pane .Links li {
+          display: block;
+          white-space: nowrap; }
+          #TopNav module pane .Links li span, #SideNav module pane .Links li span {
+            vertical-align: middle;
+            display: inline-block; }
+    #TopNav module.Selected icon, #TopNav module.Selected widget, #SideNav module.Selected icon, #SideNav module.Selected widget {
+      background: #371323;}
+    #TopNav module.Selected pane, #SideNav module.Selected pane {
+      display: block; }
+  #TopNav.Initializing, #SideNav.Initializing {
+    opacity: 0; }
+  #TopNav controls, #SideNav controls {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center; }
+    #TopNav controls span, #SideNav controls span {
+      width: 0.25em;
+      height: 0.25em;
+      display: inline-block;
+      border-radius: 100%;
+      background: #333;
+      margin: 0.25em; }
+      #TopNav controls span.Selected, #SideNav controls span.Selected {
+        background: #CCC; }
+
+#TopNav {
+  box-sizing: border-box;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  height: 60px;
+  height: var(--TopNavHeight);
+  display: flex;
+  left: 0;
+  padding-left: 52px;
+  padding-left: var(--SideNavRegularIconBarWidth); }
+  #TopNav module icon, #TopNav module config {
+    display: none; }
+  #TopNav module widget, #TopNav module icon {
+    vertical-align: middle;
+    height: 60px;
+    height: var(--TopNavHeight);
+    box-sizing: border-box; }
+  #TopNav module widget {
+    line-height: 0;
+    padding: 0.25em;
+    display: flex;
+    align-items: center; }
+  #TopNav module pane {
+    overflow: auto;
+    padding: 0.25em;
+    top: 60px;
+    top: var(--TopNavHeight); }
+    #TopNav module pane::-webkit-scrollbar {
+      width: 0.25em;
+      height: 0.25em; }
+  #TopNav module.HasIndicator widget {
+    border-width: 0.25em 0 0 0;
+    border-style: solid;
+    border-color: transparent;
+    padding-top: 0; }
+  #TopNav module.HasUpdates widget {
+    border-color: #6CB1E1;
+    border-color: var(--NavUpdatesIndicatorColor); }
+  #TopNav module.Compact icon {
+    display: table-cell; }
+  #TopNav module.Hidden {
+    display: none; }
+  #TopNav controls {
+    width: 40px;
+    display: flex;
+    align-items: center; }
+  #TopNav:hover {
+    z-index: 7; }
+
+#SideNav {
+  height: 100%;
+  z-index: 4;
+  max-width: 100%;
+  box-sizing: border-box;
+  top: 60px;
+  top: var(--TopNavHeight); }
+  #SideNav > wrapper {
+    position: relative;
+    display: block;
+    height: 100%; }
+    #SideNav > wrapper module {
+      display: block;
+      margin-bottom: 0.5em; }
+      #SideNav > wrapper module widget, #SideNav > wrapper module config {
+        display: none; }
+      #SideNav > wrapper module pane {
+        top: 0;
+        bottom: 0;
+        text-align: left; }
+        #SideNav > wrapper module pane header, #SideNav > wrapper module pane footer {
+          position: relative; }
+          #SideNav > wrapper module pane header:after, #SideNav > wrapper module pane footer:after {
+            opacity: 0;
+            transition: opacity 0.25s ease-in-out;
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            height: 15px;
+            z-index: 1;
+            background: transparent; }
+        #SideNav > wrapper module pane header:after {
+          bottom: -15px;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), transparent); }
+        #SideNav > wrapper module pane footer:after {
+          top: -15px;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.25), transparent); }
+        #SideNav > wrapper module pane:hover header:after, #SideNav > wrapper module pane:hover footer:after {
+          opacity: 1; }
+        #SideNav > wrapper module pane article {
+          box-sizing: border-box;
+          overflow: auto; }
+          #SideNav > wrapper module pane article::-webkit-scrollbar {
+            width: 0.25em;
+            height: 0.25em; }
+      #SideNav > wrapper module.Selected icon spriteIcon {
+        filter: none; }
+      #SideNav > wrapper module.HasIndicator icon {
+        border-style: solid; }
+      #SideNav > wrapper module.HasUpdates icon {
+        border-color: #6CB1E1;
+        border-color: var(--NavUpdatesIndicatorColor); }
+      #SideNav > wrapper module.Hidden {
+        display: none; }
+        #SideNav > wrapper module.Hidden.Selected {
+          display: block; }
+          #SideNav > wrapper module.Hidden.Selected icon {
+            display: none; }
+    #SideNav > wrapper controls {
+      padding: 0.5em 0; }
+  #SideNav icon spriteIcon {
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out; }
+  #SideNav:hover icon spriteIcon {
+    filter: none; }
+
+}
+#HeadlineWrapper {
+    height: 200px;
+}
+#SubNavigator .DropdownMenuSubNavigator > li {
+    font-size: 12px;
+}
+
+column module {
+    background-color: #371323;
+    outline: 1px solid #e85298;
+}
+controls.ModuleTools {display: none !important;}
+
+#FullscreenModuleWrapper module > h3, #ContentGrid module > h3, #PostAddFormRequesterModule:before {
+    background: #93325e;
+    display: block !important;
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 0;
+    color:#e2e2e2;
+    font-size: 17px;
+    font-weight:unset;
+}
+#FullscreenModuleWrapper module > h3:after, #ContentGrid module > h3:after {display:none}
+
+/*bredcrumb fuxgiven*/
+#HeadlineWrapper overlay h2 {
+    display: none;
+}
+/*
+#Breadcrumb, #HeadlineWrapper overlay h1 {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline;
+}
+*/
+
+/*Submission preview image*/
+.Content ul li a img.PreviewImage {height: 100%; width: 100%; object-fit: cover;}
+module.GenericPreviewListModule .Content ul li .Preview {height: 130px; width: 210px; display: inline-block; margin: 0;}
+
+module.GenericPreviewListModule .Content ul li {margin: 0px 8px 16px; padding: 0; vertical-align: top; display: inline-block; font-size: 0; background: #0006; outline: 1px solid #0c0c0c; position: relative;}
+spriteicon.MiscIcon.QuickDlIcon.tooltipstered {position: absolute; left: 0; top: 0;visibility: hidden; margin: 5px;}
+module.GenericPreviewListModule .Content ul li:hover spriteicon.MiscIcon.QuickDlIcon.tooltipstered {visibility: visible;}
+
+module.GenericPreviewListModule .Content ul li a {display: block;}
+
+module.GenericPreviewListModule .Content {padding: 0 !important;}
+module.GenericPreviewListModule .Content ul {font-size: 0; margin-top: 16px;}
+
+#FullscreenModuleWrapper module, #ContentGrid module {
+    margin: 0.5em;
+    padding: 0;
+    position: relative;
+}
+
+
+
+/*Submission name*/
+.GenericPreviewListModule li > a:nth-child(3)
+	{font-family:  open sans !important; font-size: 12px; text-shadow: 1px 1px 1px #000 !important; color: rgba(255, 255, 255, 0.75) !important; font-weight: bold; max-height: 17px; overflow: hidden; margin: 8px; width: 194px;}
+
+
+/*fake h3s*/
+#PostAddFormRequesterModule:before {
+    display: block;
+    content: 'Leave a Comment';
+    text-align: left;
+}
+
+/*messages*/
+fieldset#IsAnonymous {display:none;}
+
+
+/*posts*/
+#ContentGrid column .PostsListModule .PostsListModule {
+    border-left: none;
+}
+.PostsListModule .Posts > li article footer {
+    text-align: right;
+}
+.PostsListModule .Posts > li .PostHeader .AvatarWrapper, .PostsListModule .Posts > li .PostHeader .PostLabels, .PostsListModule .Posts > li .PostHeader .Poster, .PostsListModule .Posts > li .PostHeader .Date, .PostsListModule .Posts > li .PostHeader .DateModified {
+    margin: .5em;
+}
+.PostHeader {
+    background: #371323;
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    margin: -8px -8px 0;
+}
+.PostsListModule .Posts > li {
+    background: #371323;
+    margin-bottom: 15px;
+    outline: 1px solid #111;
+}
+/*download*/
+module#FilesModule .Content {
+    border-left: 5px solid #6ee16c;
+}
+
+/*stamps*/
+.PostsListModule .Posts > li article .PostStamps li {
+    border-left: .25em solid transparent;
+    background: #371323;;
+    font-size: 12px;
+}
+/*table*/
+table {
+    display: inline;
+}

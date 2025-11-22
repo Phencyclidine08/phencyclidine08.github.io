@@ -1,0 +1,361 @@
+/* if you need to resize shit for mobile, use these
+@media (min-width: 648px) Bigger
+@media (max-width: 649px) Smaller
+*/
+
+:root {
+    --NotificationUnseenBG: #1b252c;
+    --NotificationUnseenDividerColor: #27353f;
+    --NotificationSeenDividerColor: #27292b;
+    --NotificationMessageDividerColor: #383838;
+    --TodoDividerColor: #383838;
+    --InputPlaceholderColor: #ffffff8c;
+    --TabBackground: #1c272e;
+    --TabBorder: #2d373e;
+    --tagify-dd-bg-color: var(--ModalWindowBG);
+    --tagify-dd-color-primary: #0004;
+    --PrimaryNavBackgroundColor: #0e0f10;
+    --SecondaryNavBackgroundColor: #0e0f10;
+    --NavPaneBackgroundColor: #0e0f10;
+    --BodyBackground: #20131e url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    --BodyWrapperBackground: #231521 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    --LinkColor: #507969;
+    --LinkHoverColor: #45633b;
+    --TabBackground: #00000000;
+    --TabBorder: #707070;
+    --ModalWindowBG: #181a1b!important;
+    --InputBackgroundColor: #000000;
+    --InputHoverBackgroundColor: #303436;
+    --InputFocusBackgroundColor: #181a1b;
+    --ButtonBackground: linear-gradient(180deg,#767,#545);
+    --ButtonHoverBackgroundColor: #181a1b;
+	--blanker: #00000000;
+    --blankeralt: #000;
+	--DefaultGreyColor: #9c9487;
+	--StateLabelBackground: #181a1b;
+	--ButtonFontFamily:Bebas Neue; 
+	--DefaultTechnicalFontFamily:Bebas Neue;
+	
+}
+
+@font-face {
+    font-family:Bebas Neue;
+    src: url('files.gamebanana.com/bitpit/bebasneue-regular.woff2') format('woff2'),
+        url('files.gamebanana.com/bitpit/bebasneue-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family:DINEngschrift Regular;
+    src: url('files.gamebanana.com/bitpit/dinengschrift.woff2') format('woff2'),
+        url('files.gamebanana.com/bitpit/dinengschrift.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@media (min-width: 1236px)
+{
+
+
+*,*:after,*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+element.style {
+	font-size: 12px;
+    font-family: none;
+}
+
+@media (max-width: 649px){
+#SiteLogo img {
+    image-rendering: auto;
+    max-width: fit-content;
+    width: auto;
+    max-height: fit-content;
+    content: url(https://www.paydaythegame.com/ovk-media/redux/!pd3-tr-Gj3tAgj41/pd3tr-logo-white.png);
+}
+}
+
+@media (min-width: 648px){
+#SiteLogo img {
+    image-rendering: auto;
+    max-width: fit-content;
+    width: 272px;
+    height: 58px;
+    max-height: fit-content;
+    content: url(https://www.paydaythegame.com/ovk-media/redux/!pd3-tr-Gj3tAgj41/pd3tr-logo-white.png);
+}
+}
+
+#IdentityModule .Content {
+    text-align: center;
+    content: url(https://files.gamebanana.com/bitpit/jds_large_banner.png)!important;
+    width: 280px;
+}
+
+#StudioModule .Content img {
+    margin-bottom: 0.25em;
+	content: url(https://files.gamebanana.com/bitpit/jds_large_banner.png)!important;
+    width: 280px;
+}
+	
+#AuthorsAndRolesModule .Content dt.AuthorsGroup {
+    margin: 0;
+    font-size: 1.3em;
+    color: var(--DefaultTextColor);
+}
+
+#AuthorsAndRolesModule .Content dd.Author {
+    margin: 0 0 1em 0;
+    font-size: .9em;
+    color: var(--DefaultGreyColor);
+}
+
+#AuthorsAndRolesModule .Content dt.Author>* {
+    margin-right: 0.25em;
+    font-size: 1.5em;
+}
+
+
+html,body {
+    overflow-x: hidden
+	font-family: rift,bebas-neue-by-fontfabric,sans-serif;
+}
+
+.Content .RichText h1, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:Bebas Neue;margin-bottom:8px;margin-top:8px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h2, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:Bebas Neue;margin-bottom:5px;margin-top:5px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h3, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:Bebas Neue;text-shadow:2px 2px 0px black !important;}
+
+.Content .RichText h1 .HeadingText, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:Bebas Neue;}
+.Content .RichText h2 .HeadingText, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:Bebas Neue;}
+.Content .RichText h3 .HeadingText, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:Bebas Neue;}
+
+.PageModule>h2 {
+    font-size: 1.8em;
+    font-family: Bebas Neue;
+    margin: 0 0 0.5em 0;
+    padding: 0 1em 0 0;
+    line-height: 2.2rem;
+}
+
+a {
+   /*  font-size: 1.3em;  */
+	font-family:Bebas Neue;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#PageFooter column strong {
+    display: block;
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+}
+
+#PageTitle span {
+    transform: translate(0px, 50%);
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    background: var(--blankeralt);
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat
+    margin: 40px auto;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+
+
+#MainContent {
+/*	background-image: url(https://www.paydaythegame.com/wp-content/themes/pd2tg/img/defaultbgx.png); */
+	background-image: url(https://files.gamebanana.com/bitpit/fl0lhbxx0byelhz.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-color: black;
+    position: relative;
+    box-sizing: border-box;
+	font-family: Bebas Neue;
+}
+
+
+#ContentGrid>row>column:not(:first-child) {
+/*    background: var(--blanker); */
+/*    border-right: var(--blanker); */
+	background-color: rgba(0, 0, 0, 0.85);
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-3 {
+	background-color: rgba(0, 0, 0, 0.85);
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-6 {
+	background-color: rgba(0, 0, 0, 0.85);
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-4 {
+	background-color: rgba(0, 0, 0, 0.85);
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#MoreBySubmitterSubmissionsListModule {
+	display: none;
+}
+
+#WipsBySubmitterSubmissionsListModule {
+	display: none;
+}
+
+#PageBackground {
+	display: none;
+}
+
+
+@media (min-width: 1236px)
+{
+	
+#HeadlineBackground {
+     display: none;
+    width: 1200px;
+    height: 380px; 
+    background-image: url(https://files.gamebanana.com/bitpit/pd3tr-keyimage.jpg) !important;
+    opacity: 1;
+}
+
+
+#HeadlineWrapper.HasBackground {
+   /* min-height: 154px; */
+	width: 1200px;
+  /*  height: 380px; */
+    background-image: url(https://files.gamebanana.com/bitpit/pd3tr-keyimage.jpg) !important;
+    background-position-y: center;
+    background-size: cover;
+}
+}
+
+#SubNavigator {
+    display: block;
+    font-size: var(--SubNavigatorFontSize);
+    border-bottom-width: 0.125em;
+    border-bottom-style: solid;
+    border-bottom-color: var(--SubNavigatorBorderColor);
+    text-shadow: 0px 0px 5px black;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#PageTitle {
+    font-size: var(--PageTitleFontSize);
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+    text-shadow: 0px 0px 6px black;
+}
+
+#Breadcrumb {
+    border-radius: 0.5em;
+}
+
+#HeadlineWrapper overlay {
+    justify-content: flex-start !important;
+}
+
+#ItemProfileModule > div > article {
+font-family:DINEngschrift Regular !important;	
+}
+
+
+#PageFooter {
+	background: none!important;
+}
+
+records.Grid recordCell.Preview {
+    max-height: 20em !important;
+}
+
+records.Grid recordCell.Preview .Preview {
+    max-height: 20em !important;
+}
+
+.Record .Preview {
+    position: relative;
+    min-height: 3em;
+    max-height: 20em !important;
+}
+
+.Record .PreviewImage {
+    width: 100%;
+    height: auto;
+    max-height: 20em !important;
+    object-fit: cover;
+}
+
+body,button,input,select,optgroup,textarea {
+	font-family: Bebas Neue;
+}
+
+button.IconButton, .ButtonLike.IconButton {
+    padding: 0;
+    clip-path: polygon(0% 0%,100% 0%,calc(100% - 15px) 100%,0% 100%);
+    display: inline-block;
+    min-width: 180px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-family: rift,bebas-neue-by-fontfabric,sans-serif;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding: 5px 30px;
+    text-shadow: none;
+    font-kerning: none;
+    line-height: initial;
+}
+
+button, .ButtonLike {
+    font-size: var(--ButtonFontSize);
+    font-family: var(--ButtonFontFamily);
+    display: inline-flex;
+    align-items: center;
+    outline: none;
+    text-align: center;
+    border: 0;
+    border-radius: 0.125em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+	background: #507969;
+    color: #fff;
+}
+
+button.IconButton spriteIcon, button.IconButton matIcon, .ButtonLike.IconButton spriteIcon, .ButtonLike.IconButton matIcon {
+    margin: 0 0.5em;
+    display: none;
+}
+
+itemCount {
+    font-family: Bebas Neue;
+    font-size: 125%;
+}
+
+#StatsModule ul li itemCount {
+    font-weight: bold;
+	font-size: 150% !important;
+}
+
+}

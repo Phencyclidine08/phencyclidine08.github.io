@@ -1,0 +1,2413 @@
+@media (min-width: 832px) {
+:root {
+    --PantyGradient:linear-gradient(to top,#e84096,#f98ba7);
+    --PantySolid:#f26ba0;
+    --StockingGradient:linear-gradient(to top,#b25ea4,#065ba8);
+    --StockingSolid:#665da6;
+    --AngelicWhite:white;
+    --AngelicWhiteT:rgba(255,255,255,.85);
+    --AngelicBlue:#4dcddb;
+    --AngelicGradientUp:linear-gradient(to top,#4dcddb,white);
+    --AngelicGradientUpT:linear-gradient(to top,#4dcddb,#ffffff00);
+    --AngelicGradientDown:linear-gradient(to top,white,#4dcddb);
+    --AngelicGradientDownT:linear-gradient(to top,#ffffff00,#4dcddb);
+    --PantyNewGradient:linear-gradient(to top,#faee38,#fb4697);
+    --PantyNewSolidA:#fe648a;
+    --PantyNewSolidB:#f6ed55;
+    --StockingNewGradient:linear-gradient(to top,#fa4596,#6354e5);
+    --StockingNewSolidA:#6354d9;
+    --PSGNewTitleShadow:#131e3c;
+    --DefaultTangoScale:1em;
+    --StockingTitleStripe:#2f2d9b;
+    --SubNavigatorTabHoverBorderColor:transparent;
+    --psg-font-tango:Tango,TF2 secondary,Tahoma;
+    --psg-font-tango-large:Tango,TF2 Build,Tahoma;
+    --psg-outline-size:2px;
+    --psg-stroke-white:var(--psg-outline-size) 0 0 #fff,calc(-1*var(--psg-outline-size)) 0 0 #fff,0 var(--psg-outline-size) 0 #fff,0 calc(-1*var(--psg-outline-size)) 0 #fff;
+    --psg-stroke-blue:var(--psg-outline-size) 0 0 var(--AngelicBlue),calc(-1*var(--psg-outline-size)) 0 0 var(--AngelicBlue),0 var(--psg-outline-size) 0 var(--AngelicBlue),0 calc(-1*var(--psg-outline-size)) 0 var(--AngelicBlue);
+    --psg-stroke-yellow:var(--psg-outline-size) 0 0 #ffe033,calc(-1*var(--psg-outline-size)) 0 0 #ffe033,0 var(--psg-outline-size) 0 #ffe033,0 calc(-1*var(--psg-outline-size)) 0 #ffe033;
+    --psg-filter-white-outline:drop-shadow(var(--psg-outline-size) 0 0 #fff) drop-shadow(calc(-1*var(--psg-outline-size)) 0 0 #fff) drop-shadow(0 var(--psg-outline-size) 0 #fff) drop-shadow(0 calc(-1*var(--psg-outline-size)) 0 #fff);
+    --psg-filter-yellow-outline:drop-shadow(var(--psg-outline-size) 0 0 #ffe033) drop-shadow(calc(-1*var(--psg-outline-size)) 0 0 #ffe033) drop-shadow(0 var(--psg-outline-size) 0 #ffe033) drop-shadow(0 calc(-1*var(--psg-outline-size)) 0 #ffe033);
+  }
+
+  @font-face {
+font-family: "Tango"; src: local("Tango Regular"), local("Tango-Regular"), local("Tango"), local("Tango Bold"), local("Tango-Bold"), url("https://files.gamebanana.com/bitpit/tango_regular.woff2") format("woff2"), url("https://files.gamebanana.com/bitpit/tango_regular.woff") format("woff"), url("https://files.gamebanana.com/bitpit/tango_regular.ttf") format("truetype"), url("https://files.gamebanana.com/bitpit/tango_regular_OG.otf") format("opentype"); font-display: swap;
+
+  }
+
+  @font-face {
+font-family: "TF2 Build"; src: local("TF2 Build"), font-weight: 400; font-style: normal; font-display: swap; size-adjust: 66%;
+
+  }
+
+  @font-face {
+font-family: "TF2 secondary"; src: local("TF2 secondary"), font-weight: 400; font-style: normal; font-display: swap; size-adjust: 100%;
+
+  }
+
+  @font-face {
+font-family: "Tahoma"; src: local("Tahoma"), font-weight: 400; font-style: normal; font-display: swap; size-adjust: 85.37%;
+
+  }
+
+  @font-face {
+font-family: "Impact"; src: local("Impact"), font-weight: 400; font-style: normal; font-display: swap; size-adjust: 92%;
+
+  }
+
+  @font-face {
+font-family: "Cooper Black"; src: local("Cooper Black"), url("https://files.gamebanana.com/bitpit/coopbl.woff2") format("woff2"), url("https://files.gamebanana.com/bitpit/coopbl.woff") format("woff"), url("https://files.gamebanana.com/bitpit/coopbl.ttf") format("truetype"), url("https://files.gamebanana.com/bitpit/coopbl_OG.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap;
+
+  }
+
+  #ContentGrid > div.PageModule > div > p, #ContentGrid > row > column > div > div > p, #StaffProfileModule > div > article > p, #PointsModule > div > span.DroppedRank, article > p, article > ul > li > p, article > ol > li > p, div > dl > dd > span, div > fieldset > label > span, div > dl > dt, :where(#FooterStrangeBerryApp) *, :where(#tippy-1) *, :where(#tippy-2) *, :where(#tippy-3) *, :where(#tippy-4) *, :where(#tippy-5) *, :where(#tippy-6) *, :where(#tippy-7) *, :where(#tippy-8) *, :where(#tippy-9) *, :where(#tippy-10) *, #PointsModule > div > span.ClimbedRank {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #OnlineStatusModule > div > dl > dd > statelabel {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+  }
+
+  #ContentGrid > div.PageModule > div > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor), #ContentGrid > row > column > div > div > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor), #ContentGrid > row > column > div > div > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor), #StaffProfileModule > div > article > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor), article > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(.PostStamp[data-_sCategory="positive"]):not(.PostStamp[data-_sCategory="negative"]):not(.PostStamp), article > ul > li > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(.PostStamp[data-_sCategory="positive"]):not(.PostStamp[data-_sCategory="negative"]):not(.PostStamp), article > ol > li > p:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(.PostStamp[data-_sCategory="positive"]):not(.PostStamp[data-_sCategory="negative"]):not(.PostStamp), div > dl > dd > span:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(.PostStamp[data-_sCategory="positive"]):not(.PostStamp[data-_sCategory="negative"]):not(.PostStamp), div > fieldset > label > span:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(.PostStamp[data-_sCategory="positive"]):not(.PostStamp[data-_sCategory="negative"]):not(.PostStamp), div > dl > dt:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(.PostStamp[data-_sCategory="positive"]):not(.PostStamp[data-_sCategory="negative"]):not(.PostStamp), #DonatePoints > div > form > div > label > span, #DonatePoints > div > form > div:nth-child(2) > div.InputHelp {
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+  }
+
+  :where(#FooterStrangeBerryApp) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-1) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-2) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-3) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-4) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-5) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-6) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-7) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-8) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-9) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *), :where(#tippy-10) *:not(.RedColor):not(.GreenColor):not(.BlueColor):not(.OrangeColor):not(.PurpleColor):not(.GreyColor):not(a, a *) {
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+  }
+
+  div > fieldset > label > select {
+    font-family:var(--psg-font-tango) !important;
+    color:var(--StockingTitleStripe) !important;
+  }
+
+  div > div.game > span.name, div > div.game > span.hours, div > div.game > span.hours-caption, div > itemcount, div > span.Rank, div > small, div > div.TabContent > p:not(#ViewsModule > div > div.TabContent > p > a), div > div > span:not(:where(.PostStamp *)), div > ul > li > itemcount, div > ul > li > small, div > ul > li > span:not(:where(.PostStamp *)), #tpm__sBmSteamAccountDetails > module > div > p.SteamRealName, #tpm__sBmSteamAccountDetails > module > div > p.SteamLevel {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #tpm__sBmSteamAccountDetails > module > div > p.SteamStatus {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background-color:currentColor;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #tpm__sBmSteamAccountDetails > module > div > p.SteamStatus div > span.ClimbedRank {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultGreenColor);
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  :where(ul, ol) > li:not(:where(.ProseMirror, .ProseMirror *))::marker {
+    unicode-bidi:isolate;
+    font-variant-numeric:tabular-nums;
+    text-transform:none;
+    text-indent:0 !important;
+    text-align:start !important;
+    text-align-last:auto !important;
+    color:var(--StockingTitleStripe);
+    font-family:var(--psg-font-tango) !important;
+  }
+
+  article>ul li, article>ul ul li {
+    list-style-type:disc !important;
+  }
+
+  .ProseMirror :where(ul, ol) > li::marker {
+    color:currentColor !important;
+    font-family:inherit !important;
+  }
+
+  button.IconButton > span, button > span, div > div.Cluster > button, div > div.Cluster > label, button, label {
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+  }
+
+  article > p > span.RedColor, article > p > strong > span.RedColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultRedColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    PROPERTYREMOVED-text-shadow:none;
+  }
+
+  article > p > span.GreenColor, article > p > strong > span.GreenColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultGreenColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    PROPERTYREMOVED-text-shadow:none;
+  }
+
+  article > p > span.BlueColor, article > p > strong > span.BlueColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultBlueColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    PROPERTYREMOVED-text-shadow:none;
+  }
+
+  article > p > span.OrangeColor, article > p > strong > span.OrangeColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultOrangeColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    PROPERTYREMOVED-text-shadow:none;
+  }
+
+  article > p > span.PurpleColor, article > p > strong > span.PurpleColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultPurpleColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    PROPERTYREMOVED-text-shadow:none;
+  }
+
+  article > p > span.GreyColor, article > p > strong > span.GreyColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultGreyColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    PROPERTYREMOVED-text-shadow:none;
+  }
+
+  article > p > strong *, article > p > strong {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6!important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-outline-size,2px) 0 0 var(--PantyNewGradient),calc(-1*var(--psg-outline-size,2px)) 0 0 var(--PantyNewGradient),0 var(--psg-outline-size,2px) 0 var(--PantyNewGradient),0 calc(-1*var(--psg-outline-size,2px)) 0 var(--PantyNewGradient);
+  }
+
+  pre {
+    color:var(--DefaultGreenColor);
+    background:rgb(0 0 0/59%);
+    border:2px solid rgba(255,255,255,.05);
+    border-radius:.125em;
+    margin:.5em;
+    padding:.5em;
+    overflow-x:auto;
+    width:auto;
+  }
+
+  article > p > mark {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--AngelicBlue) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  article > p > s {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--AngelicWhite) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-outline-size) 0 0 var(--DefaultRedColor),calc(-1*var(--psg-outline-size)) 0 0 var(--DefaultRedColor),0 var(--psg-outline-size) 0 var(--DefaultRedColor),0 calc(-1*var(--psg-outline-size)) 0 var(--DefaultRedColor);
+  }
+
+  .RichText .Spoiler:not(:where(.ProseMirror, .ProseMirror *)) {
+    color:var(--StockingTitleStripe);
+    --psg-outline-size:2px;
+    filter:blur(5px) !important;
+    transition-property:-webkit-filter !important;
+    transition-duration:.4s !important;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  .RichText .Spoiler:hover:not(:where(.ProseMirror, .ProseMirror *)), .RichText .Spoiler:focus:not(:where(.ProseMirror, .ProseMirror *)) {
+    color:var(--StockingTitleStripe);
+    --psg-outline-size:2px;
+    filter:blur(0) !important;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  .PostHeader time, footer > span, #MessagesNavModule > pane > article > div > div > div.Cluster > div > time {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  header > span > time.LessThan30minsOld, #MessagesNavModule > pane > article > div > div > div.Cluster > div > time.LessThan30minsOld {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultOrangeColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  header > span > time.LessThan5minsOld, #MessagesNavModule > pane > article > div > div > div.Cluster > div > time.LessThan5minsOld {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultRedColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  .PostStamp[data-_sCategory="positive"], .PostStamp[data-_sCategory="negative"], .PostStamp {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    -webkit-text-fill-color:CurrentColor !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  .PostStamp[data-_sCategory="positive"] {
+    color:var(--PantyNewSolidA) !important;
+  }
+
+  .PostStamp[data-_sCategory="negative"] {
+    color:var(--StockingNewSolidA) !important;
+  }
+
+  .PostStamp {
+    color:var(--StockingTitleStripe) !important;
+    background:#0000001c !important;
+  }
+
+  div > dl > dd > time, div > div.TabContent.LatestVisitorsGrid.Grid > time, div > div.TabContent > div > itemcount, div > div.TabContent > div.Grid.StatsGrid > div > div, div > div.TabContent > div.Grid.StatsGrid > div > itemcount, div > div.TabContent.Grid > itemcount, div > div > div > small, div > div > itemcount, div > div > span, header > div > small, div > ul > li > itemcount, div > ul > li > small {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  div > dl > dd > time.LessThan5minsOld, div > div.TabContent.LatestVisitorsGrid.Grid > time.LessThan5minsOld {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultRedColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  div > dl > dd > time.LessThan30minsOld, div > div.TabContent.LatestVisitorsGrid.Grid > time.LessThan30minsOld {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultOrangeColor) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #ContentGrid > div.PageModule > div > p > a, #ContentGrid > div.PageModule > div > a, article > p > a, div > dl > dd > span > a, #VisitorsModule > div > div.TabContent.LatestVisitorsGrid.Grid > span > a > span, #VisitorsModule > div > div.TabContent > div > span > a > span, header > div.Poster > a > span, #ViewsModule > div > div.TabContent > p > a, #ViewsModule > div > div.TabContent.Grid > span > a > span, div > a > itemcount, div.StrangeBerryModal > div > div > ul > li > a, #CoreStatsModule > div > a > div > small, :where(#FooterStrangeBerryApp):is(a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-1):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-2):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-3):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-4):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-5):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-6):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-7):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-8):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-9):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), :where(#tippy-10):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *), #SubNavigator > ul > li > ul > li > a > span, #SubNavigator > ul > li > ul > li > a > div, #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div > div > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:CurrentColor;
+    color:var(--AngelicBlue) !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #ContentGrid > div.PageModule > div > p > a:hover, #ContentGrid > div.PageModule > div > a:hover, article > p > a:hover, div > dl > dd > span > a:hover, #VisitorsModule > div > div.TabContent.LatestVisitorsGrid.Grid > span > a > span:hover, #VisitorsModule > div > div.TabContent > div > span > a > span:hover, header > div.Poster > a > span:hover, #ViewsModule > div > div.TabContent > p > a:hover, #ViewsModule > div > div.TabContent.Grid > span > a > span:hover, div > a > itemcount:hover, div.StrangeBerryModal > div > div > ul > li > a:hover, #CoreStatsModule > div > a > div > small:hover, :where(#FooterStrangeBerryApp):is(a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-1):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-2):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-3):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-4):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-5):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-6):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-7):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-8):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-9):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, :where(#tippy-10):is(a, a *):not(h1, h1 *,h2, h2 *,h3, h3 *,h4, h4 *,h5, h5 *,h6, h6 *):hover, #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div > div > a:hover {
+    color:var(--AngelicWhite) !important;
+    -webkit-text-fill-color:CurrentColor;
+    text-shadow:var(--psg-stroke-blue)!important;
+  }
+
+  #SubNavigator > ul > li > ul > li > a > span:hover, #SubNavigator > ul > li > ul > li. > a > div:hover, #SubNavigator > ul > li.TitleOnly.sfHover > ul > li.sfHover > a > span {
+    color:var(--AngelicWhite) !important;
+    -webkit-text-fill-color:CurrentColor !important;
+    text-shadow:var(--psg-stroke-blue)!important;
+  }
+
+  #tippy-2 {
+    display:none;
+  }
+
+  .Name {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:CurrentColor;
+    color:var(--AngelicBlue) !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  .Name:hover {
+    color:var(--AngelicWhite) !important;
+    text-shadow:var(--psg-stroke-blue)!important;
+  }
+
+  h4:not(:where(.ProseMirror, .ProseMirror *)), h5:not(:where(.ProseMirror, .ProseMirror *)), h6:not(:where(.ProseMirror, .ProseMirror *)) {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:1.7em;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    -webkit-text-stroke:0 !important;
+    text-shadow:none;
+  }
+
+  h1:not(:where(.ProseMirror, .ProseMirror *)) {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:2.5em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -webkit-text-stroke:0 #000027;
+    text-shadow:none !important;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  article > h1:not(:where(.ProseMirror, .ProseMirror *)) {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:2.5em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -webkit-text-stroke:0 #000027;
+    text-shadow:none !important;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  h2:not(:where(.ProseMirror, .ProseMirror *)) {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:2em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -webkit-text-stroke:0 #000027;
+    text-shadow:none !important;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  .PageModule > h2 {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:3em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  .PageModule > h2 a {
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-decoration:none;
+    display:inline;
+  }
+
+  .PageModule > h2 a:hover {
+    filter:var(--psg-filter-yellow-outline);
+  }
+
+  .PageModule > h2:after {
+    height:0em;
+    margin:0em 0 0 0;
+    display:block;
+    content:"";
+    width:auto;
+    background:#4dcddb;
+  }
+
+  #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div:nth-child(1) > h2 {
+    font-size:2.2em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  h3:not(:where(.ProseMirror, .ProseMirror *)) {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:1.8em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -webkit-text-stroke:0 #000027;
+    text-shadow:none !important;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  @media (max-width: 1200px) {
+h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:2.2em !important;
+    }
+
+    article > h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:2.2em !important;
+    }
+
+    h2:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.8em !important;
+    }
+
+    .PageModule > h2 {
+      font-size:2.6em !important;
+    }
+
+    h3:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.6em !important;
+    }
+
+    h4:not(:where(.ProseMirror, .ProseMirror *)), h5:not(:where(.ProseMirror, .ProseMirror *)), h6:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.5em;
+    }
+
+    #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div:nth-child(1) > h2 {
+      font-size:2.0em !important;
+    }
+
+  }
+
+  @media (max-width: 992px) {
+h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:2.0em !important;
+    }
+
+    article > h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:2.0em !important;
+    }
+
+    h2:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.6em !important;
+    }
+
+    .PageModule > h2 {
+      font-size:2.3em !important;
+    }
+
+    h3:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.5em !important;
+    }
+
+    h4:not(:where(.ProseMirror, .ProseMirror *)), h5:not(:where(.ProseMirror, .ProseMirror *)), h6:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.4em;
+    }
+
+    #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div:nth-child(1) > h2 {
+      font-size:1.8em !important;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.8em !important;
+    }
+
+    article > h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.8em !important;
+    }
+
+    h2:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.4em !important;
+    }
+
+    .PageModule > h2 {
+      font-size:2.0em !important;
+    }
+
+    h3:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.35em !important;
+    }
+
+    h4:not(:where(.ProseMirror, .ProseMirror *)), h5:not(:where(.ProseMirror, .ProseMirror *)), h6:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.3em;
+    }
+
+    #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div:nth-child(1) > h2 {
+      font-size:1.6em !important;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.6em !important;
+    }
+
+    article > h1:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.6em !important;
+    }
+
+    h2:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.3em !important;
+    }
+
+    .PageModule > h2 {
+      font-size:1.7em !important;
+    }
+
+    h3:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.2em !important;
+    }
+
+    h4:not(:where(.ProseMirror, .ProseMirror *)), h5:not(:where(.ProseMirror, .ProseMirror *)), h6:not(:where(.ProseMirror, .ProseMirror *)) {
+      font-size:1.15em;
+    }
+
+    #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div:nth-child(1) > h2 {
+      font-size:1.4em !important;
+    }
+
+  }
+
+  #OnlineStatusModule > h2 {
+    font-size:2.5em !important;
+  }
+
+  #FavoriteGameModule > h2 {
+    font-size:2.5em !important;
+  }
+
+  #ContactInfo > h2 {
+    font-size:2.5em !important;
+  }
+
+  #CommunityMedalsModule > h2 {
+    font-size:2.08em !important;
+  }
+
+  #SoftwareKit > h2 {
+    font-size:2.5em !important;
+  }
+
+  #tpm__sBmSteamAccountDetails > module {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/steam_logo_psg.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png) !important;
+    background-position:left top,right bottom,right bottom !important;
+    background-repeat:no-repeat,no-repeat,no-repeat !important;
+    background-size:100% auto,15% auto,100% auto !important;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #tpm__sBmSteamAccountDetails > module::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  .PageModule {
+    overflow:visible;
+    position:relative;
+    z-index:0;
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+  }
+
+  .PageModule::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+    z-index:10;
+  }
+
+  #ModsOnlineModule {
+    background-color:var(--AngelicWhiteT);
+  background-image:
+    url(https://files.gamebanana.com/bitpit/backlace_top.png),
+    url(https://files.gamebanana.com/bitpit/garterbeltpixelart.gif),
+    url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png) !important;
+  background-position: left top, calc(100% - var(--gif-shift, 50px)) bottom, right bottom !important;
+  background-repeat: no-repeat, no-repeat, no-repeat !important;
+  background-size: 100% auto, 25% auto, 100% auto !important;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+    min-height:170px !important;
+  }
+
+  #ModsOnlineModule > div > span {
+    color:transparent;
+    position:relative;
+  }
+
+  #ModsOnlineModule > div > span::before {
+    content:"Mods are asleep,start Panty posting!";
+    color:var(--StockingTitleStripe);
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    font:inherit;
+    inset:0 auto auto 0;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #PostsListModule {
+    background-color:var(--AngelicWhiteT);
+  background-image:
+    url(https://files.gamebanana.com/bitpit/backlace_top.png),
+    url(https://files.gamebanana.com/bitpit/thebitchespixelart.gif),
+    url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png) !important;
+  background-position: left top, calc(100% - var(--gif-shift, 20px)) top, right bottom !important;
+  background-repeat: no-repeat, no-repeat, no-repeat !important;
+  background-size: 100% auto, 45% auto, 100% auto !important;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #PostsListModule > div > fieldset {
+    background:none;
+    border:0 solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+  }
+
+  #IdentityModule {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/seethroughcrew.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png),url(https://files.gamebanana.com/bitpit/backlace_top.png);
+    background-position:left bottom,right bottom,left top;
+    background-repeat:no-repeat,no-repeat;
+    background-size:70% auto,100% auto,100% auto;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #IdentityModule > div > div.UserTitle, #IdentityModule > div > ul > li:nth-child(1) > statelabel {
+    display:none;
+  }
+
+  #ContentGrid > row {
+    gap:3px;
+  }
+
+  @media (min-width: 992px) {
+#ContentGrid > row > column.xs-12.sm-12.md-12.lg-5 {
+      --scale:0.92;
+      flex:0 0 calc((100%*5/12) * var(--scale));
+      max-width:calc((100%*5/12) * var(--scale));
+      width:calc((100%*5/12) * var(--scale));
+    }
+
+  }
+
+  .AvatarTooltip {
+    background:none;
+  }
+
+  #SubNavigator {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:auto 100%,auto 100%;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #SubNavigator::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  #SubNavigator {
+    overflow:visible !important;
+    position:relative;
+  }
+
+  #SubNavigator > ul.sf-menu {
+    position:relative;
+    z-index:2;
+  }
+
+  #SubNavigator::after {
+    z-index:1;
+    pointer-events:none;
+  }
+
+  #SubNavigator .DropdownMenuSubNavigator>li ul>li {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(),url();
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    display:block;
+    margin:0em 0 0 0;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #SubNavigator .DropdownMenuSubNavigator>li ul>li::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  :root {
+    --SubNavTabTextSize:1.53em;
+  }
+
+  #SubNavigator > ul > li > div {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:var(--SubNavTabTextSize) !important;
+    background:linear-gradient(to top,#e84096,#f98ba7);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    color:var(--PantySolid);
+    opacity:1 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #SubNavigator > ul > li > a > div {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:var(--SubNavTabTextSize) !important;
+    background:linear-gradient(to top,#b25ea4,#065ba8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    color:var(--StockingSolid);
+    opacity:1 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #SubNavigator > ul > li > a > div:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #SubNavigator > ul.sf-menu.DropdownMenuSubNavigator {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+
+  #SubNavigator > ul.sf-menu > li {
+    float:none !important;
+    flex:0 0 auto;
+    white-space:nowrap;
+  }
+
+  #SubNavigator > ul.sf-menu > li > ul {
+    position:absolute;
+    display:none;
+  }
+
+  #SubNavigator > ul > li:nth-child(1) > a > spriteicon, #SubNavigator > ul > li:nth-child(2) > a > spriteicon, #SubNavigator > ul > li:nth-child(3) > spriteicon, #SubNavigator > ul > li:nth-child(4) > spriteicon, #SubNavigator > ul > li:nth-child(5) > spriteicon, #SubNavigator > ul > li:nth-child(6) > spriteicon, #SubNavigator > ul > li:nth-child(7) > spriteicon, #SubNavigator > ul > li:nth-child(8) > a > spriteicon, #SubNavigator > ul > li:nth-child(9) > a > spriteicon, #SubNavigator > ul > li:nth-child(10) > a > spriteicon, #SubNavigator > ul > li:nth-child(11) > spriteicon, #SubNavigator > ul > li:nth-child(12) > a > spriteicon {
+    display:none !important;
+  }
+
+  #DiscordProfile .DiscordUsername {
+    content:url(https://files.gamebanana.com/bitpit/allenart06_psg_new.png);
+    width:200px;
+  }
+
+  #DiscordProfile {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(),url(https://files.gamebanana.com/bitpit/discord_logo_psg_c3ae4.png),url() !important;
+    background-position:left top,right top,right bottom !important;
+    background-repeat:no-repeat,no-repeat,no-repeat !important;
+    background-size:100% auto,19% auto,100% auto !important;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #DiscordProfile::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+    z-index:10;
+  }
+
+  #DiscordProfile .DiscordCard {
+    background:inherit !important;
+    overflow:visible;
+    position:relative;
+    z-index:0;
+    background-color:transparent !important;
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(),url(https://files.gamebanana.com/bitpit/backlace_top_mirrored.png) !important;
+    background-position:left top,right bottom,right top !important;
+    background-repeat:no-repeat,no-repeat,no-repeat !important;
+    background-size:80% auto,45% auto,80% auto !important;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+  }
+
+  #DiscordProfile .DiscordCard::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+    z-index:10;
+  }
+
+  #DiscordProfile .DiscordActivity, #DiscordProfile .ActivityHistoryItem {
+    background:var(--AngelicGradientUpT) !important;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    border:3px solid var(--AngelicBlue);
+  }
+
+  #DiscordProfile .ActivityHistoryItem {
+    background:rgba(0,0,0,.2);
+    border-radius:4px;
+    padding:8px;
+    margin-bottom:6px;
+    border-left:3px solid var(--AngelicBlue) !important;
+  }
+
+  #DiscordProfile .ActivityItem {
+    background:none !important;
+  }
+
+  #DiscordProfile .ActivityType {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:1.4em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    -webkit-text-stroke:0 !important;
+    text-shadow:none;
+    text-transform:none !important;
+  }
+
+  #DiscordProfile .ActivityName {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-size:3em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  #DiscordProfile .GameLink {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-size:.9em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+  }
+
+  #DiscordProfile .ActivityIconImage {
+    width:64px !important;
+    height: fit-content !important;
+  }
+  
+  [src="https://cdn.discordapp.com/app-assets/1222285763459158056/1395581923828437176.png"] { 
+	  content: url(https://files.gamebanana.com/bitpit/vpkedit_normal.png);
+  }
+
+  #DiscordProfile .ActivityState {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:1.4em !important;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    -webkit-text-stroke:0 !important;
+    text-shadow:none;
+    text-transform:none;
+  }
+
+  #DiscordProfile .StatusText {
+    font-size:22px !important;
+  }
+
+  #DiscordProfile .StatusText.status-online {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:#43b581 !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #DiscordProfile .StatusText.status-idle {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:#faa61a !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #DiscordProfile .StatusText.status-dnd {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.0;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:#f04747 !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #DiscordProfile .StatusText.status-dnd::after {
+    content:"Do Not Disturb";
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size:1em !Important;
+    font-size-adjust:.5;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:#f04747 !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #DiscordProfile .StatusText.status-offline {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:#747f8d !important;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #DiscordProfile .DiscordAvatar .AvatarImage {
+    width:128px !important;
+    height:128px !important;
+  }
+
+  #DiscordProfile .StatusIndicator {
+    width:24px !important;
+    height:24px !important;
+  }
+
+  #tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p {
+    --psg-outline-size:2px;
+    font-family:var(--psg-font-tango-large) !important;
+    font-size:3.5em !important;
+    -webkit-text-stroke:0 #000027;
+    text-shadow:none !important;
+    display:inline-block;
+    width:auto !important;
+    white-space:nowrap;
+    position:absolute;
+    top:8px;
+    left:155px;
+    background:linear-gradient(to top,#e84096,#f98ba7) left/50% 100% no-repeat,linear-gradient(to top,#b25ea4,#065ba8) right/50% 100% no-repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+  }
+
+  .SteamRealName, .SteamRegionCode, .SteamLevel {
+    transform:translateY(20px) !important;
+  }
+
+  .SteamStatus {
+    transform:translateY(10px) !important;
+  }
+
+  #tpm__sBmSteamAccountDetails > module > div {
+    display:grid;
+    justify-content:left;
+    align-items:center;
+    padding:8px 4px 4px 4px;
+    height:auto;
+    min-height:132.5px;
+    grid-template-columns:[content] 100%;
+    grid-template-rows:[top] 100% [bottom] 0;
+    background:url() !important;
+    background-position:center center;
+    background-size:100% 230px;
+  }
+
+  #tpm__sBmSteamAccountDetails > module > h2 {
+    background:url() !important;
+    background-position:center center;
+    background-size:100% 230px;
+  }
+
+  #tpm__sBmSteamAccountDetails > module > div > p.SteamDisplayName {
+    content:url(https://files.gamebanana.com/bitpit/steamwontload2.png) !important;
+    max-width:100%;
+    height:auto;
+  }
+
+  #tpm__sBmSteamAccountDetails > module > div > p:nth-child(3), #tpm__sBmSteamAccountDetails > module > div > p:nth-child(4) {
+    display:none;
+  }
+
+  :is(button, .ButtonLike):not(:where(#SiteMenuToggle, #SearchForm button)) {
+    position:relative;
+    z-index:0;
+    border-radius:.125em;
+    background:var(--PantyNewGradient) !important;
+    color:var(--AngelicWhite) !important;
+    box-shadow:-4px 4px 0 0 var(--PSGNewTitleShadow);
+  }
+
+  #BuddyToggleModule > div > button > span {
+    color:var(--PantySolid) !important;
+    text-shadow:var(--psg-outline-size,2px) 0 0 var(--AngelicWhite),calc(-1*var(--psg-outline-size,2px)) 0 0 var(--AngelicWhite),0 var(--psg-outline-size,2px) 0 var(--AngelicWhite),0 calc(-1*var(--psg-outline-size,2px)) 0 var(--AngelicWhite);
+  }
+
+  #BuddyToggleModule > div > button > hoveralt {
+    color:var(--StockingSolid) !important;
+    text-shadow:var(--psg-outline-size,2px) 0 0 var(--AngelicWhite),calc(-1*var(--psg-outline-size,2px)) 0 0 var(--AngelicWhite),0 var(--psg-outline-size,2px) 0 var(--AngelicWhite),0 calc(-1*var(--psg-outline-size,2px)) 0 var(--AngelicWhite);
+  }
+
+  button > wrapper > itemcount {
+    font-family:var(--psg-font-tango) !important;
+    color:var(--AngelicWhite) !important;
+    opacity:1 !important;
+  }
+
+  #SiteMenuToggle {
+    position:relative;
+    z-index:0;
+    border-radius:0em;
+    background:var(--PantyNewGradient) !important;
+    color:var(--AngelicWhite) !important;
+    box-shadow:-4px 0 0 0 var(--PSGNewTitleShadow);
+  }
+
+  #SearchForm button {
+    position:relative;
+    z-index:0;
+    border-radius:0em .125em .125em 0;
+    background:var(--PantyNewGradient) !important;
+    color:var(--AngelicWhite) !important;
+  }
+
+  .TabsWrapper {
+    border-bottom:10px solid #ffffff00;
+    overflow:auto;
+  }
+
+  #RecentVisitors .Tab, #DiscordProfile .Tab {
+    background:var(--StockingNewGradient) !important;
+    cursor:pointer;
+    color:var(--AngelicWhite) !important;
+    opacity:.5 !important;
+    border:2px solid var(--PSGNewTitleShadow) !important;
+    border-bottom:0;
+    border-radius:.25em .25em 0 0;
+    align-items:center;
+    gap:.25em;
+    padding:.75em 1em;
+    transition:opacity .2s ease-in-out;
+    display:flex;
+  }
+
+  #RecentVisitors .TabActive, .Tab, #RecentVisitors > div.Tabs > a.Tab.TabActive, #DiscordProfile .TabActive {
+    background:var(--StockingNewGradient);
+    cursor:pointer;
+    color:var(--AngelicWhite);
+    opacity:1 !important;
+    border:2px solid var(--PSGNewTitleShadow);
+    border-bottom:0;
+    border-radius:.25em .25em 0 0;
+    align-items:center;
+    gap:.25em;
+    padding:.75em 1em;
+    transition:opacity .2s ease-in-out;
+    display:flex;
+  }
+
+  .Tabs {
+    border-bottom:3px solid var(--PSGNewTitleShadow);
+    padding:0 1em 0 .5em;
+    display:flex;
+  }
+
+  input:checked+.Tab, .Tab:has(:checked) {
+    border:3px solid var(--PSGNewTitleShadow);
+    opacity:1;
+    cursor:default;
+    border-bottom:0;
+    margin-bottom:-3px;
+    font-weight:700;
+  }
+
+  .Tab, #RecentVisitors > div.Tabs > a.Tab.TabActive {
+    background:var(--StockingNewGradient);
+    cursor:pointer;
+    color:var(--AngelicWhite);
+    opacity:.5;
+    border:2px solid var(--PSGNewTitleShadow);
+    border-bottom:0;
+    border-radius:.25em .25em 0 0;
+    align-items:center;
+    gap:.25em;
+    padding:.75em 1em;
+    transition:opacity .2s ease-in-out;
+    display:flex;
+  }
+
+  div.StrangeBerryModal.TrashNotice {
+    background:url(https://puu.sh/KyYFc/0252d1be6a.png);
+    border:2px solid #232a2e;
+  }
+
+  .StrangeBerryModal {
+    background:none;
+    border:0.18em solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+  }
+
+  #PostsListModule_Add > div, div.FormWrapper > div {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #PostsListModule_Add > div::after, div.FormWrapper > div::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike {
+    background:var(--AngelicGradientDown);
+    border:0.18em solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+    color:var(--StockingTitleStripe);
+  }
+
+  input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=number]:focus, input[type=email]:focus, input[type=num]:focus, input[type=tel]:focus, select:focus, .SelectLike:focus, option:focus, .OptionLike:focus, optgroup:focus, textarea:focus, .TextareaLike:focus {
+    background:var(--AngelicGradientDown);
+    border:0.18em solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+    color:var(--StockingTitleStripe);
+  }
+
+  input[type=text]:hover, input[type=password]:hover, input[type=url]:hover, input[type=number]:hover, input[type=email]:hover, input[type=num]:hover, input[type=tel]:hover, select:hover, .SelectLike:hover, option:hover, .OptionLike:hover, optgroup:hover, textarea:hover, .TextareaLike:hover {
+    background:var(--AngelicGradientDown);
+    border:0.18em solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+    color:var(--StockingTitleStripe);
+  }
+
+  #SearchInput {
+    font-family:var(--psg-font-tango) !important;
+    font-size:1.2em;
+    font-style:normal !important;
+    border:0.18em solid var(--PSGNewTitleShadow);
+    border-radius:.25em 0 0 .25em;
+    background:var(--StockingNewGradient);
+    color:white;
+  }
+
+  #SearchInput::placeholder {
+    font-family:var(--psg-font-tango) !important;
+    opacity:1;
+    font-style:normal !important;
+  }
+
+  .ProseMirror {
+    background:url(https://files.gamebanana.com/bitpit/submit_border_19dda.png) no-repeat right bottom/auto min(29px,100%),#0000007a no-repeat center/100% 100% !important;
+    border:0.18em solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+  }
+
+  .ProseMirror:focus {
+    background:url(https://files.gamebanana.com/bitpit/submit_border_19dda.png) no-repeat right bottom/auto min(29px,100%),#0000007a no-repeat center/100% 100% !important;
+    border:0.18em solid var(--AngelicBlue);
+    border-radius:.25em .25em .25em .25em;
+  }
+
+  @media (min-width: 648px) {
+  }
+
+  #HeadlineWrapper overlay h1 {
+    content:url(https://files.gamebanana.com/bitpit/allenart06_psg_new.png);
+    display:inline-block;
+  }
+
+  #PageTitle {
+    content:url();
+  }
+
+  #MainContentHeader {
+    --HeadlineWrapperHeight:-400px !important;
+  }
+
+  @media (min-width: 1920px) {
+body {
+      background:url(https://files.gamebanana.com/bitpit/seethroughchase.png) left top no-repeat;
+      background-size:100% auto;
+      background-attachment:fixed;
+      background-position:left top;
+    }
+
+  }
+
+  @media (max-width: 1919px) {
+body {
+      background:url(https://files.gamebanana.com/bitpit/seethroughchase.png) left top no-repeat;
+      background-size:auto;
+      background-attachment:fixed;
+      background-position:left top;
+    }
+
+  }
+
+  #MainContent {
+    background:none;
+  }
+
+  #MainContent {
+    background-color:rgb(0 0 0/0);
+    background-position:unset;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    position:relative;
+  }
+
+  #IdentityModule > div > a > img {
+    content:url(https://files.gamebanana.com/bitpit/intro2_optimized.gif);
+    width:100%;
+    height:100%;
+    border-radius:1em;
+  }
+
+  .Avatar.HasClearanceLevel {
+    box-shadow:0 0 0 .125em var(--AngelicBlue),0 0 .75em var(--AngelicBlue) !important;
+    border-radius:1em;
+  }
+
+  #IdentityModule > div > div:nth-child(2) > a > img {
+    content:url(https://filecache20.gamebanana.com/bitpit/allenart06_psg_new.png);
+    max-width:100%;
+  }
+
+  #IdentityModule > div > div:nth-child(3) > a {
+    display:block;
+    width:100%;
+    overflow:hidden;
+  }
+
+  #IdentityModule > div > div:nth-child(3) > a > img {
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #IdentityModule > div > div:nth-child(2) > a > indicator {
+    display:none;
+  }
+
+  #ResponsibilitiesModule > div > div > h4 {
+  }
+
+  #ResponsibilitiesModule > div > div > h4:after {
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(1) > div > div {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:1 !important;
+    -webkit-text-stroke:0 #000027;
+    background:linear-gradient(to top,#e84096,#f98ba7);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  :where(#ResponsibilitiesModule,#CoreStatsModule) .Card {
+    padding:0em;
+    background:none;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(1) {
+    content:url(https://images.gamebanana.com/img/banners/games/59496e8cc7888.jpg);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(2) {
+    content:url(https://images.gamebanana.com/img/banners/games/63397d6620120.jpg);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(1) {
+    content:url(https://puu.sh/K0LiP/09ba4c9270.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(2) {
+    content:url(https://files.gamebanana.com/bitpit/jds_large_banner.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(3) {
+    content:url(https://puu.sh/KaWYo/77f3ab4263.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > h4 {
+    display:none;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > div > a:nth-child(1) {
+    content:url(https://i.imgur.com/88xLk.png);
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > div > a:nth-child(2) {
+    content:url(https://images.gamebanana.com/img/banners/clubs/619fa9d27c6b1.jpg);
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #PageFooter {
+    background-color:rgba(0,0,0,0);
+  }
+
+  #ContentGrid>row>column:not(:first-child) {
+    background-color:rgba(0,0,0,0)!important;
+    border-right:rgba(0,0,0,0);
+  }
+
+  #ContentGrid row>column.lg-4 {
+    background-color:rgba(0,0,0,0)!important;
+    border-right:rgba(0,0,0,0);
+  }
+
+  #ContentGrid row>column.lg-3 {
+    background-color:rgba(0,0,0,0)!important;
+    border-right:rgba(0,0,0,0);
+  }
+
+  #ContentGrid row>column.lg-6 {
+    background-color:rgba(0,0,0,0)!important;
+    border-right:rgba(0,0,0,0);
+  }
+
+  #SiteLogo img {
+    content:url(https://files.gamebanana.com/bitpit/gameandbananawtombelt.png);
+    image-rendering:auto;
+    max-width:100%;
+    max-height:100%;
+    height:auto;
+    width:auto;
+  }
+
+  #PrimaryNav {
+    background-color:var(--AngelicWhiteT) !important;
+    position:relative;
+    overflow:visible;
+    border-radius:3em 0 0 3em;
+    background-image:linear-gradient(to right,transparent 0 577px,var(--AngelicWhiteT) 577px),url(https://files.gamebanana.com/bitpit/stripesheart_repeating.png);
+    background-repeat:no-repeat,repeat-x;
+    background-position:left top,left center;
+    background-size:100% 100%,auto 100%;
+  }
+
+  #PrimaryNav > * {
+    position:relative;
+    z-index:2;
+  }
+
+  #PrimaryNav::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:577px;
+    right:0;
+    height:100%;
+    background-image:url(https://filecache41.gamebanana.com/bitpit/stripesblade_repeating.png);
+    background-repeat:repeat-x;
+    background-position:left center;
+    background-size:auto 100%;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  #PrimaryNav::after {
+    content:url(https://files.gamebanana.com/bitpit/stripes-hilt_translated_small.png);
+    position:absolute;
+    top:0;
+    left:530px;
+    pointer-events:none;
+    z-index:1;
+  }
+
+  #PrimaryNav > div.UserPoints > itemcount:nth-child(1), #PrimaryNav > div.UserPoints > itemcount.GreenColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    text-shadow:none !important;
+  }
+
+  #PrimaryNav > div.UserPoints > itemcount:nth-child(1)::before {
+  }
+
+  #PrimaryNav > div.UserPoints > itemcount.GreenColor::before {
+  }
+
+  #PrimaryNav > div.UserPoints > itemcount.GreenColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    background:var(--PantyNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    text-shadow:none !important;
+  }
+
+  #PrimaryNav > a.SystemUpdate > span {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    text-shadow:none !important;
+  }
+
+  [data-theme~=dropdown] .tippy-content {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  [data-theme~=dropdown] .tippy-content::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  #SecondaryNav, body[data-_sSecondaryNavMode="Float"] #SecondaryNav.Expanded {
+    background-image:url(https://files.gamebanana.com/bitpit/bitchesareback.png);
+    background-size:cover;
+    background-position:unset;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+  }
+
+  body[data-_sSecondaryNavPosition="Left"] #SecondaryNav {
+    border-radius:0em 3em 3em 0 !important;
+  }
+
+  body[data-_sSecondaryNavMode="Float"] #SecondaryNav.Expanded, body[data-_sSecondaryNavPosition="Right"] #SecondaryNav {
+    border-radius:0em 0 3em 3em !important;
+  }
+
+  body[data-_sSecondaryNavPosition="Right"] #SecondaryNav {
+    background:var(--AngelicWhiteT);
+  }
+
+  #PersonalNavModule > pane > header > strong, #StatsNavModule > pane > header > strong, #NotificationsNavModule > pane > header > strong, #BuddiesNavModule > pane > header > strong, #SubmissionsNavModule > pane > header > strong, #RemindersNavModule > pane > header > strong, #MedalsNavModule > pane > header > strong, #MessagesNavModule > pane > header > strong, #ManageNavModule > pane > header > strong, #AdminNavModule > pane > header > strong, #InstallersNavModule > pane > header > strong, #SettingsNavModule > pane > header > strong {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:4em !important;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:transparent;
+    filter:var(--psg-filter-white-outline);
+    text-shadow:none;
+  }
+
+  #MessagesNavModule > pane > header > strong {
+    font-size-adjust:.2;
+  }
+
+  #SettingsNavModule > pane > header > strong {
+    font-size-adjust:.3;
+  }
+
+  pane > article > ul > li > a, pane > article > div.Shortcuts.RichText > b > a, pane > article > div.Shortcuts.RichText > p > a, pane > article > div.Shortcuts.RichText > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingSolid);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > ul > li > a:hover, pane > article > div.Shortcuts.RichText > b > a:hover, pane > article > div.Shortcuts.RichText > p > a:hover, pane > article > div.Shortcuts.RichText > a:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #PersonalNavModule > pane > article > div.StrangeBerryModal > statelabel {
+    display:none;
+  }
+
+  #PersonalNavModule > pane > article > div.StrangeBerryModal {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    position:relative;
+    border-bottom:1px solid var(--AngelicBlue);
+    overflow:hidden;
+  }
+
+  #PersonalNavModule > pane > article > ul, #PersonalNavModule > pane > article > div {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #PersonalNavModule > pane > article > ul::after, #PersonalNavModule > pane > article > div::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  #PersonalNavModule > pane > article > div.StrangeBerryModal > small {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingSolid);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > ul > li > a > span {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > ul > li > a > span:hover {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-outline-size,2px) 0 0 #ffe033,calc(-1*var(--psg-outline-size,2px)) 0 0 #ffe033,0 var(--psg-outline-size,2px) 0 #ffe033,0 calc(-1*var(--psg-outline-size,2px)) 0 #ffe033;
+  }
+
+  #PersonalNavModule > pane > article > div > a > strong {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingSolid);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #PersonalNavModule > pane > article > div > a > strong:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  pane > article > div > ul > li > a > span, pane > article > div > ul > li > a > strong {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > div > ul > li > a > span:hover, pane > article > div > ul > li > a > strong:hover {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #PersonalNavModule > pane > article > div.Shortcuts.RichText {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #StatsNavModule > pane > article > dl > dt {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:1;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #StatsNavModule > pane > article > dl > dd {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--PantySolid);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #StatsNavModule > pane > article > dl > dd.GreenColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size:2em !important;
+    background:var(--PantyNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--PantyNewSolidA);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > small > itemcount.GreenColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    background:var(--PantyNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--PantyNewSolidA);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > small > itemcount.RedColor {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    background:var(--DefaultRedColor);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > div > div > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingSolid);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > div > div > a:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > span {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > span > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingSolid);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > span > a:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > small > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--PantyGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--PantySolid);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > small > a:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > div > small > itemcount, #NotificationsNavModule > pane > article > ul > li > ul > li > time {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > time.LessThan4HoursOld {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultOrangeColor);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > ul > li > time.LessThan5minsOld {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultRedColor);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #NotificationsNavModule > pane > article > ul > li > div > div > statelabel {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--DefaultRedColor);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:currentColor;
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-outline-size,2px) 0 0 var(--PSGNewTitleShadow),calc(-1*var(--psg-outline-size,2px)) 0 0 var(--PSGNewTitleShadow),0 var(--psg-outline-size,2px) 0 var(--PSGNewTitleShadow),0 calc(-1*var(--psg-outline-size,2px)) 0 var(--PSGNewTitleShadow);
+  }
+
+  pane > article > div > ul > li > a > itemcount {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #SubmissionsNavModule > pane > article > div > strong {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #SubmissionsNavModule > pane > article > div > ul > li > a > span, #SubmissionsNavModule > pane > article > div > ul > li > a > strong {
+    font-size-adjust:.5 !important;
+  }
+
+  #RemindersNavModule > pane > article > div, #RemindersNavModule > pane > article > form > div > div > div > div.GreyColor, #RemindersNavModule > pane > article > form > div > label {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #MessagesNavModule .InboxItem {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #MessagesNavModule > pane > article > div > div > div.RichText {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #MessagesNavModule > pane > article > div > div > div.RichText > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #MessagesNavModule > pane > article > div > div > div.RichText > a:hover {
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #MessagesNavModule > pane > header {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    display:block;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #MessagesNavModule > pane > header > h2 > span {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.3;
+    background:var(--StockingTitleStripe) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > div > strong, pane > article > details > summary > div > span {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.5;
+    background:var(--StockingTitleStripe) !important;
+    -webkit-background-clip:text !important;
+    -webkit-text-fill-color:var(--StockingTitleStripe);
+    -webkit-text-stroke:0 !important;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > div > ul > li > a {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  pane > article > div > ul > li > a:hover {
+    --psg-outline-size:2px;
+    display:inline-block;
+    font-family:var(--psg-font-tango) !important;
+    font-size-adjust:.6;
+    -webkit-text-stroke:0 #000027;
+    background:var(--StockingNewGradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:var(--StockingNewSolidA);
+    text-shadow:var(--psg-stroke-yellow);
+  }
+
+  #AdminNavModule > pane > article > div > ul > li > a > span {
+    --psg-outline-size:0px;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #AdminNavModule > pane > article > div > ul > li > a, #AdminNavModule > pane > article > div > ul > li > a > span {
+    font-size-adjust:.4;
+  }
+
+  #SettingsNavModule > pane > article > div > ul > li > a > span {
+    --psg-outline-size:0px;
+    text-shadow:var(--psg-stroke-white);
+  }
+
+  #SettingsNavModule > pane > article > div > ul > li > a, #SettingsNavModule > pane > article > div > ul > li > a > span {
+    font-size-adjust:.4;
+  }
+
+  #StatsNavModule > pane > article > dl, #StatsNavModule > pane > article > ul, #NotificationsNavModule > pane > article > ul, #BuddiesNavModule > pane > article > div, #SubmissionsNavModule > pane > article > div, #RemindersNavModule > pane > article, #MedalsNavModule > pane > article > div, #MessagesNavModule > pane > article, #ManageNavModule > pane > article, #AdminNavModule > pane > article > div, #InstallersNavModule > pane > article, #SettingsNavModule > pane > article > div {
+    background-color:var(--AngelicWhiteT);
+    background-image:url(https://files.gamebanana.com/bitpit/backlace_top.png),url(https://files.gamebanana.com/bitpit/backlace_bottom_5cc60.png);
+    background-position:left top,right bottom;
+    background-repeat:no-repeat,no-repeat;
+    background-size:100% auto,100% auto;
+    margin:.5em 0 0 0;
+    padding:.5em 1em 1em 1em;
+    position:relative;
+    border-bottom:1px solid var(--ModuleBorderColor);
+    --module-radius:12px;
+    border-radius:var(--module-radius);
+    overflow:hidden;
+  }
+
+  #StatsNavModule > pane > article > dl::after, #StatsNavModule > pane > article > ul::after, #NotificationsNavModule > pane > article > ul::after, #BuddiesNavModule > pane > article > div::after, #SubmissionsNavModule > pane > article > div::after, #RemindersNavModule > pane > article::after, #MedalsNavModule > pane > article > div::after, #MessagesNavModule > pane > article::after, #ManageNavModule > pane > article::after, #AdminNavModule > pane > article > div > ul::after, #InstallersNavModule > pane > article::after, #SettingsNavModule > pane > article > div::after {
+    content:"";
+    position:absolute;
+    inset:0;
+    box-sizing:border-box;
+    border:3px solid var(--AngelicBlue);
+    border-radius:inherit;
+    pointer-events:none;
+  }
+
+  #SecondaryNav module pane {
+    background:none;
+    display:none;
+    position:absolute;
+  }
+
+  #PersonalNavModule > pane > article > div > ul > li > a > span, #PersonalNavModule > pane > article > div.Shortcuts.RichText {
+    color:white !important;
+  }
+
+  .Notification.Unseen {
+    background-color:rgba(0,0,0,.55)!important;
+    border-top-color:var(--NotificationUnseenDividerColor);
+  }
+
+  #PageBackground {
+    background-image:url(https://puu.sh/KaX1l/2d42f525cc.png)!important;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:.05;
+  }
+
+  .Record .PreviewImage {
+    aspect-ratio:16/9;
+    object-fit:cover;
+    object-position:top center;
+    background-color:#0d0d0d80;
+    width:100%;
+    max-height:22em;
+  }
+
+  img[src="https://images.gamebanana.com/static/img/defaults/avatar.gif"] {
+    content:url("https://files.gamebanana.com/bitpit/chuck_default.png");
+    max-width:50px !important;
+    max-height:50px !important;
+    width:auto;
+    height:auto;
+  }
+
+  :not(#ModsOnlineModule) > .Avatar, :not(#ModsOnlineModule) .Avatar, #tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a, #IdentityModule .Avatar {
+    position:relative;
+    display:inline-block;
+  }
+
+  :not(#ModsOnlineModule) > .Avatar img, :not(#ModsOnlineModule) .Avatar img, #tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a img, #IdentityModule .Avatar img {
+    width:100%;
+    height:100%;
+    display:block;
+  }
+
+  :not(#ModsOnlineModule) > .Avatar::after, :not(#ModsOnlineModule) .Avatar::after, #tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a::after {
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    background:url(https://shared.akamai.steamstatic.com/community_assets/images/items/1546790/558efce86af3043bda6ac5078e1801dc7b587de7.png) center/100% 100% no-repeat;
+    transform:translate(-50%,-50%) scale(1.16,1.14);
+  }
+
+  #IdentityModule .Avatar::after, #IdentityModule a::after, #IdentityModule [class*="Avatar"]::after {
+    content:none !important;
+    background:none !important;
+    box-shadow:none !important;
+    transform:none !important;
+  }
+
+  .Avatar::after, #IdentityModule .Avatar::after, :not(#ModsOnlineModule) > .Avatar::after, :not(#ModsOnlineModule) .Avatar::after, #tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a::after {
+    border:none !important;
+    outline:none !important;
+    box-shadow:none !important;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+    background-origin:border-box;
+    background-color:transparent !important;
+  }
+
+}
+
+#ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule > h2 {
+  background:var(--DefaultRedColor) !important;
+  -webkit-background-clip:text !important;
+  font-size-adjust:.6;
+  padding-right:0;
+}
+
+#ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule, #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule > div, #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule > div > h2, #ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule > h2 {
+  display:grid;
+  justify-items:center;
+  justify-content:center;
+  align-content:center;
+  align-items:center;
+  margin:0 !important;
+}
+
+#ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule > div > a {
+  font-size-adjust:1;
+  margin:0;
+}
+
+@media (max-width: 832px) {
+#ContentGrid > row > column.xs-12.sm-6.md-6.lg-4 > div.PageModule {
+    display:none;
+  }
+
+}

@@ -1,0 +1,1540 @@
+                 /********************************************************************/
+                 /**                     Black N' red �berstyle                    **/
+                 /********************************************************************/
+/*******************************************************************************************************/
+/**Design idea/icon sheet/image remake/adaptation to new layout: Thrashstalker (/members/1235118)     **/
+/**Past design fixes: Ring-A-Ding Rampage (/members/1244443)                                          **/
+/**Original images: Strelok (/members/597879)                                                         **/
+/*******************************************************************************************************/
+/**Date of creation: AUG 2013                                                                         **/
+/**Last modified: 22 DEC 2019                                                                         **/
+/*******************************************************************************************************/
+
+
+/**********/
+/** BASE **/
+/**********/
+
+#MainContent {
+    bottom: -13px;
+}
+
+.AdvancedElement_Switch.Inline ul li:first-of-type {
+    border-radius: 0px;
+}
+
+.AdvancedElement_Switch.Inline ul li {
+    border-radius: 0px;
+}
+
+.AdvancedElement_Switch.Inline ul li:last-of-type {
+    border-radius: 0px;
+}
+
+table {
+    border-spacing: 0em;
+}
+
+spriteIcon, .SpriteIcon {
+    background-image: url(https://files.gamebanana.com/bitpit/159091971751926428.png);
+    filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(5);
+}
+
+body .Medal_normal, body .Medal_rare, body .Medal_legendary {
+    background-image: url(https://files.gamebanana.com/bitpit/159091971751926428.png);
+    filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(5);
+}
+
+body .MiniMedal_normal, body .MiniMedal_rare, body .MiniMedal_legendary {
+    background-image: url(https://files.gamebanana.com/bitpit/159091971751926428.png);
+    filter: grayscale(1) sepia(1) hue-rotate(330deg) saturate(5);
+}
+
+
+@font-face
+{
+	font-family     : 'Steelfish';
+	font-variant    : bold;
+	src             : url('https://files.gamebanana.com/bitpit/steelfish_rg.ttf');
+}
+
+@font-face
+{
+	font-family     : 'Kairos';
+	font-variant    : bold;
+	src             : url('https://files.gamebanana.com/bitpit/kairossans.woff');
+}
+
+@font-face
+{
+	font-family     : 'Pacifico';
+	font-variant    : bold;
+	src             : url('https://files.gamebanana.com/bitpit/pacifico_2dc8b.ttf');
+}
+
+@font-face
+{
+	font-family     : 'Monsterrat';
+	font-variant    : 'Bold';
+	src             : url('https://files.gamebanana.com/bitpit/montserrat.ttf');
+}
+body
+{
+	background	: #000 url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg') fixed;
+        background-repeat: repeat;
+	color		: #ff0000;
+	font-family : 'Monsterrat';
+}
+
+#Wrapper
+{
+	background : rgba(0,0,0,.5);
+	box-shadow : 0 0 50px black;
+}
+
+#TitleBreadcrumb,
+.Avatar .OnlineIndicator
+{
+	display		: none;
+}
+
+#HeaderWrapper header > div #HomeLink,
+#PublicNavigator,
+#PageTitleWrapper,
+#DropdownMenuSubNavigator,
+.Modal .Contents,
+#HeaderWrapper header #SubmissionType,
+#FooterWrapper #FooterLinks,
+.Module > .Description,
+#PublicNavigator .NavigatorTabs
+{
+	background	: transparent;
+	border : 0;
+	box-shadow : none;
+}
+
+.Modal {
+    background: url(https://files.gamebanana.com/bitpit/bg_dark.png);
+}
+
+.BlueColor {
+    background: #000000c2;
+    border: 2px solid;
+}
+
+/***********************/
+/** HEADER AND FOOTER **/
+/***********************/
+
+#SubNavigator {
+    border-bottom-style: hidden;
+}
+
+#Breadcrumb {
+	    font-size: 0px;
+}		
+
+#GamesNavModule widget ul li img {
+    filter: grayscale(2);
+}
+
+#GamesNavModule pane article ul li img {
+    filter: grayscale(2);
+}
+
+#SideNav wrapper {
+    border-right: 2px solid;
+    position: unset;
+}
+
+#NavOptionsNavModule pane wrapper {
+    border: none;
+}
+
+#TopNav, #SideNav {
+    background: url(https://pluspng.com/img-png/carbon-fiber-png-carbon-fiber-vertical-png-1680.png);
+    border-bottom: 2px solid;
+}
+
+#TopNav module icon svg, #SideNav module icon svg {
+    filter: grayscale(2);
+}
+
+#TopNav module pane, #SideNav module pane {
+    display: none;
+    background: url(https://pluspng.com/img-png/carbon-fiber-png-carbon-fiber-vertical-png-1680.png);
+    position: absolute;
+}
+
+body[data-_sSideNavIconSize=Small] #SideNav wrapper icon svg {
+    filter: grayscale(2);
+}
+
+#TopNav module.Selected icon, #TopNav module.Selected widget, #SideNav module.Selected icon, #SideNav module.Selected widget {
+    background: url(https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6);
+}
+
+#PageFooter #ImportantLinks li a span {
+    text-transform: uppercase;
+}
+
+h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+.sf-menu, .sf-menu * {
+    text-transform: uppercase;
+}
+
+#TopNav module pane .Links li span, #SideNav module pane .Links li span {
+    text-transform: uppercase;
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li ul > li > a {
+
+    background: url('https://pluspng.com/img-png/carbon-fiber-png-carbon-fiber-vertical-png-1680.png');
+    padding: 0.50em 20px;
+    border-radius: 2px;
+
+}
+
+#PageFooter {
+
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+    border-top: 2px solid;
+
+}
+
+#SearchNavModule #SearchForm input[type="text"] {
+    border: 3px solid #ff8400;
+}
+
+#BananaNavModule widget a {
+    filter: hue-rotate(300deg) saturate(100%) contrast(100%);
+    position: relative;
+}
+
+#BananaNavModule widget a:hover {
+    filter: grayscale(5);
+}
+
+body[data-_sHeaderStyle="Floating"] #MainContentHeader.Fixed .Background + overlay, body[data-_sHeaderStyle="Floating"] #MainContentHeader.Fixed overlay {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+#SideNav wrapper module pane article {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+#BuddiesNavModule pane article .ChannelContents > .Messages {
+    background: transparent;
+}
+
+#BuddiesNavModule pane article .ChannelContents > .Messages > .Message .Wrapper .RichText {
+    border-radius: 0em;
+}
+
+#BuddiesNavModule pane article .ChannelContents > .Messages > .SelfMessage .Wrapper .RichText {
+    border-top-left-radius: 0em;
+    background: midnightblue;
+}
+
+#TopNav module pane header h4, #SideNav module pane header h4 {
+    font-family: 'Monsterrat';
+    text-transform: uppercase;
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg');
+    
+}
+
+#TopNav module pane header, #SideNav module pane header {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg');
+}
+
+#HeadlineWrapper overlay {
+    color: #ffba07;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px #ff0000;
+    font: 25px 'Monsterrat';
+        font-weight: normal;
+    text-align: center;
+}
+
+#FullscreenModuleWrapper module > h3, #ContentGrid module > h3 {
+    font: 25px 'Steelfish';
+    background: #000000 url('https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg');
+    border: 1px solid #fba500;
+    font: normal 25px 'Kairos';
+    text-align: center;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+#FullscreenModuleWrapper module > h3, #ContentGrid module > h3 {
+    font: 25px 'Kairos';
+}
+
+.IconSheet.BananaIcon {
+    background-image: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg);
+    background-position: initial;
+}
+
+#HeaderWrapper #MemberNavigatorPanes > li {
+     top : 1px !important; 
+     left : 0px !important;
+}
+
+#HeaderWrapper header > div #HomeLink {
+    font-size: 0;
+    padding: 10px;
+}
+
+#HeaderWrapper header > div #HomeLink, #HeaderWrapper header > div #PublicNavigator {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#Wrapper #MainContentHeader #PageTitleWrapper h1 {
+    font-size: 75px;
+}
+
+#HeaderWrapper header > div #PublicNavigatorTabs #SubmitTab a:hover {
+    color: #ff801a;
+}
+
+#HeaderWrapper aside #HeaderToggle {
+    background: url(http://files.gamebanana.com/bitpit/bg2_2.jpg);
+}
+
+#HeaderWrapper aside {
+    position: fixed;
+    top: 0;
+    margin-left: -56px;
+    text-align: right;
+}
+
+#Wrapper #HeaderWrapper aside #MemberNavigatorTabs > ul > li {
+    display: inline-block;
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg);
+}
+
+
+#HeaderWrapper header > div #PublicNavigatorTabs > ul > li:hover, #HeaderWrapper header > div #PublicNavigatorTabs > ul > li.ActiveTab {
+    background: rgba(101, 156, 625, 0.05);
+}
+
+#Wrapper #HeaderWrapper aside #MemberNavigatorTabs > ul {
+    background: transparent;
+    margin: 6px;
+    margin-left: 42px;
+}
+
+.NavigatorPanes > li > div {
+    padding: 15px 10px 10px 10px;
+    background: url(hhttps://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg);
+}
+
+.NavigatorPanes > li h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 10px 0 10px;
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Free-Seamless-Carbon-Fiber-Texture.jpg');
+}
+
+#HeaderWrapper header > div
+{
+        background    : transparent;
+}
+
+header
+{
+	background	: linear-gradient(black, rgba(0,0,0,.5));
+	box-shadow	: 0 0 30px black;
+	border-bottom : 2px solid;
+}
+
+#FooterWrapper
+{
+	margin-top : 10px;
+	background	: rgba(0,0,0,.5);
+	box-shadow	: 0 0 30px black;
+	padding		: 10px;
+	border-top : 2px solid;
+}
+
+#HeaderWrapper header > div #PublicNavigatorTabs #SearchTab input {
+    border-radius: 0px;
+}
+
+#HeaderWrapper header > div #PublicNavigatorTabs #SearchTab button {
+    border-radius: 0px;
+    padding: 6px;
+}
+
+#PageFooter #ImportantLinks li a {
+    background-color: #000000;
+    border-color: #ff0000;
+    border-radius: 2px;
+}
+
+}
+
+/********************/
+/** NAVIGATOR TABS **/
+/********************/
+
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    border-bottom-width: 0px;
+	text-align: center;
+}
+
+#PcSpecsModule dd img {
+    filter: grayscale(2);
+}
+
+.PageModule > h3:after {
+    width: auto;
+}
+
+#FullscreenModuleWrapper module > h3, #ContentGrid module > h3 {
+    padding: 0px;
+}
+
+.PageModule > .ModuleTools {
+    position: absolute;
+}
+
+.MainForm .InputsWrapper fieldset > legend .Title {
+    text-transform: uppercase;
+}
+
+:root {
+     --ModuleTitleUnderlineColor: #ffc100;
+     NavPaneBackgroundColor: transparent;
+}
+
+h3 {
+    padding: 0 0 0.25em 2;
+}
+
+.PostsListModule div.Content ul.Posts > li .PostHeader .PostLabels .StateLabel.IsSubmitter {
+    border: 1px solid;
+    border-radius: 0 0 0px 0;
+    text-transform: uppercase;
+ 
+}
+
+.MainForm .InputsWrapper > fieldset > legend .StateLabel.RequiredInput {
+    color: #ff7c00;
+    border: 1px solid;
+    border-radius: 0 0 0px 0;
+    text-transform: uppercase;
+}
+
+.MainForm .InputsWrapper > fieldset > legend .StateLabel.OptionalInput {
+    border: 1px solid;
+    border-radius: 0 0 0px 0;
+    text-transform: uppercase;
+}
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModeSwitchers .Wysiwyg {
+
+    color: #ff0000;
+    text-transform: uppercase;
+
+}
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModeSwitchers .Source {
+
+    color: #8a8a8a;
+    text-transform: uppercase;
+
+}
+
+#FullscreenModuleWrapper module.Maximized, #ContentGrid module.Maximized {
+    background: url('https://files.gamebanana.com/bitpit/bg_black.jpg');
+}
+
+
+#FullscreenModuleWrapper module.Maximized, #ContentGrid module.Maximized:hover {
+    background: url('https://files.gamebanana.com/bitpit/bg_light.jpg');
+}
+
+
+#FullscreenModuleWrapper module > .Content, #ContentGrid module > .Content {
+    background: url('https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6');
+    border-radius: 0 0 20px 0;
+    border-color: #ff0000;
+    box-shadow: 8px 8px 10px #080808;
+
+}
+
+#FullscreenModuleWrapper module > .Content, #ContentGrid module > .Content:hover {
+    background: url(https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6);
+}
+
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Wysiwyg .RichText:hover {
+    background: url('http://files.gamebanana.com/bitpit/bg_light.jpg');
+}
+
+.NavigatorTabs li
+{
+	text-transform : uppercase;
+}
+
+#PublicNavigator .NavigatorTabs > ul > li:hover,
+#PublicNavigator .NavigatorTabs > ul > li.ActiveTab
+{
+	background : transparent;
+	box-shadow : none;
+	color : red;
+}
+
+#MemberNavigator .NavigatorTabs > ul > li,
+#MemberNavigator .NavigatorTabs > ul > li:last-child
+{
+       background  : url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+       border      : 1px solid #333;
+       margin-right: 5px;
+}
+
+#MemberNavigator .NavigatorTabs > ul > li.TabHasUpdates
+{
+	background	: #ff8b01;
+	animation   : none;
+}
+
+#MemberNavigator .NavigatorTabs > ul > li:hover,
+#MemberNavigator .NavigatorTabs > ul > li.ActiveTab
+{
+	border-color	: #ff7800;
+}
+
+#MemberNavigator .NavigatorPanes > li,
+#PublicNavigator .NavigatorPanes > li
+{
+	background	: #0D0C0B url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+        border-top      : 2px solid #ff0000;
+}
+
+.ContentColumn > .Module .ModuleToolsWrapper:hover, #FullscreenModuleWrapper > .Module .ModuleToolsWrapper:hover {
+    background: #141414;
+}
+
+#PublicNavigator .NavigatorTabs #SearchTab button {
+    border-radius: 0;
+    padding: 3px;
+}
+
+#PublicNavigator .NavigatorTabs #SearchTab input {
+    border-radius: 0;
+}
+
+#FooterWrapper {
+    border: transparent;
+}
+
+/****************/
+/** PAGE TITLE **/
+/****************/
+
+#TopNav, #SideNav {
+background: url('https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6');
+}
+
+#TopNav module pane article, #SideNav module pane article {
+
+    padding: 0.75em;
+    background: url('https://files.gamebanana.com/bitpit/bg2_2.jpg');
+
+}
+
+#PageTitleWrapper h1
+{
+	font		: 75px 'Monsterrat';
+	color		: #ff7238;
+	text-shadow	: 0 0 10px #8c0000, 0 0 10px red;
+	text-transform	: uppercase;
+}
+
+
+/*******************/
+/** DROPDOWN MENU **/
+/*******************/
+
+#PageTitleWrapper,
+#DropdownMenuSubNavigator
+{
+	text-align	: center;
+}
+
+#DropdownMenuSubNavigator
+{
+	border		: 0;
+}
+
+#DropdownMenuSubNavigator div
+{
+	display : inline-block;
+	vertical-align : middle;
+	margin-left : 2px;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li
+{
+	box-shadow : none;
+}
+
+#DropdownMenuSubNavigator li.TitleOnly,
+#DropdownMenuSubNavigator li a,
+#DropdownMenuSubNavigator .sf-menu > li.TitleOnly:hover,
+#DropdownMenuSubNavigator li a:hover
+{
+	background	: #171717;
+        background-image: url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+	border		: 1px solid #262321;
+	color		: #ff8622;
+	text-align	: initial;
+	box-shadow  : none;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li ul > li > a:hover,
+#DropdownMenuSubNavigator .sf-menu > li > a:hover,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a:hover
+{
+	background	: #171717;
+	color		: #e76a31;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li > a {
+    color: #e7d631;
+}
+
+#DropdownMenuSubNavigator .sf-menu > li ul > li > a {
+    color: #e7ac31;
+}
+
+#PageFooter #ImportantLinks li a:hover span {
+    color: white !important;
+}
+
+/************/
+/** AVATAR **/
+/************/
+
+.Avatar.IsRipeSupporter {
+    border-radius: 0em;
+}
+
+.AvatarTooltip .Column .NameAndStatus .StateLabel.Online {
+    color: #ff0000;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .NameAndStatus .StateLabel.Offline {
+    color: #043333;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .Clearance .StateLabel.Member {
+    color: #e83131;
+    border: 1px solid;
+}
+.AvatarTooltip .Column .Clearance .StateLabel {
+    color: gray;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Online {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase; 
+	  }
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Offline {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase; 
+	  }
+
+.AvatarTooltip .Column .StatusLevels stateLabel:not(.IsRipeSupporter) {
+    border: 3px solid;
+    border-radius: 0px;
+    text-transform: uppercase; 
+	}
+
+.AvatarTooltip .Column .StatusLevels stateLabel:not(.IsRipeSupporter).HasClearanceLevel {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase;
+      color: #ff5000;	  
+	  }
+
+ stateLabel.IsRipeRelated, stateLabel.GameKeyGrade_premium, stateLabel.IsRipeSupporter {
+    border: 2px solid;
+    border-radius: 0px;
+    text-transform: uppercase;
+	text-shadow: 1px 0px 0em black;
+    background: linear-gradient(45deg, #ff0000, #ff8e02, #f9c405, #eee, #0e131700);
+      }
+
+.Avatar.IsRipeSupporter {
+    background: linear-gradient(to bottom, #ff1904, #bd1107, #000000, #7b0202, #ff0202);
+    padding: 0.25em;
+    border-radius: 0.125em;
+}	
+
+/*************/
+/** BUTTONS **/
+/*************/
+
+button,
+.ButtonLike,
+#ActivityPane #ActivityCalendar button
+{
+	font            : 10px 'Monsterrat';
+	text-transform	: uppercase;
+	color		: #f77f08;
+	border		: 1px solid;
+	background	: #171717;
+        background-image: url('hhttps://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6');
+	outline		: 0;
+        border-radius   : 0 0 0px 0;
+}
+
+button[disabled]:hover, 
+button[disabled].Selected, 
+button[disabled].Expanded, 
+.ButtonLike[disabled]:hover, 
+.ButtonLike[disabled].Selected, 
+.ButtonLike[disabled].Expanded, 
+.LargeButton[disabled]:hover, 
+.LargeButton[disabled].Selected, 
+.LargeButton[disabled].Expanded 
+{
+    background: #000000c7;
+    color: #e7bd31;
+}
+
+button:hover,
+.ButtonLike:hover
+{
+	color		: #ff0b0b;
+	border-color	: #672c01;
+	background	: black;
+}
+
+#ImportantLinks li #OpenChatButton
+{
+	border-color	: #ff0000;
+	background : rgba(0, 0, 0, 0.65);
+	text-transform : none;
+	width : 100%;
+	text-align : left;
+	padding : 5px;
+}
+
+#ResponsibilitiesModule li {
+    background-image: url('https://pixelbell.com/wp-content/uploads/2014/01/6.free-carbon-fiber-textures.jpg');
+}
+
+.Modal .CloseModal {
+    border-radius: 0px;
+}
+
+.Paginator .Controls :last-child {
+    border-radius: 0px;
+}
+
+#HeaderWrapper header > div #PublicNavigatorTabs #SearchTab form input[type="text"] {
+    border-radius: 0px;
+    width: 150px;
+    padding: 4px;
+    font-size: 13px;
+    margin: 0;
+}
+
+#PublicNavigatorTabs #SearchTab form button {
+    border-radius: 0px;
+    padding: 6px;
+}
+
+#HeaderWrapper header > div #PublicNavigatorTabs #SearchTab form button {
+    border-radius: 0px;
+    padding: 6px;
+}
+
+button:hover, button.Selected, button.Expanded, .ButtonLike:hover, .ButtonLike.Selected, .ButtonLike.Expanded {
+    color: #fff97f;
+}
+
+/**********************/
+/** LINKS AND COLORS **/
+/**********************/
+
+.Avatar.HasClearanceLevel 
+{
+    box-shadow: 0 0 0 0.125em #ffa500, 0 0 0.75em #ff0000;
+}
+
+.AvatarTooltip .Column .OnlineStatus .StateLabel.Online 
+{
+      color: ##6CB1E1; }
+
+#Loader.Complete num {
+    color: #ffac00;
+}
+
+#Loader.Complete span {
+    border-color: #ff5305;
+}
+
+#Loader num {
+    color: red;
+}
+
+#Loader span {
+    display: block;
+    border: var(--LoaderBorderWidth) solid gray;
+    border-left-color: lightgray;
+}
+
+
+#BananaNavModule widget svg {
+    filter: hue-rotate(150deg) saturate(100%) contrast(100%);
+}
+
+#BananaNavModule widget:hover svg {
+    filter: hue-rotate(150deg);
+}
+
+.PostsListModule div.Content ul.Posts > li.IsSubmitter {
+    background: linear-gradient(to bottom, rgba(108, 177, 225, 0.1), transparent);
+}
+
+#NavOptionsNavModule pane #NavOptionsUiThemeList {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+:root {
+    --DefaultRedDarkColor: #e74c31;
+    --DefaultRedColor: lightgray;
+    --DefaultGreenColor: #e1976c;
+    --LinkHoverColor: #e7a831;
+    --LinkColor: #ffffff;
+    --NavUpdatesIndicatorColor: #e3e731;
+    --BodyBackground: transparent;
+}
+
+.PostsListModule div.Content ul.Posts > li .PostHeader .PostLabels .StateLabel.IsModerator {
+    color: gray;
+    border: 1px solid;
+}
+
+.PostsListModule div.Content ul.Posts > li .PostHeader .PostLabels .StateLabel.IsSubmitter {
+    border: 1px solid;
+}
+
+#PointsModule span.DroppedRank {
+    display: block;
+    color: gray;
+}
+
+.PostsListModule div.Content ul.Posts > li .TogglePostRepliesButton {
+    padding: 3px 15px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px none;
+    border-radius: 0 0 0px 0;
+}
+
+a
+{
+	color		: #ffc600;
+        text-shadow     : none;
+}
+
+a:hover
+{
+	color		: #ffffff;
+	text-shadow	: 0 0 10px;
+}
+
+a img:hover,
+.Module h3 > img:hover
+{
+	box-shadow	: 0 0 0 1px #e86b31;
+}
+
+#HeadlineWrapper overlay nav + h1:before {
+    color               : #e75731;
+    text-shadow         : none;
+	display             : none;
+}
+
+a img:hover, .Module h3 > img:hover {
+    box-shadow          : 0 0 0 1px #317CE8;
+}
+
+a.Name
+{
+	font		: 14px Monsterrat !important;
+}
+
+#FooterWrapper a,
+#FooterWrapper .RedColor,
+#PostsListModule footer,
+.OlderThan1Day,
+.InputHelp,
+#ActivityPane #ActivityCalendar ul .ActivityDay.SelectedDay,
+#DropdownMenuSubNavigator .sf-menu .ActiveEntry a
+{
+	color		: #868686;
+}
+
+a#AddIdeaLink,
+a#AddBugLink,
+.LessThan5minsOld,
+.LessThan30minsOld,
+.GreenColor,
+.OrangeColor,
+.PurpleColor,
+.Modal .CloseModal
+{
+	color		: #e1ac6c;
+}
+
+.RedColor {
+    color: gray;
+}
+
+ul#ImportantLinks a
+{
+	border-color	: #fb1a1a;
+	background : rgba(0,0,0,.65);
+}
+
+ul#ImportantLinks a:hover
+{
+	color		: #3a1206 !important;
+	border-color	: #ff9b00 !important;
+}
+
+#ImportantLinks li #AddIdeaLink {
+    color: #562702;
+}
+
+#ImportantLinks li #AddBugLink {
+    color: lightgray;
+}
+
+.LessThan1HourOld,
+.LessThan4HoursOld,
+strong.RedColor,
+#FooterWrapper a:hover,
+#FooterWrapper .RedColor:hover
+{
+	color		: #f99606;
+}
+
+#FooterWrapper #FooterLinks #ApiLinks .Json {
+    color: #ffba07;
+}
+
+.MainForm .InputsWrapper .InputHasError .InputError {
+    color: gray;
+}
+
+.MainForm .InputsWrapper .InputHasError .InputHelp, .MainForm .InputsWrapper .InputHasError .InputError, .MainForm .InputsWrapper .InputHasError .InputWrapper {
+    border-left: 5px solid gray;
+}
+
+.MainForm .InputsWrapper > fieldset > legend .StateLabel.RequiredInput {
+    color: #ff6500;
+}
+
+dt {    
+    color: #e83131;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#PointsModule span.ClimbedRank {
+    display: block;
+    color: #eac10c;
+}
+
+.PostsListModule div.Content ul.Posts > li .PostHeader .PostTools > button:first-of-type {
+    border-radius: 0px 0 0 0px;
+}
+
+.PostsListModule div.Content ul.Posts > li .PostHeader .PostTools > button:last-of-type {
+    border-radius: 0 0px 0px 0;
+}
+
+#SearchPredictions li a {
+    padding: 2.5px 5px;
+    display: block;
+    background: url('http://files.gamebanana.com/bitpit/bg_black.jpg');
+}
+
+#BuddiesListModule .Status .StateLabel.Online {
+    color: #ff0000;
+    border: 1px solid;
+}
+
+#BuddiesListModule .Status .StateLabel.Offline {
+    border: 1px solid;
+}
+
+#StampsLogListModule td.Post ul.StampsAdded {
+    color: #f50c0c;
+}
+
+#LatestProfileVisitorsModule .AvatarWrapper.Online {
+    border-left: 3px solid #e1786c;
+}
+
+#ActivityPane #PersonalActivityFeedModule .Content .Controls .PrevPage {
+    border-radius: 0px;
+}
+
+#ActivityPane #PersonalActivityFeedModule .Content .Controls .NextPage {
+    border-radius: 0px;
+}
+
+#MedalProgressModule .Content ul li .CompletedBar {
+    background: #e85831;
+}
+
+#MedalProgressModule .Content ul li .ErrorBar {
+    background: lightgray;
+}
+
+#NetworkBar ul li a:hover {
+    
+    color: gray;
+
+}
+
+50% {
+    background-color: red;
+}
+
+/*************/
+/** MODULES **/
+/*************/
+
+textarea {
+    border-color: transparent;
+    border-image: (url)http://files.gamebanana.com/bitpit/bg_light.jpg;
+}
+
+div.Module
+{
+	background	: #141414;
+	border-radius	: 0 0 20px 0;
+	margin-top : 15px;
+}
+
+.ContentColumn:not(:last-child) .Module
+{
+	margin-right : 15px;
+}
+
+.ContentColumn > .ThirdPartModule
+{
+	margin : 0;
+}
+
+.Module > h3
+{
+	background	: #141414 url('http://files.gamebanana.com/bitpit/binding_dark.png');
+	border		: 1px solid #262321;
+	font    	: normal 25px 'Steelfish';
+	text-align	: center;
+	margin-bottom	: 5px;
+	text-transform : uppercase;
+}
+
+.Module .Content,
+.Module > .LogMessages
+{
+	background      : #0D0C0B url('http://files.gamebanana.com/bitpit/bg_black.jpg');
+	border-radius	: 0 0 20px 0;
+	box-shadow	: 8px 8px 10px black;
+	margin-left	: 0;
+}
+
+.Module .Content:hover
+{
+	background	: rgba(0, 0, 0, 0.25);
+        background-image: url(http://files.gamebanana.com/bitpit/bg_light.jpg);
+}
+
+.Modal .Module .Content
+{
+	border-radius : 0;
+	box-shadow : none;
+}
+
+.Modal .Module .Content:hover
+{
+	background      : rgba(0, 0, 0, 0.25);
+        background-image: url(http://files.gamebanana.com/bitpit/bg_light.jpg);
+}
+
+#PostsListModule .LabelState.IsModerator
+{
+	color		: #f702a2;
+}
+
+.PostsListModule div.Content ul.Posts > li .LabelStat.Date
+{
+	border		: 1px solid;
+	padding		: 2px;
+	margin-top	: 5px;
+	margin-left	: 5px;
+}
+
+.PostsListModule .PostsListModule {
+        background-image: url('http://files.gamebanana.com/bitpit/bg_black.jpg');
+}
+
+.tooltipster-content
+{
+	background	: #141414 url('http://files.gamebanana.com/bitpit/binding_dark.png');
+	padding		: 5px;
+	box-shadow	: 0 0 10px black, 0 0 10px black;
+	border		: 1px solid black;
+}
+
+.Modal .Contents > .Module > .Content, .Modal .Contents > .Module > .Description, .Modal .Contents > .Module > .LogMessages {
+    background-image: url('http://files.gamebanana.com/bitpit/bg_black.jpg');
+
+}
+
+.PostsListModule div.Content ul.Posts > li,
+.Points,
+input[type="text"],
+textarea,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Wysiwyg .RichText,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Backup .RichText,
+#IdentityModule > .Content,
+.Module > .LogMessages
+{
+	background	: #0D0C0B url('https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6');
+	border: #ff0000;
+	border-radius: 2px;   
+}
+
+.PostHeader,
+.PageNavigation,
+div.GenericPreviewListModule li:nth-child(even)
+{
+	background	: #141414 url('http://files.gamebanana.com/bitpit/binding_dark.png');
+}
+
+.PostHeader,
+div.GenericPreviewListModule li:not(:last-child)
+{
+	border-bottom	: #ff9e07bd;
+}
+
+.PostsListModule div.Content ul.Posts > li
+{
+	border		: 2px solid black !important;
+	margin		: 10px;
+}
+
+.PostsListModule div.Content ul.Posts > li article,
+.PostsListModule div.Content ul.Posts > li .PostHeader
+{
+	padding : 10px;
+}
+
+.MainForm .InputsWrapper fieldset > legend span {
+
+    text-transform: uppercase;
+}
+
+.MainForm .InputsWrapper > fieldset > legend .StateLabel.RequiredInput 
+{
+
+    color: #e78a31;
+    border: 1px solid;
+}
+
+.MainForm .InputsWrapper > fieldset > legend .StateLabel.OptionalInput {
+    border: 1px solid;
+}
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModeSwitchers .Wysiwyg 
+{
+    color: #ff4026;
+}
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModeSwitchers .Source 
+{
+    color: lightgray;
+}
+
+#FooterWrapper #FooterLinks #CorporateLinks a:hover 
+{
+    color: #ffffff;
+}
+
+.PostsListModule div.Content ul.Posts > li article .PostStamps:hover 
+{
+    cursor: help;
+    color: #ffc300;
+}
+
+
+.PageNavigation
+{
+	border		: 2px solid black;
+}
+
+fieldset:not(.Submit)
+{
+	box-shadow : 0 0 0 2px black;
+	margin-bottom : 10px;
+	background	: #0D0C0B url('http://files.gamebanana.com/bitpit/binding_dark.png');
+}
+
+fieldset legend
+{
+	text-indent : 5px;
+	display : inline;
+}
+
+#AddFormModuleRequesterModule .Content .AreaPanes .AreaPane .Sections li.Selected {
+    color: #e77931;
+}
+
+#AddFormModuleRequesterModule .Content .AreaTabs .Selected, #AddFormModuleRequesterModule .Content .AreaTabs li:hover {
+    color: #090808;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.BlueBorder:hover, .RedBorder:hover, .GreenBorder:hover, .OrangeBorder:hover, .GreyBorder:hover {
+    border-color: #e7a531 !important;
+}
+
+.RedBorder {
+    border-color: gray !important;
+}
+
+.RedColor {
+    color: gray;
+}
+
+.GreenBorder {
+    border-color: #e83131 !important;
+}
+
+#ActivityPane #PersonalActivityFeedModule .Content .Broadcasts .Unseen {
+    color: #6d6d6d;
+}
+
+#ActivityPane #PersonalActivityFeedModule .Content .Broadcasts li {
+    color: #d0d0d0;
+}
+
+#BuddyRemoverModule .Description {
+    background-image: url('https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6');
+}
+
+#UnsubscribeFromMeModule .Description {
+    background-image: url('https://us.123rf.com/450wm/pratchaya9/pratchaya91806/pratchaya9180600029/110598980-carbon-fiber-background-black-texture.jpg?ver=6');
+}
+
+.Module.Maximized > .Content {
+    background-image: url('http://files.gamebanana.com/bitpit/bg_black.jpg');
+}
+
+#OverviewModule .Content .StatBlock dl dt.Type_table {
+    background: url(http://files.gamebanana.com/bitpit/bg2_2.jpg);
+    margin: 5px 0 0 0;
+    padding: 2.5px 5px;
+    font-size: 10px;
+    display: inline-block;
+}
+
+
+/*****************/
+/** INPUT BOXES **/
+/*****************/
+
+input[type="text"],
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Wysiwyg .RichText,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Source textarea,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Backup .RichText
+{
+	font     	: 14px 'Monsterrat';
+	color		: #ff5000;
+	border		: 1px solid;
+	outline		: 0;
+}
+
+input[type="text"]:hover,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Wysiwyg .RichText:hover,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Source textarea:hover,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Backup .RichText:hover,
+input[type="text"]:focus,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Wysiwyg .RichText:focus,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Source textarea:focus,
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Backup .RichText:focus
+{
+	border		: 1px solid #e79431;
+}
+
+.MarkdownEditor .Editor .BackupView .BackupContents
+{
+	color		: #ffb921;
+}
+
+p.NoRecordsFound {
+    text-align: center;
+    color: gray;
+    padding: 5px;
+}
+
+/************/
+/** STAMPS **/
+/************/
+
+.PostsListModule div.Content ul.Posts > li article .PostStamps li,
+div.StampsForm label,
+.PostsListModule div.Content ul.Posts > li .FullStampsDisplay article .Stamps .Stamp div
+{
+	background	: #0D0C0B;
+	border: red;
+        border-radius   : 1px;
+}
+
+.PostsListModule div.Content ul.Posts > li article .PostStamps li:hover,
+div.StampsForm label:hover,
+.PostsListModule div.Content ul.Posts > li .FullStampsDisplay article .Stamps .Stamp div:hover
+{
+	border-color	: #da0505;
+}
+
+div.StampsForm label.Unlocked.Checked
+{
+	background	: #0D0C0B url('http://files.gamebanana.com/bitpit/bg2_2.jpg');
+	border-color	: #ff0e00;
+}
+
+/************/
+/** TABLES **/
+/************/
+
+table thead th,
+tr:nth-child(odd)
+{
+	background	: #181818;
+        background-image: url('http://files.gamebanana.com/bitpit/binding_dark.png');
+	border		: 1px solid #000;
+}
+
+.MultipleRowListModule > div.Content td,
+tr
+{
+	border		: 1px solid #000;
+}
+
+/**********/
+/** MISC **/
+/**********/
+
+::-webkit-scrollbar-corner {
+    background: #e7a331bd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f90000bd;
+}
+
+.MainForm .InputsWrapper fieldset > legend stateLabel.RequiredInput {
+    color: #e1ab6c;
+    color: var(--DefaultBlueColor);
+    border-radius: 0px;
+    border: 2px solid;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=num]:focus, input[type=tel]:focus, select:focus, .SelectLike:focus, option:focus, .OptionLike:focus, optgroup:focus, textarea:focus, .TextareaLike:focus {
+    background: url(http://files.gamebanana.com/bitpit/bg_black.jpg);
+
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover, input[type=num]:hover, input[type=tel]:hover, select:hover, .SelectLike:hover, option:hover, .OptionLike:hover, optgroup:hover, textarea:hover, .TextareaLike:hover {
+    background: url(http://files.gamebanana.com/bitpit/bg_light.jpg);
+}
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModes .Wysiwyg .RichText:focus {
+    background: url(https://files.gamebanana.com/bitpit/bg_light.jpg);
+}
+
+.ContentEditableEditor .InputWrapper .Editor .ViewModeSwitchers span {
+    border-radius: 0px;
+}
+
+.MainForm .InputsWrapper fieldset > legend:after {
+    background: #e77931;
+}
+
+.PostsListModule .Posts > li .PostHeader .PostLabels stateLabel.IsSubmitter {
+    border: 2px solid;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+.PostsListModule .Posts > li .PostHeader .PostLabels stateLabel {
+    border: 2px solid;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+#PcSpecsModule dd img {
+    width: 35px;
+}
+
+#PointsModule .PointsCount {
+    margin-bottom: 0em;
+    font-family: inherit;
+}
+
+itemCount {
+    font-family: inherit;
+}
+
+/*****************/
+/**SOME NEW SHIT**/
+/*****************/
+
+.Editor .WysiwygPalettes .ElementConfig.Active {
+    background: url(http://files.gamebanana.com/bitpit/bg2_2.jpg);
+}
+
+.Editor .WysiwygPalettes .BitpitFileInserter ul {
+    background: url(http://files.gamebanana.com/bitpit/bg2_2.jpg);
+}
+
+.Editor .WysiwygPalettes .BitpitFileInserter ul li {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.Editor .WysiwygPalettes > palette {
+    background: url(http://files.gamebanana.com/bitpit/bg2_2.jpg);
+}
+
+.Editor .WysiwygPalettes > h4 {
+    border-radius: 0em;
+}
+
+#BuddiesNavModule pane article .ChannelContents > .Messages > .Message .RichText {
+    border-radius: 0em;
+}
+
+#BuddiesNavModule pane article .ChannelContents > .Messages > .SelfMessage .RichText {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0em;
+    background: #0000005e;
+}
+
+.Editor .ViewModeSwitchers span.Wysiwyg {
+    color: #e88231;
+}
+
+.Editor .ViewModeSwitchers span {
+    border-radius: 0em;
+}
+
+#PrimaryNav {
+    background: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX4256868.jpg');
+    border-bottom: 2px solid;
+}
+
+
+#SecondaryNav>wrapper {
+    background: #000000;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+
+#PrimaryNav h4, #SecondaryNav h4 {
+    font-family: 'Monsterrat';
+}
+
+
+#SecondaryNav>wrapper module pane header, #SecondaryNav>wrapper module pane footer {
+    background: #000000;
+}
+
+
+#SecondaryNav>wrapper module pane article {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+
+:root {
+    --BodyWrapperBackground: transparent;
+}
+
+
+#PrimaryNav #SectionsNavModule pane {
+    width: 800px;
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+
+#PrimaryNav header, #SecondaryNav header {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+
+#PrimaryNav module.Selected pane, #SecondaryNav module.Selected pane {
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg');
+}
+
+
+#SecondaryNav>wrapper module.Selected icon {
+    background: url(https://images.freecreatives.com/wp-content/uploads/2016/02/High-Res-Dark-Carbon-Fiber-Texture1.jpg);
+}
+:root
+{
+  --StateLabelBackground : transparent;
+  --SubNavigatorActiveTabBorderColor : var(--DefaultOrangeColor);
+  --SubNavigatorTabHoverBorderColor : var(--DefaultOrangeColor);
+}
+
+.PostsListModule .Posts > li .PostHeader .PostLabels stateLabel.IsSubmitter,
+.MainForm .InputsWrapper fieldset > legend stateLabel.RequiredInput
+{
+    color: var(--DefaultOrangeColor);
+}
+
+#NavOptionsNavModule pane #NavOptionsUiThemeList li
+{
+  background : transparent;
+}
+
+#PrimaryNav .BlueColor,
+#SecondaryNav .BlueColor
+{
+    color: var(--DefaultOrangeColor);
+}
+
+#SubNavigator .ActiveEntry,
+#SubNavigator .ActiveEntry:hover
+{
+    border-width: 2px;
+}

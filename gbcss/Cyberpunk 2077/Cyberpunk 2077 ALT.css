@@ -1,0 +1,463 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
+
+@font-face {
+        font-family:cyberpunk;
+        src:url("https://files.gamebanana.com/bitpit/cyberpunk.otf");
+}
+
+@font-face {
+        font-family:goodtimes;
+        src:url("https://files.gamebanana.com/bitpit/good_times_rg.ttf");
+}
+
+#MainContentHeader
+{
+  --HeadlineWrapperHeight: -400px !important;
+}
+
+:root {
+        --ModuleTitleFontFamily:cyberpunk;
+        --ModuleTitleFontSize:24px;
+        --NavPaneBackgroundColor:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);
+        --PrimaryNavBackgroundColor:#d54197;
+        --SecondaryNavBackgroundColor:#d54197;
+        --SubNavigatorBorderColor:#0089ff/*#ffff00*/;
+        --BodyWrapperBackground:linear-gradient(0deg, rgba(73,22,25,0.9) 0%, rgba(85,26,29,0.9) 37%, rgba(129,39,45,0.9) 74%, rgba(168,50,58,0.9) 100%) no-repeat fixed center;
+        --InputBackgroundColor:rgba(41, 196, 196, 0.8);
+        --InputTextColor:#121a1f;
+        --InputHoverBackgroundColor:rgb(103 255 178 / 80%)/*rgb(216 219 46 / 80%)*/;
+        --InputFocusBackgroundColor:rgb(103 255 178 / 80%)/*rgb(216 219 46 / 80%)*/;
+        --InputPlaceholderColor:#121a1f;
+       
+        --DefaultTextColor:white;
+       
+        --DefaultRedColor:#ffff00;
+        --DefaultGreenColor:#da419c;
+       
+        --DefaultBlueColor: #0dff49;
+        --DefaultRedDarkColor: #bab630;
+        --DefaultGreenDarkColor: #038a94;
+        --DefaultPurpleColor: #bb69ff;
+        --DefaultGreyColor: #999999;
+        --DefaultOrangeColor: #03fc20;
+        --DefaultYellowColor: #fca103;
+		
+		--BodyBackground: var(--NavPaneBackgroundColor);
+		--StampBackgroundColor:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);
+		
+		--TabBackground: #9b3037 !important;
+		--TabBorder: #d64b4b !important;
+}
+
+#tpm__sBmSteamAccountDetails {
+    border-radius: 0px 0px 0px 0px;
+    border: 0px solid #d64b4b !important;
+    background-position: center center;
+    background-size: 100% 230px;
+}
+
+#tpm__sBmSteamAccountDetails > module > {
+	background-color: rgba(168, 50, 58, 0.8);
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #d64b4b !important;
+    background-position: center center;
+    background-size: 100% 230px;
+}
+
+#tpm__sBmSteamAccountDetails > module > div {
+	background-color: rgba(168, 50, 58, 0.8) !important;
+	background-blend-mode: overlay;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p {
+font-size: 20px !important;	
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamLevel {
+font-size: 10px !important;	
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName {	
+}
+
+.SteamAvatar > img {
+    border: 2px solid var(--DefaultGreenColor) !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus {
+    color: var(--DefaultGreenColor) !important;
+    font-size: 16px !important;
+    transform: translate(0px, -12px);
+}
+}
+
+#IdentityModule > div > a.MemberLink {
+	content: url(https://files.gamebanana.com/bitpit/allenart04a_shadow.png);
+	max-width: 213px
+}
+
+#tpm__sBmAudio > module > div > div > audio {
+    max-width: 255px !important;
+}
+
+img#GbLogo {
+        background:url("https://files.gamebanana.com/bitpit/download.webp")!important;
+        background-size:200px 50px;
+       
+        width: 200px;
+        height: 50px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 200px;
+}
+
+
+
+nav#SecondaryNav wrapper module pane{
+       
+}
+
+module div.Content{
+        background-color:rgba(168, 50, 58, 0.8);
+        border-radius: 0px 0px 0px 0px; /*tl, tr, br, bl*/
+        /*was going to use this to simulate the angled corners of Cyberpunk's ingame UI, but that would require some complex techniques I'm not ready to try yet.*/
+        border:1px solid #d64b4b;
+}
+
+h3, h4, h5, h6 {
+        font-family:goodtimes;
+        text-shadow:2px 2px 0px #000000;
+}h4, h5, h6{text-shadow:1px 1px 0px #000000;}
+
+h1, h2 {
+        font-family:cyberpunk;
+        color:#eaff00;
+        text-shadow:2px 2px 4px #000000;
+}
+
+.PageModule>h2 {
+    font-size: 23px;
+    font-family: var(--ModuleTitleFontFamily);
+    margin: 0 0 0.5em 0;
+    padding: 0 1em 0 0;
+}
+
+/*p, div, span*/ .PageModule .Content, .PageModule .Content div,.PageModule .Content span,.PageModule .Content p{
+        color:white;
+        text-shadow:1px 1px 0px #000000;
+}
+
+a {
+        color:#ff7996/*#ff335f*/;
+        text-shadow:1px 1px 0px #000000;
+}
+
+.PageModule h3 a {
+        color:#ff335f;
+}
+
+.AvatarTooltip a {
+    color: var(--LinkColor);
+    text-shadow: none;
+}statelabel.IsRipeRelated a{color: var(--LinkColor);text-shadow: 0 0 0.125em black;}
+statelabel.IsRipeRelated a:hover{color: var(--LinkHoverColor);text-shadow: 0 0 0.125em black;}
+
+a:hover {
+        color:#f598ac;
+        text-shadow:3px 3px 0px #ba1c3e;
+}
+
+.PageModule h3 a:hover {
+        color:#f598ac;
+}
+
+.AvatarTooltip a:hover {
+    color: var(--LinkHoverColor);
+    text-shadow: none;
+}
+
+button, li.ButtonLike   {
+        background:#ff335f;
+        color:white;
+        text-shadow:1px 1px 0px #ba1c3e
+}
+
+button:hover, li.ButtonLike:hover, li.ButtonLike.Selected, select option:hover  {
+        background:#df132f;
+        color:white;
+        text-shadow:1px 1px 0px #ba1c3e
+}
+
+@media (min-width: 648px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/Kqabd/c19842c324.png);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top -105px right 0px;
+}
+
+#HeadlineWrapper overlay h1 {
+    content: url(https://files.gamebanana.com/bitpit/allenart04a_shadow.png);
+    max-width: 600px;
+}
+
+
+#IdentityModule .Avatar {
+	content: url(https://files.gamebanana.com/bitpit/allenscott_avatar01a.gif);
+    margin-bottom: 0.5em;
+	max-width: 213px;
+}
+
+.Avatar img {
+    width: 100%;
+    height: 100%;
+	/*
+	border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png);
+	*/
+	border-style: solid;
+	border-width: inherit;
+	border-image-repeat: stretch !important;
+	-moz-border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 repeat;
+	-webkit-border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 repeat;
+	-o-border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 repeat;
+	border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 fill repeat;
+}
+
+.Avatar img::after {
+    width: 100%;
+    height: 100%;
+	/*
+	border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png);
+	*/
+	border-style: solid;
+	border-width: inherit;
+	border-image-repeat: stretch !important;
+	-moz-border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 repeat;
+	-webkit-border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 repeat;
+	-o-border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 repeat;
+	border-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png) 26 26 27 27 fill repeat;
+}
+
+/*
+
+.Avatar::before {
+	content: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png);
+	position: absolute;
+	align-content: start;
+}
+
+
+.Avatar.HasClearanceLevel {
+	content: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png);
+}
+*/
+}
+
+@media (max-width: 649px) {
+wrapper#HeadlineWrapper {
+    background: url(https://files.gamebanana.com/bitpit/rebecca_er_header.png);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top;
+}
+
+#HeadlineWrapper overlay h1 {
+    content: url(https://files.gamebanana.com/bitpit/allenart04a_shadow.png);
+    max-width: 300px;
+}
+
+#IdentityModule .Avatar {
+	content: url(https://puu.sh/JmMDi/788b289891.gif);
+    margin-bottom: 0.5em;
+	max-height: 150px;
+}
+
+}
+
+
+
+/*
+wrapper#HeadlineWrapper{
+        background:url("https://files.gamebanana.com/bitpit/1096896.jpg");
+}
+*/
+
+body {
+    background: rgb(73,22,25);
+    background: url(https://files.gamebanana.com/bitpit/rebecca_er_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* 
+body {
+        background: rgb(73,22,25);
+        background: url("https://files.gamebanana.com/bitpit/d7p_yldx4aavjwo.jpg_large");
+        background-size: cover; 
+        background-attachment:fixed;
+}
+
+*/
+
+#PrimaryNav {
+    background: url(https://files.gamebanana.com/bitpit/rebecca_er_bg.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#SecondaryNav {
+    background: url(https://files.gamebanana.com/bitpit/rebecca_er_bg.jpg);
+    background-size: unset;
+    background-position: unset;
+}
+
+#SubNavigator {
+    background: var(--NavPaneBackgroundColor);
+    display: block;
+    font-size: var(--SubNavigatorFontSize);
+    border-bottom-width: 0.125em;
+    border-bottom-style: solid;
+    border-bottom-color: #dd43a3;
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    margin-right: 50px;
+}
+
+#SubNavigator .ActiveEntry {
+    border-bottom-color: #dd43a3;
+}
+
+.PostsListModule .Posts>li article .PostStamps li {
+    border-left: 1em solid transparent;
+    background: #0000004f;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.25em 0.5em;
+    border-radius: 0.125em;
+}
+
+.Tab {
+    background: var(--TabBackground);
+    border: 1pxsolidvar(--TabBorder);
+    border-bottom: 0;
+    border-radius: 0.25em 0.25em 0 0;
+    cursor: pointer;
+    opacity: .5;
+    padding: 0.75em 1em;
+    transition: opacity .2s ease-in-out;
+}
+
+.ExtendedContentButton {
+    background: #ff335f;
+}
+
+::selection{background: yellow;color:black;}::-moz-selection{background: yellow;color:black;}
+::-webkit-scrollbar {
+  border-radius: 0px !important;
+}
+::-webkit-scrollbar-track {
+  background: #27b3b3 !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #d54197 !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dddd00 !important;
+}
+
+/*Cursors*/
+:root{
+    --defaultCursor:        url("https://files.gamebanana.com/bitpit/aero_arrow_yellow_cyan.cur"),default !important;
+    --grabCursor:   url("https://files.gamebanana.com/bitpit/aero_move_yellow_cyan.cur"),grab !important;
+    --grabbingCursor:       url("https://files.gamebanana.com/bitpit/aero_move_yellow_cyan.cur"),grabbing !important;
+    --helpCursor:   url("https://files.gamebanana.com/bitpit/aero_link_yellow_cyan.cur"),help !important;
+    --pointerCursor:        url("https://files.gamebanana.com/bitpit/aero_link_yellow_cyan.cur"),pointer !important;
+    --moveCursor:   url('https://files.gamebanana.com/bitpit/aero_move_yellow_cyan.cur') 12 12, move !important;
+}
+body,.lg-outer #lg-dropdown-overlay
+{
+        cursor : var(--defaultCursor);
+}
+
+.RichText .Spoiler,#MedalsModule li,.PostsListModule .Posts>li article .PostStamps:hover
+{
+        cursor : var(--helpCursor);
+}
+
+a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,select,.SelectLike,.BeaconParent .Beacon,.ExpandableToggle,.PageModule>.RelatedLinksButton,.MainForm .InputsWrapper .OptionalInput>legend,fieldset#Userid .AdvancedElement_InputSuggestionsList li,.AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend,.AdvancedElement_FloatingButtonTabs li,.AdvancedElement_InputSuggestionsList li,.AdvancedElement_Tabs li,.AdvancedElement_GraphicalSelect .OptionsWrapper .Options li,.AdvancedElement_Switch.List ul li,#MasterLog log .CloseButton,.Modal .CloseModal,.Editor .ViewModeSwitchers span,.Editor .WysiwygPalettes>h4,#PrimaryNav controls,#SecondaryNav controls,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover,#HiddenColumnToggleButton,#AlertsNavModule pane .Controls .MarkAllAsSeen,#ActivityNavModule pane .Controls .MarkAllAsSeen,#AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,#ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,#GamesNavModule widget ul li,#BuddiesNavModule pane #BuddyChatInitiators li,.RichText .TableOfContents ul li,#FeaturesSliderModule .Slides .Slide,#FeaturesSliderModule .Slides .ExpandedSlide,#FeaturesSliderModule .Slides .Slide .Info .Name,#FeaturesSliderModule .Slides .ExpandedSlide .Info .Name,#SubmissionsListAdvancedListSettingsModule .RecentGames li,#SubmissionsListAdvancedListSettingsModule .SelectedGames li,#ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher,#UpdatesModule .ToggleContentButton,.lg-actions .lg-next,.lg-actions .lg-prev,.lg-toolbar .lg-icon,.lg-outer .lg-thumb-item,.lg-outer .lg-toogle-thumb,.lg-outer .lg-video .lg-video-play,.lg-outer .lg-pager-cont
+{
+        cursor : var(--pointerCursor);
+}
+
+#ResponsibilitiesModule > div > dl > dd > ul > li{
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        border:none;
+}
+
+select option:hover {background:#d54197;color:black;}
+
+.GreenColor {
+        color:#00ffff !important;
+}
+
+.RedColor {
+        color:#ffff00 !important;
+}
+
+/*.TableOfContents ul li span.HeadingText*/
+/*.TableOfContents span.HeadingText*/
+.TableOfContents li.HeadingH1 span.HeadingText, .TableOfContents li.HeadingH2 span.HeadingText, .TableOfContents li.HeadingH3 span.HeadingText {
+        color:#ffffff;
+        text-shadow:1px 1px 0px black;
+}
+/*.TableOfContents span.HeadingText:hover*/
+.TableOfContents li.HeadingH1:hover span.HeadingText, .TableOfContents li.HeadingH2:hover span.HeadingText, .TableOfContents li.HeadingH3:hover span.HeadingText {
+        color:#ffff00;
+        text-shadow:0px 0px 5px #00ffff, 0px 0px 2px #00ffff,
+        0px 0px 0px #00ffff;
+}
+
+.Spoiler {filter:blur(4px);transition-duration:0.08s;}
+.Spoiler:hover {filter:blur(0px);}
+
+
+
+.Content .RichText h1, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:goodtimes;margin-bottom:8px;margin-top:8px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h2, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:goodtimes;margin-bottom:5px;margin-top:5px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h3, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:goodtimes;text-shadow:2px 2px 0px black !important;}
+
+.Content .RichText h1 .HeadingText, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:cyberpunk;}
+.Content .RichText h2 .HeadingText, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:cyberpunk;}
+.Content .RichText h3 .HeadingText, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:cyberpunk;}
+
+.IndexNumber {color:#c1c1c1 !important;}
+
+#HiddenColumnToggleButton maticon {background:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);}
+
+#ImportantLinks li a {filter:grayscale(100%);}
+
+spriteIcon, .SpriteIcon { /*set background-image to custom spritesheet*/ }

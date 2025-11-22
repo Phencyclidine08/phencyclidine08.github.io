@@ -1,0 +1,133 @@
+@font-face{
+    font-family: bunboi;
+    src: url(https://files.gamebanana.com/bitpit/lazer84_45721.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+body{
+    background: url(https://i.imgur.com/FB7x9QS.jpg) fixed center 50% no-repeat;
+    background-size: 100%;
+    font-family: "Open sans";
+}
+
+wrapper#MainContentWrapper {
+    background: #120f25cf;
+}
+
+section#MainContent {
+    background: url(https://i.imgur.com/FB7x9QS.jpg) fixed center 50% no-repeat;
+    background-size: 100%;
+}
+
+h1#PageTitle {
+    font-family: bunboi;
+    text-align: center;
+    background: linear-gradient(to right, rgba(246,0,64,1) 0%, rgba(246,0,64,1) 45%, rgba(172,0,130,1) 58%, rgba(172,0,130,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(3.5px 3.5px 0px #4100ff);
+}
+
+nav#Breadcrumb {
+    text-align: center;
+    font-family: bunboi;
+}
+
+footer#PageFooter{
+    display: none;
+}
+button, .ButtonLike {
+    background: #872d92;
+}
+
+.ExtendedContentButton {
+    background: #872d92;
+    color: #bbb;
+}
+
+spriteIcon.MiscIcon.ShowContentIcon, .SpriteIcon.MiscIcon.ShowContentIcon {
+    width: 16px;
+    height: 16px;
+    content: url(https://i.imgur.com/yGJ8cPT.png);
+    background-position: 916px 0px;
+}
+
+spriteIcon.MiscIcon.HideContentIcon, .SpriteIcon.MiscIcon.HideContentIcon {
+    width: 16px;
+    height: 16px;
+    content: url(https://i.imgur.com/QnaW58P.png);
+    background-position: 916px 0px;
+}
+
+img#GbLogo {
+    content: url(https://i.imgur.com/Fc1Ldeq.png);
+}
+
+.TitleOnly>div {
+    font-family: bunboi;
+    filter: drop-shadow(1px 1px 0px #4100ff);
+    color: #00fff3;
+    cursor: pointer;
+}
+
+.TitleOnly>div:hover {
+    color: #ffffff;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li {
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a {
+    color: #00fff3;
+    font-family: bunboi;
+    filter: drop-shadow(1px 1px 0px #4100ff);
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a:hover {
+    color: #ffffff;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li:hover {
+    border-bottom-width: 0;
+}
+
+#HeadlineWrapper {
+    background: rgba(0, 0, 0, 0);
+}
+
+#ContentGrid>row>column:not(:first-child) {
+    background: rgba(255, 255, 255, 0);
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    background: transparent;
+    background: transparent;
+}
+
+#SubNavigator li spriteIcon {
+    filter: grayscale(1);
+    display: none;
+}
+
+#SubNavigator{
+    border-bottom-width: 0;
+    text-align: center;
+}
+
+#SubNavigator .ActiveEntry {
+    border-bottom-width: 0;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+    background: #000000ad;
+}
+
+#PrimaryNav, #SecondaryNav {
+    background: #120f25;
+}

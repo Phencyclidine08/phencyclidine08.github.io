@@ -1,0 +1,19 @@
+:root {
+--defaultCursor: url("https://files.gamebanana.com/bitpit/allen_cursor.png"), default !important;
+--helpCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_help.png"), help !important;
+--pointerCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_pointer.png"), pointer !important;
+--DefaultTextColor: #e85298;
+--DefaultYellowColor: #a8cb05;
+--LinkColor: #f3075b;
+--LinkHoverColor: #a8cb05; 
+--BodyBackground: #371323 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+--NavBackgroundColor: #371323;
+--NavPaneBackgroundColor: #371323;
+--NotificationUnseenBG : #371323 !important;
+--NotificationUnseenDividerColor: e85298 !important;
+}
+
+/*header*/
+#MainContentHeader {
+    background: url(https://files.gamebanana.com/bitpit/2020_header_studio.png) -0px -271px;
+}

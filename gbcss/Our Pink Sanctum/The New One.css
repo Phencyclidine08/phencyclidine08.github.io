@@ -1,0 +1,912 @@
+/*Orignally Created by wohSiesta (2019.01)*/
+/*Reverse Engineered by Allen Scott (2019.15)*/
+/*Cursor Bits by Ring-a-Ding Rampage originally pulled from YellowJello's css file (2020.08) */
+/*Further Edited by Allen Scott. Basically nothing left from the original 2019 copy (2021.04)*/
+
+:root {
+--defaultCursor: url("https://files.gamebanana.com/bitpit/allen_cursor.png"), default !important;
+--helpCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_help.png"), help !important;
+--pointerCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_pointer.png"), pointer !important;
+--DefaultTextColor: #e85298;
+--DefaultYellowColor: #a8cb05;
+--LinkColor: #f3075b;
+--LinkHoverColor: #a8cb05; 
+--NavBackgroundColor: #371323;
+--NavPaneBackgroundColor: #371323;
+--ButtonHoverBackgroundColor: #5d213d;
+--ButtonHoverFontColor: #fa0460;
+--ModuleHeaderBackground: #5d213d; 
+--NotificationUnseenBG : var(--NavPaneBangroundColor) !important;
+--NotificationUnseenDividerColor: var(--LinkColor) !important;
+--FixedMainContentHeaderBackground: #371323;
+--SteamOffline:#043333 !important;
+--SteamOnline:#fef7f2 !important;
+--SteamIngame:#a3cf06 !important;
+--InputBackgroundColor: #5f213d !important;
+--InputFocusBackgroundColor: #6a2544 !important;
+--InputHoverBackgroundColor: #6a2544 !important;
+--NotificationSeenDividerColor: #27292b;
+--NotificationMessageDividerColor: #383838;
+--TodoDividerColor: #e85298;
+--InputPlaceholderColor: #ffffff8c;
+--TabBackground: #371323;
+--TabBorder: #e85298;
+--DefaultCodeColor: #6ee16c;
+--BodyBackground: #0000ff00 !important;
+--BodyWrapperBackground: #0000ff00 !important;
+}
+
+/* This provides the Lobster font */
+
+#HeadlineBackground {
+	display: none
+}
+
+@font-face {
+    font-family:Lobster;
+    src:url(https://files.gamebanana.com/bitpit/lobster-regular.ttf);
+}
+
+@font-face {
+    font-family:Dosis;
+    src:url(https://files.gamebanana.com/bitpit/dosis-regular.ttf);
+}
+
+nav > wrapper > module > pane > header > strong {
+        font-size: 30px;
+        margin-left: 5px;
+		font-style: normal;
+		text-transform: none ;
+		letter-spacing: 1px ;
+		font-weight: normal ;
+		font-family:Lobster !important;
+}
+
+/* This modifies the header text for modules. */
+
+.PageModule >h1 {
+    font-family:Lobster !important;
+	font-size: 1.8em ;
+	font-style: normal;
+	text-transform: none ;
+	letter-spacing: 1px ;
+	font-weight: normal ;
+	padding-top: 5px ;
+	padding-bottom: 5px ;
+	padding-left: 0.5em ;
+}
+
+.PageModule >h2 {
+    font-family:Lobster !important;
+	font-size: 1.8em ;
+	font-style: normal;
+	text-transform: none ;
+	letter-spacing: 1px ;
+	font-weight: normal ;
+	padding-top: 5px ;
+	padding-bottom: 5px ;
+	padding-left: 0.5em ;
+}
+
+.PageModule >h3 {
+    font-family:Lobster !important;
+	font-size: 1.8em ;
+	font-style: normal;
+	text-transform: none ;
+	letter-spacing: 1px ;
+	font-weight: normal ;
+	padding-top: 5px ;
+	padding-bottom: 5px ;
+	padding-left: 0.5em ;
+}
+
+#ContentRatingsModule > p.Description { 
+	display: none; 
+}
+
+#TipsModule { 
+	display: none; 
+}
+
+/* This all modifies the rich text. */
+
+h1, h2, h3 {
+	font-family:Lobster !important;
+    font-weight: bold;
+	font-style: normal;
+	text-transform: none ;
+	letter-spacing: 1px ;
+	font-weight: normal ;
+}
+
+h1 {
+	font-size: 1.5em ;
+    margin: 0 0 0.75em;
+    padding: 0 0 0.25em 0;
+}
+
+h2 {
+	font-size: 1.3em ;
+    margin: 0 0 0.5em;
+    padding: 0 0 0.25em 0;
+}
+
+h3 {
+	font-size: 1.1em ;
+    margin: 0 0 0.25em;
+    padding: 0 0 0.25em 0;
+}
+
+.RichText .Spoiler {
+	color: var(--DefaultTextColor) !important;
+	filter: blur(5px) !important;
+	transition-property: -webkit-filter !important;
+	transition-duration: .4s !important;
+	background: transparent !important;
+}
+
+.RichText .Spoiler:hover, .RichText .Spoiler:focus {
+	filter: blur(0px) !important;
+	color: var(--DefaultTextColor) !important;
+	background: transparent !important;
+}
+
+.GreenColor {
+    color: var(--DefaultGreenColor);
+}
+.RedColor {
+    color: var(--DefaultRedColor);
+}
+.RainbowColor-Scroll {
+  animation: RainbowRotate 6s linear 0s infinite;
+}
+
+@keyframes RainbowRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+
+del {
+    text-decoration: line-through;
+	text-decoration-color: var(--LinkColor);
+	text-decoration-thickness: 3px;
+}
+
+pre {
+    color: var(--DefaultCodeColor) !important;
+    background: var(--EmbeddedWindowBackgroundColor);
+    border: 2px solid rgba(255,255,255,.05);
+    border-radius: 0.125em;
+    margin: 0.5em;
+    padding: 0.5em;
+    overflow-x: auto;
+    width: auto;
+}
+
+code {
+    font-family: var(--DefaultTechnicalFontFamily);
+    color: var(--DefaultCodeColor) !important;
+}
+
+body {
+    font-size: var(--DefaultMediumFontSize);
+    font-family:Dosis !important;
+	font-size: 19px !important;
+    word-wrap: break-word;
+    background: var(--BodyBackground);
+    color: var(--DefaultTextColor);
+}
+
+.PageModule>.Description {
+    padding: 0 0 0.5em 0;
+    color: #e85298;
+    font-size: 0.8em;
+    text-shadow: 0px 2px 2px black;
+}
+
+#AuthorsAndRolesModule .Content dd.Author {
+    margin: 0 0 1em 0;
+    font-size: 0.7em;
+    color: #e85298;
+    text-shadow: 0px 2px 4px black;
+}
+
+/*header*/
+#MainContentHeader {
+    background: url(https://files.gamebanana.com/bitpit/2020_header_studio.png) -0px -235px;
+}
+
+body {background: url(https://files.gamebanana.com/bitpit/background_2019.png) !important;}
+#BodyWrapper {background: none !important;}
+
+input[type=text], input[type=password], input[type=password], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.125em;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--DefaultTechnicalFontFamily);
+    padding: 0.75em;
+    color: var(--InputTextColor);
+    border: 0;
+    background: var(--InputBackgroundColor);
+}
+
+
+#Member_Submissions_Flag #SubmissionsListModule .Preview p, #FlagsModule .Preview p {
+    max-width: 300px;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+/*This affects the Overview, apps, network, etc (SubNavigator)*/
+
+#SignupNoAdsPromo {
+    text-align: center;
+}
+
+#SubNavigator {
+    display: block;
+    font-size: var(--SubNavigatorFontSize);
+    border-bottom-width: .125em;
+    border-bottom-style: solid;
+    border-bottom-color: #371323;
+}
+
+#SubNavigator .ActiveEntry {
+    font-weight: bold;
+    margin-bottom: -0.125em;
+    border-bottom-width: .125em;
+    border-bottom-style: solid;
+    border-bottom-color: #e85298;
+    background: var(--SubNavigatorActiveTabBackgroundColor);
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li {
+    font-size: 12px;
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    /0/background: #000000ad;
+    margin-right: 50px;
+}
+	
+@import url('https://files.gamebanana.com/bitpit/lobster-regular.ttf');
+	
+#SubNavigator .DropdownMenuSubNavigator>li {
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size: 16px;
+	letter-spacing: 2px;
+    font-family: Arial Black;
+    text-shadow: rgb(0 0 0) 0px 0px 5px;
+}
+
+.TitleOnly>div {
+    color: #e85298;
+    cursor: pointer;
+}
+
+.TitleOnly>div:hover {
+    color: #e85298;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a {
+    color: #e85298;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a:hover {
+    color: #e85298;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li:hover {
+    border-bottom-width: 0;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+    background: #000000ad;
+}
+
+body[data-_sHeaderStyle=Floating] #MainContentHeader.Fixed #SubNavigator {
+    font-size: var(--SubNavigatorFixedFontSize);
+	background: #371323;
+
+}
+
+/*
+
+spriteIcon, .SpriteIcon {
+  image-rendering: pixelated;
+  background-image: url(http://www.mediafire.com/convkey/430b/6ifirr184wh3g73zg.jpg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle; } 
+  
+  */
+
+Signature.Allen.Title, .Signature.Allen.Title {
+	max-width: 100%;
+    content: url(https://files.gamebanana.com/bitpit/allenart03a_f0ef1.png);
+}
+
+img#SiteLogo {
+    content: url(https://files.gamebanana.com/bitpit/gamebananaimg_angel.png);
+}
+
+#SiteLogo {
+    filter: grayscale(.25);
+	content: url(https://files.gamebanana.com/bitpit/gamebananaimg_angel.png);
+    transition: all .2s ease-in-out;
+}
+
+button, .ButtonLike {
+    background: #e85298;
+	color:#371323;
+	font-weight: bold;
+	margin: 4px;
+}
+
+.ExtendedContentButton {
+    background: #e85298;
+	color:#371323;
+	font-weight: bold;
+}
+
+/* Responsibilities Modgroups*/
+
+#ResponsibilitiesModule ul.Modgroups li {
+    border-width: .125em;
+    border-style: solid;
+    border-color: var(--DefaultDarkerRegion1Color);
+}
+
+#ResponsibilitiesModule li {
+    -moz-box-shadow: .125em .125em .125em #000;
+    -webkit-box-shadow: 0.125em 0.125em 0.125em #000;
+    box-shadow: 0.125em 0.125em 0.125em #000;
+    display: inline-block;
+    margin: .125em;
+    white-space: nowrap;
+    padding: .25em;
+	background: #3d2126;
+	color: #e85298;
+}
+
+/* State Labels, Such as Honorary or Modgroups*/
+
+stateLabel.IsHonorary {
+    background: #ffede8;
+	color: #e85298;
+	font-weight: bold;
+}
+
+stateLabel {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: .25em .5em;
+    margin: .125em;
+    border-radius: .25em;
+    background: #6a2544;
+	color: #e85298;
+}
+
+/*Top and Side Nav*/
+
+#PrimaryNav, #SecondaryNav {
+    background: #371323;
+}
+
+/*Avatartooltip*/
+
+.AvatarTooltip .Column .NameAndStatus .StateLabel.Online {
+    color: #e85298;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .NameAndStatus .StateLabel.Offline {
+    color: #043333;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .Clearance .StateLabel.Member {
+    color: #cb6f9a;
+    border: 1px solid;
+}
+.AvatarTooltip .Column .Clearance {
+    color: gray;
+    border: 1px solid;
+}
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Online {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase; 
+	  }
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Offline {
+      border: 2px solid;
+      border-radius: 0px;
+      text-transform: uppercase; 
+	  }
+
+/*Ripe Border
+	  
+.Avatar.IsRipeSupporter {
+    border-radius: 0em;
+}
+
+.Avatar.IsRipeSupporter {
+    background: linear-gradient(to bottom, #f3074a, #fa487a, #fc7ea2, #fa487a, #f3074a);
+    padding: 0.25em;
+    border-radius: 0.125em;
+}
+*/
+
+/*Staff Member Glows*/
+
+.Avatar.HasClearanceLevel 
+{
+    box-shadow: 0 0 0 0.125em #fef7f2, 0 0 0.75em #ffede8;
+}
+
+.Avatar.HasModClearanceLevel 
+{
+    box-shadow: 0 0 0 0.125em #f5a6b1, 0 0 0.75em #5d213d;
+}
+
+/*Hover Column Assets*/
+
+.AvatarTooltip .Column .StatusLevels .HasClearanceLevel {
+    color: #e85298;
+}
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Online {
+	background: #5d213d; 
+    color: #e85298;
+	font-weight: bold;
+}
+
+.AvatarTooltip .Column .OnlineStatus stateLabel.Offline {
+    background: #e85298;
+	color:#371323;
+	font-weight: bold;
+}
+
+
+/*Online Corner Indicator*/
+
+.Avatar.Online:after, .MemberLink.Online:after
+{
+	background: #fef7f2;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #f9a8b3;
+}
+
+/*Sprite Replacements*/ 
+
+/*stamps*/
+.PostsListModule .Posts > li article .PostStamps li {
+    border-left: .25em solid transparent;
+	border-right: .25em solid transparent;
+    background: #5d213d;
+    font-size: 12px;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=positive] {
+    color: #ffede8;
+    border-color: #ffede8;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=negative] {
+    color: #e85298;
+    border-color: #e85298;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=neutral] {
+    color: #823d4e;
+    border-color: #823d4e;
+}
+
+
+/*More Custom Cursor Dependants*/
+
+body, .lg-outer #lg-dropdown-overlay
+{
+	cursor: var(--defaultCursor);
+}
+
+.RichText .Spoiler, #MedalsModule li, .PostsListModule .Posts>li article .PostStamps:hover
+{
+	cursor: var(--helpCursor);
+}
+
+a, .Linklike, button, .ButtonLike, input[type=range]::-webkit-slider-runnable-track, select, .SelectLike, .BeaconParent .Beacon, .ExpandableToggle, .PageModule>.RelatedLinksButton, .MainForm .InputsWrapper .OptionalInput>legend, fieldset#Userid .AdvancedElement_InputSuggestionsList li, .AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend, .AdvancedElement_FloatingButtonTabs li, .AdvancedElement_InputSuggestionsList li, .AdvancedElement_Tabs li, .AdvancedElement_GraphicalSelect .OptionsWrapper .Options li, .AdvancedElement_Switch.List ul li, #MasterLog log .CloseButton, .Modal .CloseModal, .Editor .ViewModeSwitchers span, .Editor .WysiwygPalettes>h4, #PrimaryNav controls, #SecondaryNav controls, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover, #HiddenColumnToggleButton, #AlertsNavModule pane .Controls .MarkAllAsSeen, #ActivityNavModule pane .Controls .MarkAllAsSeen, #AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper, #ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper, #GamesNavModule widget ul li, #BuddiesNavModule pane #BuddyChatInitiators li, .RichText .TableOfContents ul li, #FeaturesSliderModule .Slides .Slide, #FeaturesSliderModule .Slides .ExpandedSlide, #FeaturesSliderModule .Slides .Slide .Info .Name, #FeaturesSliderModule .Slides .ExpandedSlide .Info .Name, #SubmissionsListAdvancedListSettingsModule .RecentGames li, #SubmissionsListAdvancedListSettingsModule .SelectedGames li, #ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher, #UpdatesModule .ToggleContentButton, .lg-actions .lg-next, .lg-actions .lg-prev, .lg-toolbar .lg-icon, .lg-outer .lg-thumb-item, .lg-outer .lg-toogle-thumb, .lg-outer .lg-video .lg-video-play, .lg-outer .lg-pager-cont
+{
+        cursor: var(--pointerCursor);
+}
+
+
+#HeadlineWrapper {
+    height: 145px;
+}
+
+#HeadlineWrapper overlay {
+    color: var(--PageTitleColor);
+    padding: 1em;
+    width: 0%;
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+a, .Linklike {
+  cursor: pointer;
+  text-decoration: none;
+  color: #a8cb05;
+  color: var(--LinkColor); }
+
+a:hover, .Linklike:hover {
+  color: #fb0d01;
+  color: var(--LinkHoverColor); }
+  
+
+/*studio Identity*/
+	
+/*Submission Thumbnails*/
+
+	records.Grid recordCell.Preview .Preview {	
+    max-height: 9em;
+}
+	
+	recordCell.Preview img {
+	max-width: 100%;
+	border: 0px solid #be4279;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+	
+	img.PreviewImage {
+    box-shadow: 0 0.125em 0.125em rgb(0 0 0 / 25%);
+}
+
+#PortfolioModule recordCell.Preview bgImg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    transition: all .25s ease-in-out;
+	border: 0px solid #be4279;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#PortfolioModule recordCell.Identifiers a {
+    font-size: var(--DefaultXLargeFontSize);
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+    line-height: 1em;
+}
+
+#PortfolioModule recordCell.Identifiers small {
+    font-size: var(--DefaultMiniFontSize);
+    color: var(--DefaultGreyColor);
+	text-shadow: 0 0 5px #000;
+    display: block;
+}
+	
+	.IdeaPreview gauge indicator.Positivity {
+    background: #fef7f2;
+}
+	
+/* Stats Module Overflow Fix */	
+	
+	#CoreStatsModule ul {
+    margin-right: 0.5em;
+	margin-left:  0.5em;
+    white-space: nowrap;
+    overflow-x: scroll;
+	overflow-y: clip;
+    padding-bottom: .75em;
+}
+
+/* Replacement for "column module" */
+
+.PageModule > .Content, .PageModule > .LogMessages {
+    background: #371323;
+    border: 4px solid #e85298;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.PageModule > h2 {
+    border: 0px solid #be4279;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+    background: var(--ModuleHeaderBackground);
+    margin-bottom: 0;
+	text-align: center;
+}
+
+#PostAddFormRequesterModule:before {
+    display: none;
+    content: none;
+    text-align: center;
+}
+
+.PageModule>h2:after {
+    height: .1em;
+    margin: .25em 0 0 0;
+    display: none;
+    content: none;
+    width: 2em;
+    background: var(--ModuleTitleUnderlineColor);
+}
+
+/*
+column module {
+    background-color: #371323;
+    /-/outline: 1px solid #e85298;
+	border: 4px solid #be4279;
+	        border-bottom-right-radius: 20px;
+			border-bottom-left-radius: 20px;
+}
+*/
+
+controls.ModuleTools {display: none !important;}
+
+
+
+#FullscreenModuleWrapper module > h3, #ContentGrid module > h3, {
+    background: #5d213d;
+    display: block !important;
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 0;
+    color:#fef7f2;
+    font-size: 17px;
+    font-weight:unset;
+}
+#FullscreenModuleWrapper module > h3:after, #ContentGrid module > h3:after {display:none}
+
+#StrangeBerryApp > div.OverlayWrapper > div {
+    width: 80%;
+    max-height: 90vh;
+    background: #371323;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-radius: 0.25em;
+    border: 1px solid #e85298;
+    box-shadow: 0 0 15px #00000038;
+}
+
+/*Submission preview image*/
+.Content ul li a img.PreviewImage {height: 100%; width: 100%; object-fit: cover;}
+module.GenericPreviewListModule .Content ul li .Preview {height: 130px; width: 210px; display: inline-block; margin: 0;}
+
+module.GenericPreviewListModule .Content ul li {margin: 0px 8px 16px; padding: 0; vertical-align: top; display: inline-block; font-size: 0; background: #0006; outline: 1px solid #0c0c0c; position: relative;}
+spriteicon.MiscIcon.QuickDlIcon.tooltipstered {position: absolute; left: 0; top: 0;visibility: hidden; margin: 5px;}
+module.GenericPreviewListModule .Content ul li:hover spriteicon.MiscIcon.QuickDlIcon.tooltipstered {visibility: visible;}
+
+module.GenericPreviewListModule .Content ul li a {display: block;}
+
+module.GenericPreviewListModule .Content {padding: 0 !important;}
+module.GenericPreviewListModule .Content ul {font-size: 0; margin-top: 16px;}
+
+#FullscreenModuleWrapper module, #ContentGrid module {
+    margin: 0.5em;
+    padding: 0;
+    position: relative;
+}
+
+
+
+/*Submission name*/
+.GenericPreviewListModule li > a:nth-child(3)
+	{font-family:  open sans !important; font-size: 12px; text-shadow: 1px 1px 1px #000 !important; color: rgba(255, 255, 255, 0.75) !important; font-weight: bold; max-height: 17px; overflow: hidden; margin: 8px; width: 194px;}
+
+
+/*messages*/
+fieldset#IsAnonymous {display:none;}
+
+
+/*posts*/
+#ContentGrid column .PostsListModule .PostsListModule {
+    border-left: none;
+}
+.PostsListModule .Posts > li article footer {
+    text-align: left;
+}
+.PostsListModule .Posts > li .PostHeader .AvatarWrapper, .PostsListModule .Posts > li .PostHeader .PostLabels, .PostsListModule .Posts > li .PostHeader .Poster, .PostsListModule .Posts > li .PostHeader .Date, .PostsListModule .Posts > li .PostHeader .DateModified {
+    margin: .5em;
+}
+
+.PostsListModule .Posts>li article {
+    margin-top: .5em;
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
+.PostHeader {
+    background: #5d213d;
+    margin: -5px -5px 0;
+	border: 2px solid #be4279;
+	border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.PostsListModule .Posts > li {
+	/-/background-image:url("https://puu.sh/HU07m/4c019a6ad2.png");
+	background: #47182d; 
+	color:#e85298;
+    margin-bottom: 15px;
+    border: 2px solid #be4279;
+	border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.PostsListModule .Posts>li .PostReplies .PostsListModule .Content {
+    padding: 0;
+	border: 2px solid #be4279;
+	border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.PostsListModule .Posts>li .PostHeader .PostLabels stateLabel.IsSubmitter {
+    background: #ffede8;
+	color: #e85298;
+	font-weight: bold;
+}
+
+.PostsListModule .Posts>li .PostTools {
+    margin: .25em 0 .5em 0;
+    display: flex;
+    align-items: center;
+    opacity: .5;
+    transition: opacity .25s ease-in-out;
+	overflow-x: auto;
+}
+
+.OlderThan1Day {
+    color: #fff7d3;
+}
+
+.LessThan4HoursOld {
+    color: #e85298;
+}
+
+.LessThan1HourOld {
+    color: #e85298;
+}
+
+.LessThan30minsOld {
+    font-weight: bold;
+    color: #e85298;
+}
+
+.LessThan5minsOld {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #e85298;
+}
+
+/*download*/
+module#FilesModule .Content {
+    border-left: 5px solid #6ee16c;
+}
+
+
+/*table*/
+table {
+    display: inline;
+}
+
+/*nav*/
+#TopNav,#SideNav {
+background: #93325e;
+}
+
+#TopNav, #SideNav {
+  transform: translateZ(0);
+  top: 0;
+  position: absolute;
+  background: #93325e;
+  position: fixed;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; }
+    #TopNav module.Selected icon, #TopNav module.Selected widget, #SideNav module.Selected icon, #SideNav module.Selected widget {
+      background: #371323;}
+    #TopNav controls span, #SideNav controls span {
+      width: 0.25em;
+      height: 0.25em;
+      display: inline-block;
+      border-radius: 100%;
+      background: #333;
+      margin: 0.25em; }
+      #TopNav controls span.Selected, #SideNav controls span.Selected {
+        background: #CCC; }
+  #TopNav module.HasUpdates widget {
+    border-color: #6CB1E1;
+    border-color: var(--NavUpdatesIndicatorColor); }
+      #SideNav > wrapper module.HasUpdates icon {
+        border-color: #6CB1E1;
+        border-color: var(--NavUpdatesIndicatorColor); }
+}
+
+#HeadlineWrapper {
+    height: 200px;
+}
+
+#tpm__sBmSteamAccountDetails > element.style {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    padding: 8px 4px 4px 4px;
+    height: 132.5px/*215px*/;
+    grid-template-columns: [content]100%;
+    grid-template-rows: [top]100%/*75%*/ [bottom]0%/*25%*/;
+    background: #371323 !important;
+    background-position: center center;
+    background-size: 100% 230px;
+    /* border: 3px solid gray; */    
+    	
+
+#PageFooter #ImportantLinks li a {
+    border-radius: .125em;
+    font-size: var(--DefaultLargeFontSize);
+    font-weight: bold;
+    display: block;
+    background-color: #371323;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+}
+
+#PageFooter #ImportantLinks li #AddBugLink {
+    color: #e85298;
+}
+
+#PageFooter #ImportantLinks li #AddTicketLink {
+    color: #e85298;
+}
+
+/* This provides the Lobster font again just incase */
+
+@font-face {
+    font-family:Lobster;
+    src:url(https://files.gamebanana.com/bitpit/lobster-regular.ttf);
+}
+
+@font-face {
+    font-family:Dosis;
+    src:url(https://files.gamebanana.com/bitpit/dosis-regular.ttf);
+}

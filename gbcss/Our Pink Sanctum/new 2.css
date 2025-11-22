@@ -1,0 +1,291 @@
+:root {
+--defaultCursor: url("https://files.gamebanana.com/bitpit/allen_cursor.png"), default !important;
+--helpCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_help.png"), help !important;
+--pointerCursor: url("https://files.gamebanana.com/bitpit/allen_cursor_pointer.png"), pointer !important;
+--DefaultTextColor: #e85298;
+--DefaultYellowColor: #a8cb05;
+--LinkColor: #f3075b;
+--LinkHoverColor: #a8cb05; 
+--BodyBackground: #371323 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+--NavBackgroundColor: #371323;
+--NavPaneBackgroundColor: #371323;
+--NotificationUnseenBG : #371323 !important;
+--NotificationUnseenDividerColor: e85298 !important;
+--InputBackgroundColor: #5f213d !important;
+--InputFocusBackgroundColor: #6a2544 !important;
+--InputHoverBackgroundColor: #6a2544 !important;
+--NotificationSeenDividerColor: #27292b;
+--NotificationMessageDividerColor: #383838;
+--TodoDividerColor: #e85298;
+--InputPlaceholderColor: #ffffff8c;
+--TabBackground: #371323;
+--TabBorder: #e85298;
+}
+
+/*More Custom Cursor Dependants*/
+
+body, .lg-outer #lg-dropdown-overlay
+{
+	cursor: var(--defaultCursor);
+}
+
+.RichText .Spoiler, #MedalsModule li, .PostsListModule .Posts>li article .PostStamps:hover
+{
+	cursor: var(--helpCursor);
+}
+
+a, .Linklike, button, .ButtonLike, input[type=range]::-webkit-slider-runnable-track, select, .SelectLike, .BeaconParent .Beacon, .ExpandableToggle, .PageModule>.RelatedLinksButton, .MainForm .InputsWrapper .OptionalInput>legend, fieldset#Userid .AdvancedElement_InputSuggestionsList li, .AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend, .AdvancedElement_FloatingButtonTabs li, .AdvancedElement_InputSuggestionsList li, .AdvancedElement_Tabs li, .AdvancedElement_GraphicalSelect .OptionsWrapper .Options li, .AdvancedElement_Switch.List ul li, #MasterLog log .CloseButton, .Modal .CloseModal, .Editor .ViewModeSwitchers span, .Editor .WysiwygPalettes>h4, #PrimaryNav controls, #SecondaryNav controls, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover, body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover, #HiddenColumnToggleButton, #AlertsNavModule pane .Controls .MarkAllAsSeen, #ActivityNavModule pane .Controls .MarkAllAsSeen, #AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper, #ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper, #GamesNavModule widget ul li, #BuddiesNavModule pane #BuddyChatInitiators li, .RichText .TableOfContents ul li, #FeaturesSliderModule .Slides .Slide, #FeaturesSliderModule .Slides .ExpandedSlide, #FeaturesSliderModule .Slides .Slide .Info .Name, #FeaturesSliderModule .Slides .ExpandedSlide .Info .Name, #SubmissionsListAdvancedListSettingsModule .RecentGames li, #SubmissionsListAdvancedListSettingsModule .SelectedGames li, #ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher, #UpdatesModule .ToggleContentButton, .lg-actions .lg-next, .lg-actions .lg-prev, .lg-toolbar .lg-icon, .lg-outer .lg-thumb-item, .lg-outer .lg-toogle-thumb, .lg-outer .lg-video .lg-video-play, .lg-outer .lg-pager-cont
+{
+        cursor: var(--pointerCursor);
+}
+
+/*header*/
+#MainContentHeader {
+    background: url(https://files.gamebanana.com/bitpit/2020_header_studio.png) -0px -235px;
+}
+
+Signature.Allen.Title, .Signature.Allen.Title {
+	max-width: 100%;
+    content: url(https://files.gamebanana.com/bitpit/allenart03a_f0ef1.png);
+}
+
+img#GbLogo {
+    content: url(https://files.gamebanana.com/bitpit/gamebanana_title_resized1.png);
+}
+
+/*SubNavigator*/
+#SubNavigator {
+    display: block;
+    font-size: var(--SubNavigatorFontSize);
+    border-bottom-width: .125em;
+    border-bottom-style: solid;
+    border-bottom-color: #371323;
+}
+
+#SubNavigator .ActiveEntry {
+    font-weight: bold;
+    margin-bottom: -0.125em;
+    border-bottom-width: .125em;
+    border-bottom-style: solid;
+    border-bottom-color: #e85298;
+    background: var(--SubNavigatorActiveTabBackgroundColor);
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li {
+    font-size: 12px;
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    /0/background: #000000ad;
+    margin-right: 50px;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li {
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size: 16px;
+	letter-spacing: 2px;
+    font-family: Arial Black;
+    text-shadow: rgb(0 0 0) 0px 0px 5px;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a {
+  /*color: #ed3358; */
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li>a:hover {
+    /*color: #ed3358; */
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li:hover {
+    border-bottom-width: 0;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+    background: #000000ad;
+}
+
+body[data-_sHeaderStyle=Floating] #MainContentHeader.Fixed #SubNavigator {
+    font-size: var(--SubNavigatorFixedFontSize);
+	background: #4a000f;
+
+}
+
+body[data-_bFloatPageNav="1"] #MainContentHeader.Fixed {
+    transform: translateZ(0);
+    opacity: 0;
+    background: #371323;
+    top: var(--PrimaryNavHeight);
+    position: fixed;
+}
+
+/*Modules*/
+
+column module {
+    background-color: #371323;
+    outline: 1px solid #e85298;
+}
+controls.ModuleTools {display: none !important;}
+
+#FullscreenModuleWrapper module > h3, #ContentGrid module > h3, #PostAddFormRequesterModule:before {
+    background: #93325e;
+    display: block !important;
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 0;
+    color:#e2e2e2;
+    font-size: 17px;
+    font-weight:unset;
+}
+
+#FullscreenModuleWrapper module > h3:after, #ContentGrid module > h3:after {display:none}
+
+
+#FullscreenModuleWrapper module, #ContentGrid module {
+    margin: 0.5em;
+    padding: 0;
+    position: relative;
+}
+
+#TipsModule {
+	display: none ;
+}
+
+
+#StrangeBerryApp > div.OverlayWrapper > div {
+    width: 80%;
+    max-height: 90vh;
+    background: #371323;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    border-radius: 0.25em;
+    border: 1px solid #e85298;
+    box-shadow: 0 0 15px #00000038;
+}
+/*stamps*/
+.PostsListModule .Posts > li article .PostStamps li {
+    border-left: .25em solid transparent;
+	border-right: .25em solid transparent;
+    background: #54252e;
+    font-size: 12px;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=positive] {
+    color: #ffede8;
+    border-color: #ffede8;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=negative] {
+    color: #ed3358;
+    border-color: #ed3358;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=neutral] {
+    color: #823d4e;
+    border-color: #823d4e;
+}
+
+.PostsListModule .Posts>li article .PostStamps li {
+    border-left: 1em solid transparent;
+    background: #290e1a;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.25em 0.5em;
+    border-radius: 0.125em;
+}
+
+/*Submission preview image*/
+.Content ul li a img.PreviewImage {height: 100%; width: 100%; object-fit: cover;}
+module.GenericPreviewListModule .Content ul li .Preview {height: 130px; width: 210px; display: inline-block; margin: 0;}
+
+module.GenericPreviewListModule .Content ul li {margin: 0px 8px 16px; padding: 0; vertical-align: top; display: inline-block; font-size: 0; background: #0006; outline: 1px solid #0c0c0c; position: relative;}
+spriteicon.MiscIcon.QuickDlIcon.tooltipstered {position: absolute; left: 0; top: 0;visibility: hidden; margin: 5px;}
+module.GenericPreviewListModule .Content ul li:hover spriteicon.MiscIcon.QuickDlIcon.tooltipstered {visibility: visible;}
+
+module.GenericPreviewListModule .Content ul li a {display: block;}
+
+module.GenericPreviewListModule .Content {padding: 0 !important;}
+module.GenericPreviewListModule .Content ul {font-size: 0; margin-top: 16px;}
+
+#FullscreenModuleWrapper module, #ContentGrid module {
+    margin: 0.5em;
+    padding: 0;
+    position: relative;
+}
+
+
+
+/*Submission name*/
+.GenericPreviewListModule li > a:nth-child(3)
+	{font-family:  open sans !important; font-size: 12px; text-shadow: 1px 1px 1px #000 !important; color: rgba(255, 255, 255, 0.75) !important; font-weight: bold; max-height: 17px; overflow: hidden; margin: 8px; width: 194px;}
+
+
+/*fake h3s*/
+#PostAddFormRequesterModule:before {
+    display: block;
+    content: 'Leave a Comment';
+    text-align: left;
+}
+
+/*messages*/
+fieldset#IsAnonymous {display:none;}
+
+
+/*posts*/
+#ContentGrid column .PostsListModule .PostsListModule {
+    border-left: none;
+}
+.PostsListModule .Posts > li article footer {
+    text-align: right;
+}
+.PostsListModule .Posts > li .PostHeader .AvatarWrapper, .PostsListModule .Posts > li .PostHeader .PostLabels, .PostsListModule .Posts > li .PostHeader .Poster, .PostsListModule .Posts > li .PostHeader .Date, .PostsListModule .Posts > li .PostHeader .DateModified {
+    margin: .5em;
+}
+.PostHeader {
+    background: #371323;
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    margin: -8px -8px 0;
+}
+.PostsListModule .Posts > li {
+    background: #371323;
+    margin-bottom: 15px;
+    outline: 1px solid #111;
+}
+/*download*/
+module#FilesModule .Content {
+    border-left: 5px solid #6ee16c;
+}
+
+/*stamps*/
+.PostsListModule .Posts > li article .PostStamps li {
+    border-left: .25em solid transparent;
+    background: #371323;;
+    font-size: 12px;
+}
+/*table*/
+table {
+    display: inline;
+}
+
+/*asdfasdf*/
+
+button, .ButtonLike {
+    background: #371323;
+}
+
+.ExtendedContentButton {
+    background: #371323;
+    color: #e85298;
+}
+
+#PrimaryNav, #SecondaryNav {
+    background: #371323;
+}
+
+body {background: url(https://files.gamebanana.com/bitpit/background_2019.png) !important;}
+#BodyWrapper {background: none !important;}

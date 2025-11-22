@@ -1,0 +1,206 @@
+#PageBackground {
+	background-image: url(https://puu.sh/KaX1l/2d42f525cc.png)!important;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .05;
+}
+
+#MainContentHeader
+{
+  --HeadlineWrapperHeight: -400px !important;
+}
+
+#HeadlineWrapper overlay h1 {
+    content: url(https://puu.sh/K0Lmy/52a866c210.png);
+    max-width: 600px;
+}
+
+#IdentityModule > div > article > img {
+	content: url(https://puu.sh/K0LiP/09ba4c9270.png);
+}
+
+#IdentityModule > div > article > h2 {
+	display:none;
+}
+
+#HeadlineBackground {
+	display:none;
+}
+
+#StudioModule .Content img {
+    margin-bottom: 0.25em;
+	content: url(https://puu.sh/K0LiP/09ba4c9270.png)!important;
+    width: 280px;
+}
+
+@media (min-width: 648px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/K0Lmm/1dfc56d81b.png);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top -105px right 0px;
+}
+}
+
+@media (max-width: 649px) {
+wrapper#HeadlineWrapper {
+    background: url(https://puu.sh/K0Lmm/1dfc56d81b.png);
+    width: auto;
+    height: 400px;
+    background-size: cover;
+    align-content: end;
+    overflow: hidden;
+    background-position: top;
+}
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+body {
+    background: rgb(73,22,25);
+	background-image: url(https://puu.sh/K0L5N/a22deb33e1.jpg);
+	background-position: unset;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    position: relative;
+}
+
+#MainContent {
+	background-color: rgba(0, 0, 0, 0.85);
+	background-image: url(https://puu.sh/K0L5N/a22deb33e1.jpg);
+	background-position: unset;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    position: relative;
+}
+
+#PageFooter {
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid>row>column:not(:first-child) {
+/*    background: var(--blanker); */
+/*    border-right: var(--blanker); */
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-4 {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-3 {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+#ContentGrid row>column.lg-6 {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+	border-right: rgba(0, 0, 0, 0.85);
+}
+
+
+#PrimaryNav {
+	background-image: url(https://puu.sh/K0L5N/a22deb33e1.jpg);
+    background-size: cover;
+    background-position: bottom;
+	background-position-y: -59em!important;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+}
+
+#SecondaryNav {
+    background-image: url(https://puu.sh/K0Ldy/2eabb01d2c.png);
+    background-size: cover;
+    background-position: unset;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#SubNavigator {
+	background-color: rgba(0, 0, 0, 0.85)!important;
+}
+
+#SubNavigator .BasicSubNavigator, #SubNavigator .DropdownMenuSubNavigator {
+    margin-right: 50px;
+}
+
+#SubNavigator .ActiveEntry {
+    border-bottom-color: #dd43a3;
+}
+
+#NotificationsNavModule .NotificationPaneHeader {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+#SecondaryNav>wrapper module pane article {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+#SecondaryNav module pane {
+    background: none;
+    display: none;
+    position: absolute;
+}
+
+.Notification.Unseen {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+    border-top-color: var(--NotificationUnseenDividerColor);
+}
+
+[data-theme~=dropdown] .tippy-content {
+	background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.125em;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--DefaultTechnicalFontFamily);
+    padding: 0.75em;
+    color: var(--InputTextColor);
+    border: 0;
+    background: var(--InputBackgroundColor);
+}
+
+
+/*------------------------------THIS SECTION REPLACES IMAGES ON STUDIO SUBS--------------------*/
+
+/* --------- Backlace Animated Festive Screenshot --------- */
+img[src="https://images.gamebanana.com/img/ss/mods/68a2484e8ab56.jpg"] {
+  content: url("https://files.gamebanana.com/bitpit/festive.png");
+  width: auto; 
+  height: auto;
+}
+/* Lazy Thumbnail */
+img[src="https://images.gamebanana.com/img/ss/mods/100-90_68a2484e8ab56.jpg"] {
+  content: url("https://files.gamebanana.com/bitpit/festive_lazy.png");
+  width: auto; 
+  height: auto;
+}
+
+/* Loona's name becomes readable. */
+img[src="https://images.gamebanana.com/img/upic/665b54736dd5c.png"] {
+  content: url("https://puu.sh/KzddC/d7a8c1b957.png");
+  width: auto; 
+  height: auto;
+}
+
+
+
