@@ -252,13 +252,25 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     padding-inline-start: 0em !important;
 }
 
+#PostsListModule > div > button.ExtendedContentButton
+{
+	position: relative;
+	transform: translate(75px, 0px)
+}
+
 
 /* -------------------------- Point Donation Field Overflow Fix -------------------------- */
 
 #DonatePoints > div > form > div:nth-child(1) > div,
 #DonatePoints > div > form > div:nth-child(2) > div.InputWrapper{
-  max-width: 100%;
+  max-width: 95%;
   overflow-x: hidden;
+}
+
+#DonatePoints > div > form > button
+{
+	position: realtive;
+	transform: translate(55px, 0px)
 }
 
 /* -------------------------- Page Header Styling -------------------------- */
@@ -785,7 +797,8 @@ dt {
     background-size: 150px 150px, /* ✅ scale the pattern image smaller */ cover;
 }
 
-#PostsListModule::before {
+#PostsListModule::before 
+{
   content: '';
   position: absolute;
   inset: 0;
@@ -817,10 +830,51 @@ dt {
     26px auto;  /* left border - repeated */
 }
 
+/* -------------------------- Page Module Styling Add Buddy Button -------------------------- */
+
+#BuddyToggleModule::before
+{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+
+  background:
+    /* Corners */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Side Borders */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center repeat-x,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') top right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center repeat-x,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') top left repeat-y;
+
+  background-size:
+    85px 85px,  /* top-left */
+    85px 85px,  /* top-right */
+    85px 85px,  /* bottom-right */
+    85px 85px,  /* bottom-left */
+
+    100% 26px,  /* top border */
+    26px 100%,  /* right border - repeated */
+    100% 26px,  /* bottom border */
+    26px 100%;  /* left border - repeated */
+}
+
+#BuddyToggleModule > div > button
+{
+	position: relative;
+	transform: translate( 30px, 0px);
+}
 
 /* -------------------------- Page Module Styling Audio Player -------------------------- */
 
-#tpm__sBmAudio > module.PageModule::before {
+#tpm__sBmAudio > module.PageModule::before
+{
   content: '';
   position: absolute;
   inset: 0;
@@ -1211,6 +1265,12 @@ dt {
 
 #ContentGrid > row > column:nth-child(7) > div > div {
 	padding: 0px 0px 40px 10px;
+}
+
+#CommunityMedalsModule > div > div.Cluster
+{
+	position: relative;
+	transform: translate(40px, 0px)
 }
 
 /* -------------------------- PrimaryNav Styling -------------------------- */
