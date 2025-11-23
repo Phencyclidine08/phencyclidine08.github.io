@@ -1,0 +1,15 @@
+.PageModule {
+    transform: rotate(180deg);
+}
+
+#PageTitle {
+    transform: rotate(180deg);
+}
+
+#Breadcrumb > a:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+#PostsListModule {
+    transform: rotate(0deg);
+}
