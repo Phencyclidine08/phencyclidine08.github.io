@@ -260,6 +260,21 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 	transform: translate(75px, 0px)
 }
 
+#PostsListModule > div > button.IconButton,
+#PostsListModule_Add > div > form > button,
+.Post > div.Flow > button,
+#PostsListModule > div > button.ExtendedContentButton {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+
 
 /* -------------------------- Point Donation Field Overflow Fix -------------------------- */
 
@@ -273,6 +288,17 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 {
 	position: realtive;
 	transform: translate(55px, 0px)
+}
+
+#DonatePoints > div > form > button {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
 }
 
 /* -------------------------- Page Header Styling -------------------------- */
@@ -834,44 +860,77 @@ dt {
 
 /* -------------------------- Page Module Styling Add Buddy Button -------------------------- */
 
-#BuddyToggleModule::before
-{
-  content: '';
+#BuddyToggleModule {
+  position: relative;
+  padding: 50px 36px;
+  overflow: visible;
+  margin: .0em 0 0 0;
+ background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%)!important;
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover !important;
+}
+
+#BuddyToggleModule > div > button {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+
+#BuddyToggleModule::before {
+  content: "";
   position: absolute;
   inset: 0;
-  z-index: 10;
   pointer-events: none;
+  z-index:10;
 
   background:
-    /* Corners */
+    /* Corners (top) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
 
-    /* Side Borders */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center repeat-x,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') top right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center repeat-x,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') top left repeat-y;
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
 
   background-size:
-    85px 85px,  /* top-left */
-    85px 85px,  /* top-right */
-    85px 85px,  /* bottom-right */
-    85px 85px,  /* bottom-left */
+    85px 85px,
+    85px 85px,
+    85px 85px,
+    85px 85px,
 
-    100% 26px,  /* top border */
-    26px 100%,  /* right border - repeated */
-    100% 26px,  /* bottom border */
-    26px 100%;  /* left border - repeated */
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%;
+
+  z-index: 0;
 }
 
-#BuddyToggleModule > div > button
-{
-	position: relative;
-	transform: translate( 30px, 0px);
+#BuddyToggleModule > div {
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  z-index: 11;
 }
+
+
 
 /* -------------------------- Page Module Styling Audio Player -------------------------- */
 
