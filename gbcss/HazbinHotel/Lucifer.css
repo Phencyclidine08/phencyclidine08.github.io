@@ -475,6 +475,42 @@ wrapper#HeadlineWrapper {
   z-index: 99999; /* or higher than ::before */
 }
 
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+	color: #750d0f !important;
+	border: 1px solid #750d0f;
+  background-color: transparent;
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li ul > li > a {
+    color: #750d0f;
+    background-color: transparent;
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li ul > li > a:hover {
+    color: var(--HazbinGlass1); /* or the actual hover color */
+}
+
+
+#SubNavigator li itemCount {
+    font-size: var(--DefaultMiniFontSize);
+    color: #750d0f !important;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul {
+
+  z-index: 99998;
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 1000px 600px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 100px); /* move 20px below bottom */
+}
+
+
+
 /* -------------------------- Page Module Styling Generic -------------------------- */
 
 .PageModule {
@@ -940,7 +976,7 @@ dt {
   content: '';
   position: absolute;
   inset: 0;
-  z-index: 10; /* above content */
+  z-index: 1;
   pointer-events: none;
 
   background:
