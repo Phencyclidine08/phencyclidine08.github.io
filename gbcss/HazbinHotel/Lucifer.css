@@ -263,7 +263,8 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 #PostsListModule > div > button.IconButton,
 #PostsListModule_Add > div > form > button,
 .Post > div.Flow > button,
-#PostsListModule > div > button.ExtendedContentButton {
+#PostsListModule > div > button.ExtendedContentButton,
+.Post > div.FormWrapper > div > form > button{
 	color: #750d0f !important;
   background:
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
