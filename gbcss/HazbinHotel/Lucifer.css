@@ -188,7 +188,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 
 .Posts .Post {
-      background:
+    background:
     url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
     radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
   
@@ -989,43 +989,85 @@ dt {
 	padding: 10px 10px 64px 10px !important; 
 }
 
+#GsaModule {
+    min-height: 509px
+}
+
+/* -------------------------- Page Module Styling Favorite Game -------------------------- */
+
+#FavoriteGameModule {
+    min-height: 475px
+}
+
 /* -------------------------- Page Module Styling Subscribe Container -------------------------- */
+ 
+#MemberSubscriptionToggleModule {
+  position: relative;
+  padding: 50px 36px;
+  overflow: visible;
+  margin: .0em 0 0 0;
+ background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%)!important;
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover !important;
+}
+
+#MemberSubscriptionToggleModule > div > button {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
 
 #MemberSubscriptionToggleModule::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  z-index: 10; /* above content */
   pointer-events: none;
+  z-index:10;
 
   background:
-    /* Corners (Top Layer) */
+    /* Corners (top) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
 
-    /* Side Borders (Under Corners) */
+    /* Sides (under corners) */
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
-
-    /* ✅ New centered background image */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/misc_module_image1.png') center center no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
 
   background-size:
-    85px 85px,   /* top-left corner */
-    85px 85px,   /* top-right corner */
-    85px 85px,   /* bottom-right corner */
-    85px 85px,   /* bottom-left corner */
+    85px 85px,
+    85px 85px,
+    85px 85px,
+    85px 85px,
 
-    100% 26px,   /* top border */
-    26px 100%,   /* right border */
-    100% 26px,   /* bottom border */
-    26px 100%,   /* left border */
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%;
 
-    100%;        /* ✅ center image uses natural size */
+  z-index: 0;
+}
+
+#MemberSubscriptionToggleModule > div {
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  z-index: 11;
 }
 
 
@@ -1235,29 +1277,6 @@ dt {
 
 /* -------------------------- Page Module Styling Misc -------------------------- */
 
-#tpm__sBmAudio > module.PageModule,
-#MemberSubscriptionToggleModule {
-
-/* Margin Fixes */
-	
-  position: relative;
-  padding: 70px 36px;
-  overflow: visible;
-
-/* This section looks redundant. Removing it doesn’t cause any immediate disasters, but I’m keeping it, because I’m not interested in discovering whatever obscure nonsense it was quietly preventing. */
-
-  background:
-    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
-    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
-  
-  background-repeat:
-    repeat,
-    no-repeat;
-
-  background-size:
-    150px 150px, /* ✅ scale the pattern image smaller */
-    cover;
-}
 
 /* Margin Fixes */
 
