@@ -1071,6 +1071,14 @@ dt {
 }
 
 
+#ContentGrid > row > column:nth-child(2) > module:nth-child(2) {
+  background: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/misc_module_image1.png') center center no-repeat;
+  background-size: auto 100%; /* auto width, full height */
+  display: flex !important;
+  height: 140px !important;
+}
+
+
 
 /* -------------------------- Page Module Styling Steam App -------------------------- */
 
@@ -1221,6 +1229,10 @@ dt {
 }
 
 /* -------------------------- Page Module Styling Staff Online App -------------------------- */
+
+#ModsOnlineModule {
+	min-height: 158px !important;
+}
 
 /* Margin Fixes */
 
