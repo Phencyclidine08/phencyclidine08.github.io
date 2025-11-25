@@ -275,7 +275,12 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   background-position: center calc(100% + 38px); /* move 20px below bottom */
 }
 
+/* -------------------------- Points Stats Module -------------------------- */
 
+#PointsModule > div {
+  display: list-item !important;
+  text-align: center !important; /* ✅ aligns inline content to center */
+} 
 
 /* -------------------------- Point Donation Field Overflow Fix -------------------------- */
 
@@ -1095,6 +1100,16 @@ dt {
     min-height: 475px
 }
 
+#FavoriteGameModule > div {
+  justify-content: center; /* centers content horizontally */
+}
+
+#FavoriteGameModule > div > div.game {
+  display: list-item !important;
+  text-align: center !important; /* ✅ aligns inline content to center */
+}
+
+
 /* -------------------------- Page Module Styling Subscribe Container -------------------------- */
  
 #MemberSubscriptionToggleModule {
@@ -1342,8 +1357,14 @@ dt {
 
 #ModsOnlineModule > div > span
 {
-	padding: 0px 10px 0px 20px;
+
 }
+
+#ModsOnlineModule > div {
+  text-align: center !important; /* ✅ aligns inline content to center */
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+} 
 
 /* -------------------------- Page Module Styling Buddies -------------------------- */
 
