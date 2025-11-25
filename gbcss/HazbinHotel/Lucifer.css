@@ -1357,13 +1357,15 @@ dt {
 
 #ModsOnlineModule > div > span
 {
-
+   text-align: center !important; /* ✅ aligns inline content to center */
+   align-items: center !important;    /* vertical center */
+   justify-content: center !important; /* horizontal center */
 }
 
 #ModsOnlineModule > div {
   text-align: center !important; /* ✅ aligns inline content to center */
-  align-items: center;    /* vertical center */
-  justify-content: center; /* horizontal center */
+  align-items: center  !important;    /* vertical center */
+  justify-content: center !important; /* horizontal center */
 } 
 
 /* -------------------------- Page Module Styling Buddies -------------------------- */
