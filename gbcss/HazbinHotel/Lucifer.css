@@ -1572,5 +1572,9 @@ img[src="https://cdn.discordapp.com/app-assets/1222285763459158056/1395581923828
   content: url(https://phencyclidine08.github.io/gbcss/_0/Assets/VPKedit_normal.png) !important;
 }
 
+#ContentGrid > row > column:nth-child(3) > div.PageModule > h2 {
+	display: none;
+}
+
 /* -------------------------- To Be Continued -------------------------- */
 
