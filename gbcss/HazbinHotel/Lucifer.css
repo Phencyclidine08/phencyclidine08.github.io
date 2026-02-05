@@ -1572,8 +1572,63 @@ img[src="https://cdn.discordapp.com/app-assets/1222285763459158056/1395581923828
   content: url(https://phencyclidine08.github.io/gbcss/_0/Assets/VPKedit_normal.png) !important;
 }
 
-#ContentGrid > row > column:nth-child(3) > div.PageModule > h2 {
-	display: none;
+/* Contact Icons */
+.spriteIcon.ContactTypeIcon.DiscordIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/discord_icon_130958.webp") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+spriteIcon.ContactTypeIcon.SteamIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/Steam_icon_logo.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+spriteIcon.MiscIcon.Checkpoint {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/checkpoint.cc.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+spriteIcon.ContactTypeIcon.TwitterIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/twitter-x-logo-png_seeklogo-492396.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+spriteIcon.ContactTypeIcon.XboxIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/xbox.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+/* Battle.Net */
+#ContactInfo > div > dl > dd:nth-child(12) > spriteicon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/blizznet.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+/* EA Play */
+#ContactInfo > div > dl > dd:nth-child(14) > spriteicon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/Electronic_Arts_Logo_2020.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+spriteIcon.ContactTypeIcon.GithubIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/git.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 /* -------------------------- To Be Continued -------------------------- */
