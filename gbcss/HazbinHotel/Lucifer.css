@@ -1565,7 +1565,12 @@ dt {
     margin:8px 0;
   }
 
+/* --------------------------- Misc Changes --------------------------- */
 
+/* Removing Trans Flag on VPKedit from Discord Rich Presence */
+img[src="https://cdn.discordapp.com/app-assets/1222285763459158056/1395581923828437176.png"] {
+  content: url(https://phencyclidine08.github.io/gbcss/_0/Assets/VPKedit_normal.png) !important;
+}
 
 /* -------------------------- To Be Continued -------------------------- */
 
