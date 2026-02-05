@@ -1091,13 +1091,13 @@ dt {
 }
 
 #GsaModule {
-    min-height: 509px
+/*    min-height: 509px */
 }
 
 /* -------------------------- Page Module Styling Favorite Game -------------------------- */
 
 #FavoriteGameModule {
-    min-height: 475px
+/*    min-height: 475px */
 }
 
 #FavoriteGameModule > div {
