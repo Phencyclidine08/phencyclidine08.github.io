@@ -1569,11 +1569,11 @@ dt {
 
 /* Removing Trans Flag on VPKedit from Discord Rich Presence */
 img[src="https://cdn.discordapp.com/app-assets/1222285763459158056/1395581923828437176.png"] {
-  content: url(https://phencyclidine08.github.io/gbcss/_0/Assets/VPKedit_normal.png) !important;
+  content: url("https://phencyclidine08.github.io/gbcss/_0/Assets/VPKedit_normal.png") !important;
 }
 
 /* Contact Icons */
-.spriteIcon.ContactTypeIcon.DiscordIcon {
+spriteIcon.ContactTypeIcon.DiscordIcon {
   background-image: url("https://phencyclidine08.github.io/gbcss/_0/Assets/discord_icon_130958.webp") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
