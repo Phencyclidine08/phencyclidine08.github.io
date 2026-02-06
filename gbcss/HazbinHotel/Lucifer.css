@@ -1578,6 +1578,7 @@ spriteIcon.ContactTypeIcon.DiscordIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 spriteIcon.ContactTypeIcon.SteamIcon {
@@ -1585,6 +1586,7 @@ spriteIcon.ContactTypeIcon.SteamIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 spriteIcon.MiscIcon.Checkpoint {
@@ -1592,6 +1594,7 @@ spriteIcon.MiscIcon.Checkpoint {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 spriteIcon.ContactTypeIcon.TwitterIcon {
@@ -1599,6 +1602,7 @@ spriteIcon.ContactTypeIcon.TwitterIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 spriteIcon.ContactTypeIcon.XboxIcon {
@@ -1606,6 +1610,7 @@ spriteIcon.ContactTypeIcon.XboxIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 /* Battle.Net */
@@ -1614,6 +1619,7 @@ spriteIcon.ContactTypeIcon.XboxIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 /* EA Play */
@@ -1622,6 +1628,7 @@ spriteIcon.ContactTypeIcon.XboxIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 spriteIcon.ContactTypeIcon.GithubIcon {
@@ -1629,6 +1636,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  image-rendering: auto !important;
 }
 
 /* -------------------------- To Be Continued -------------------------- */
