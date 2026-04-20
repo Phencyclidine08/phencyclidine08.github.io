@@ -775,7 +775,21 @@ dt {
 #IdentityModule > div > ul > li:nth-child(1)
 {
   position: relative; /* required to visually shift */
-  transform: translate(0px, 50px); /* X = right 20px, Y = up 10px */
+  transform: translate(0px, 80px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(2)
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 0px); /* X = right 20px, Y = up 10px */
+}
+
+
+#IdentityModule > div > .Avatar.IsRipeSupporter 
+{
+    background: none;
+    padding: .25em;
+    border-radius: .125em;
 }
 
 #IdentityModule > div > ul > li:nth-child(1) > statelabel
