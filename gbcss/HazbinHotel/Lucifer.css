@@ -1628,7 +1628,7 @@ spriteIcon.ContactTypeIcon.XboxIcon {
 }
 
 /* Battle.Net */
-#ContactInfo > div > dl > dd:nth-child(12) > spriteicon {
+#ContactInfo > div > dl > dd:nth-child(10) > spriteicon {
   background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/blizznet.png") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
@@ -1637,7 +1637,7 @@ spriteIcon.ContactTypeIcon.XboxIcon {
 }
 
 /* EA Play */
-#ContactInfo > div > dl > dd:nth-child(14) > spriteicon {
+#ContactInfo > div > dl > dd:nth-child(12) > spriteicon {
   background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/Electronic_Arts_Logo_2020.png") !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
