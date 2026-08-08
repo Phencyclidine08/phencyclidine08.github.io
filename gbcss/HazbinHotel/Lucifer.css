@@ -1773,14 +1773,14 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     transform-origin: center;
 }
 
-.Avatar {
+.Avatar:not(#IdentityModule *) {
     position: relative;
     display: block;
     z-index: 0;
 }
 
-.Avatar::after {
-	    content: "";
+.Avatar:not(#IdentityModule *)::after {
+    content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
