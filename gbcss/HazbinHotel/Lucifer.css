@@ -1571,7 +1571,7 @@ dt {
   }
 
   #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(1) {
-    content:url(https://images.gamebanana.com/img/banners/games/59496e8cc7888.jpg);
+    content:url();
     display:block;
     width:70%;
     height:auto;
