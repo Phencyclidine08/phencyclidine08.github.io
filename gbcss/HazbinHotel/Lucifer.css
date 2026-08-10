@@ -1571,7 +1571,7 @@ dt {
   }
 
   #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(1) {
-    content:url();
+    content:url(https://cdn.cloudflare.steamstatic.com/steam/apps/440/header.jpg);
     display:block;
     width:70%;
     height:auto;
