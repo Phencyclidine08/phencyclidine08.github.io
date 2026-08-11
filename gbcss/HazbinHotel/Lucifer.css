@@ -1787,17 +1787,26 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     z-index: 0;
 }
 
+.Avatar.Online:after, .MemberLink.Online:after {
+    content: "";
+    width: auto !important;
+    height: auto !important;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    box-shadow: 0 0 0 2px rgb(116 233 100);
+    background: var(--DefaultGreenColor);
+}
+
 .Avatar:not(#IdentityModule *)::after {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
     pointer-events: none;
-
     background:
         url("https://shared.akamai.steamstatic.com/community_assets/images/items/322330/beaee5e90d93bfafa5f5f55acb23abfd28ad180c.png")
         center / 100% 100% no-repeat;
-
     transform: scale(1.16, 1.14);
     transform-origin: center;
 }
