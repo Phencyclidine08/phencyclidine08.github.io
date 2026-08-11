@@ -1794,7 +1794,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     position: absolute;
     bottom: -3px;
     right: -3px;
-    box-shadow: 0 0 0 2px rgb(116 233 100);
+    box-shadow: 0 0 0 2px rgb(116 233 100 / 0%);
     background: var(--DefaultGreenColor);
 }
 
