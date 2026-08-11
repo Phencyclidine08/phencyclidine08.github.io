@@ -75,13 +75,14 @@
 }
 
 /* -------------------------- Main Background -------------------------- */
-
 body {
-	background-image: url();
-    background-size: 10%;
-	background-color: var(--ChyronMainBG);
-	/*	font-family: Park Lane;  */
-	/*   line-height: 1.75;      */
+    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/chyron_mainbackground_gradient.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: var(--ChyronMainBG);
+
+    /* font-family: Park Lane; */
+    /* line-height: 1.75; */
 }
 
 /* -------------------------- Removing Column & Footer Backgrounds -------------------------- */
