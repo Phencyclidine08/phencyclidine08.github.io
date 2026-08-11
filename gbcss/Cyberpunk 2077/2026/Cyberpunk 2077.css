@@ -190,8 +190,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 .Posts .Post {
     background:
-    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
-    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+    url(" "),
   
   background-repeat:
     repeat,
@@ -278,10 +277,6 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 /* -------------------------- Points Stats Module -------------------------- */
 
-#PointsModule > div {
-  display: list-item !important;
-  text-align: center !important; /* ✅ aligns inline content to center */
-} 
 
 /* -------------------------- Point Donation Field Overflow Fix -------------------------- */
 
@@ -534,6 +529,7 @@ wrapper#HeadlineWrapper {
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 #IdentityModule {
+  max-height: 533px;
   position: relative;
   padding: 70px 36px;
   overflow: visible;
@@ -571,7 +567,7 @@ wrapper#HeadlineWrapper {
     url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.pn') center left repeat-y,
 
     /* ✅ Custom image you want to translate */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/becca_card_apng.png') center 170px no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/becca_card_apng.png') center 0px no-repeat;
 
   background-size:
     300px 200px,   /* plaque */
@@ -690,7 +686,7 @@ wrapper#HeadlineWrapper {
 #IdentityModule > div > ul 
 {
   position: relative; /* required to visually shift */
-  transform: translate(0px, 30px); /* X = right 20px, Y = up 10px */
+  transform: translate(0px, -120px); /* X = right 20px, Y = up 10px */
   padding: 0px 0px 0px 0px;
 }
 
@@ -877,86 +873,12 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Discord App -------------------------- */
 
-#DiscordProfile 
-{
-    overflow: hidden !important;     /* Prevents any visual overflow */
-    box-sizing: border-box !important; /* Ensures padding/borders don't expand width */	
-	height: 475px
-}
-
-
-#ActivityHistoryContent
-{
-    overflow: scroll;
-	height: 200px
-	
-}
-
-#DiscordProfile::before
-{
-	z-index: 11;
-}
-
-#DiscordProfile .DiscordCard,
-#discordActivityPanel,
-#discordSettingsTabPanel
-{
-  height: 190px;
-  position: relative;
-  padding: 70px 36px;
-  overflow: visible;
-
-  background:
-    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
-    radial-gradient(ellipse at center, #840430 50%, #38050c 100%) !important;
-  
-  background-repeat:
-    repeat,
-    no-repeat !important;
-
-  background-size:
-    150px 150px, /* ✅ scale the pattern image smaller */
-    cover !important;
-	
-    border-radius: 8px 8px 8px 8px !important;
-	border: 2px solid var(--HazbinGlass2) !important;
-}
-
-/* Margin Fixes */
-
-#DiscordProfileTabContent > div,
-#discordActivityPanel,
-#discordSettingsTabPanel
-{
-	padding: 10px 10px 60px 10px !important; 
-}
 
 /* -------------------------- Page Module Styling Global Submission Announcement -------------------------- */
 
-/* Margin Fixes */
-
-#GsaModule > div {
-	padding: 10px 10px 64px 10px !important; 
-}
-
-#GsaModule {
-/*    min-height: 509px */
-}
 
 /* -------------------------- Page Module Styling Favorite Game -------------------------- */
 
-#FavoriteGameModule {
-/*    min-height: 475px */
-}
-
-#FavoriteGameModule > div {
-  justify-content: center; /* centers content horizontally */
-}
-
-#FavoriteGameModule > div > div.game {
-  display: list-item !important;
-  text-align: center !important; /* ✅ aligns inline content to center */
-}
 
 
 /* -------------------------- Page Module Styling Subscribe Container -------------------------- */
@@ -964,14 +886,6 @@ wrapper#HeadlineWrapper {
 
 
 /* -------------------------- Page Module Styling Steam App -------------------------- */
-
-#tpm__sBmSteamAccountDetails > module {
-
-}
-
-#tpm__sBmSteamAccountDetails > module::before {
-
-}
 
 
 .SteamAvatar:hover > img 
@@ -1043,7 +957,7 @@ wrapper#HeadlineWrapper {
     pointer-events: none;
 
     background:
-        url("https://shared.akamai.steamstatic.com/community_assets/images/items/601220/b52bd23d8c484b108683f378441fdd5d8bcf285f.png")
+        url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png")
         center / 100% 100% no-repeat;
 
     transform: translate(-50.2%, -48.9%) scale(1.18, 1.17);
@@ -1051,89 +965,16 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Staff Online App -------------------------- */
 
-#ModsOnlineModule {
-	min-height: 158px !important;
-}
 
-/* Margin Fixes */
-
-#ModsOnlineModule > h2 {
-  position: relative; /* required for transform to visually shift */
-  transform: translate( 20px, -20px); /* X = right 20px, Y = up 10px */
-}
-
-#ModsOnlineModule > div {
-	padding: 0px 10px 0px 20px;
-}
-
-#ModsOnlineModule .Grid {
-    grid-template-columns: repeat(auto-fit, 50px) !important;
-    gap: 0.6em !important;
-    display: grid;
-	position: relative; /* required for transform to visually shift */
-	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
-}
-
-#ModsOnlineModule > div > span
-{
-   text-align: center !important; /* ✅ aligns inline content to center */
-   align-items: center !important;    /* vertical center */
-   justify-content: center !important; /* horizontal center */
-}
-
-#ModsOnlineModule > div {
-  text-align: center !important; /* ✅ aligns inline content to center */
-  align-items: center  !important;    /* vertical center */
-  justify-content: center !important; /* horizontal center */
-} 
 
 /* -------------------------- Page Module Styling Buddies -------------------------- */
 
-/* Margin Fixes */
-
-#BuddiesModule > h2 {
-  position: relative; /* required for transform to visually shift */
-  transform: translate( 20px, -10px); /* X = right 20px, Y = up 10px */
-}
-
-#BuddiesModule > div {
-	padding: 20px 10px 0px 20px;
-}
-
-#BuddiesModule > div > div {
-    grid-template-columns: repeat(auto-fit, 50px) !important;
-    gap: 0.6em !important;
-    display: grid;
-	position: relative; /* required for transform to visually shift */
-	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
-}
 
 /* -------------------------- Page Module Styling Favorite Game App -------------------------- */
 
-/* Margin Fixes */
-
-#FavoriteGameModule > div {
-	padding: 0px 0px 44px 0px;
-}
 
 /* -------------------------- Page Module Styling Misc -------------------------- */
 
-
-/* Margin Fixes */
-
-#ContentGrid > row > column:nth-child(8) > div > div {
-	padding: 0px 0px 40px 10px;
-}
-
-#ContentGrid > row > column:nth-child(7) > div > div {
-	padding: 0px 0px 40px 10px;
-}
-
-#CommunityMedalsModule > div > div.Cluster
-{
-	position: relative;
-	transform: translate(40px, 0px)
-}
 
 /* -------------------------- PrimaryNav Styling -------------------------- */
 
