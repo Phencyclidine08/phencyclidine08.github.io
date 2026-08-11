@@ -1,3 +1,1717 @@
+:root {
+    --ChyronMainGradient:linear-gradient(to top,#2c070c,#010508);
+	--ChyronMainBG:#000000;
+    --HazbinRed:#f20032;
+    --HazbinRedGradient:linear-gradient(to top,#f8021b,#5e0110);
+	--HazbinRedGradientTweaked:linear-gradient(to top,#980d20,#38050c);
+    --HazbinMaroon:#871028;
+	--HazbinPurple:#5e0f39;
+	--HazbinGlass1:#ffebab;
+	--HazbinGlass1Gradient:linear-gradient(to top,#ffebab,#fecc92);
+	--HazbinGlass2:#ffc681;
+	--HazbinGlass2Gradient:linear-gradient(to top,#ffc683,#ff966c);
+	--HazbinViolet:#270b3d;
+	--HazbinPink:#b5194e;
+	--HazbinLED:#fdefe4;
+	--HazbinLED-C:#ef7821;
+	--HazbinMaroonGradient:linear-gradient(to top,#860f3c,#350011);
+
+	--SecondaryNavBackgroundColor:linear-gradient(to top,#860f3c,#350011);
+	--NavPaneBackgroundColor:linear-gradient(to top,#860f3c,#350011);
+	--NotificationUnseenBG:linear-gradient(to top,#860f3c,#350011);
+	--NotificationSeenDividerColor:#f20032;
+	--NotificationUnseenDividerColor:#f20032;
+	
+    --DefaultTextFontFamily: "Open Sans", sans-serif;
+    --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
+    --DefaultTextColor: #ffc681;
+    --DefaultBlueColor: #6CB1E1;
+    --DefaultRedColor: #FF4E4E;
+    --DefaultRedDarkColor: #701E24;
+    --DefaultGreenColor: #6EE16C;
+    --DefaultGreenDarkColor: #344734;
+    --DefaultPurpleColor: #FF5E9D;
+    --DefaultGreyColor: #999999;
+    --DefaultOrangeColor: #FF7238;
+    --DefaultYellowColor: #FFE033;
+    --StateLabelBackground: linear-gradient(to top,#840430,#670f38);
+	--ButtonBackground: linear-gradient(to top,#840430,#670f38);
+	--ButtonFontColor: #bbb;
+    --ButtonFontFamily: "IBM Plex Mono", monospace;
+    --ButtonFontSize: 0.9em;
+    --ButtonHoverFontColor: #e2e2e2;
+    --ButtonHoverBackgroundColor: #670f38;
+    --LinkColor: #fe226d;
+    --LinkHoverColor: #FD70E1;
+    --NavUpdatesIndicatorColor: #6CB1E1;
+    --InputTitleUnderlineColor: #707070;
+    --InputTextColor: #e2e2e2;
+    --InputBackgroundColor: #840430;
+    --InputHoverBackgroundColor: #670f38;
+    --InputFocusBackgroundColor: #400822;
+    --InputPlaceholderColor: #121a1f;
+    --PaginatorPageNumberBackgroundColor: #0b1013;
+    --AdvancedElementTabsBackgroundColor: transparent;
+    --AdvancedElementTabsBorderColor: #0e1317;
+    --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+    --ActiveTabBorderColor: #FF5E9D;
+    --ActiveTabBackgroundColor: rgba(255,94,157,0.08);
+    --TableColumnTitleFontColor: #ffffff8a;
+    --TableColumnTitleBackground: #ffffff14;
+    --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
+}
+
+/* -------------------------- Removing Needless Elements Present on Client Side -------------------------- */
+
+#FavoriteGameModule > h2 > spriteicon, 
+#GsaModule > h2 > a > spriteicon,
+#ContactInfo > h2 > a > spriteicon,
+#Bio > h2 > a > spriteicon,
+#PcSpecs > h2 > a > spriteicon,
+#StaffProfileModule > h2 > a > spriteicon,
+#SoftwareKit > h2 > a > spriteicon
+{
+	display: none;
+}
+
+/* -------------------------- Main Background -------------------------- */
+
+body {
+	background-image: url();
+    background-size: 10%;
+	background-color: var(--ChyronMainBG);
+	/*	font-family: Park Lane;  */
+	/*   line-height: 1.75;      */
+}
+
+/* -------------------------- Removing Column & Footer Backgrounds -------------------------- */
+
+#MainContent {
+	background-color: rgb(0 0 0 / 0%);
+	background: none;
+}
+
+#PageFooter {
+	background-color: rgb(0 0 0 / 0%);
+	background: none;
+}
+
+#ContentGrid>row>column:not(:first-child) {
+	background-color: rgb(99 61 61 / 0%)!important;
+	border-right: rgb(112 84 84 / 0%);
+}
+
+#ContentGrid row>column.lg-3 {
+	background-color: rgb(99 61 61 / 0%)!important;
+	border-right: rgb(0 0 0 / 0%);
+}
+
+#ContentGrid row>column.lg-6 {
+	background-color: rgb(0 0 0 / 0%)!important;
+	border-right: rgb(0 0 0 / 0%);
+}
+
+/* -------------------------- Module Tabs -------------------------- */
+
+.Tab {
+    background: var(--ButtonBackground);
+    cursor: pointer;
+    opacity: .5;
+    border: 2px solid var(--HazbinGlass2);
+    border-bottom: 0;
+    border-radius: .25em .25em 0 0;
+    align-items: center;
+    gap: .25em;
+    padding: .75em 1em;
+    transition: opacity .2s 
+ease-in-out;
+    display: flex;
+}
+
+input:checked+.Tab, .Tab:has(:checked) {
+    border: 3px solid var(--HazbinGlass2);
+    opacity: 1;
+    cursor: default;
+    border-bottom: 0;
+    margin-bottom: -3px;
+    font-weight: 700;
+}
+
+.TabsWrapper {
+    border-bottom: 10px solid #00000000;
+    overflow: auto;
+}
+
+.Tabs {
+    border-bottom: 3px solid var(--HazbinGlass2);
+    padding: 0 1em 0 .5em;
+    display: flex;
+}
+
+/* -------------------------- Text Fields -------------------------- */
+
+input[type=text],input[type=password],input[type=url],input[type=number],input[type=email],input[type=num],input[type=tel],select,.SelectLike,option,.OptionLike,optgroup,textarea,.TextareaLike {
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: .125em;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--DefaultTechnicalFontFamily);
+    padding: .75em;
+    color: var(--InputTextColor);
+    border: 0;
+    background: #0000003d;
+}
+
+input[type=text]:hover,input[type=password]:hover,input[type=url]:hover,input[type=number]:hover,input[type=email]:hover,input[type=num]:hover,input[type=tel]:hover,select:hover,.SelectLike:hover,option:hover,.OptionLike:hover,optgroup:hover,textarea:hover,.TextareaLike:hover {
+    background: #00000078;
+}
+
+input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[type=number]:focus,input[type=email]:focus,input[type=num]:focus,input[type=tel]:focus,select:focus,.SelectLike:focus,option:focus,.OptionLike:focus,optgroup:focus,textarea:focus,.TextareaLike:focus {
+    background: #00000017;
+}
+
+/* -------------------------- Post Flow -------------------------- */
+
+#PostsListModule > div > button.IconButton
+{
+	position: relative;
+	transform: translate(10px, 0px)
+}
+
+#PostsListModule > div > fieldset
+{
+	position: relative;
+	transform: translate(10px, 0px);
+	max-width: 300px
+}
+
+
+.Posts .Post {
+    background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+    border-radius: 8px 8px 8px 8px !important;
+    border: 2px solid var(--HazbinGlass2) !important;
+  padding: 3px 3px;
+  border-radius: 8px; /* ✅ this adds the curve */
+}
+
+.PostStamp {
+    --PostStampColor: var(--DefaultGreyColor);
+    color: var(--PostStampColor);
+    background: #00000042 !important;
+}
+
+.Posts .Post > .Flow > div > .Post
+{
+  background: #ffffff00; /* background fill only */
+  border: 1px solid var(--HazbinGlass2) !important;
+}
+
+.Posts .Post statelabel,
+.Posts .Post * statelabel {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 130px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+.Posts .Post * statelabel
+{
+	text: "Owner" !important;
+    display: inline-block;
+}
+
+.Post > header,
+.Post > article,
+.Post > footer,
+.Post > div.Cluster.PostTools,
+.Post > div.Flow,
+.Post > ul
+{
+	padding: 0px 10px 0px 10px;
+}
+
+.Post > div.Cluster.PostTools
+{
+	padding: 0px 10px 5px 10px;
+}
+
+.Replies {
+    padding-inline-start: 0em !important;
+}
+
+#PostsListModule > div > button.ExtendedContentButton
+{
+	position: relative;
+	transform: translate(75px, 0px)
+}
+
+#PostsListModule > div > button.IconButton,
+#PostsListModule_Add > div > form > button,
+.Post > div.Flow > button,
+#PostsListModule > div > button.ExtendedContentButton,
+.Post > div.FormWrapper > div > form > button{
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+/* -------------------------- Points Stats Module -------------------------- */
+
+#PointsModule > div {
+  display: list-item !important;
+  text-align: center !important; /* ✅ aligns inline content to center */
+} 
+
+/* -------------------------- Point Donation Field Overflow Fix -------------------------- */
+
+#DonatePoints > div > form > div:nth-child(1) > div,
+#DonatePoints > div > form > div:nth-child(2) > div.InputWrapper{
+  max-width: 95%;
+  overflow-x: hidden;
+}
+
+#DonatePoints > div > form > button
+{
+	position: realtive;
+	transform: translate(55px, 0px)
+}
+
+#DonatePoints > div > form > button {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+/* -------------------------- Page Header Styling -------------------------- */
+
+#HeadlineWrapper {  
+	  position: relative;
+	  background: var(--HazbinRedGradient); /* background fill only */
+	  padding: 26px;
+	  overflow: visible;
+}
+
+#HeadlineWrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* higher than content */
+  pointer-events: none;
+
+  background:
+    /* corners first */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_max.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_max.png') bottom left no-repeat,
+
+    /* sides next */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+
+  background-size:
+    85px 85px,   /* top-left corner */
+    85px 85px,   /* top-right corner */
+    160px 160px,   /* bottom-right corner */
+    160px 160px,   /* bottom-left corner */
+
+    100% 26px,   /* top border: full width, 26px height */
+    26px 100%,   /* right border: 26px width, full height */
+    100% 26px,   /* bottom border: full width, 26px height */
+    26px 100%,   /* left border: 26px width, full height */
+
+    cover;
+
+  padding: 26px; /* Matches border/corner size */
+  overflow: visible;
+}
+
+/* Container Width Sensitive Logic (prevent lucy from losing eye contact with viewer) */
+
+/* STEP 1 — Turn the parent into a container */
+#MainContentHeader {
+    container-type: inline-size;
+}
+
+/* STEP 2 — Apply styles only when the container is ≤ 1200px wide */
+@container (max-width: 1200px) {
+    wrapper#HeadlineWrapper {
+        background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/lucy_header.png);
+        width: auto;
+        height: 400px;
+        background-size: cover;
+        align-content: end;
+        overflow: hidden;
+        background-position: top -200px right 0;
+    }
+}
+
+/* STEP 3 — Apply styles only when the container is < 1200px wide */
+@container (min-width: 1201px) {
+    wrapper#HeadlineWrapper {
+        background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/lucy_header.png);
+        width: auto;
+        height: 400px;
+        background-size: cover;
+        align-content: end;
+        overflow: hidden;
+        background-position: top -350px right 0;
+    }
+}
+
+#HeadlineWrapper overlay h1 {
+  background-image: url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 580px;
+  height: 290px;
+
+  color: transparent;
+  text-shadow: none;
+}
+
+@media (max-width: 632px) {
+wrapper#HeadlineWrapper {
+ display: none !important; 
+}
+}
+
+/* Nuke Breadcrumb */
+
+#Breadcrumb {
+	display: none;
+}
+
+/* -------------------------- SubNavigator Styling -------------------------- */
+
+#SubNavigator {
+  position: relative;
+  z-index: 1; /* Base layer for stacking */
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+
+
+  padding: 36px;
+  overflow: visible;
+  isolation: isolate; /* Creates new stacking context */
+
+  /* ✅ Centering content */
+  display: flex;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+#SubNavigator::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index:10;
+
+  background:
+    /* Corners (top) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    85px 85px,
+    85px 85px,
+    85px 85px,
+    85px 85px,
+
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%;
+
+  z-index: 0;
+}
+
+/* SubNav Dropdown Render Priority */
+
+#SubNavigator .DropdownMenuSubNavigator>li ul {
+  position: absolute;
+  z-index: 99999; /* or higher than ::before */
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul>li {
+	color: #750d0f !important;
+	border: 1px solid #750d0f;
+  background-color: transparent;
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li ul > li > a {
+    color: #750d0f;
+    background-color: transparent;
+}
+
+#SubNavigator .DropdownMenuSubNavigator > li ul > li > a:hover {
+    color: var(--HazbinGlass1); /* or the actual hover color */
+}
+
+
+#SubNavigator li itemCount {
+    font-size: var(--DefaultMiniFontSize);
+    color: #750d0f !important;
+}
+
+#SubNavigator .DropdownMenuSubNavigator>li ul {
+
+  z-index: 99998;
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 1000px 600px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 100px); /* move 20px below bottom */
+}
+
+
+
+/* -------------------------- Page Module Styling Generic -------------------------- */
+
+.PageModule {
+  position: relative;
+  padding: 50px 36px;
+  overflow: visible;
+  margin: .0em 0 0 0;
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+  background-repeat:
+    repeat,
+    no-repeat;
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+}
+
+.PageModule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+	
+
+  background:
+    /* corners first */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
+
+    /* sides next */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+
+  background-size:
+    85px 85px,   /* top-left corner */
+    85px 85px,   /* top-right corner */
+    85px 85px,   /* bottom-right corner */
+    85px 85px,   /* bottom-left corner */
+
+    100% 26px,   /* top border: full width, 26px height */
+    26px 100%,   /* right border: 26px width, full height */
+    100% 26px,   /* bottom border: full width, 26px height */
+    26px 100%,   /* left border: 26px width, full height */
+
+    cover;
+
+  padding: 26px; /* Matches border/corner size */
+  overflow: visible;
+}
+
+.PageModule > h2 {
+  margin-left: 36px;
+}
+
+.PageModule> h2:after {
+    background: var(--HazbinGlass2);
+}
+
+dt {
+    font-size: var(--DefaultTinyFontSize);
+    margin-bottom: .25em;
+    color: var(--HazbinGlass1);
+}
+
+/* -------------------------- Page Module Styling Identity -------------------------- */
+
+#IdentityModule {
+  position: relative;
+  padding: 70px 36px;
+  overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+}
+
+#IdentityModule::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background:
+    /* Plaque */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') bottom no-repeat,
+
+    /* Corners */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_max.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_max.png') bottom left no-repeat,
+
+    /* Borders */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
+
+    /* ✅ Custom image you want to translate */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/LuciferRender_by_OKDraws.webp') center 170px no-repeat;
+
+  background-size:
+    300px 200px,   /* plaque */
+
+    85px 85px,     /* top-left */
+    85px 85px,     /* top-right */
+    160px 160px,   /* bottom-right */
+    160px 160px,   /* bottom-left */
+
+    100% 26px,     /* top border */
+    26px 100%,     /* right border */
+    100% 26px,     /* bottom border */
+    26px 100%,     /* left border */
+
+    400px 800px;   /* ✅ custom image size */
+}
+
+
+#IdentityModule .Avatar {
+  position: absolute;                 /* Escape layout */
+  width: 200px;                       /* Your custom size */
+  height: 200px;
+  transform: translate(-110px, 160px);  /* Move wherever you want */
+  pointer-events: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+#IdentityModule > div > a {
+    box-shadow: 0 0 0 .0em var(--DefaultRedColor), 0 0 .0em var(--DefaultRedColor);
+}
+
+#IdentityModule .Avatar.Online::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    background: var(--DefaultGreenColor);
+}
+
+#IdentityModule .Avatar.Offline::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    border: transparent;
+    border-radius: 50px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ Hides the original avatar image */
+#IdentityModule .Avatar .AvatarImage {
+  display: none !important;
+}
+
+#IdentityModule .MemberLink {
+  position: relative;
+  display: block;
+	margin-top: 320px;
+  padding: 0px 0px 40px 0px;
+  transform: translate(0px, -360px); /* X = right 20px, Y = up 10px */
+
+  /* Replace content with signature */
+  background-image: url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/signature1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* ✅ Hide original children inside .MemberLink */
+#IdentityModule .MemberLink > * {
+  display: none !important;
+  z-index: 1;
+}
+
+#IdentityModule > div > div:nth-child(3),
+#IdentityModule > div > div.UserTitle
+{
+	display:none;
+}
+
+#IdentityModule > div > ul {
+ color: #750d0f;
+}
+
+#IdentityModule > div > ul > li:nth-child(3) {
+	transform: translateY(10px); /* adjust */
+    display: inline-block; /* may be needed depending on HTML */
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > span {
+	font-size: 12px;
+    display: inline-block; /* may be needed depending on HTML */
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > small,
+#IdentityModule > div > ul > li:nth-child(3) > small,
+#IdentityModule > div > ul > li:nth-child(1) > statelabel
+{
+	color: #750d0f !important;
+}
+
+#IdentityModule > div > ul 
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 30px); /* X = right 20px, Y = up 10px */
+  padding: 0px 0px 0px 0px;
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > span
+{
+  position: relative; /* required to visually shift */
+  transform: translate(8px, 0px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(4) > spriteicon
+{
+  position: relative; /* required to visually shift */
+  transform: translate(-83px, 33px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(3)
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 20px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(1)
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 80px); /* X = right 20px, Y = up 10px */
+}
+
+#IdentityModule > div > ul > li:nth-child(2)
+{
+  position: relative; /* required to visually shift */
+  transform: translate(0px, 0px); /* X = right 20px, Y = up 10px */
+}
+
+
+#IdentityModule > div > .Avatar.IsRipeSupporter 
+{
+    background: none;
+    padding: .25em;
+    border-radius: .125em;
+}
+
+#IdentityModule > div > ul > li:nth-child(1) > statelabel
+{
+	display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: .25em .5em;
+    margin: .125em;
+    border-radius: .25em;
+    background: transparent;
+	border: 1px solid #750d0f73;
+}
+
+
+.AvatarTooltip
+{
+  position: relative;
+
+  overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+}
+
+.AvatarTooltip::before
+{
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index:10;
+
+  background:
+    /* Corners (top) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    51px 51px,
+    51px 51px,
+    51px 51px,
+    51px 51px,
+
+    100% 16px,
+    16px 100%,
+    100% 16px,
+    16px 100%;
+
+  z-index: 0;
+
+	margin: -15px -15px -15px -15px !important;
+
+}
+
+.tippy-content .AvatarTooltip,
+.tippy-content .BananaTip,
+{
+
+}
+
+/* -------------------------- Page Module Styling Comments -------------------------- */
+
+#PostsListModule 
+{
+    position: relative;
+    padding: 50px 20px;
+    overflow: visible;
+    margin: .0em 0 0 0;
+    background: url(https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png), radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 150px 150px, /* ✅ scale the pattern image smaller */ cover;
+}
+
+#PostsListModule::before 
+{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+
+  background:
+    /* Corners */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
+
+    /* Side Borders */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center repeat-x,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') top right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center repeat-x,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') top left repeat-y;
+
+  background-size:
+    85px 85px,  /* top-left */
+    85px 85px,  /* top-right */
+    85px 85px,  /* bottom-right */
+    85px 85px,  /* bottom-left */
+
+    100% 26px,  /* top border */
+    26px auto,  /* right border - repeated */
+    100% 26px,  /* bottom border */
+    26px auto;  /* left border - repeated */
+}
+
+/* -------------------------- Page Module Styling Add Buddy Button -------------------------- */
+
+#BuddyToggleModule {
+  position: relative;
+  padding: 50px 36px;
+  overflow: visible;
+  margin: .0em 0 0 0;
+ background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%)!important;
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover !important;
+}
+
+#BuddyToggleModule > div > button {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+
+#BuddyToggleModule::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index:10;
+
+  background:
+    /* Corners (top) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    85px 85px,
+    85px 85px,
+    85px 85px,
+    85px 85px,
+
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%;
+
+  z-index: 0;
+}
+
+#BuddyToggleModule > div {
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  z-index: 11;
+}
+
+
+
+/* -------------------------- Page Module Styling Audio Player -------------------------- */
+
+#tpm__sBmAudio > module.PageModule::before
+{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  background:
+    /* Corners (Top Layer) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Side Borders (Under Corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y,
+
+    /* ✅ New centered background image */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/misc_module_image2.png') top center no-repeat;
+
+  background-size:
+    85px 85px,   /* top-left corner */
+    85px 85px,   /* top-right corner */
+    85px 85px,   /* bottom-right corner */
+    85px 85px,   /* bottom-left corner */
+
+    100% 26px,   /* top border */
+    26px 100%,   /* right border */
+    100% 26px,   /* bottom border */
+    26px 100%,   /* left border */
+
+    100%;        /* ✅ center image uses natural size */
+}
+
+/* Margin Fixes */
+
+#tpm__sBmAudio > module > div {
+	padding: 100px 0px 15px 0px !important;
+}
+
+#tpm__sBmAudio > module > div > div > audio {
+    overflow: hidden;     /* Prevents any visual overflow */
+    box-sizing: border-box; /* Ensures padding/borders don't expand width */
+    max-width: 100%;      /* Prevents expanding wider than container */
+}
+
+/* -------------------------- Page Module Styling Discord App -------------------------- */
+
+#DiscordProfile 
+{
+    overflow: hidden !important;     /* Prevents any visual overflow */
+    box-sizing: border-box !important; /* Ensures padding/borders don't expand width */	
+	height: 475px
+}
+
+
+#ActivityHistoryContent
+{
+    overflow: scroll;
+	height: 200px
+	
+}
+
+#DiscordProfile::before
+{
+	z-index: 11;
+}
+
+#DiscordProfile .DiscordCard,
+#discordActivityPanel,
+#discordSettingsTabPanel
+{
+  height: 190px;
+  position: relative;
+  padding: 70px 36px;
+  overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%) !important;
+  
+  background-repeat:
+    repeat,
+    no-repeat !important;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover !important;
+	
+    border-radius: 8px 8px 8px 8px !important;
+	border: 2px solid var(--HazbinGlass2) !important;
+}
+
+/* Margin Fixes */
+
+#DiscordProfileTabContent > div,
+#discordActivityPanel,
+#discordSettingsTabPanel
+{
+	padding: 10px 10px 60px 10px !important; 
+}
+
+/* -------------------------- Page Module Styling Global Submission Announcement -------------------------- */
+
+/* Margin Fixes */
+
+#GsaModule > div {
+	padding: 10px 10px 64px 10px !important; 
+}
+
+#GsaModule {
+/*    min-height: 509px */
+}
+
+/* -------------------------- Page Module Styling Favorite Game -------------------------- */
+
+#FavoriteGameModule {
+/*    min-height: 475px */
+}
+
+#FavoriteGameModule > div {
+  justify-content: center; /* centers content horizontally */
+}
+
+#FavoriteGameModule > div > div.game {
+  display: list-item !important;
+  text-align: center !important; /* ✅ aligns inline content to center */
+}
+
+
+/* -------------------------- Page Module Styling Subscribe Container -------------------------- */
+ 
+#MemberSubscriptionToggleModule {
+  position: relative;
+  padding: 50px 36px;
+  overflow: visible;
+  margin: .0em 0 0 0;
+ background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%)!important;
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover !important;
+}
+
+#MemberSubscriptionToggleModule > div > button {
+	color: #750d0f !important;
+  background:
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
+  
+  background-size: 300px 100px;
+
+  /* shift image downward using background-position */
+  background-position: center calc(100% + 38px); /* move 20px below bottom */
+}
+
+#MemberSubscriptionToggleModule::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index:10;
+
+  background:
+    /* Corners (top) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* Sides (under corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    85px 85px,
+    85px 85px,
+    85px 85px,
+    85px 85px,
+
+    100% 26px,
+    26px 100%,
+    100% 26px,
+    26px 100%;
+
+  z-index: 0;
+}
+
+#MemberSubscriptionToggleModule > div {
+  display: flex;
+  justify-content: center; /* centers content horizontally */
+  z-index: 11;
+}
+
+
+/* -------------------------- Page Module Styling Steam App -------------------------- */
+
+#tpm__sBmSteamAccountDetails > module {
+  position: relative;
+  padding: 70px 36px;
+  overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+}
+
+#tpm__sBmSteamAccountDetails > module::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* on top of content */
+  pointer-events: none;
+
+  background:
+    /* Corners (Top Layer) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl.png') bottom left no-repeat,
+
+    /* Side Borders (Under Corners) */
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+
+  background-size:
+    85px 85px,   /* top-left corner */
+    85px 85px,   /* top-right corner */
+    85px 85px,   /* bottom-right corner */
+    85px 85px,   /* bottom-left corner */
+
+    100% 26px,   /* top border */
+    26px 100%,   /* right border */
+    100% 26px,   /* bottom border */
+    26px 100%;   /* left border */
+}
+
+/* Margin Fixes */
+
+#tpm__sBmSteamAccountDetails > module > div {
+ 	padding: 80px 0px 80px 30px !important;
+	
+}
+
+#tpm__sBmSteamAccountDetails > module > h2 {
+	background-image: none !important;
+  padding: 50px 0px 0px 36px;
+}
+#tpm__sBmSteamAccountDetails > module > div {
+	background-image: none !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div > p,
+#tpm__sBmSteamAccountDetails > module > div > p {
+	padding: 95px 0px 0px 20px;
+	
+}
+
+
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) 
+{
+
+    padding:10px 00px 0px 10px !important;
+	max-width: 396px;
+    overflow: visible;
+    background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
+    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
+
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
+    border-radius: 8px 8px 8px 8px !important;
+    border: 2px solid var(--HazbinGlass2) !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus
+{
+	max-width: 250px !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamLevel,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName
+{
+		padding: 87px 0px 0px 40px !important;
+}
+
+.SteamAvatar 
+{
+	padding: 4px 0px 0px 8px !important;
+    --SteamOffline: #080808;
+    --SteamOnline: var(--HazbinGlass1);
+    --SteamIngame: var(--HazbinRed);
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus 
+{
+    --SteamOffline: #080808;
+    --SteamOnline: var(--HazbinGlass1);
+    --SteamIngame: var(--HazbinRed);
+}
+
+.SteamAvatar:hover > img 
+{
+    filter: brightness(130%) !important;
+}
+
+.SteamAvatar:hover::after {
+    content: "View Full Profile";
+    font-size: 12px;
+    font-family: "Motiva Sans", Sans-serif !important;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: calc( 3px + 55px) !important;
+    left:60px !important;
+    color: white !important;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > p,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamLevel,
+#tpm__sBmSteamAccountDetails > module > div > p.SteamRealName
+{
+		color: var(--HazbinGlass2)
+}
+
+    #tpm__sBmSteamAccountDetails > module > div > p.SteamDisplayName {
+        content: url(https://files.gamebanana.com/bitpit/steamwontload2.png) !important;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #tpm__sBmSteamAccountDetails > module > div > p:nth-child(3),
+    #tpm__sBmSteamAccountDetails > module > div > p:nth-child(4) {
+        display: none;
+    }
+
+   .SteamAvatar:hover > img {
+    filter: brightness(130%) !important;
+}
+
+/* Disable the "View Full Profile" hover text */
+.SteamAvatar:hover::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Avatars and overlays */
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a {
+    position: relative;
+    display: inline-block;
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Static overlay */
+#tpm__sBmSteamAccountDetails > module > div > div:nth-child(1) > a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        url("https://shared.akamai.steamstatic.com/community_assets/images/items/601220/b52bd23d8c484b108683f378441fdd5d8bcf285f.png")
+        center / 100% 100% no-repeat;
+
+    transform: translate(-48%, -48%) scale(1.12, 1.14);
+}
+
+/* -------------------------- Page Module Styling Staff Online App -------------------------- */
+
+#ModsOnlineModule {
+	min-height: 158px !important;
+}
+
+/* Margin Fixes */
+
+#ModsOnlineModule > h2 {
+  position: relative; /* required for transform to visually shift */
+  transform: translate( 20px, -20px); /* X = right 20px, Y = up 10px */
+}
+
+#ModsOnlineModule > div {
+	padding: 0px 10px 0px 20px;
+}
+
+#ModsOnlineModule .Grid {
+    grid-template-columns: repeat(auto-fit, 50px) !important;
+    gap: 0.6em !important;
+    display: grid;
+	position: relative; /* required for transform to visually shift */
+	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
+}
+
+#ModsOnlineModule > div > span
+{
+   text-align: center !important; /* ✅ aligns inline content to center */
+   align-items: center !important;    /* vertical center */
+   justify-content: center !important; /* horizontal center */
+}
+
+#ModsOnlineModule > div {
+  text-align: center !important; /* ✅ aligns inline content to center */
+  align-items: center  !important;    /* vertical center */
+  justify-content: center !important; /* horizontal center */
+} 
+
+/* -------------------------- Page Module Styling Buddies -------------------------- */
+
+/* Margin Fixes */
+
+#BuddiesModule > h2 {
+  position: relative; /* required for transform to visually shift */
+  transform: translate( 20px, -10px); /* X = right 20px, Y = up 10px */
+}
+
+#BuddiesModule > div {
+	padding: 20px 10px 0px 20px;
+}
+
+#BuddiesModule > div > div {
+    grid-template-columns: repeat(auto-fit, 50px) !important;
+    gap: 0.6em !important;
+    display: grid;
+	position: relative; /* required for transform to visually shift */
+	transform: translate( 0px, -20px); /* X = right 20px, Y = up 10px */
+}
+
+/* -------------------------- Page Module Styling Favorite Game App -------------------------- */
+
+/* Margin Fixes */
+
+#FavoriteGameModule > div {
+	padding: 0px 0px 44px 0px;
+}
+
+/* -------------------------- Page Module Styling Misc -------------------------- */
+
+
+/* Margin Fixes */
+
+#ContentGrid > row > column:nth-child(8) > div > div {
+	padding: 0px 0px 40px 10px;
+}
+
+#ContentGrid > row > column:nth-child(7) > div > div {
+	padding: 0px 0px 40px 10px;
+}
+
+#CommunityMedalsModule > div > div.Cluster
+{
+	position: relative;
+	transform: translate(40px, 0px)
+}
+
+/* -------------------------- PrimaryNav Styling -------------------------- */
+
+
+#PrimaryNav {
+  box-sizing: border-box;
+
+  background: var(--HazbinRedGradient);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  z-index: 1005;
+  position: relative; /* Required for ::before/::after */
+  transform: translateZ(0);
+  display: flex;
+  width: 100%;
+  height: var(--PrimaryNavHeight);
+  transition: opacity 0.5s ease-in-out;
+
+  /* create stacking context */
+	
+  isolation: isolate;
+}
+
+/* Cascade window image: behind everything */
+
+#PrimaryNav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 647px;
+  height: 100%;
+  pointer-events: none;
+
+  background-image: url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/primarynav_window_cascading1.png");
+  background-repeat: repeat-x;
+  background-position: top right;
+  background-size: auto 100%;
+
+  z-index: 0; /* bottom layer */
+}
+
+/* Bottom border: above cascade, below content */
+
+#PrimaryNav::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  pointer-events: none;
+
+  background-image: url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/primarynav_bottom_border.png");
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-size: auto 8px;
+
+  z-index: 2;
+}
+
+/* explicitly raise nav content */
+
+#PrimaryNav > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* -------------------------- Page Module Styling Responsibilties -------------------------- */
+
+#ResponsibilitiesModule > div > div > div,
+#ResponsibilitiesModule > div > div > h4
+{
+  /* ✅ Centering content */
+  display: flex;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+  #ResponsibilitiesModule > div > div:nth-child(1) > div > div {
+    font-size-adjust:1 !important;
+  }
+
+  :where(#ResponsibilitiesModule) .Card {
+    padding:0em;
+    background:none;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(1) {
+    content:url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3545060/cede55b7156e2fc893d6eef6ecbe9c6cdfe52e9b/header.jpg?t=1785519377);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(2) {
+    content:url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(2) > div > a:nth-child(3) {
+    content:url(https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3557890/7ef0523b29a765089b6a7f5bba6bf4cd8a275c16/header.jpg?t=1785783473);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(1) {
+    content:url(https://puu.sh/K0LiP/09ba4c9270.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(2) {
+    content:url(https://files.gamebanana.com/bitpit/jds_large_banner.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(3) > div > a:nth-child(3) {
+    content:url(https://puu.sh/KaWYo/77f3ab4263.png);
+    display:block;
+    width:70%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > h4 {
+    display:none;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > div > a:nth-child(1) {
+    content:url(https://i.imgur.com/88xLk.png);
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
+
+  #ResponsibilitiesModule > div > div:nth-child(4) > div > a:nth-child(2) {
+    content:url(https://images.gamebanana.com/img/banners/clubs/619fa9d27c6b1.jpg);
+    display:none;
+    width:100%;
+    height:auto;
+    margin:8px 0;
+  }
+
+/* --------------------------- Misc Changes --------------------------- */
+
+/* Removing Trans Flag on VPKedit from Discord Rich Presence */
+img[src="https://cdn.discordapp.com/app-assets/1222285763459158056/1395581923828437176.png"] {
+  content: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/VPKedit_normal.png") !important;
+}
+
+/* Contact Icons */
+spriteIcon.ContactTypeIcon.DiscordIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/discord_icon_130958.webp") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+spriteIcon.ContactTypeIcon.SteamIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/Steam_icon_logo.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+spriteIcon.MiscIcon.Checkpoint {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/checkpoint.cc.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+spriteIcon.ContactTypeIcon.TwitterIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/twitter-x-logo-png_seeklogo-492396.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+spriteIcon.ContactTypeIcon.XboxIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/xbox.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+/* Battle.Net */
+#ContactInfo > div > dl > dd:nth-child(10) > spriteicon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/blizznet.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+/* EA Play */
+#ContactInfo > div > dl > dd:nth-child(12) > spriteicon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/Electronic_Arts_Logo_2020.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
+spriteIcon.ContactTypeIcon.GithubIcon {
+  background-image: url("https://phencyclidine08.github.io/gbcss/Misc/Assets/git.png") !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  image-rendering: auto !important;
+}
+
 /* -------------------------- Posts and Staff Online Avatar Frames -------------------------- */
 
 
@@ -89,3 +1803,4 @@
 }
 
 /* -------------------------- To Be Continued -------------------------- */
+
