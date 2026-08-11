@@ -1,0 +1,91 @@
+/* -------------------------- Posts and Staff Online Avatar Frames -------------------------- */
+
+
+
+/* Staff Online avatars */
+#ModsOnlineModule .Grid > a.Avatar {
+    display: inline-grid !important;
+    position: relative;
+    padding: 0 !important;
+    margin: 0;
+    overflow: visible;
+    line-height: 0;
+    vertical-align: top;
+}
+
+/* All avatar images occupy the same grid cell */
+#ModsOnlineModule .Grid > a.Avatar > img {
+    grid-area: 1 / 1 !important;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0;
+    z-index: 0;
+}
+
+/* Primary avatar */
+#ModsOnlineModule .Grid > a.Avatar > img:first-of-type {
+    display: block;
+}
+
+/* Hide alternate images by default */
+#ModsOnlineModule .Grid > a.Avatar > img:not(:first-of-type) {
+    display: none;
+}
+
+/*
+ * Only perform the image swap if the Avatar
+ * actually contains a second image.
+ */
+#ModsOnlineModule .Grid > a.Avatar:has(> img:nth-of-type(2)):hover > img:first-of-type {
+    display: none;
+}
+
+#ModsOnlineModule .Grid > a.Avatar:has(> img:nth-of-type(2)):hover > img:not(:first-of-type) {
+    display: block;
+}
+
+/* Overlay */
+#ModsOnlineModule .Grid > a.Avatar::after {
+    content: "";
+    grid-area: 1 / 1;
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    pointer-events: none;
+
+    background:
+        url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png")
+        center / 100% 100% no-repeat;
+
+    transform: scale(1.16, 1.14);
+    transform-origin: center;
+}
+
+.Avatar:not(#IdentityModule *) {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+.Avatar:not(#IdentityModule *)::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png")
+        center / 100% 100% no-repeat;
+
+    transform: scale(1.16, 1.14);
+    transform-origin: center;
+}
+
+/* -------------------------- To Be Continued -------------------------- */
