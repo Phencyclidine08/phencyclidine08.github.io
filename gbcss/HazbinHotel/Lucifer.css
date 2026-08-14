@@ -1811,5 +1811,29 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     transform-origin: center;
 }
 
+/* -------------------------- Record Previews -------------------------- */
+
+records.Grid recordCell.Preview {
+    max-height: 20em !important;
+}
+
+records.Grid recordCell.Preview .Preview {
+    max-height: 20em !important;
+}
+
+.Record .Preview {
+    position: relative;
+    min-height: 3em;
+    max-height: 20em !important;
+}
+
+.Record .PreviewImage {
+    aspect-ratio: auto !important;
+    width: 100%;
+    height: auto;
+    max-height: 20em !important;
+    object-fit: cover;
+}
+
 /* -------------------------- To Be Continued -------------------------- */
 
