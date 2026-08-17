@@ -1,5 +1,11 @@
 :root {
-    --ChyronMainGradient:linear-gradient(to top,#2c070c,#010508);
+    --ChyronMainGradient:linear-gradient(to top,#010508,#2c070c);
+	--ChyronMainGradientR:radial-gradient(
+    circle at top center,
+    #2c070c 0%,
+    #2c070c 15%,
+    #010508 75%
+	);
 	--ChyronMainBG:#000000; 
 	--ChyronMainBG2:#2c070c;
     --HazbinRed:#f20032;
@@ -77,10 +83,11 @@
 
 /* -------------------------- Main Background -------------------------- */
 body {
-    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/chyron_mainbackground_gradient.png");
+    background: var(--ChyronMainGradient);
     background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: var(--ChyronMainBG);
 
     /* font-family: Park Lane; */
     /* line-height: 1.75; */
