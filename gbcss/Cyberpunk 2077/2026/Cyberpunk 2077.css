@@ -1,6 +1,7 @@
 :root {
     --ChyronMainGradient:linear-gradient(to top,#2c070c,#010508);
-	--ChyronMainBG:#000000;
+	--ChyronMainBG:#000000; 
+	--ChyronMainBG2:#2c070c;
     --HazbinRed:#f20032;
     --HazbinRedGradient:linear-gradient(to top,#f8021b,#5e0110);
 	--HazbinRedGradientTweaked:linear-gradient(to top,#980d20,#38050c);
@@ -360,26 +361,26 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 /* STEP 2 — Apply styles only when the container is ≤ 1200px wide */
 @container (max-width: 1200px) {
     wrapper#HeadlineWrapper {
-        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/nightcity_header.png);
+        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/becca_header_alt.jpg);
         width: auto;
         height: 400px;
         background-size: cover;
         align-content: end;
         overflow: hidden;
-        background-position: top -200px right 0;
+        background-position: top 0px right 0;
     }
 }
 
 /* STEP 3 — Apply styles only when the container is < 1200px wide */
 @container (min-width: 1201px) {
     wrapper#HeadlineWrapper {
-        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/nightcity_header.png);
+        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/becca_header_alt.jpg);
         width: auto;
         height: 400px;
         background-size: cover;
         align-content: end;
         overflow: hidden;
-        background-position: top -350px right 0;
+        background-position: top 0px right 0;
     }
 }
 
@@ -982,7 +983,7 @@ wrapper#HeadlineWrapper {
 #PrimaryNav {
   box-sizing: border-box;
 
-  background: var(--HazbinRedGradient);
+  background: var(--ChyronMainBG2);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
