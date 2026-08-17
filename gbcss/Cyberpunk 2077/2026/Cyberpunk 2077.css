@@ -986,6 +986,12 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- PrimaryNav Styling -------------------------- */
 
+#SiteLogo img {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/gamebanana_title.png") !important;
+    min-height: 50px;
+	max-width: 400px;
+    image-rendering: auto !important;
+}
 
 #PrimaryNav {
   box-sizing: border-box;
@@ -1019,7 +1025,7 @@ wrapper#HeadlineWrapper {
   height: 100%;
   pointer-events: none;
 
-  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/primarynav_asset1.png");
+  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_asset1.png");
   background-repeat: repeat-x;
   background-position: top right;
   background-size: auto 100%;
@@ -1038,7 +1044,7 @@ wrapper#HeadlineWrapper {
   height: 8px;
   pointer-events: none;
 
-  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/primarynav_bottom_border.png");
+  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_bottom_border.png");
   background-repeat: repeat-x;
   background-position: bottom left;
   background-size: auto 8px;
