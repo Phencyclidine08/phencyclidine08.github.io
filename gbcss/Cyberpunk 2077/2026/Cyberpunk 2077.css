@@ -521,10 +521,10 @@ wrapper#HeadlineWrapper {
 
 
 /* -------------------------- Page Module Styling Generic -------------------------- */
-.Module {
+.PageModule {
     position: relative;
 
-    background: #51171b;
+    background: #51171b00;
 
     border-style: solid;
     border-width: 1px;
@@ -532,10 +532,10 @@ wrapper#HeadlineWrapper {
     border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_01.png");
 
     /* top | right | bottom | left */
-    border-image-slice: 81 2 35 47 fill;
+    border-image-slice: 82 29 82 52 fill;
 
     /* Visual size of each border section */
-    border-image-width: 81px 2px 35px 47px;
+    border-image-width: 82px 29px 82px 52px;
 
     border-image-repeat: stretch;
     border-image-outset: 0;
