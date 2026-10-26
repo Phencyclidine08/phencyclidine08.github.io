@@ -482,6 +482,28 @@ wrapper#HeadlineWrapper {
     border-image-outset: 0;
 }
 
+#IdentityModule
+	{
+    position: relative;
+
+    background: #491619;
+
+    border-style: solid;
+    border-width: 0px;
+
+    border-image-source: url("");
+
+    /* top | right | bottom | left */
+    border-image-slice: 82 29 82 52 fill;
+
+    /* Visual size of each border section */
+    border-image-width: 82px 29px 82px 52px;
+
+    border-image-repeat: stretch;
+    border-image-outset: 0;
+}
+
+
 .PageModule > h2,
 .PageModule > .Content,
 .PageModule > div
@@ -623,7 +645,7 @@ wrapper#HeadlineWrapper {
   display: block;
 	margin-top: 320px;
   padding: 0px 0px 40px 0px;
-  transform: translate(0px,-350px); /* X = right 20px, Y = up 10px */
+  transform: translate(-10px,-330px); /* X = right 20px, Y = up 10px */
 
   /* Replace content with signature */
   background-image: url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_black.png');
@@ -671,7 +693,7 @@ wrapper#HeadlineWrapper {
 #IdentityModule > div > ul 
 {
   position: relative; /* required to visually shift */
-  transform: translate(0px, -120px); /* X = right 20px, Y = up 10px */
+  transform: translate(-21px, -10px); /* X = right 20px, Y = up 10px */
   padding: 0px 0px 0px 0px;
 }
 
