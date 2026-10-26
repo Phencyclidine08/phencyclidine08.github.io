@@ -511,10 +511,13 @@ wrapper#HeadlineWrapper {
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 #IdentityModule {
-  max-height: 533px;
   position: relative;
   padding: 70px 36px;
   overflow: visible;
+
+  background:
+    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
+    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
   
   background-repeat:
     repeat,
@@ -533,13 +536,38 @@ wrapper#HeadlineWrapper {
   pointer-events: none;
 
   background:
+    /* Plaque */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom_plaque.png') bottom no-repeat,
+
+    /* Corners */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_max.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_max.png') bottom left no-repeat,
+
+    /* Borders */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y,
 
     /* ✅ Custom image you want to translate */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/Capri_seated.png') center 0px no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Capri_seated.png') center 0px no-repeat;
 
   background-size:
+    300px 200px,   /* plaque */
 
-    247% auto;   /* ✅ custom image size */
+    85px 85px,     /* top-left */
+    85px 85px,     /* top-right */
+    160px 160px,   /* bottom-right */
+    160px 160px,   /* bottom-left */
+
+    100% 26px,     /* top border */
+    26px 100%,     /* right border */
+    100% 26px,     /* bottom border */
+    26px 100%,     /* left border */
+
+    238% auto;   /* ✅ custom image size */
 }
 
 
@@ -595,10 +623,10 @@ wrapper#HeadlineWrapper {
   display: block;
 	margin-top: 320px;
   padding: 0px 0px 40px 0px;
-  transform: translate(0px, 240px); /* X = right 20px, Y = up 10px */
+  transform: translate(0px,-350px); /* X = right 20px, Y = up 10px */
 
   /* Replace content with signature */
-  background-image: url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_shadow.png');
+  background-image: url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_black.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -688,12 +716,12 @@ wrapper#HeadlineWrapper {
 #IdentityModule > div > ul > li:nth-child(1) > statelabel
 {
 	display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-    padding: .25em .5em;
-    margin: .125em;
-    border-radius: .25em;
-    background: transparent;
+	align-items: center;
+	white-space: nowrap;
+	padding: .25em .5em;
+	margin: .125em;
+	border-radius: .25em;
+	background: transparent;
 	border: 1px solid #750d0f73;
 }
 
