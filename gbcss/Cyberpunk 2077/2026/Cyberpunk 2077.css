@@ -839,7 +839,7 @@ wrapper#HeadlineWrapper {
   background:
 
     /* ✅ New centered background image */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/misc_module_image2.png') top center no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/misc_module_image2.png') top center no-repeat;
 
   background-size:
 
@@ -874,6 +874,20 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Steam App -------------------------- */
 
+
+.SteamAvatar 
+{
+    --SteamOffline: #080808;
+    --SteamOnline: var(--HazbinGlass1);
+    --SteamIngame: var(--HazbinRed);
+}
+
+#tpm__sBmSteamAccountDetails > module > div > p.SteamStatus 
+{
+    --SteamOffline: #080808;
+    --SteamOnline: var(--HazbinGlass1);
+    --SteamIngame: var(--HazbinRed);
+}
 
 .SteamAvatar:hover > img 
 {
