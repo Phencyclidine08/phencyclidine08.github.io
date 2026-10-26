@@ -928,6 +928,22 @@ wrapper#HeadlineWrapper {
     transform: translate(-50.2%, -48.9%) scale(1.18, 1.17);
 }
 
+#tpm__sBmSteamAccountDetails > module > div {
+
+background: url() !important;
+	
+}
+
+#tpm__sBmSteamAccountDetails > module > div > div > p,
+#tpm__sBmSteamAccountDetails > module > div > p
+{
+
+	padding-left: 52px !important;
+	
+}
+
+
+
 /* -------------------------- Page Module Styling Staff Online App -------------------------- */
 
 
