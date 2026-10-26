@@ -68,6 +68,8 @@
     --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
 }
 
+
+
 /* -------------------------- Removing Needless Elements Present on Client Side -------------------------- */
 
 #FavoriteGameModule > h2 > spriteicon, 
@@ -504,6 +506,33 @@ wrapper#HeadlineWrapper {
     border-image-repeat: stretch;
     border-image-outset: 0;
 }
+
+.PageModule > h2,
+.PageModule > .Content,
+.PageModule > div
+
+{
+    padding-left: 52px !important;
+    box-sizing: border-box;
+}
+
+.PageModule {
+    width: calc(100% - 5px);
+    box-sizing: border-box;
+}
+
+#CoreStatsModule > div 
+{
+    padding-left: 41px !important;
+    box-sizing: border-box;
+}
+
+.Tabs {
+    border-bottom: 0px solid;
+}
+
+#ContentGrid > row > column:nth-child(4)
+
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 #IdentityModule {
