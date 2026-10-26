@@ -346,26 +346,26 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 /* STEP 2 — Apply styles only when the container is ≤ 1200px wide */
 @container (max-width: 1200px) {
     wrapper#HeadlineWrapper {
-        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_01a.png);
+        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_02a.png);
         width: auto;
         height: 400px;
         background-size: cover;
         align-content: end;
         overflow: hidden;
-        background-position: top 0px right 0;
+        background-position: top -140px right 0;
     }
 }
 
 /* STEP 3 — Apply styles only when the container is < 1200px wide */
 @container (min-width: 1201px) {
     wrapper#HeadlineWrapper {
-        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_01a.png);
+        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_02a.png);
         width: auto;
         height: 400px;
         background-size: cover;
         align-content: end;
         overflow: hidden;
-        background-position: top 0px right 0;
+        background-position: top -140px right 0;
     }
 }
 
