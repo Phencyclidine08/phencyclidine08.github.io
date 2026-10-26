@@ -70,6 +70,8 @@
 
 
 
+
+
 /* -------------------------- Removing Needless Elements Present on Client Side -------------------------- */
 
 #FavoriteGameModule > h2 > spriteicon, 
@@ -558,38 +560,13 @@ wrapper#HeadlineWrapper {
   pointer-events: none;
 
   background:
-    /* Plaque */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') bottom no-repeat,
-
-    /* Corners */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl.pn') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr.pn') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_max.pn') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_max.pn') bottom left no-repeat,
-
-    /* Borders */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.pn') top center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.pn') center right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.pn') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.pn') center left repeat-y,
 
     /* ✅ Custom image you want to translate */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/becca_card_apng.png') center 0px no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/Capri_seated.png') center 0px no-repeat;
 
   background-size:
-    300px 200px,   /* plaque */
 
-    85px 85px,     /* top-left */
-    85px 85px,     /* top-right */
-    160px 160px,   /* bottom-right */
-    160px 160px,   /* bottom-left */
-
-    100% 26px,     /* top border */
-    26px 100%,     /* right border */
-    100% 26px,     /* bottom border */
-    26px 100%,     /* left border */
-
-    400px 800px;   /* ✅ custom image size */
+    247% auto;   /* ✅ custom image size */
 }
 
 
@@ -648,7 +625,7 @@ wrapper#HeadlineWrapper {
   transform: translate(0px, -360px); /* X = right 20px, Y = up 10px */
 
   /* Replace content with signature */
-  background-image: url('https://filecache40.gamebanana.com/bitpit/allenart04a_shadow.png');
+  background-image: url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/Allenart07a.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
