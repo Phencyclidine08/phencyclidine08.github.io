@@ -540,10 +540,10 @@ wrapper#HeadlineWrapper {
     url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom_plaque.png') bottom no-repeat,
 
     /* Corners */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_max.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_max.png') bottom left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
 
     /* Borders */
     url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
@@ -559,8 +559,8 @@ wrapper#HeadlineWrapper {
 
     85px 85px,     /* top-left */
     85px 85px,     /* top-right */
-    160px 160px,   /* bottom-right */
-    160px 160px,   /* bottom-left */
+    85px 85px,   /* bottom-right */
+    85px 85px,   /* bottom-left */
 
     100% 26px,     /* top border */
     26px 100%,     /* right border */
