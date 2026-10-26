@@ -625,7 +625,7 @@ wrapper#HeadlineWrapper {
   transform: translate(0px, -360px); /* X = right 20px, Y = up 10px */
 
   /* Replace content with signature */
-  background-image: url('https://phencyclidine08.github.io/gbcss/Cyberpunk 2077/2026/assets/Allenart07a.png');
+  background-image: url('https://phencyclidine08.github.io/gbcss/Cyberpunk%2077/2026/assets/Allenart07a.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
