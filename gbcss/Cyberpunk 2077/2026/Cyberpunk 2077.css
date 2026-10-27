@@ -907,7 +907,7 @@ wrapper#HeadlineWrapper {
   background:
 
     /* ✅ New centered background image */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/misc_module_image2.png') top center no-repeat;
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/misc_module_image2.png') 25px 0px no-repeat;
 
   background-size:
 
