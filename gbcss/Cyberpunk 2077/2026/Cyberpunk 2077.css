@@ -1432,3 +1432,26 @@ spriteIcon.ContactTypeIcon.GithubIcon {
 
 /* -------------------------- To Be Continued -------------------------- */
 
+##ContentGrid > row > column:nth-child(4) > div.PageModule,
+#ContentGrid > row > column:nth-child(8) > div.PageModule,
+#PointsModule
+
+{
+    position: relative;
+
+    background: #51171b00;
+
+    border-style: solid;
+    border-width: 1px;
+
+    border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_03.png");
+
+    /* top | right | bottom | left */
+    border-image-slice: 82 29 82 52 fill;
+
+    /* Visual size of each border section */
+    border-image-width: 82px 29px 82px 52px;
+
+    border-image-repeat: stretch;
+    border-image-outset: 0;
+}
