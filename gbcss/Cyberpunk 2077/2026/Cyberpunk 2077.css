@@ -824,9 +824,7 @@ wrapper#HeadlineWrapper {
 
   overflow: visible;
 
-  background:
-    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest_dark.png"),
-    radial-gradient(ellipse at center, #840430 50%, #38050c 100%);
+  background: #2c070c;
   
   background-repeat:
     repeat,
@@ -846,17 +844,17 @@ wrapper#HeadlineWrapper {
   z-index:10;
 
   background:
-    /* Corners (top) */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tl_min.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_tr_min.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_br_min.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_corner_bl_min.png') bottom left no-repeat,
+    /* corners first */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
 
-    /* Sides (under corners) */
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_top.png') top center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_right.png') center right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_left.png') center left repeat-y;
+    /* sides next */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y;
 
   background-size:
     51px 51px,
