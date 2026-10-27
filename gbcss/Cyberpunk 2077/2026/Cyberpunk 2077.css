@@ -602,7 +602,6 @@ wrapper#HeadlineWrapper {
 #ContentGrid > row > column:nth-child(4) > div.PageModule,
 #ContentGrid > row > column:nth-child(8) > div.PageModule,
 #PointsModule
-
 {
     position: relative;
 
@@ -627,20 +626,11 @@ wrapper#HeadlineWrapper {
 
 #IdentityModule {
   position: relative;
-  padding: 70px 36px;
+  padding: 15px 36px;
   overflow: visible;
 
-  background:
-    url("https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/cascading_lucifer_crest.png"),
-    radial-gradient(ellipse at center, #980d20 50%, #38050c 100%);
-  
-  background-repeat:
-    repeat,
-    no-repeat;
+	  background: #491619;
 
-  background-size:
-    150px 150px, /* ✅ scale the pattern image smaller */
-    cover;
 }
 
 #IdentityModule::before {
