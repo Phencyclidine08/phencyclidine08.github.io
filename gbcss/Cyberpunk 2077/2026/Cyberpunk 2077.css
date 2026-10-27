@@ -597,8 +597,6 @@ wrapper#HeadlineWrapper {
     border-bottom: 0px solid;
 }
 
-#ContentGrid > row > column:nth-child(4)
-
 #ContentGrid > row > column:nth-child(4) > div.PageModule,
 #ContentGrid > row > column:nth-child(8) > div.PageModule,
 #PointsModule
