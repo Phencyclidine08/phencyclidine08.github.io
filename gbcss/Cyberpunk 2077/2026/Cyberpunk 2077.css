@@ -542,10 +542,10 @@ wrapper#HeadlineWrapper {
     border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_01.png");
 
     /* top | right | bottom | left */
-    border-image-slice: 82 29 82 52 fill;
+    border-image-slice: 200 29 82 52 fill;
 
     /* Visual size of each border section */
-    border-image-width: 82px 29px 82px 52px;
+    border-image-width: 200px 29px 82px 52px;
 
     border-image-repeat: stretch;
     border-image-outset: 0;
