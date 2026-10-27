@@ -31,7 +31,7 @@
 	
     --DefaultTextFontFamily: "Open Sans", sans-serif;
     --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
-    --DefaultTextColor: #ffc681;
+    --DefaultTextColor: #ef4e3e;
     --DefaultBlueColor: #6CB1E1;
     --DefaultRedColor: #FF4E4E;
     --DefaultRedDarkColor: #701E24;
@@ -48,8 +48,8 @@
     --ButtonFontSize: 0.9em;
     --ButtonHoverFontColor: #e2e2e2;
     --ButtonHoverBackgroundColor: #670f38;
-    --LinkColor: #fe226d;
-    --LinkHoverColor: #FD70E1;
+    --LinkColor: #50ccc9; 
+    --LinkHoverColor: #ffda31; 
     --NavUpdatesIndicatorColor: #6CB1E1;
     --InputTitleUnderlineColor: #707070;
     --InputTextColor: #e2e2e2;
