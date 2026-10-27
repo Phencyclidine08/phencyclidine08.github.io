@@ -399,7 +399,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 }
 
 #HeadlineWrapper overlay h1 {
-  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_shadow.png");
+  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_impacted.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 580px;
@@ -1432,45 +1432,3 @@ spriteIcon.ContactTypeIcon.GithubIcon {
 
 /* -------------------------- To Be Continued -------------------------- */
 
-#ContentGrid > row > column:nth-child(4) > div.PageModule,
-#ContentGrid > row > column:nth-child(8) > div.PageModule
-{
-    position: relative;
-
-    background: #51171b00;
-
-    border-style: solid;
-    border-width: 1px;
-
-    border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_03.png");
-
-    /* top | right | bottom | left */
-    border-image-slice: 82 29 82 52 fill;
-
-    /* Visual size of each border section */
-    border-image-width: 82px 29px 82px 52px;
-
-    border-image-repeat: stretch;
-    border-image-outset: 0;
-}
-
-#PointsModule
-{
-    position: relative;
-
-    background: #51171b00;
-
-    border-style: solid;
-    border-width: 1px;
-
-    border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_03.png");
-
-    /* top | right | bottom | left */
-    border-image-slice: 82 29 82 52 fill;
-
-    /* Visual size of each border section */
-    border-image-width: 82px 29px 82px 52px;
-
-    border-image-repeat: stretch;
-    border-image-outset: 0;
-}
