@@ -332,6 +332,33 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   z-index: 10; /* higher than content */
   pointer-events: none;
 
+  background:
+    /* corners first */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* sides next */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y;
+
+
+  background-size:
+    85px 85px,   /* top-left corner */
+    85px 85px,   /* top-right corner */
+    85px 85px,   /* bottom-right corner */
+    85px 85px,   /* bottom-left corner */
+
+    100% 26px,   /* top border: full width, 26px height */
+    26px 100%,   /* right border: 26px width, full height */
+    100% 26px,   /* bottom border: full width, 26px height */
+    26px 100%,   /* left border: 26px width, full height */
+
+    cover;
+
   padding: 26px; /* Matches border/corner size */
   overflow: visible;
 }
@@ -394,28 +421,68 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Sub Navigator Styling -------------------------- */
 #SubNavigator {
-    position: relative;
+  position: relative;
+  z-index: 1; /* Base layer for stacking */
 
-    background: #49161900;
+  background:
+    url(""),
+    radial-gradient(ellipse at center, #491619 50%, #491619 100%);
+  
+  background-repeat:
+    repeat,
+    no-repeat;
 
-    border-style: solid;
-    border-width: 1px;
+  background-size:
+    150px 150px, /* ✅ scale the pattern image smaller */
+    cover;
 
-    border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_02.png");
 
-    /* top | right | bottom | left */
-    border-image-slice: 4 44 55 55 fill;
+  padding: 36px;
+  overflow: visible;
+  isolation: isolate; /* Creates new stacking context */
 
-    /*
-        top | right | bottom | left
+  /* ✅ Centering content */
+  display: flex;
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+}
 
-        Left needs more width to preserve the
-        angled bottom-left geometry.
-    */
-    border-image-width: 2px 8px 14px 10px;
+#SubNavigator::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10; /* higher than content */
+  pointer-events: none;
 
-    border-image-repeat: stretch;
-    border-image-outset: 0;
+  background:
+    /* corners first */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
+
+    /* sides next */
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
+    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y;
+
+
+  background-size:
+    85px 85px,   /* top-left corner */
+    85px 85px,   /* top-right corner */
+    85px 85px,   /* bottom-right corner */
+    85px 85px,   /* bottom-left corner */
+
+    100% 26px,   /* top border: full width, 26px height */
+    26px 100%,   /* right border: 26px width, full height */
+    100% 26px,   /* bottom border: full width, 26px height */
+    26px 100%,   /* left border: 26px width, full height */
+
+    cover;
+
+  padding: 26px; /* Matches border/corner size */
+  overflow: visible;
 }
 
 
