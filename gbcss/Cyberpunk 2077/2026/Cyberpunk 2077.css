@@ -1551,7 +1551,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
 .PageModule.AdBlockAppealModule::before, .PageModule.AdBlockAppealModule::after { content: none; }
 
 .PageModule::before {
-    content: "UI" counter(rb-mod, decimal-leading-zero) "";
+    content: "PAGEMODULE." counter(rb-mod, decimal-leading-zero) " // LOADED";
     position: absolute;
     top: .75em;
     right: 1.7em;
