@@ -405,31 +405,61 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     container-type: inline-size;
 }
 
-/* STEP 2 — Apply styles only when the container is ≤ 1200px wide */
+
+/* =========================================
+   HEADLINE WRAPPER - CAPRI + STEAM OVERLAY
+   ========================================= */
+
 @container (max-width: 1200px) {
     wrapper#HeadlineWrapper {
-        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_02a.png);
+        background-image:
+            url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png"),
+            url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_02a.png");
+
+        background-size:
+            140% 125%,
+            cover;
+
+        background-position:
+            center,
+            top -140px right 0;
+
+        background-repeat:
+            no-repeat,
+            no-repeat;
+
         width: auto;
         height: 400px;
-        background-size: cover;
         align-content: end;
         overflow: hidden;
-        background-position: top -140px right 0;
     }
 }
 
-/* STEP 3 — Apply styles only when the container is < 1200px wide */
 @container (min-width: 1200px) {
     wrapper#HeadlineWrapper {
-        background: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_02a.png);
+        background-image:
+            url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png"),
+            url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_header_02a.png");
+
+        background-size:
+            140% 125%,
+            cover;
+
+        background-position:
+            center,
+            top -140px right 0;
+
+        background-repeat:
+            no-repeat,
+            no-repeat;
+
         width: auto;
         height: 400px;
-        background-size: cover;
         align-content: end;
         overflow: hidden;
-        background-position: top -140px right 0;
     }
 }
+
 
 #HeadlineWrapper overlay h1 {
   background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_impacted.png");
@@ -442,7 +472,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   text-shadow: none;
 }
 
-@media (max-width: 837px) {
+@media (max-width: 936px) {
 wrapper#HeadlineWrapper {
  display: none !important; 
 }
