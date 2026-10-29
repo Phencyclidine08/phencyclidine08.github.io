@@ -1772,8 +1772,7 @@ body::after {
 #CoreStatsModule itemcount, #CoreStatsModule .Card > span { font: 500 1.6em/1 var(--rb-hud); letter-spacing: .02em; }
 #CoreStatsModule small { font: .6rem var(--rb-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--rb-dim); opacity: 1; }
 
-.GenericKeyListModule dl { display: grid; grid-template-columns: auto 1fr; gap: .55em 1.1em; margin: 0; }
-.GenericKeyListModule dt { font: .68rem/1.95 var(--rb-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--rb-cat); opacity: 1; }
+.GenericKeyListModule dt { font: .68rem/1.95 var(--rb-mono); letter-spacing: .08em; text-transform: uppercase; opacity: 1; }
 .GenericKeyListModule dd { margin: 0; font-size: 1.02em; }
 
 #CoreStatsModule .Content { display: flex !important; flex-wrap: wrap; gap: .5em; }
