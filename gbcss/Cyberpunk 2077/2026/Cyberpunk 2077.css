@@ -857,49 +857,26 @@ wrapper#HeadlineWrapper {
 
 
 .AvatarTooltip {
-  position: relative;
-  overflow: visible;
-  background: #2c070c;
-  
-  background-repeat:
-    repeat,
-    no-repeat;
+    position: relative;
+	background: none !important;
 
-  background-size:
-    150px 150px,
-    cover;
+    border-style: solid;
+    border-width: 2px;
+
+    border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_04.png");
+
+    /* top | right | bottom | left */
+    border-image-slice: 200 29 82 52 fill;
+
+    /* Visual size of each border section */
+    border-image-width: 200px 29px 82px 52px;
+
+    border-image-repeat: stretch;
+    border-image-outset: 0;
 }
 
 /* Frame */
-.AvatarTooltip::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
 
-  background:
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y;
-
-  background-size:
-    51px 51px,
-    51px 51px,
-    51px 51px,
-    51px 51px,
-    100% 16px,
-    16px 100%,
-    100% 16px,
-    16px 100%;
-
-  margin: -15px !important;
-  z-index: 0;
-}
 
 /* Sitting buddy */
 .AvatarTooltip::after {
@@ -924,6 +901,18 @@ wrapper#HeadlineWrapper {
 .tippy-content .BananaTip,
 {
 
+}
+
+.AvatarTooltip::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9998;
+    background:
+        repeating-linear-gradient(to bottom, rgb(255 0 0 / 18%) 0 1px, #ff000000 1px 3px),
+        linear-gradient(to bottom, #ff000000, rgb(255 0 0 / 6%) 45%, rgb(255 0 0 / 8%) 50%, rgb(255 0 0 / 6%) 55%, transparent) 0 -30vh / 100% 30vh no-repeat;
+    animation: rb-sweep-screen 9s linear infinite;
 }
 
 /* -------------------------- Page Module Styling Comments -------------------------- */
