@@ -360,43 +360,28 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 	  overflow: visible;
 }
 
+
 #HeadlineWrapper::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 10; /* higher than content */
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    pointer-events: none;
 
-  background:
-    /* corners first */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
+    /* 9-slice border image */
+    border: 45px solid transparent;
 
-    /* sides next */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y;
+    border-image-source:
+        url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_frame_01.png");
 
+    border-image-slice: 45 45 45 45;
+    border-image-width: 45px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
 
-  background-size:
-    85px 85px,   /* top-left corner */
-    85px 85px,   /* top-right corner */
-    85px 85px,   /* bottom-right corner */
-    85px 85px,   /* bottom-left corner */
-
-    100% 26px,   /* top border: full width, 26px height */
-    26px 100%,   /* right border: 26px width, full height */
-    100% 26px,   /* bottom border: full width, 26px height */
-    26px 100%,   /* left border: 26px width, full height */
-
-    cover;
-
-  padding: 26px; /* Matches border/corner size */
-  overflow: visible;
+    box-sizing: border-box;
 }
+
 
 /* Container Width Sensitive Logic (prevent lucy from losing eye contact with viewer) */
 
