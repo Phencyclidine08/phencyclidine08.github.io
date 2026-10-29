@@ -116,7 +116,7 @@ dt {
 /* -------------------------- Main Background -------------------------- */
 body {
     background: var(--ChyronMainGradient);
-/*	background-image: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/backgroundart.png); */
+	background-image: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/backgroundart.png);
     background-size: 100%;
     background-position: center top;
     background-repeat: no-repeat;
@@ -943,24 +943,6 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Page Module Styling Audio Player -------------------------- */
 
-#tpm__sBmAudio > module.PageModule::before
-{
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-
-  background:
-
-    /* ✅ New centered background image */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/misc_module_image2.png') 25px 0px no-repeat;
-
-  background-size:
-
-    100%;        /* ✅ center image uses natural size */
-}
-
 /* Margin Fixes */
 
 #tpm__sBmAudio > module > div {
@@ -1610,7 +1592,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     color: var(--rb-cat);
     opacity: .65;
     animation: rb-blink 3.2s steps(1) infinite;
-	color: #f65140 !important;
+    color: #f65140 !important;
 }
 @keyframes rb-blink { 70% { opacity: .65; } 72% { opacity: .15; } 74% { opacity: .65; } }
 
@@ -1622,7 +1604,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     background: linear-gradient(to bottom, transparent, rgba(95, 240, 255, .07) 50%, transparent) 0 -40% / 100% 40% no-repeat;
     animation: rb-modscan 7s linear infinite;
 }
-#ContentGrid column:nth-child(2) .PageModule::after { animation-duration: 8.5s; }
+#ContentGrid column:nth-child(2) .PageModule::after {animation-duration: 8.5s;}
 #ContentGrid row:nth-child(2) .PageModule::after { animation-duration: 10s; }
 @keyframes rb-modscan { to { background-position: 0 140%; } }
 
