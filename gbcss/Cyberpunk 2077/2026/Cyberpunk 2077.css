@@ -1531,8 +1531,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     transition: --rb-br .35s ease, border-color .3s;
     animation: rb-boot .8s cubic-bezier(.2, .8, .2, 1) both;
 }
-#ContentGrid column:nth-child(2) .PageModule { animation-delay: .12s; }
-#ContentGrid row:nth-child(2) .PageModule { animation-delay: .24s; }
+
 @keyframes rb-boot {
     0%   { opacity: .3; transform: translateY(10px); filter: brightness(2.2) saturate(0); }
     40%  { opacity: 1; filter: brightness(1.4); }
@@ -1888,3 +1887,54 @@ body::after {
     to   { text-shadow: 0 0 26px rgb(248 255 127 / 80%), 0 0 2px #fff; }
 }
 #PointsModule .Rank { position: relative; font: .7rem var(--rb-mono); color: var(--rb-dim); text-transform: uppercase; letter-spacing: .06em; }
+
+
+
+/* =========================================
+   UI LABEL BLINK STAGGER
+   ========================================= */
+
+/* Column 1 - Full Width */
+#ContentGrid > row > column:nth-child(1) .PageModule::before {
+    animation-delay: 0s !important;
+}
+
+/* Column 2 - Left */
+#ContentGrid > row > column:nth-child(2) .PageModule::before {
+    animation-delay: -.4s !important;
+}
+
+/* Column 3 - Center */
+#ContentGrid > row > column:nth-child(3) .PageModule::before {
+    animation-delay: -.8s !important;
+}
+
+/* Column 4 - Right */
+#ContentGrid > row > column:nth-child(4) .PageModule::before {
+    animation-delay: -1.2s !important;
+}
+
+/* Column 5 - Full Width */
+#ContentGrid > row > column:nth-child(5) .PageModule::before {
+    animation-delay: -1.6s !important;
+}
+
+/* Column 6 - Left */
+#ContentGrid > row > column:nth-child(6) .PageModule::before {
+    animation-delay: -2s !important;
+}
+
+/* Column 7 - Center */
+#ContentGrid > row > column:nth-child(7) .PageModule::before {
+    animation-delay: -2.4s !important;
+}
+
+/* Column 8 - Right */
+#ContentGrid > row > column:nth-child(8) .PageModule::before {
+    animation-delay: -2.8s !important;
+}
+
+/* Column 9 - Full Width */
+#ContentGrid > row > column:nth-child(9) .PageModule::before {
+    animation-delay: -3.2s !important;
+}
