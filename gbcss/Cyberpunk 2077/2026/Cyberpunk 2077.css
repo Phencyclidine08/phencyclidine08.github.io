@@ -117,20 +117,21 @@ dt {
 	display: none;
 }
 
+
 /* -------------------------- Main Background -------------------------- */
+
 body {
-    background: var(--ChyronMainGradient);
-	background-image: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/backgroundart.png);
-    background-size: 100%;
+    background-color: #010508;
+
+    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/backgroundart.png");
+    background-size: auto 100vh;
     background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	font-family: var(--rb-body);
 
-
-    /* font-family: Park Lane; */
-    /* line-height: 1.75; */
+    font-family: var(--rb-body);
 }
+
 
 /* -------------------------- Removing Column & Footer Backgrounds -------------------------- */
 
