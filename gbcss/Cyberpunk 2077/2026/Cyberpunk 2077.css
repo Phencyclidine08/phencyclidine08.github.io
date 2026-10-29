@@ -643,8 +643,7 @@ wrapper#HeadlineWrapper {
 
     
     url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Capri_seated.png') center 0px no-repeat;
-  background-size:
-    300px 200px,   
+  background-size: 300px 200px,   
 
     85px 85px,     
     85px 85px,     
@@ -657,8 +656,7 @@ wrapper#HeadlineWrapper {
     26px 100%,     
 
     238% auto;   /* ✅ custom image size */
-
-	animation: none;
+  animation: none;
 }
 
 
