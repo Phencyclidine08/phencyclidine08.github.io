@@ -1749,6 +1749,12 @@ body::after {
     display: none !important;
 }
 
+
+#DiscordProfile > h2 {
+    transform: translateX(20px);
+}
+
+
 .GenericKeyListModule dt { font: .68rem/1.95 var(--rb-mono); letter-spacing: .08em; ; opacity: 1; }
 .GenericKeyListModule dd { margin: 0; font-size: 1.02em; }
 
