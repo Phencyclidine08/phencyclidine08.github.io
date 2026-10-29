@@ -449,69 +449,24 @@ wrapper#HeadlineWrapper {
 
 /* -------------------------- Sub Navigator Styling -------------------------- */
 #SubNavigator {
-  position: relative;
-  z-index: 1; /* Base layer for stacking */
+    position: relative;
+	background: none !important;
 
-  background:
-    url(""),
-    radial-gradient(ellipse at center, #491619 50%, #491619 100%);
-  
-  background-repeat:
-    repeat,
-    no-repeat;
+    border-style: solid;
+    border-width: 2px;
 
-  background-size:
-    150px 150px, /* ✅ scale the pattern image smaller */
-    cover;
+    border-image-source: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/module_square_04.png");
 
+    /* top | right | bottom | left */
+    border-image-slice: 200 29 82 52 fill;
 
-  padding: 36px;
-  overflow: visible;
-  isolation: isolate; /* Creates new stacking context */
+    /* Visual size of each border section */
+    border-image-width: 200px 29px 82px 52px;
 
-  /* ✅ Centering content */
-  display: flex;
-  align-items: center;    /* vertical center */
-  justify-content: center; /* horizontal center */
+    border-image-repeat: stretch;
+    border-image-outset: 0;
 }
 
-#SubNavigator::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 10; /* higher than content */
-  pointer-events: none;
-
-  background:
-    /* corners first */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tl_min.png') top left no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_tr_min.png') top right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_br_min.png') bottom right no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_corner_bl_min.png') bottom left no-repeat,
-
-    /* sides next */
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_top.png') top center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_right.png') center right repeat-y,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom.png') bottom center no-repeat,
-    url('https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_left.png') center left repeat-y;
-
-
-  background-size:
-    85px 85px,   /* top-left corner */
-    85px 85px,   /* top-right corner */
-    85px 85px,   /* bottom-right corner */
-    85px 85px,   /* bottom-left corner */
-
-    100% 26px,   /* top border: full width, 26px height */
-    26px 100%,   /* right border: 26px width, full height */
-    100% 26px,   /* bottom border: full width, 26px height */
-    26px 100%,   /* left border: 26px width, full height */
-
-    cover;
-
-  padding: 26px; /* Matches border/corner size */
-  overflow: visible;
-}
 
 
 /* SubNav Dropdown Render Priority */
@@ -858,7 +813,7 @@ wrapper#HeadlineWrapper {
 
 .AvatarTooltip {
     position: relative;
-	background: none !important;
+	background: #ed4e3e !important;
 
     border-style: solid;
     border-width: 2px;
@@ -884,6 +839,7 @@ wrapper#HeadlineWrapper {
   content: "";
   position: absolute;
   pointer-events: none;
+  animation: rb-blink 3.2s steps(1) infinite;
 
   width: 200px;
   height: 250px;
@@ -891,7 +847,7 @@ wrapper#HeadlineWrapper {
   background: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_module_sit.png") no-repeat center bottom;
   background-size: contain;
 
-  top: -180px;
+  top: -168px;
   left: -67px;
 
   z-index: 11;
@@ -1467,7 +1423,7 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     height: 250px;
 
     right: 0;
-    top: -60px;
+    top: -39px;
 
     pointer-events: none;
     z-index: 10;
