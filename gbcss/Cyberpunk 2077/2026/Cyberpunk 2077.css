@@ -1851,10 +1851,7 @@ body::after {
     position: absolute;
     inset: -40px 0 0 45%;
     pointer-events: none;
-    background:
-        radial-gradient(circle at 18px 41px, rgba(127, 216, 255, .85) 0 2px, rgba(127, 216, 255, .2) 3px, transparent 7px) 0 0 / 83px 97px,
-        radial-gradient(circle at 52px 13px, rgba(127, 216, 255, .6) 0 1.5px, transparent 5px) 0 0 / 67px 131px,
-        radial-gradient(circle at 33px 70px, rgba(79, 247, 200, .55) 0 1px, transparent 4px) 0 0 / 113px 89px;
+    background: radial-gradient(circle at 18px 41px, rgb(252 255 127 / 85%) 0 2px, rgb(253 255 127 / 20%) 3px, transparent 7px) 0 0 / 83px 97px, radial-gradient(circle at 52px 13px, rgb(255 251 127 / 60%) 0 1.5px, transparent 5px) 0 0 / 67px 131px, radial-gradient(circle at 33px 70px, rgb(247 240 79 / 55%) 0 1px, transparent 4px) 0 0 / 113px 89px;
     filter: blur(.3px);
     opacity: .8;
     animation: rb-souls 7s linear infinite;
