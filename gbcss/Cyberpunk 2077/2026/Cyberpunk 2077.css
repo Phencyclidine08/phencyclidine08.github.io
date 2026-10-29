@@ -1553,49 +1553,6 @@ spriteIcon.ContactTypeIcon.GithubIcon {
 #ContentGrid row:nth-child(2) .PageModule::after { animation-duration: 10s; }
 @keyframes rb-modscan { to { background-position: 0 140%; } }
 
-.PageModule > h2 {
-    display: flex !important;
-    align-items: center;
-    gap: .7em;
-    margin: 0 0 1em !important;
-    padding: 0 1.5em .7em 2.5em !important;
-    background: none !important;
-    border: 0 !important;
-    border-bottom: 1px solid var(--rb-line) !important;
-    font-family: var(--rb-hud) !important;
-    font-weight: 800 !important;
-    font-size: 1.15em !important;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: #f65140 !important;
-}
-.PageModule > h2::before {
-    content: "";
-    flex: none;
-    width: .55em;
-    height: .55em;
-    transform: rotate(45deg);
-    border: 2px solid #f65140;
-    animation: rb-pulse 2.4s ease-in-out infinite alternate;
-}
-@keyframes rb-pulse {
-    from { box-shadow: 0 0 2px #f65140; }
-    to   { box-shadow: 0 0 14px #f65140, inset 0 0 6px #f65140; }
-}
-.PageModule > h2::after {
-    content: "" !important;
-    visibility: visible !important;
-    display: block !important;
-    flex: 1;
-    height: 1px !important;
-    width: auto !important;
-    margin: 0 !important;
-    background: linear-gradient(90deg, var(--rb-cat), transparent) !important;
-    opacity: .55;
-}
-.PageModule > h2 a { color: inherit !important; }
-.PageModule > h2 spriteicon, .PageModule > h2 > a > spriteicon { display: none !important; }
-
 BodyWrapper::after {
     content: "";
     position: fixed;
@@ -1658,4 +1615,115 @@ body::after {
     25%  { background-position: -40px 20px; }
     50%  { background-position: 30px -50px; }
     75%  { background-position: -20px -30px; }
+}
+
+	/* HEADER WORKING */
+
+
+/* =========================================
+   PAGE MODULE HEADERS
+   ========================================= */
+
+/* Default headers - red */
+.PageModule > h2 {
+    --header-color: #f65140;
+
+    display: flex !important;
+    align-items: center;
+    gap: .7em;
+    margin: 0 0 1em !important;
+    padding: 0 1.5em .7em 2.5em !important;
+    background: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--rb-line) !important;
+    font-family: var(--rb-hud) !important;
+    font-weight: 800 !important;
+    font-size: 1.15em !important;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--header-color) !important;
+}
+
+/* Header links inherit the selected color */
+.PageModule > h2 > a {
+    color: inherit !important;
+}
+
+/* =========================================
+   NAVIGATIONAL HEADERS
+   ========================================= */
+
+/*
+   Cyan: headers containing links,
+   excluding headers with settings wrench links.
+*/
+.PageModule > h2:has(a):not(:has(a > .SpannerIcon)) {
+    --header-color: #50ccc9;
+    color: #50ccc9 !important;
+}
+
+/* Yellow when hovering over linked headers */
+.PageModule > h2:has(a):not(:has(a > .SpannerIcon)):hover {
+    --header-color: #ffda31;
+    color: #ffda31 !important;
+}
+
+/* =========================================
+   HEADER DIAMOND
+   ========================================= */
+
+.PageModule > h2::before {
+    content: "";
+    flex: none;
+    width: .55em;
+    height: .55em;
+    transform: rotate(45deg);
+
+    border: 2px solid var(--header-color) !important;
+
+    animation: rb-pulse 2.4s ease-in-out infinite alternate;
+    transition: border-color .25s ease;
+}
+
+/* Pulsating diamond glow */
+@keyframes rb-pulse {
+    from {
+        box-shadow:
+            0 0 2px var(--header-color);
+    }
+    to {
+        box-shadow:
+            0 0 14px var(--header-color),
+            inset 0 0 6px var(--header-color);
+    }
+}
+
+/* =========================================
+   DECORATIVE LINE
+   ========================================= */
+
+.PageModule > h2::after {
+    content: "" !important;
+    visibility: visible !important;
+    display: block !important;
+    flex: 1;
+    height: 1px !important;
+    width: auto !important;
+    margin: 0 !important;
+
+    background: linear-gradient(
+        90deg,
+        var(--header-color),
+        transparent
+    ) !important;
+
+    opacity: .55;
+}
+
+/* =========================================
+   HIDE HEADER ICONS
+   ========================================= */
+
+.PageModule > h2 spriteicon {
+    display: none !important;
 }
