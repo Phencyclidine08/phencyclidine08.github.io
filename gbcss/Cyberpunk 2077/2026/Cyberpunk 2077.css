@@ -649,101 +649,149 @@ wrapper#HeadlineWrapper {
     border-image-width: 200px 29px 82px 52px;
     border-image-repeat: stretch;
     border-image-outset: 0;
+
+	max-height: 760px;
 }
 
 /* =========================================
-   PLAQUE AND CHARACTER IMAGE
+   ONLINE AVATAR - CAPRI REPLACEMENT
    ========================================= */
 
+/* Avatar container */
+a.Avatar.Online[href*="/members/1242417"] {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    position: relative;
+}
 
-#IdentityModule::before {
-    content: "";
+/* Hide original avatar image */
+a.Avatar.Online[href*="/members/1242417"] > img.AvatarImage {
+    opacity: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Capri replacement image */
+a.Avatar.Online[href*="/members/1242417"]::after {
+    content: "" !important;
     position: absolute;
-    inset: 0;
+
+    /* Image dimensions */
+    width: 1290px;
+    height: 1290px;
+
+    /* Capri image */
+    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Capri_seated.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+
+    /* Positioning */
+    top: 74%;
+    left: 130%;
+    bottom: auto !important;
+    right: auto !important;
+    transform: translate(-60%, -10%);
+
+    /* Remove original green online indicator */
+    box-shadow: none !important;
+
+    /* Layering */
     z-index: 0;
     pointer-events: none;
 
-    background:
-        /* Bottom plaque */
-        url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/frame_bottom_plaque.png")
-        bottom center no-repeat,
+	webkit-mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
+    mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
 
-        /* Capri character */
-        url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Capri_seated.png")
-        center 0px no-repeat;
+    /* White is visible, black is hidden */
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
 
-    background-size:
-        300px 200px,
-        238% auto;
+    /* Original mask dimensions */
+    -webkit-mask-size: 495px 857px;
+    mask-size: 495px 757px;
 
-    /* Clip both images to the frame shape */
-	clip-path: polygon(
-    14px 1px,
-    calc(100% - 1px) 1px,
-    calc(100% - 1px) calc(100% - 55px),
-    calc(100% - 30px) calc(100% - 1px),
-    14px calc(100% - 1px),
-    1px calc(100% - 32px),
-    1px 21px
-	);
+    /* Position mask within Capri's 1400px canvas */
+    -webkit-mask-position: 493px 21px;
+    mask-position: 397px 0px;
 
-
-    animation: none;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 
+/* =========================================
+   OFFLINE AVATAR - CAPRI REPLACEMENT
+   ========================================= */
 
-
-
-#IdentityModule .Avatar {
-  position: absolute;                 /* Escape layout */
-  width: 200px;                       /* Your custom size */
-  height: 200px;
-  transform: translate(-110px, 160px);  /* Move wherever you want */
-  pointer-events: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  overflow: hidden;
+/* Avatar container */
+a.Avatar.Offline[href*="/members/1242417"] {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    position: relative;
 }
 
-#IdentityModule > div > a {
-    box-shadow: 0 0 0 .0em var(--DefaultRedColor), 0 0 .0em var(--DefaultRedColor);
+/* Hide original avatar image */
+a.Avatar.Offline[href*="/members/1242417"] > img.AvatarImage {
+    opacity: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-#IdentityModule .Avatar.Online::after {
-    content: "";
-    width: 20px;
-    height: 20px;
+/* Capri replacement image */
+a.Avatar.Offline[href*="/members/1242417"]::after {
+    content: "" !important;
     position: absolute;
-    bottom: 3px;
-    right: 3px;
-    border: transparent;
-    border-radius: 50px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
-    background: var(--DefaultGreenColor);
-}
 
-#IdentityModule .Avatar.Offline::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    border: transparent;
-    border-radius: 50px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
-}
+    /* Image dimensions */
+    width: 1290px;
+    height: 1290px;
 
-/* ✅ Hides the original avatar image */
-#IdentityModule .Avatar .AvatarImage {
-  display: none !important;
-}
+    /* Capri image */
+    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Capri_seated_split.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
 
-#IdentityModule > div > a > img.HovatarImage {
-    display: none !important;
+    /* Positioning */
+    top: 74%;
+    left: 130%;
+    bottom: auto !important;
+    right: auto !important;
+    transform: translate(-60%, -10%);
+
+    /* Remove original green online indicator */
+    box-shadow: none !important;
+
+    /* Layering */
+    z-index: 0;
+    pointer-events: none;
+
+	webkit-mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
+    mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
+
+    /* White is visible, black is hidden */
+    -webkit-mask-mode: luminance;
+    mask-mode: luminance;
+
+    /* Original mask dimensions */
+    -webkit-mask-size: 495px 857px;
+    mask-size: 495px 757px;
+
+    /* Position mask within Capri's 1400px canvas */
+    -webkit-mask-position: 493px 21px;
+    mask-position: 397px 0px;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 
@@ -758,14 +806,13 @@ wrapper#HeadlineWrapper {
     padding: 0px 0px 40px 0px;
 
     /* Original positioning */
-    transform: translate(-10px, -330px);
+    transform: translate(-10px, -500px) !important;
 
     /* Signature image */
     background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_black.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-
     width: 100%;
     height: 100px;
     overflow: hidden;
