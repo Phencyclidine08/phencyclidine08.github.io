@@ -836,7 +836,7 @@ wrapper#HeadlineWrapper {
     padding: 0px 0px 40px 0px;
 
     /* Original positioning */
-    transform: translate(-10px, -500px) !important;
+    transform: translate(10px, -500px) !important;
 
     /* Signature image */
     background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/Allenart07a_black.png");
