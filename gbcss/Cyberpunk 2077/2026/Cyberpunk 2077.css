@@ -900,7 +900,7 @@ a.Avatar.Offline[href*="/members/1242417"]::after {
 #IdentityModule > div > ul 
 {
   position: relative; /* required to visually shift */
-  transform: translate(-21px, -10px); /* X = right 20px, Y = up 10px */
+  transform: translate(-10px, -100px); /* X = right 20px, Y = up 10px */
   padding: 0px 0px 0px 0px;
 }
 
@@ -913,7 +913,7 @@ a.Avatar.Offline[href*="/members/1242417"]::after {
 #IdentityModule > div > ul > li:nth-child(4) > spriteicon
 {
   position: relative; /* required to visually shift */
-  transform: translate(-83px, 33px); /* X = right 20px, Y = up 10px */
+  transform: translate(-70px, 33px); /* X = right 20px, Y = up 10px */
 }
 
 #IdentityModule > div > ul > li:nth-child(3)
@@ -2145,4 +2145,3 @@ body::after {
 #ContentGrid > row > column:nth-child(9) .PageModule::before {
     animation-delay: -3.2s !important;
 }
-
