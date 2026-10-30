@@ -1650,7 +1650,10 @@ spriteIcon.ContactTypeIcon.GithubIcon {
     inset: 0;
     z-index: 1;
     pointer-events: none;
-
+	
+	width: auto;
+    height: auto;
+	
     background:
         url("https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/items/1091500/2504dff701df1c304a964370e15f42aecee8e21b.png")
         center / 100% 100% no-repeat;
