@@ -1359,22 +1359,32 @@ background: url() !important;
 
 /* Cascade window image: behind everything */
 
+
+/* Hide Capri by default */
 #PrimaryNav::before {
-  content: "";
-  position: absolute;
-  top: -8.1em;
-  right: 5em;
-  width: 647px;
-  height: 400%;
-  pointer-events: none;
-
-  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_asset_capri_lounging_blinkanim.png");
-  background-repeat: repeat-y;
-  background-position: top right;
-  background-size: auto 100%;
-
-  z-index: 3; /* bottom layer */
+    content: none;
 }
+
+/* Show Capri only when viewport exceeds 1400px */
+@media screen and (min-width: 1525px) {
+    #PrimaryNav::before {
+        content: "";
+        position: absolute;
+        top: -8.1em;
+        right: 5em;
+        width: 647px;
+        height: 400%;
+        pointer-events: none;
+
+        background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_asset_capri_lounging_blinkanim.png");
+        background-repeat: repeat-y;
+        background-position: top right;
+        background-size: auto 100%;
+
+        z-index: 3;
+    }
+}
+
 
 /* Bottom border: above cascade, below content */
 
