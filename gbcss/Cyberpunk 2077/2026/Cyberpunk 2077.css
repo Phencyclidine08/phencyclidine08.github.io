@@ -486,7 +486,34 @@ wrapper#HeadlineWrapper {
 
     border-image-repeat: stretch;
     border-image-outset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
+
+
+/* Center the navigation menu */
+#SubNavigator > ul.sf-menu {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 30px !important;
+}
+
+/* Normalize top-level navigation items */
+#SubNavigator > ul.sf-menu > li {
+    margin: 0 !important;
+    float: none !important;
+    flex: 0 0 auto;
+}
+
+/* Remove previously added link margins */
+#SubNavigator > ul.sf-menu > li > a {
+    margin: 0 !important;
+}
+
 
 
 
