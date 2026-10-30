@@ -1336,6 +1336,41 @@ background: url() !important;
 
 
 
+
+/* =========================================
+   REPLACE SITE LOGO
+   ========================================= */
+
+#SiteLogo > img:nth-child(2) {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/gamebanana_title_capri.png") !important;
+
+    width: 300px !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+    max-height: none !important;
+	image-rendering: auto !important;
+    object-fit: contain;
+}
+
+/* =========================================
+   REPLACE SACRED BANANA
+   ========================================= */
+
+#SiteLogo > img.SacredBanana {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/gamebanana_logo_capri.png") !important;
+
+    width: auto !important;
+    height: 60px !important;
+    max-width: none !important;
+    max-height: none !important;
+	image-rendering: auto !important;
+    object-fit: contain;
+}
+
+
+
+
 #PrimaryNav {
   box-sizing: border-box;
 
