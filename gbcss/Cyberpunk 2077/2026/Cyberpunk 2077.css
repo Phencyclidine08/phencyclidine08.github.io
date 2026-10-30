@@ -1362,10 +1362,10 @@ background: url() !important;
 #PrimaryNav::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 4em;
+  top: -8.1em;
+  right: 5em;
   width: 647px;
-  height: 100%;
+  height: 400%;
   pointer-events: none;
 
   background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_asset_capri_lounging.png");
@@ -1373,7 +1373,7 @@ background: url() !important;
   background-position: top right;
   background-size: auto 100%;
 
-  z-index: 0; /* bottom layer */
+  z-index: 3; /* bottom layer */
 }
 
 /* Bottom border: above cascade, below content */
@@ -1381,7 +1381,7 @@ background: url() !important;
 #PrimaryNav::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -0.2em;
   left: 0;
   width: 100%;
   height: 8px;
