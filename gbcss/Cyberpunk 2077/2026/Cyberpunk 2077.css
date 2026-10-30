@@ -743,11 +743,11 @@ wrapper#HeadlineWrapper {
 
     /* Mask dimensions */
     -webkit-mask-size: 495px 857px;
-    mask-size: 495px 757px;
+    mask-size: 495px 759px;
 
     /* Mask positioning */
     -webkit-mask-position: 493px 21px;
-    mask-position: 397px 0px;
+    mask-position: 396px -2px;
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
@@ -813,11 +813,11 @@ wrapper#HeadlineWrapper {
 
     /* Mask dimensions */
     -webkit-mask-size: 495px 857px;
-    mask-size: 495px 757px;
+    mask-size: 495px 759px;
 
     /* Mask positioning */
     -webkit-mask-position: 493px 21px;
-    mask-position: 397px 0px;
+    mask-position: 396px -2px;
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
