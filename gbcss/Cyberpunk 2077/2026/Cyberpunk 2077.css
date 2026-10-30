@@ -1338,13 +1338,13 @@ background: url() !important;
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 4em;
   width: 647px;
   height: 100%;
   pointer-events: none;
 
-  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_asset1.png");
-  background-repeat: repeat-x;
+  background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/primarynav_asset0.png");
+  background-repeat: repeat-y;
   background-position: top right;
   background-size: auto 100%;
 
