@@ -2178,3 +2178,21 @@ body::after {
 #ContentGrid > row > column:nth-child(9) .PageModule::before {
     animation-delay: -3.2s !important;
 }
+
+
+/* =========================================
+   DISCORD AVATAR - IMAGE REPLACEMENT
+   ========================================= */
+
+
+#DiscordProfileTabContent > div > div.DiscordHeader > div.DiscordAvatar > img {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_animation_square.gif") !important;
+
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 80px !important;
+    max-height: 80px !important;
+
+    object-fit: cover;
+    display: block;
+}
