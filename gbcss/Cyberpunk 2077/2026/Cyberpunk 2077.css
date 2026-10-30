@@ -680,12 +680,14 @@ wrapper#HeadlineWrapper {
 	max-height: 760px;
 }
 
+
 /* =========================================
    ONLINE AVATAR - CAPRI REPLACEMENT
+   Identity Module Only
    ========================================= */
 
 /* Avatar container */
-a.Avatar.Online[href*="/members/1242417"] {
+#IdentityModule a.Avatar.Online[href*="/members/1242417"] {
     background: transparent !important;
     border-color: transparent !important;
     box-shadow: none !important;
@@ -694,7 +696,7 @@ a.Avatar.Online[href*="/members/1242417"] {
 }
 
 /* Hide original avatar image */
-a.Avatar.Online[href*="/members/1242417"] > img.AvatarImage {
+#IdentityModule a.Avatar.Online[href*="/members/1242417"] > img.AvatarImage {
     opacity: 0 !important;
     background: transparent !important;
     border: none !important;
@@ -702,7 +704,7 @@ a.Avatar.Online[href*="/members/1242417"] > img.AvatarImage {
 }
 
 /* Capri replacement image */
-a.Avatar.Online[href*="/members/1242417"]::after {
+#IdentityModule a.Avatar.Online[href*="/members/1242417"]::after {
     content: "" !important;
     position: absolute;
 
@@ -731,18 +733,19 @@ a.Avatar.Online[href*="/members/1242417"]::after {
     z-index: 0;
     pointer-events: none;
 
-	webkit-mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
+    /* Mask */
+    -webkit-mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
     mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
 
     /* White is visible, black is hidden */
     -webkit-mask-mode: luminance;
     mask-mode: luminance;
 
-    /* Original mask dimensions */
+    /* Mask dimensions */
     -webkit-mask-size: 495px 857px;
     mask-size: 495px 757px;
 
-    /* Position mask within Capri's 1400px canvas */
+    /* Mask positioning */
     -webkit-mask-position: 493px 21px;
     mask-position: 397px 0px;
 
@@ -753,10 +756,11 @@ a.Avatar.Online[href*="/members/1242417"]::after {
 
 /* =========================================
    OFFLINE AVATAR - CAPRI REPLACEMENT
+   Identity Module Only
    ========================================= */
 
 /* Avatar container */
-a.Avatar.Offline[href*="/members/1242417"] {
+#IdentityModule a.Avatar.Offline[href*="/members/1242417"] {
     background: transparent !important;
     border-color: transparent !important;
     box-shadow: none !important;
@@ -765,7 +769,7 @@ a.Avatar.Offline[href*="/members/1242417"] {
 }
 
 /* Hide original avatar image */
-a.Avatar.Offline[href*="/members/1242417"] > img.AvatarImage {
+#IdentityModule a.Avatar.Offline[href*="/members/1242417"] > img.AvatarImage {
     opacity: 0 !important;
     background: transparent !important;
     border: none !important;
@@ -773,7 +777,7 @@ a.Avatar.Offline[href*="/members/1242417"] > img.AvatarImage {
 }
 
 /* Capri replacement image */
-a.Avatar.Offline[href*="/members/1242417"]::after {
+#IdentityModule a.Avatar.Offline[href*="/members/1242417"]::after {
     content: "" !important;
     position: absolute;
 
@@ -795,31 +799,30 @@ a.Avatar.Offline[href*="/members/1242417"]::after {
     right: auto !important;
     transform: translate(-60%, -10%);
 
-    /* Remove original green online indicator */
-    box-shadow: none !important;
-
     /* Layering */
     z-index: 0;
     pointer-events: none;
 
-	webkit-mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
+    /* Mask */
+    -webkit-mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
     mask-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/identity_module_mask.png");
 
     /* White is visible, black is hidden */
     -webkit-mask-mode: luminance;
     mask-mode: luminance;
 
-    /* Original mask dimensions */
+    /* Mask dimensions */
     -webkit-mask-size: 495px 857px;
     mask-size: 495px 757px;
 
-    /* Position mask within Capri's 1400px canvas */
+    /* Mask positioning */
     -webkit-mask-position: 493px 21px;
     mask-position: 397px 0px;
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
+
 
 
 /* =========================================
