@@ -742,6 +742,10 @@ wrapper#HeadlineWrapper {
   display: none !important;
 }
 
+#IdentityModule > div > a > img.HovatarImage {
+    display: none !important;
+}
+
 
 /* =========================================
    IDENTITY MODULE - SIGNATURE
@@ -2094,3 +2098,4 @@ body::after {
 #ContentGrid > row > column:nth-child(9) .PageModule::before {
     animation-delay: -3.2s !important;
 }
+
