@@ -1216,16 +1216,16 @@ wrapper#HeadlineWrapper {
 
 .SteamAvatar 
 {
-    --SteamOffline: #080808;
-    --SteamOnline: var(--HazbinGlass1);
-    --SteamIngame: var(--HazbinRed);
+    --SteamOffline: #afc3c3;
+    --SteamOnline: #ffda31;
+    --SteamIngame: #1be07c;
 }
 
 #tpm__sBmSteamAccountDetails > module > div > p.SteamStatus 
 {
-    --SteamOffline: #080808;
-    --SteamOnline: var(--HazbinGlass1);
-    --SteamIngame: var(--HazbinRed);
+    --SteamOffline: #afc3c3;
+    --SteamOnline: #ffda31;
+    --SteamIngame: #1be07c;
 }
 
 .SteamAvatar:hover > img 
@@ -1249,7 +1249,7 @@ wrapper#HeadlineWrapper {
 #tpm__sBmSteamAccountDetails > module > div > p.SteamLevel,
 #tpm__sBmSteamAccountDetails > module > div > p.SteamRealName
 {
-		color: var(--HazbinGlass2)
+		color: var(--DefaultTextColor)
 }
 
     #tpm__sBmSteamAccountDetails > module > div > p.SteamDisplayName {
