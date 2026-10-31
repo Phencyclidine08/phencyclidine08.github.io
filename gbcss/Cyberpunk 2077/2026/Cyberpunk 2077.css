@@ -653,6 +653,13 @@ wrapper#HeadlineWrapper {
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 
+#IdentityModule .KeyInfo,
+#IdentityModule > div > ul > li:nth-child(3) > small,
+#IdentityModule .KeyInfo * {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 1px #000000 !important;
+}
+
 
 /* =========================================
    IDENTITY MODULE
@@ -920,12 +927,6 @@ wrapper#HeadlineWrapper {
     display: inline-block; /* may be needed depending on HTML */
 }
 
-#IdentityModule > div > ul > li:nth-child(4) > small,
-#IdentityModule > div > ul > li:nth-child(3) > small,
-#IdentityModule > div > ul > li:nth-child(1) > statelabel
-{
-	color: #750d0f !important;
-}
 
 #IdentityModule > div > ul 
 {
