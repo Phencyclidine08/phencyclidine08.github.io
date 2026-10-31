@@ -1225,7 +1225,7 @@ wrapper#HeadlineWrapper {
 {
     --SteamOffline: #afc3c3;
     --SteamOnline: #1be07c;
-    --SteamIngame: #6f0af3;
+    --SteamIngame: #a057ff;
 }
 
 .SteamAvatar:hover > img 
