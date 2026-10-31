@@ -2276,3 +2276,12 @@ statelabel.IsHonorary { color: white !important; border-color: rgb(255 255 255);
 spriteIcon {
     background-image: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/icon_sheet.png);
 }
+
+/* Change sprite sheet when hovering over its button */
+button:hover spriteicon {
+    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/icon_sheet_hover.png") !important;
+}
+
+a:hover spriteicon {
+    background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/icon_sheet_link.png") !important;
+}
