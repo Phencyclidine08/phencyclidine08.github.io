@@ -221,11 +221,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 
 /* -------------------------- Post Flow -------------------------- */
 
-#PostsListModule > div > button.IconButton
-{
-	position: relative;
-	transform: translate(10px, 0px)
-}
+
 
 #PostsListModule > div > fieldset
 {
@@ -300,11 +296,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     padding-inline-start: 0em !important;
 }
 
-#PostsListModule > div > button.ExtendedContentButton
-{
-	position: relative;
-	transform: translate(75px, 0px)
-}
+
 
 
 /* =========================================
@@ -320,22 +312,16 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
     align-items: center;
     justify-content: center;
     gap: .6em;
-
     width: 100%;
     padding: .75em 1em !important;
-
     background: #50ccc92e !important;
     border: 1px solid #50ccc9 !important;
     border-radius: 0 !important;
-
     color: var(--rb-mint) !important;
     font: 500 .85rem/1 var(--rb-hud) !important;
-
     letter-spacing: .18em;
     text-transform: uppercase;
-
     cursor: pointer;
-
     transition:
         background .2s,
         color .2s,
