@@ -1217,15 +1217,15 @@ wrapper#HeadlineWrapper {
 .SteamAvatar 
 {
     --SteamOffline: #afc3c3;
-    --SteamOnline: #ffda31;
-    --SteamIngame: #1be07c;
+    --SteamOnline: #1be07c;
+    --SteamIngame: #6f0af3;
 }
 
 #tpm__sBmSteamAccountDetails > module > div > p.SteamStatus 
 {
     --SteamOffline: #afc3c3;
-    --SteamOnline: #ffda31;
-    --SteamIngame: #1be07c;
+    --SteamOnline: #1be07c;
+    --SteamIngame: #6f0af3;
 }
 
 .SteamAvatar:hover > img 
