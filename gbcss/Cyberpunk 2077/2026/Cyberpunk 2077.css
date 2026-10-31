@@ -2279,3 +2279,7 @@ stateLabel.ContentRating .InitialVisibility_show {
     background: black;
     border-radius: 0 .25em .25em 0;
 }
+
+#RecentVisitors > h2 {
+    transform: translateX(20px);
+}
