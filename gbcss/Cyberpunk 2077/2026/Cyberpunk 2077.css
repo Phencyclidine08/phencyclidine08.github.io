@@ -259,23 +259,29 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   border: 1px solid #f14f3f !important;
 }
 
-.Posts .Post statelabel,
-.Posts .Post * statelabel {
-	color: #750d0f !important;
-  background:
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
-  
-  background-size: 130px 100px;
 
-  /* shift image downward using background-position */
-  background-position: center calc(100% + 38px); /* move 20px below bottom */
+/* Preserve original label dimensions */
+statelabel[data-label="Submitter"] {
+    position: relative;
+    font-size: 1 !important;
+    color: transparent !important;
+	background: #6b02f95c !important;
+    border: 1px solid #6b02f9;
 }
 
-.Posts .Post * statelabel
-{
-	text: "Owner" !important;
-    display: inline-block;
+/* Display Owner in place of Submitter */
+statelabel[data-label="Submitter"]::after {
+    content: "Host";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #fff;
+    font-size: inherit;
+    white-space: nowrap;
 }
+
 
 .Post > header,
 .Post > article,
@@ -913,6 +919,47 @@ wrapper#HeadlineWrapper {
         opacity: 1;
     }
 }
+
+
+/* =========================================
+   KEY INFO - POSITIONING AND LAYERING
+   ========================================= */
+
+
+
+ul.KeyInfo {
+    transform: translate(0em, -4em);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px !important;
+}
+
+ul.KeyInfo > li {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+ul.KeyInfo,
+ul.KeyInfo * {
+    color: white !important;
+    text-shadow: 1px 1px 1px black !important;
+}
+
+
+/* =========================================
+   KEY INFO - FEATURED ICON REPLACEMENT
+   ========================================= */
+
+ul.KeyInfo spriteicon.SubnavigatorIcon.FeaturedIcon {
+    /* Independent positioning */
+    position: relative;
+    transform: translate(3px, -4px);
+}
+
+
+
 
 .AvatarTooltip {
     position: relative;
@@ -2174,4 +2221,4 @@ statelabel {
     font: .7rem/1 var(--rb-mono) !important;
     letter-spacing: .05em;
 }
-statelabel.IsHonorary { color: var(--rb-lamp) !important; border-color: rgba(240, 162, 78, .45); background: rgba(240, 162, 78, .08) !important; }
+statelabel.IsHonorary { color: white !important; border-color: rgb(255 255 255); background: rgb(255 255 255 / 50%) !important; }
