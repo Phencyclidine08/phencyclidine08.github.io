@@ -2245,3 +2245,30 @@ statelabel {
     letter-spacing: .05em;
 }
 statelabel.IsHonorary { color: white !important; border-color: rgb(255 255 255); background: rgb(255 255 255 / 50%) !important; }
+/* =========================================
+   ICON ONLY BUTTON - STYLING
+   ========================================= */
+
+.IconOnlyButton {
+    background: #50ccc92e !important;
+    border: 1px solid #50ccc9 !important;
+
+    /* Icon color */
+    color: var(--rb-mint) !important;
+
+    /* Smooth transitions */
+    transition:
+        background .2s,
+        border-color .2s,
+        color .2s,
+        box-shadow .2s;
+}
+
+/* Hover effect */
+.IconOnlyButton:hover {
+    background: #50ccc9 !important;
+    border-color: #50ccc9 !important;
+    color: var(--rb-void) !important;
+
+    box-shadow: 0 0 18px #50ccc9;
+}
