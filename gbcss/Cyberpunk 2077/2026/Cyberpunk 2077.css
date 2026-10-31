@@ -231,6 +231,21 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 }
 
 
+
+/* Posts list - expand equally from center */
+#PostsListModule > div > div.Posts.Flow {
+    position: relative;
+
+    width: 117% !important;
+    max-width: none !important;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
 .Posts .Post {
     background:
     url(" "),
@@ -257,6 +272,14 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 {
   background: #ffffff00; /* background fill only */
   border: 1px solid #f14f3f !important;
+
+	position: relative;
+
+    width: 105% !important;
+    max-width: none !important;
+
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
