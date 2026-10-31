@@ -839,6 +839,7 @@ wrapper#HeadlineWrapper {
 #IdentityModule .MemberLink {
     position: relative;
     display: block;
+	
     margin-top: 320px;
     padding: 0px 0px 40px 0px;
 
@@ -859,6 +860,17 @@ wrapper#HeadlineWrapper {
         rb-flicker 1.2s steps(1) both,
         rb-signature-glitch 5.5s steps(1) 1.4s infinite;
 }
+
+/* Hide original image while preserving its layout */
+#IdentityModule .MemberLink img {
+    filter: opacity(0) !important;
+}
+
+/* Hide the Identity Module status indicator */
+#IdentityModule > div > div:nth-child(2) > a > indicator {
+    display: none !important;
+}
+
 
 /* =========================================
    SIGNATURE GLITCH ANIMATION
