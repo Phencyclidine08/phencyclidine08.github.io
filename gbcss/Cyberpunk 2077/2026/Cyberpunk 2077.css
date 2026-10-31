@@ -242,14 +242,13 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
   background-repeat:
     repeat,
     no-repeat;
-
-  background-size:
+    background-size:
     150px 150px, /* ✅ scale the pattern image smaller */
     cover;
     border-radius: 8px 8px 8px 8px !important;
-    border: 2px solid var(--HazbinGlass2) !important;
-  padding: 3px 3px;
-  border-radius: 8px; /* ✅ this adds the curve */
+    border: 2px solid #f14f3f !important;
+    padding: 3px 3px;
+    border-radius: 8px; /* ✅ this adds the curve */
 }
 
 .PostStamp {
@@ -261,7 +260,7 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 .Posts .Post > .Flow > div > .Post
 {
   background: #ffffff00; /* background fill only */
-  border: 1px solid var(--HazbinGlass2) !important;
+  border: 1px solid #f14f3f !important;
 }
 
 .Posts .Post statelabel,
@@ -653,13 +652,6 @@ wrapper#HeadlineWrapper {
 /* -------------------------- Page Module Styling Identity -------------------------- */
 
 
-#IdentityModule .KeyInfo,
-#IdentityModule > div > ul > li:nth-child(3) > small,
-#IdentityModule .KeyInfo * {
-    color: #ffffff !important;
-    text-shadow: 1px 1px 1px #000000 !important;
-}
-
 
 /* =========================================
    IDENTITY MODULE
@@ -927,6 +919,12 @@ wrapper#HeadlineWrapper {
     display: inline-block; /* may be needed depending on HTML */
 }
 
+#IdentityModule > div > ul > li:nth-child(4) > small,
+#IdentityModule > div > ul > li:nth-child(3) > small,
+#IdentityModule > div > ul > li:nth-child(1) > statelabel
+{
+	color: #750d0f !important;
+}
 
 #IdentityModule > div > ul 
 {
