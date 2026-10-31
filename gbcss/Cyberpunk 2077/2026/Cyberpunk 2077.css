@@ -306,20 +306,56 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 	transform: translate(75px, 0px)
 }
 
+
+/* =========================================
+   POSTS - BUTTON STYLING
+   ========================================= */
+
 #PostsListModule > div > button.IconButton,
 #PostsListModule_Add > div > form > button,
 .Post > div.Flow > button,
 #PostsListModule > div > button.ExtendedContentButton,
-.Post > div.FormWrapper > div > form > button{
-	color: #750d0f !important;
-  background:
-    url('https://phencyclidine08.github.io/gbcss/HazbinHotel/Lucifer/frame_bottom_plaque.png') no-repeat;
-  
-  background-size: 300px 100px;
+.Post > div.FormWrapper > div > form > button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
 
-  /* shift image downward using background-position */
-  background-position: center calc(100% + 38px); /* move 20px below bottom */
+    width: 100%;
+    padding: .75em 1em !important;
+
+    background: #50ccc92e !important;
+    border: 1px solid #50ccc9 !important;
+    border-radius: 0 !important;
+
+    color: var(--rb-mint) !important;
+    font: 500 .85rem/1 var(--rb-hud) !important;
+
+    letter-spacing: .18em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background .2s,
+        color .2s,
+        box-shadow .2s;
 }
+
+/* =========================================
+   POSTS - BUTTON HOVER EFFECTS
+   ========================================= */
+
+#PostsListModule > div > button.IconButton:hover,
+#PostsListModule_Add > div > form > button:hover,
+.Post > div.Flow > button:hover,
+#PostsListModule > div > button.ExtendedContentButton:hover,
+.Post > div.FormWrapper > div > form > button:hover {
+    background: #50ccc9 !important;
+    color: var(--rb-void) !important;
+    box-shadow: 0 0 18px #50ccc9;
+}
+
 
 /* -------------------------- Points Stats Module -------------------------- */
 
