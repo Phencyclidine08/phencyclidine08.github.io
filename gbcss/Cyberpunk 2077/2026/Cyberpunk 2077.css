@@ -2285,3 +2285,24 @@ button:hover spriteicon {
 a:hover spriteicon {
     background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/icon_sheet_link.png") !important;
 }
+
+stateLabel.ContentRating span:first-child {
+    background: #5eff602e;
+    border-radius: .25em 0 0 .25em;
+    border-right: 1px solid #111;
+}
+
+stateLabel.ContentRating .InitialVisibility_hide {
+    background: black;
+    border-radius: 0 .25em .25em 0;
+}
+
+stateLabel.ContentRating .InitialVisibility_warn {
+    background: black;
+    border-radius: 0 .25em .25em 0;
+}
+
+stateLabel.ContentRating .InitialVisibility_show {
+    background: black;
+    border-radius: 0 .25em .25em 0;
+}
