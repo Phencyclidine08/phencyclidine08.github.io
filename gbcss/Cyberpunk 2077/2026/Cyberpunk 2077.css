@@ -346,7 +346,7 @@ statelabel[data-label="Submitter"]::after {
     background: #50ccc92e !important;
     border: 1px solid #50ccc9 !important;
     border-radius: 0 !important;
-    color: var(--rb-mint) !important;
+    color: #50ccc9 !important;
     font: 500 .85rem/1 var(--rb-hud) !important;
     letter-spacing: .18em;
     text-transform: uppercase;
@@ -2271,4 +2271,8 @@ statelabel.IsHonorary { color: white !important; border-color: rgb(255 255 255);
     color: var(--rb-void) !important;
 
     box-shadow: 0 0 18px #50ccc9;
+}
+
+spriteIcon {
+    background-image: url(https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/icon_sheet.png);
 }
