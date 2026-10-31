@@ -914,98 +914,6 @@ wrapper#HeadlineWrapper {
     }
 }
 
-
-/* ✅ Hide original children inside .MemberLink */
-#IdentityModule .MemberLink > * {
-  display: none !important;
-  z-index: 1;
-}
-
-#IdentityModule > div > div:nth-child(3),
-#IdentityModule > div > div.UserTitle
-{
-	display:none;
-}
-
-#IdentityModule > div > ul {
- color: #750d0f;
-}
-
-#IdentityModule > div > ul > li:nth-child(3) {
-	transform: translateY(10px); /* adjust */
-    display: inline-block; /* may be needed depending on HTML */
-}
-
-#IdentityModule > div > ul > li:nth-child(4) > span {
-	font-size: 12px;
-    display: inline-block; /* may be needed depending on HTML */
-}
-
-#IdentityModule > div > ul > li:nth-child(4) > small,
-#IdentityModule > div > ul > li:nth-child(3) > small,
-#IdentityModule > div > ul > li:nth-child(1) > statelabel
-{
-	color: #750d0f !important;
-}
-
-#IdentityModule > div > ul 
-{
-  position: relative; /* required to visually shift */
-  transform: translate(-10px, -100px); /* X = right 20px, Y = up 10px */
-  padding: 0px 0px 0px 0px;
-}
-
-#IdentityModule > div > ul > li:nth-child(4) > span
-{
-  position: relative; /* required to visually shift */
-  transform: translate(8px, 0px); /* X = right 20px, Y = up 10px */
-}
-
-#IdentityModule > div > ul > li:nth-child(4) > spriteicon
-{
-  position: relative; /* required to visually shift */
-  transform: translate(-70px, 33px); /* X = right 20px, Y = up 10px */
-}
-
-#IdentityModule > div > ul > li:nth-child(3)
-{
-  position: relative; /* required to visually shift */
-  transform: translate(0px, 20px); /* X = right 20px, Y = up 10px */
-}
-
-#IdentityModule > div > ul > li:nth-child(1)
-{
-  position: relative; /* required to visually shift */
-  transform: translate(0px, 80px); /* X = right 20px, Y = up 10px */
-}
-
-#IdentityModule > div > ul > li:nth-child(2)
-{
-  position: relative; /* required to visually shift */
-  transform: translate(0px, 0px); /* X = right 20px, Y = up 10px */
-}
-
-
-#IdentityModule > div > .Avatar.IsRipeSupporter 
-{
-    background: none;
-    padding: .25em;
-    border-radius: .125em;
-}
-
-#IdentityModule > div > ul > li:nth-child(1) > statelabel
-{
-	display: inline-flex;
-	align-items: center;
-	white-space: nowrap;
-	padding: .25em .5em;
-	margin: .125em;
-	border-radius: .25em;
-	background: transparent;
-	border: 1px solid #750d0f73;
-}
-
-
 .AvatarTooltip {
     position: relative;
 	background: #000000 !important;
@@ -2257,3 +2165,13 @@ body::after {
     object-fit: cover;
     display: block;
 }
+
+statelabel {
+    background: #1be07c5c !important;
+    color: #1be07c !important;
+    border: 1px solid #1be07c;
+    border-radius: 0 !important;
+    font: .7rem/1 var(--rb-mono) !important;
+    letter-spacing: .05em;
+}
+statelabel.IsHonorary { color: var(--rb-lamp) !important; border-color: rgba(240, 162, 78, .45); background: rgba(240, 162, 78, .08) !important; }
