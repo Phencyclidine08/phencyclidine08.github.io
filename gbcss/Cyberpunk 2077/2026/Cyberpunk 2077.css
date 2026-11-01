@@ -2214,6 +2214,16 @@ statelabel {
     letter-spacing: .05em;
 }
 statelabel.IsHonorary { color: white !important; border-color: rgb(255 255 255); background: rgb(255 255 255 / 50%) !important; }
+
+statelabel.GreyColor {
+    background: #aaaaaa3b !important;
+    color: #8d8d8d !important;
+    border: 1px solid #858585 !important;
+    border-radius: 0 !important;
+    font: .7rem/1 var(--rb-mono) !important;
+    letter-spacing: .05em !important;
+}
+
 /* =========================================
    ICON ONLY BUTTON - STYLING
    ========================================= */
