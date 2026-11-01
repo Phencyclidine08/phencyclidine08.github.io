@@ -165,7 +165,14 @@ textarea,
 
 /* Help - Elements With Help Tooltips */
 [aria-description],
-.cursor-help {
+[aria-describedby],
+[title],
+[data-tooltip],
+.cursor-help,
+.PostStamps,
+.PostStamps *,
+.PostStamp,
+.PostStamp * {
     cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/02_WHATSTHIS.png") 0 0, help !important;
 }
 
