@@ -131,6 +131,57 @@ body {
     font-family: var(--rb-body);
 }
 
+/* -------------------------- Cursor -------------------------- */
+
+/* Default Cursor */
+html,
+body {
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/04_ARROW.png") 0 0, default !important;
+}
+
+/* Pointer - Links, Buttons, Clickable Elements */
+a,
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select,
+summary {
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/05_POINTING_HAND.png") 0 0, pointer !important;
+}
+
+/* Text - Text Fields and Editable Content */
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="url"],
+textarea,
+[contenteditable="true"] {
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/11_IBEAM.png") 0 0, text !important;
+}
+
+/* Help - Elements With Help Tooltips */
+[aria-description],
+.cursor-help {
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/02_WHATSTHIS.png") 0 0, help !important;
+}
+
+/* Move - Draggable Elements */
+[draggable="true"],
+.cursor-move {
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/07_CROSS.png") 0 0, move !important;
+}
+
+/* Not Allowed - Disabled Elements */
+:disabled,
+[aria-disabled="true"],
+.cursor-not-allowed {
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/08_FORBIDDEN.png") 0 0, not-allowed !important;
+}
+
 
 /* -------------------------- Removing Column & Footer Backgrounds -------------------------- */
 
