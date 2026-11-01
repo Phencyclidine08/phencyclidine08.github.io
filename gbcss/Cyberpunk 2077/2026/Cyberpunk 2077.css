@@ -564,6 +564,26 @@ wrapper#HeadlineWrapper {
     margin: 0 !important;
 }
 
+#SubNavigator {
+    background:
+        linear-gradient(90deg, transparent, var(--rb-holo), transparent) -70% 100% / 40% 1px no-repeat,
+        rgba(7, 8, 12, .6) !important;
+    border-bottom: 1px solid var(--rb-line) !important;
+    backdrop-filter: blur(6px);
+    font-family: var(--rb-hud);
+    font-size: .8em;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    animation: rb-navsweep 4.5s linear infinite;
+
+	z-index: 99;
+}
+@keyframes rb-navsweep { to { background-position: 170% 100%, 0 0; } }
+#SubNavigator li > a, #SubNavigator li > div { color: var(--rb-dim) !important; transition: color .2s, text-shadow .2s; }
+#SubNavigator li:hover > a, #SubNavigator li:hover > div { color: var(--rb-bone) !important; text-shadow: 0 0 10px rgba(95, 240, 255, .6); }
+#SubNavigator .ActiveEntry { background: linear-gradient(to top, #50ccc926, transparent) !important; border-bottom: 2px solid #50ccc9 !important; }
+#SubNavigator .ActiveEntry > a { color: #50ccc9 !important; text-shadow: 0 0 12px #50ccc9; }
+
 
 
 
