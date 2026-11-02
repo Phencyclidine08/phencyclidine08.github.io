@@ -2573,3 +2573,63 @@ img.PreviewImage[src*="sgi_list_hero_21427_0f83ac04c16d6c0a.webp"] {
     padding: .75em .35em !important;
     white-space: nowrap !important;
 }
+
+/* =========================================
+   STEAM WORKSHOP IMAGE - CUSTOM STYLING
+   ========================================= */
+
+img[src*="Steam_Workshop_2011.webp"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    border: 1px solid #50ccc9;
+    border-radius: 0;
+
+    box-sizing: border-box;
+
+    transition:
+        transform .2s ease,
+        filter .2s ease,
+        box-shadow .2s ease;
+}
+
+/* Hover Effect */
+img[src*="Steam_Workshop_2011.webp"]:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 0 18px #50ccc9;
+}
+
+/* =========================================
+   STEAM WORKSHOP - DEFAULT
+   ========================================= */
+
+img[src*="Steam_Workshop_2011.webp"] {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/workshop.png") !important;
+
+    background: #50ccc92e !important;
+    border: 1px solid #50ccc9 !important;
+    border-radius: 0 !important;
+
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        box-shadow .2s ease;
+}
+
+/* =========================================
+   STEAM WORKSHOP - HOVER
+   ========================================= */
+
+img[src*="Steam_Workshop_2011.webp"]:hover {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/workshop_hover.png") !important;
+
+    background: #50ccc9 !important;
+    box-shadow: 0 0 18px #50ccc9 !important;
+}
