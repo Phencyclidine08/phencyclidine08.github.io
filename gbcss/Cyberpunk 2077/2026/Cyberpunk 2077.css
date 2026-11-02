@@ -2371,3 +2371,15 @@ stateLabel.ContentRating .InitialVisibility_show {
 #RecentVisitors > h2 {
     transform: translateX(20px);
 }
+
+#PrimaryNav { backdrop-filter: blur(8px); }
+#SiteLogo img {
+    animation: rb-logo 5s steps(1) infinite;
+}
+@keyframes rb-logo {
+    0%, 96%, 100% { transform: none; }
+    97% { transform: translateX(2px) skewX(-10deg); }
+    98% { transform: translateX(-2px); }
+}
+#SearchForm input { color: #50ccc9; background: #50ccc94f; border: 1px solid #50ccc9 !important; border-radius: 0; font-family: var(--rb-mono); }
+#SearchForm input:focus { color: var(--rb-void); background: #50ccc9; border-color: #50ccc9 !important; box-shadow: 0 0 12px #50ccc94f; outline: none; }
