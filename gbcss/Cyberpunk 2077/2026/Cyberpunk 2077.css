@@ -1145,7 +1145,7 @@ ul.KeyInfo spriteicon.SubnavigatorIcon.FeaturedIcon {
 /* Margin Fixes */
 
 #tpm__sBmAudio > module > div {
-	padding: 100px 0px 15px 40px !important;
+	padding: 100px 0px 35px 40px !important;
 }
 
 #tpm__sBmAudio > module
@@ -2428,4 +2428,92 @@ stateLabel.ContentRating .InitialVisibility_show {
 #SearchInput:focus::placeholder {
     color: var(--rb-void) !important;
     opacity: 1 !important;
+}
+
+/* =========================================
+   AUDIO PLAYER - CYBERPUNK HUD
+   ========================================= */
+
+audio[controls] {
+    display: block !important;
+
+    width: 100% !important;
+    min-width: 220px !important;
+    height: 48px !important;
+
+    flex: 1 1 auto !important;
+    box-sizing: border-box !important;
+
+    background: #101a1d !important;
+    border: 2px solid #50ccc9 !important;
+    border-radius: 0 !important;
+
+    padding: 4px !important;
+    color-scheme: dark;
+
+    transition:
+        background .2s ease,
+        box-shadow .2s ease,
+        border-color .2s ease;
+}
+
+/* =========================================
+   AUDIO PLAYER - HOVER
+   ========================================= */
+
+audio[controls]:hover {
+    background: #50ccc92e !important;
+    border-color: #50ccc9 !important;
+    box-shadow: 0 0 18px #50ccc9;
+}
+
+/* =========================================
+   AUDIO PLAYER - NATIVE CONTROL CONTAINER
+   ========================================= */
+
+audio::-webkit-media-controls-enclosure {
+    background: transparent !important;
+    border-radius: 0 !important;
+}
+
+audio::-webkit-media-controls-panel {
+    background: #101a1d !important;
+    border-radius: 0 !important;
+}
+
+/* =========================================
+   AUDIO PLAYER - BUTTONS
+   ========================================= */
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+    cursor: pointer !important;
+    border-radius: 0 !important;
+}
+
+/* =========================================
+   AUDIO PLAYER - TIME DISPLAY
+   ========================================= */
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    font-family: var(--rb-mono) !important;
+    font-size: 11px !important;
+}
+
+/* =========================================
+   AUDIO PLAYER - TIMELINE
+   ========================================= */
+
+audio::-webkit-media-controls-timeline {
+    cursor: pointer !important;
+    border-radius: 0 !important;
+}
+
+/* =========================================
+   AUDIO PLAYER - VOLUME
+   ========================================= */
+
+audio::-webkit-media-controls-volume-slider {
+    cursor: pointer !important;
 }
