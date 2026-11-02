@@ -2529,3 +2529,47 @@ img.PreviewImage[src*="sgi_list_hero_21427_0f83ac04c16d6c0a.webp"] {
     height: 150px !important;
     object-fit: cover !important;
 }
+
+/* =========================================
+   MODULE TABS - RESPONSIVE WIDTH
+   ========================================= */
+
+.Tabs {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+
+    gap: .5em;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+/* Allow tabs to shrink within their container */
+.Tabs > .Tab {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    width: auto !important;
+
+    padding: .75em .35em !important;
+    box-sizing: border-box !important;
+
+    text-align: center;
+    justify-content: center;
+
+    font-size: clamp(.55rem, .8vw, .85rem) !important;
+    letter-spacing: .05em !important;
+
+    white-space: nowrap;
+}
+
+/* =========================================
+   RECENT VISITORS - SMALLER TAB TEXT
+   ========================================= */
+
+#RecentVisitors > .Tabs > .Tab {
+    font-size: .65rem !important;
+    letter-spacing: .02em !important;
+    padding: .75em .35em !important;
+    white-space: nowrap !important;
+}
