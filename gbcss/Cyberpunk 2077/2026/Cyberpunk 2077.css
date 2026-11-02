@@ -2482,7 +2482,6 @@ audio[controls] {
    ========================================= */
 
 audio[controls]:hover {
-    background: #50ccc92e !important;
     border-color: #50ccc9 !important;
     box-shadow: 0 0 18px #50ccc9;
 }
