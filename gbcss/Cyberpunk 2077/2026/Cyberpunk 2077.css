@@ -2517,3 +2517,15 @@ audio::-webkit-media-controls-timeline {
 audio::-webkit-media-controls-volume-slider {
     cursor: pointer !important;
 }
+
+/* =========================================
+   CUSTOM BLOG PREVIEW IMAGE
+   ========================================= */
+
+img.PreviewImage[src*="sgi_list_hero_21427_0f83ac04c16d6c0a.webp"] {
+    content: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/capri_animation.gif") !important;
+
+    width: 100% !important;
+    height: 150px !important;
+    object-fit: cover !important;
+}
