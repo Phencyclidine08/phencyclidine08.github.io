@@ -220,38 +220,72 @@ textarea,
 /* -------------------------- Module Tabs -------------------------- */
 
 .Tab {
-    background: transparent;
-    cursor: pointer;
-    opacity: .5;
-    border: 2px solid #ff4f3e;
-    border-bottom: 1;
-    border-radius: .25em .25em 0 0;
+    display: flex !important;
     align-items: center;
-    gap: .25em;
-    padding: .75em 1em;
-    transition: opacity .2s 
-ease-in-out;
-    display: flex;
+    justify-content: center;
+    gap: .6em;
+
+    width: auto;
+    padding: .75em 1em !important;
+
+    background: #50ccc92e !important;
+    border: 1px solid #50ccc9 !important;
+    border-radius: 0 !important;
+
+    color: #50ccc9 !important;
+    font: 500 .85rem/1 var(--rb-hud) !important;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+
+    opacity: 1 !important;
+    cursor: pointer;
+
+    transition:
+        background .2s,
+        color .2s,
+        box-shadow .2s;
 }
 
-input:checked+.Tab, .Tab:has(:checked) {
-    border: 3px solid #ff4f3e;
-    opacity: 1;
-    cursor: default;
-    border-bottom: 0;
-    margin-bottom: -3px;
-    font-weight: 700;
+/* MODULE TABS - HOVER EFFECTS */
+
+.Tab:hover:not(:has(:checked)),
+input:not(:checked) + .Tab:hover {
+    background: #50ccc9 !important;
+    color: var(--rb-void) !important;
+    box-shadow: 0 0 18px #50ccc9;
+    opacity: 1 !important;
 }
+
+/* MODULE TABS - ACTIVE / SELECTED */
+
+input:checked + .Tab,
+.Tab:has(:checked) {
+    background: #50ccc9 !important;
+    color: var(--rb-void) !important;
+
+    border: 1px solid #50ccc9 !important;
+    border-radius: 0 !important;
+
+    opacity: 1 !important;
+    cursor: default;
+    font-weight: 700 !important;
+
+    box-shadow: 0 0 18px #50ccc9;
+}
+
+/*  MODULE TABS - CONTAINER */
 
 .TabsWrapper {
-    border-bottom: 10px solid #00000000;
+    border-bottom: 0 !important;
     overflow: auto;
 }
 
 .Tabs {
-    border-bottom: 3px solid #ff4f3e;
-    padding: 0 1em 0 .5em;
     display: flex;
+    gap: .5em;
+    padding: 0 1em 0 .5em;
+
+    border-bottom: 0 !important;
 }
 
 /* -------------------------- Text Fields -------------------------- */
