@@ -2635,7 +2635,7 @@ img[src*="Steam_Workshop_2011.webp"]:hover {
 }
 
 /* =========================================
-   PAGE LAYOUT - MINIMUM WIDTH
+   PAGE LAYOUT - MINIMUM WIDTH & CENTERING
    ========================================= */
 
 #MainContentHeader,
@@ -2643,4 +2643,8 @@ img[src*="Steam_Workshop_2011.webp"]:hover {
 #ContentGrid {
     min-width: 1200px !important;
     box-sizing: border-box !important;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
