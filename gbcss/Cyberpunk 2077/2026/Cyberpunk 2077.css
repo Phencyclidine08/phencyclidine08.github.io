@@ -328,11 +328,11 @@ input[type=text]:focus,input[type=password]:focus,input[type=url]:focus,input[ty
 #PostsListModule > div > div.Posts.Flow {
     position: relative;
 
-    width: 117% !important;
+    width: 114% !important;
     max-width: none !important;
 
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-49.8%);
 }
 
 
