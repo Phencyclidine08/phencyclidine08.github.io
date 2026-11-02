@@ -160,7 +160,7 @@ input[type="number"],
 input[type="url"],
 textarea,
 [contenteditable="true"] {
-    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/11_IBEAM.png") 0 0, text !important;
+    cursor: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/cursor/11_IBEAM.png") 20 20, text !important;
 }
 
 /* Help - Elements With Help Tooltips */
