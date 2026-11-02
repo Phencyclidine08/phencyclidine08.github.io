@@ -220,11 +220,11 @@ textarea,
 /* -------------------------- Module Tabs -------------------------- */
 
 .Tab {
-    background: var(--ButtonBackground);
+    background: transparent;
     cursor: pointer;
     opacity: .5;
-    border: 2px solid var(--HazbinGlass2);
-    border-bottom: 0;
+    border: 2px solid #ff4f3e;
+    border-bottom: 1;
     border-radius: .25em .25em 0 0;
     align-items: center;
     gap: .25em;
@@ -235,7 +235,7 @@ ease-in-out;
 }
 
 input:checked+.Tab, .Tab:has(:checked) {
-    border: 3px solid var(--HazbinGlass2);
+    border: 3px solid #ff4f3e;
     opacity: 1;
     cursor: default;
     border-bottom: 0;
@@ -249,7 +249,7 @@ input:checked+.Tab, .Tab:has(:checked) {
 }
 
 .Tabs {
-    border-bottom: 3px solid var(--HazbinGlass2);
+    border-bottom: 3px solid #ff4f3e;
     padding: 0 1em 0 .5em;
     display: flex;
 }
@@ -2382,4 +2382,16 @@ stateLabel.ContentRating .InitialVisibility_show {
     98% { transform: translateX(-2px); }
 }
 #SearchForm input { color: #50ccc9; background: #50ccc94f; border: 1px solid #50ccc9 !important; border-radius: 0; font-family: var(--rb-mono); }
-#SearchForm input:focus { color: var(--rb-void); background: #50ccc9; border-color: #50ccc9 !important; box-shadow: 0 0 12px #50ccc94f; outline: none; }
+#SearchForm input:focus {color: var(--rb-void);background: #50ccc9;border-color: #50ccc9 !important;box-shadow: 0 0 12px #50ccc94f;outline: none;}
+/* Search Input Placeholder - Default */
+#SearchInput::placeholder {
+    color: #50ccc9 !important;
+    opacity: 1 !important;
+    transition: color 0.2s ease;
+}
+
+/* Search Input Placeholder - Focused */
+#SearchInput:focus::placeholder {
+    color: var(--rb-void) !important;
+    opacity: 1 !important;
+}
