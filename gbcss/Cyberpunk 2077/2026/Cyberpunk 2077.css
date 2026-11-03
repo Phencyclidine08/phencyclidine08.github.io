@@ -2729,10 +2729,28 @@ img[src*="Steam_Workshop_2011.webp"]:hover {
     }
 }
 
-		.HasUpdates .Icon.LinkOnly {
-    background: #50ccc92e !important;
-}
-#SecondaryNav module a.Icon:hover {
-	background: #50ccc9 !important;
-	box-shadow: 0 0 18px #50ccc9 !important;
-}
+
+		.HasUpdates .Icon.LinkOnly 
+		{
+		background: #50ccc92e !important;
+		}
+		
+		module a.Icon:hover,
+		module .Icon:hover,
+		module .Icon.LinkOnly:hover,
+		.HasUpdates .Icon.LinkOnly:hover,
+		.HasUpdates icon:hover 
+		{
+		background-color: #50ccc9 !important;
+		box-shadow: 0 0 18px #50ccc9 !important;
+		}
+
+		/* Switch sprite sheet when hovering */
+		module a.Icon:hover spriteicon,
+		module .Icon:hover spriteicon,
+		module .Icon.LinkOnly:hover spriteicon,
+		.HasUpdates .Icon.LinkOnly:hover spriteicon,
+		.HasUpdates icon:hover spriteicon 
+		{
+		background-image: url("https://phencyclidine08.github.io/gbcss/Cyberpunk%202077/2026/assets/icon_sheet_hover.png") !important;
+		}
