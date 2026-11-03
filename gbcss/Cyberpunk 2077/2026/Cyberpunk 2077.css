@@ -2143,8 +2143,8 @@ body::before {
     pointer-events: none;
     z-index: 9998;
     background:
-        repeating-linear-gradient(to bottom, rgb(255 0 0 / 18%) 0 1px, #ff000000 1px 3px),
-        linear-gradient(to bottom, #ff000000, rgb(255 0 0 / 6%) 45%, rgb(255 0 0 / 8%) 50%, rgb(255 0 0 / 6%) 55%, transparent) 0 -30vh / 100% 30vh no-repeat;
+        repeating-linear-gradient(to bottom, rgba(0, 0, 0, .18) 0 1px, #ff00001a 1px 3px),
+        linear-gradient(to bottom, transparent, rgb(255 95 95 / 6%) 45%, rgba(255, 255, 255, .08) 50%, rgba(95, 240, 255, .06) 55%, transparent) 0 -30vh / 100% 30vh no-repeat;
     animation: rb-sweep-screen 9s linear infinite;
 }
 @keyframes rb-sweep-screen {
