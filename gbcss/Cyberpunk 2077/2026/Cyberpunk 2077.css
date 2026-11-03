@@ -1189,19 +1189,77 @@ ul.KeyInfo spriteicon.SubnavigatorIcon.FeaturedIcon {
     border-image-outset: 0;
 }
 
+#tpm__sBmAudio {
+    --ticker-width: 246px;    /* Visible ticker width */
+    --ticker-height: 10px;    /* Visible ticker height */
+    --ticker-x: 47px;        /* Move right (+), left (-) */
+    --ticker-y: 0px;          /* Move down (+), up (-) */
+    --ticker-speed: 180s;      /* Lower = faster */
+}
+
 #tpm__sBmAudio > module {
     position: relative;
     overflow: visible;
+    clip-path: none;
 }
 
+#tpm__sBmAudio > module::before {
+    /* KEEP YOUR FULL LYRICS CONTENT HERE */
+	content: "Crazy is what crazy does. I hear you talking 'bout the trouble that you never caused. I'm landing on your jaw. Don't you run from me. You'll get exactly what you think you deserve, let's go. I'm throwing blows, my punch is comin' from the shoulder. I'll let you hear the kiss, just move a little closer. I'm jumpin' off the edge, I'm rollin' like a coaster. I'll hang you on the wall and turn you into a poster. I've tried so many ways to make you see the way I do. But you don't care. Don't you run from me. You'll get exactly what you think you deserve. I'm not afraid of the flame. I've burned myself so many times. I don't think I'll learn. (You can't run from me) Rip your face off, let the punch in. Lost my sanity, I'm going off the deep end. I don't hold back, I just let go. Bring the chaos, I'm burning up the ammo. I'm throwing blows, my punch is comin' from the shoulder. I'll let you hear the kiss, just move a little closer. I'm jumpin' off the edge, I'm rollin' like a coaster. I'll hang you on the wall and turn you into a poster. I've tried so many ways to make you see the way I do. But you don't care. Don't you run from me. You'll get exactly what you think you deserve. I'm not afraid of the flame. I've burned myself so many times. I don't think I'll learn. Don't you run from me. You'll get exactly what you think you deserve. Don't you run from me. You'll get exactly what you think you deserve. I'm not afraid of the flame. I've burned myself so many times. I don't think I'll learn.";
 
-#tpm__sBmAudio > module::after {
+    position: absolute;
+    left: var(--ticker-x);
+    bottom: calc(.5em - var(--ticker-y));
+
+    display: block;
+    width: max-content;
+    height: var(--ticker-height);
+    white-space: nowrap;
+
+    font: .7rem/1 var(--rb-mono);
+    letter-spacing: .12em;
+    color: #00ffff !important;
+    opacity: 1;
+
+    overflow: visible;
+    pointer-events: none;
+    z-index: 11;
+
+    animation: rb-ticker-clipped var(--ticker-speed) linear infinite;
+}
+
+/* Moving text with counter-moving clipping boundaries */
+@keyframes rb-ticker-clipped {
+    from {
+        transform: translateX(var(--ticker-width));
+
+        clip-path: inset(
+            0
+            100%
+            0
+            calc(-1 * var(--ticker-width))
+        );
+    }
+
+    to {
+        transform: translateX(-100%);
+
+        clip-path: inset(
+            0
+            calc(-1 * var(--ticker-width))
+            0
+            100%
+        );
+    }
+}
+
+#tpm__sBmAudio ::after {
     content: "";
     position: absolute;
 
     /* Center the image */
     top: 40%;
-    left: 55%;
+    left: 58%;
     transform: translate(-50%, -50%);
 
     /* Image dimensions */
@@ -1223,6 +1281,7 @@ ul.KeyInfo spriteicon.SubnavigatorIcon.FeaturedIcon {
         rb-flicker 1.2s steps(1) both,
         rb-audio-glitch 5.5s steps(1) 1.4s infinite;
 }
+
 
 /* Glitch animation preserving image centering */
 @keyframes rb-audio-glitch {
@@ -2670,7 +2729,7 @@ img[src*="Steam_Workshop_2011.webp"]:hover {
     }
 }
 
-.HasUpdates .Icon.LinkOnly {
+		.HasUpdates .Icon.LinkOnly {
     background: #50ccc92e !important;
 }
 #SecondaryNav module a.Icon:hover {
