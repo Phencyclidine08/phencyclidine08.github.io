@@ -2873,3 +2873,6 @@ module.Active > a.Icon {
     pointer-events: none;
 }
 
+.Notification.Unseen {
+    background: #d03f3f63 !important;
+}
