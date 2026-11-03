@@ -2669,3 +2669,11 @@ img[src*="Steam_Workshop_2011.webp"]:hover {
         transform: translateX(-50%);
     }
 }
+
+.HasUpdates .Icon.LinkOnly {
+    background: #50ccc92e !important;
+}
+#SecondaryNav module a.Icon:hover {
+	background: #50ccc9 !important;
+	box-shadow: 0 0 18px #50ccc9 !important;
+}
