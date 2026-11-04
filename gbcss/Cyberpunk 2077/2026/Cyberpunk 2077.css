@@ -2971,3 +2971,24 @@ module.Active > a.Icon {
 .Notification.Unseen {
     background: #d03f3f63 !important;
 }
+
+/* Typewriter Reveal */
+article, p, h1, h2, h3, h4, .RedColor, span, dd, dt {
+    animation: rb-decrypt 1.4s steps(28) 0.4s both;
+}
+
+@keyframes rb-decrypt {
+    0% {
+        clip-path: inset(0 100% 0 0);
+        text-shadow: 0 0 12px #f75444;
+    }
+
+    90% {
+        text-shadow: 0 0 12px #f75444;
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+        text-shadow: none;
+    }
+}
